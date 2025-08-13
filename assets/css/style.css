@@ -1,0 +1,30 @@
+ /* Light Mode */
+:root {
+  --bg-color: #FFFFFF;
+  --text-title: #0D1B2A;
+  --text-color: #333333;
+  --card-bg: #F8F9FA;
+  --btn-primary: #4DB8FF;
+  --btn-secondary: #007ACC;
+  --accent-primary: #4DB8FF;
+  --accent-secondary: #00C2B2;
+  --border-color: #E0E0E0;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-color: #0B0F14;
+  --text-title: #FFFFFF;
+  --text-color: #CCCCCC;
+  --card-bg: #1A1F25;
+  --btn-primary: #4DB8FF;
+  --btn-secondary: #3399FF;
+  --accent-primary: #4DB8FF;
+  --accent-secondary: #00D4C6;
+  --border-color: #2E2E2E;
+}
+header .navbar-brand img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
