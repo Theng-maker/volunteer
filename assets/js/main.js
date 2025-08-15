@@ -26,3 +26,5 @@ button.addEventListener("click", () => {
     localStorage.setItem("theme", newTheme);
     currentThemeSetting = newTheme;
 });
+
+// Navbar search
