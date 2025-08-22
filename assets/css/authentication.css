@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../image/homepage/state-area.png') no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.was-validated .form-control:valid, .form-control.is-valid{
+    background-image: none !important;
+    background-color: transparent !important;
+}
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+  border-color: var(--bs-form-valid-border-color);
+  box-shadow: none !important;
+}
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+  box-shadow: none !important;
+}
+
+.login-area {
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #cacaca;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(20px);
+}
+
+
+
+.section-title img {
+    width: 80px;
+}
+
+.login-area .section-title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.login-area form .form-label {
+
+    font-size: 18px;
+}
+
+.login-area form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none
+}
+
+.login-area form .login-list img {
+    width: 30px;
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.login-area form .login-list li:hover img {
+    border: 2px solid #007bff;
+    transform: scale(1.1);
+}
+
+
+/* -------- Found acc ---- */
+.found-acc-area{
+    width: 550px;
+}
+.found-acc-area ul {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+.found-acc-area ul li {
+    margin-bottom: 20px;
+}
+
+.found-acc-area ul li .account-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: 0.3s;
+}
+
+.found-acc-area ul li h4 {
+    font-size: 22px;
+
+}
+
+.found-acc-area ul li:hover .account-img img,
+.found-acc-area ul li:hover h4 {
+    transform: scale(1.1);
+    color: #007bff;
+}
+
+
+
+
+/* ---- ORG Register--*/
+.org-login{
+    height: auto;
+    padding: 10px 0;
+ background-color: #3C86C5; 
+ background-position: bottom;  
+}
+.org-register{
+    /* width: 800px; */
+    padding: 10px 30px;
+}
+.org-register .section-title h2{
+    margin-bottom: 5px;
+}
+
+.org-register .ts-control{
+    border: none;
+    padding: 4px;
+}
+.ts-dropdown, .ts-control, .ts-control input{
+    font-size: 16px !important;
+}
+.org-register .wrapper {
+  text-align: center;
+  position: relative;
+}
+.org-register .wrapper input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+.upload {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(198, 198, 198, 0.65);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.border {
+  border: 5px dashed rgba(198, 198, 198, 0.65);
+  padding: 10px;
+}
+
+.border-container p {
+  color: #130f40;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  opacity: 0.65;
+}
+
+#file-browser {
+  text-decoration: none;
+  color: rgb(22,42,255);
+  border-bottom: 3px dotted rgba(22, 22, 255, 0.85);
+}
+
+#file-browser:hover {
+  color: rgb(0, 0, 255);
+  border-bottom: 3px dotted rgba(0, 0, 255, 0.85);
+}
+
+.icons {
+  color: #95afc0;
+  opacity: 0.55;
+}
