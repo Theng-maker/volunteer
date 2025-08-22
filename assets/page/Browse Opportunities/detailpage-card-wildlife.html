@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ព័ត៌មានលម្អិត</title>
+    <link rel="shortcut icon" href="../../image/logo-removebg.png" type="image/x-icon">
+    <!-- date  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/opportunities/opportunities.css">
+    <link rel="stylesheet" href="../../css/opportunities/detailpages.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-list list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            អំពីយើង
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            ទំនាក់ទំនង
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-action d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-globe2"></i>
+                            <span class="align-content-center">
+                                ភាសាខ្មែរ
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../../image/Icon/Cambodia.png" alt="">
+                                    <span>
+                                        ភាសាខ្មែរ
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../../image/Icon/england.png" alt="">
+                                    <span>
+                                        ភាសាអង់គ្លេស
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../../image/Icon/arabic.png" alt="">
+                                    <span>
+                                        ភាសាអារ៉ាប់
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                        aria-label="Change to light theme">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand " href="#">
+                    <img src="../../image/Logo.jpg" alt="">
+                    ស្ម័គ្រចិត្ត
+                </a>
+
+                <!-- Offcanvas toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
+                    <li>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="dropdown nav-notification">
+                            <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell-fill"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
+                                    3
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="ps-3">
+                                    <h3 class="fs-5">ការជូនដំណឹង</h3>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../../image/Icon/facebook.png" alt="" class="">
+                                        <span class="ps-2">
+                                            Facebook <br>
+                                            អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
+                                            <span class="text-secondary">
+                                                ឥឡូវនេះ
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../../image/Icon/setting.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការកំណត់ <br>
+                                            អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
+                                            <span class="text-secondary">
+                                                ៣០នាទីមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../../image/Icon/mark.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការដាក់ពាក្យ <br>
+                                            ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
+                                            <span class="text-secondary">
+                                                ២ម៉ោងមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class=" my-3 d-flex justify-content-center">
+                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                        មើលការជូនដំណឹងទាំងអស់
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../../image/profile.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb-page" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item">
+                        <a href="../Browse Opportunities/opportunities.html">ការងារស្ម័គ្រចិត្ត</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">ស្ម័គ្រចិត្តថែទាំសត្វ</li>
+                </ol>
+            </nav>
+
+            <div class="position-relative mb-5 rounded overflow-hidden">
+                <div class="hero-img">
+                    <img src="../../image/opportunities/Wildlife/card-3/img-3.png"
+                        alt="អ្នកស្ម័គ្រចិត្តកំពុងបង្រៀនកុមារក្នុងថ្នាក់រៀន។" class="img-fluid w-100">
+                </div>
+                <div class="hero-overlay position-absolute">
+                    <h1 class="fw-bold mb-3">ស្ម័គ្រចិត្តថែទាំសត្វ</h1>
+                    <a href="#apply" class="btn btn-primary btn-lg px-4 py-2 rounded-pill fs-5">ដាក់ពាក្យឥឡូវនេះ</a>
+                </div>
+            </div>
+
+
+            <!-- counter -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="counter-card card-green">
+                        <i class="bi bi-person-fill-add"></i>
+                        <h3>១៥០+</h3>
+                        <p>អ្នកស្ម័គ្រចិត្ត</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="counter-card card-pink">
+                        <i class="bi bi-globe"></i>
+                        <h3>៤</h3>
+                        <p>ប្រទេសដែលចូលរួម</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="counter-card card-orange">
+                        <i class="bi bi-book"></i>
+                        <h3>៣</h3>
+                        <p>ឆ្នាំនៃបទពិសោធន៍</p>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <div>
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-7">
+                        <div class="program-info">
+                            <h3 class="section-heading">ព័ត៌មានទូទៅអំពីកម្មវិធី</h3>
+                            <p class="mb-4">
+                                កម្មវិធីស្ម័គ្រចិត្តថែទាំសត្វសត្វព្រៃនេះមានបំណងការពារ និងថែរក្សាប្រភេទសត្វក្នុងតំបន់ដែលកំពុងមានហានិភ័យ និងការខ្វះខាត។
+                                អ្នកស្ម័គ្រចិត្តនឹងចូលរួមក្នុងសកម្មភាពដូចជា ការផ្លាស់ប្តូរព្រៃឈើ ការថែទាំសត្វរងរបួស
+                                និងការផ្សព្វផ្សាយការយល់ដឹងស្តីពីសត្វព្រៃ។ កម្មវិធីនេះផ្តល់ឱកាសឱ្យអ្នកសិក្សាជំនាញថ្មី បង្កើនការយល់ដឹងអំពីបរិស្ថាន
+                                និងធ្វើឱ្យមានឥទ្ធិពលវិជ្ជមានចំពោះសហគមន៍។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card p-4 shadow-sm rounded-4 card-info">
+                            <h5 class="mb-3">ព័ត៌មានរហ័ស</h5>
+                            <div class="quick-info">
+                                <ul>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-calendar3 me-3 text-primary"></i>
+                                        <strong class="me-2">កាលបរិច្ឆេទ:</strong> ២៥ មករា ២០២៥ - ២៥ មេសា ២០២៥
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-clock me-3 text-primary"></i>
+                                        <strong class="me-2">ពេលវេលា: </strong> ម៉ោង ០៦:០០ ព្រឹក - ០៩:០០ យប់
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-people me-3 text-primary"></i>
+                                        <strong class="me-2">ប្រភេទកម្មវិធី:</strong> ជម្រកសត្វព្រៃ / Wildlife
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-geo-alt me-3 text-primary"></i>
+                                        <strong class="me-2">ទីតាំង:</strong> ស្ទឹងត្រែង, កម្ពុជា
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-gift me-3 text-primary"></i>
+                                        <strong class="me-2">ផលប្រយោជន៍:</strong> កន្លែងស្នាក់នៅ, អាហារ,
+                                        មធ្យោបាយធ្វើដំណើរ
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="section-heading">ជំនាញដែលត្រូវការសម្រាប់ស្ម័គ្រចិត្ត</h3>
+                        <div class="skill-require">
+                            <ul>
+                                <li>Empathy and Care: មានចិត្តស្រឡាញ់សត្វ និងសុខភាពរបស់ពួកវា។</li>
+                                <li>ទំនាក់ទំនងល្អ: សមត្ថភាពក្នុងការប្រាស្រ័យទាក់ទងយ៉ាងច្បាស់លាស់ជាមួយកុមារឪពុកម្តាយនិងសមាជិកក្រុមដទៃទៀត។</li>
+                                <li>Physical Fitness: អាចធ្វើការងារខាងក្រៅ និងក្នុងព្រៃឈើបាន។</li>
+                                <li>Teamwork: ធ្វើការជាក្រុមបានយ៉ាងល្អ។</li>
+                                <li>Commitment: ចូលរួមយ៉ាងសកម្មក្នុងការការពារបរិស្ថាន។</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="section-heading">ភារកិច្ចសំខាន់ៗ</h3>
+                        <div class="tasks">
+                            <ul>
+                                <li>Animal Care: ជួយថែទាំសត្វដែលរងរបួស ឬត្រូវបានជួយសង្គ្រោះ។</li>
+                                <li>Habitat Restoration: ដាំដើមឈើ និងថែទាំតំបន់អាស្រ័យ។</li>
+                                <li>Research & Monitoring: កត់ត្រា និងតាមដានចំនួនសត្វ។</li>
+                                <li>Community Awareness: ចូលរួមក្នុងសកម្មភាពផ្សព្វផ្សាយការយល់ដឹង។</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Impact and Testimonials -->
+            <section class="impact-testimonials p-5 rounded-4 shadow mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="section-heading mb-4">🌱 ផលប៉ះពាល់របស់យើង</h3>
+                        <p class="lead">
+                            ក្នុងឆ្នាំមុន មានសិស្សច្រើនជាង <strong>២០០ នាក់</strong> បានបង្កើនជំនាញភាសាអង់គ្លេស
+                            និងទំនុកចិត្តក្នុងការបង្ហាញខ្លួនក្នុងថ្នាក់រៀនដោយមានការចូលរួមពីអ្នកស្ម័គ្រចិត្ត។
+                            កម្មវិធីនេះបានបង្កើនការចូលរួមក្នុងថ្នាក់រៀនដោយសមាជិកថ្មីរហូតដល់ <strong>៤៥%</strong>។
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-6 mb-3">
+                                <h4 class="fw-bold display-5">300+</h4>
+                                <p class="mb-0">សត្វដែលត្រូវបានជួយសង្គ្រោះ</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <h4 class="fw-bold display-5">៧៥%</h4>
+                                <p class="mb-0">ការកើនឡើងការចូលរួម</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <h4 class="fw-bold display-5">៥០០+</h4>
+                                <p class="mb-0">ម៉ោងស្ម័គ្រចិត្ត</p>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <h4 class="fw-bold display-5">១០+</h4>
+                                <p class="mb-0">ដៃគូសហគមន៍</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="section-heading text-white mb-4">🗣️ អ្វីដែលពួកគេនិយាយ</h3>
+                        <div class="card bg-white text-dark p-4 rounded-4 shadow-sm mb-3 feedback">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../../image/opportunities/Wildlife/card-3/volunteer.png"
+                                    class="rounded-circle me-3" alt="senghorn">
+                                <div>
+                                    <h5 class="mb-0 fw-bold">សុខគ្រី</h5>
+                                    <small class="text-muted">អ្នកស្ម័គ្រចិត្តពីអង្គការ Green Earth</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">
+                                “ការងារនេះធ្វើឱ្យខ្ញុំយល់ថា សត្វព្រៃមានតម្លៃ និងត្រូវការការពារ។ ខ្ញុំមានក្តីស្រឡាញ់សម្រាប់ធម្មជាតិ។”
+                            </p>
+                        </div>
+                        <div class="card bg-white text-dark p-4 rounded-4 shadow-sm feedback">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../../image/opportunities/Education/English teaching/student.png"
+                                    class="rounded-circle me-3" alt="កុមារា ម្នាក់">
+                                <div>
+                                    <h5 class="mb-0 fw-bold">ចាន់រ័ត្ន</h5>
+                                    <small class="text-muted">សិស្សក្នុងសហគមន៍</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">
+                                "សកម្មភាពនេះបានបង្រៀនឱ្យយើងស្រឡាញ់ និងថែរក្សាបរិស្ថាននៅជុំវិញខ្លួនយើង។"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- gallery -->
+            <section class="mb-5">
+                <h3 class="section-heading">រូបថតសកម្មភាព</h3>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="../../image/opportunities/Wildlife/card-3/img-1.png"
+                            class="img-fluid rounded shadow-sm h-100" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../image/opportunities/Wildlife/card-3/img-2.png"
+                            class="img-fluid rounded shadow-sm h-100" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../image/opportunities/Wildlife/card-3/img-3.png"
+                            class="img-fluid rounded shadow-sm h-100" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../image/opportunities/Wildlife/card-9/img-1.png"
+                            class="img-fluid rounded shadow-sm" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../image/opportunities/Wildlife/card-12/img-1.png"
+                            class="img-fluid rounded shadow-sm h-100" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../image/opportunities/Wildlife/card-9/img-3.png"
+                            class="img-fluid rounded shadow-sm" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- organization -->
+            <section class="mb-5 organization">
+                <h3 class="section-heading">អំពីអង្គការ</h3>
+                <p>
+                    អង្គការរបស់យើងមានគោលបំណងការពារ និងរក្សាទុកធម្មជាតិ ដោយជឿថា សត្វព្រៃ និងបរិស្ថានគួរតែទទួលបានការថែរក្សា។
+                    យើងធ្វើការជាមួយសហគមន៍ក្នុងស្រុក ដើម្បីបង្កើនការយល់ដឹង និងបង្កើតអនាគតប្រកបដោយចីរភាពសម្រាប់កូនចៅជំនាន់ក្រោយ។
+                </p>
+            </section>
+            <!-- contact -->
+            <div class="contact-card mb-5">
+                <h3 class="section-heading mb-4">ព័ត៌មានទំនាក់ទំនង</h3>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card shadow border-0 rounded-4 p-4 h-100">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-circle bg-primary text-white me-3">
+                                    <i class="bi bi-globe fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">គេហទំព័រ</h5>
+                                    <a href="#" class="text-decoration-none text-dark fw-semibold hover-link">
+                                        www.wildlifeorganization.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card shadow border-0 rounded-4 p-4 h-100">
+                            <h5 class="mb-3">អ៊ីមែល & លេខទូរស័ព្ទ</h5>
+                            <div class="d-flex gap-5">
+                                <p class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                    <a href="mailto:example@email.com"
+                                        class="text-dark fw-semibold hover-link">wildlife@email.com</a>
+                                </p>
+                                <p class="d-flex align-items-center">
+                                    <i class="bi bi-telephone-fill text-primary me-2"></i>
+                                    <a href="tel:012345678" class="text-dark fw-semibold hover-link">012-345-678</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card shadow border-0 rounded-4 py-4 px-5">
+                            <div class="row">
+                                <div class="col-lg-4 mb-3 mb-lg-0">
+                                    <h5>តាមដានយើង</h5>
+                                    <div class="d-flex pt-2">
+                                        <a href="#" class="social-icon me-3"><i class="bi bi-facebook"></i></a>
+                                        <a href="#" class="social-icon me-3"><i class="bi bi-twitter"></i></a>
+                                        <a href="#" class="social-icon me-3"><i class="bi bi-telegram"></i></a>
+                                        <a href="#" class="social-icon me-3"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-3 mb-lg-0">
+                                    <h5>ម៉ោងធ្វើការ</h5>
+                                    <p class="mb-0"><i class="bi bi-clock text-warning me-2"></i>Mon – Fri: 9:00 AM – 5:00 PM
+                                </div>
+                                <div class="col-lg-4">
+                                    <h5>អាសយដ្ឋាន</h5>
+                                    <p class="mb-0"><i class="bi bi-geo-alt text-danger me-2"></i>
+                                        ស្ទឹងត្រែង , រាជធានីភ្នំពេញ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <section class="courage-card text-center  text-white p-5 rounded-4 mb-5 shadow-lg">
+                <h2 class="fw-bold display-5 mb-4">🚀 ត្រៀមខ្លួនសម្រាប់ការផ្លាស់ប្តូរជីវិត?</h2>
+                <a href="#"
+                    class="btn btn-outline-light btn-lg mx-2 my-2 px-4 py-2 rounded-pill fw-bold">ដាក់ពាក្យឥឡូវនេះ</a>
+                <button type="button" class="btn btn-outline-light btn-lg mx-2 my-2 px-4 py-2 rounded-pill fw-bold"
+                    data-bs-toggle="modal" data-bs-target="#share">
+                    ចែករំលែក
+                </button>
+                <!-- Modal -->
+                <div class="modal top fade" id="share" tabindex="-1" aria-labelledby="share" aria-hidden="true"
+                    data-bs-backdrop="true" data-bs-keyboard="false">
+                    <div class="modal-dialog   modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="sharetitle">ចែករំលែក</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="d-flex gap-3">
+                                    <li><a href="#" class="social-icon me-3"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#" class="social-icon me-3"><i class="bi bi-twitter"></i></a></li>
+                                    <li><a href="#" class="social-icon me-3"><i class="bi bi-telegram"></i></a></li>
+                                    <li><a href="#" class="social-icon me-3"><i class="bi bi-linkedin"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="bi bi-instagram"></i></a></li>
+                                </ul>
+                                <div class="text-start">
+                                    <h5 class="modal-title pb-3" id="sharetitle">គេហទំព័រ​ Link</h5>
+                                    <button id="copyLinkBtn" class="btn btn-secondary rounded-pill"
+                                        data-bs-toggle="tooltip" data-bs-title="Copied!">
+                                        📋 គេហទំព័រ​ Link
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- more card -->
+            <section class="mb-5">
+                <h3 class="section-heading">🔎 កម្មវិធីស្ម័គ្រចិត្តផ្សេងទៀត</h3>
+                <div class="row g-4">
+                    <!-- card-7 -->
+                    <div class="col-lg-4 opportunity-card " data-category="education" data-location="kratié">
+                        <div class="card shadow-lg h-100" id="education">
+                            <!-- card-top -->
+                            <div>
+                                <a href="#">
+                                    <div id="carouselCard-7"
+                                        class="carousel slide card-img-top carousel-top position-relative"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-indicators page">
+                                            <button type="button" data-bs-target="#carouselCard-7" data-bs-slide-to="0"
+                                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCard-7" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCard-7" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../../image/opportunities/Education/card-7/img-1.png"
+                                                    class="d-block w-100" alt="image-1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../../image/opportunities/Education/card-7/img-2.png"
+                                                    class="d-block w-100" alt="image-2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../../image/opportunities/Education/card-7/img-3.png"
+                                                    class="d-block w-100" alt="image-3">
+                                            </div>
+                                        </div>
+                                        <!-- category tag -->
+                                        <div class="categories-tag ">
+                                            <span>ការអប់រំ</span>
+                                        </div>
+                                        <!-- favorite -->
+                                        <div class="favorite ">
+                                            <i class="bi bi-heart-fill"></i>
+                                        </div>
+                                        <!-- carousel controls -->
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselCard-7" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselCard-7" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title fw-medium fs-4">វគ្គបណ្តុះបណ្តាលជាងអគ្គិសនី</h3>
+                                <div class="location mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>ក្រចេះ</span>
+                                </div>
+                                <p class="card-text mb-1">
+                                    ចូលរួមរៀនជំនាញអគ្គិសនីដើម្បីមានឱកាសការងារល្អ និងប្រាក់ចំណូលខ្ពស់
+                                </p>
+                                <p class="text-muted small mb-3">រៀបចំដោយ: ក្រសួងការងារ
+                                    និងបណ្តុះបណ្តាលវិជ្ជាជីវៈ</p>
+                                <div class="card-content">
+                                    <ul class="list-unstyled ps-2 mb-3">
+                                        <li class="mb-1">
+                                            <i class="bi bi-calendar-event pe-2"></i>
+                                            <span>ថ្ងៃទី ១៨ ខែមករា - ១៨ ខែកុម្ភៈ ឆ្នាំ២០២៦ </span>
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="bi bi-clock pe-2"></i>
+                                            <span>ម៉ោង ០៨:០០ - ម៉ោង ១៦:០០</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-people pe-2"></i>
+                                            <span>ត្រូវការ ២០ នាក់</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto">
+                                    <!-- Benefits -->
+                                    <div
+                                        class="benefits d-flex justify-content-around py-2 border-top border-bottom mb-3">
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-taxi-front-fill fs-4"></i>
+                                            <span class="small">គ្មានរថយន្ត</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-house-fill fs-4"></i>
+                                            <span class="small">គ្មានកន្លែងស្នាក់នៅ</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-fork-knife fs-4"></i>
+                                            <span class="small">គ្មានអាហារ</span>
+                                        </div>
+                                    </div>
+                                    <!-- Buttons -->
+                                    <div class="card-action d-flex justify-content-between">
+                                        <a href="../Browse Opportunities/detailpages-card-1.html"
+                                            class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                        <a href="#" class="btn btn-primary">ដាក់ពាក្យ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-8 -->
+                    <div class="col-lg-4 opportunity-card " data-category="education" data-location="siem-reap">
+                        <div class="card shadow-lg h-100" id="education">
+                            <!-- card-top -->
+                            <div>
+                                <a href="#">
+                                    <div id="carouselCard-8"
+                                        class="carousel slide card-img-top carousel-top position-relative"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-indicators page">
+                                            <button type="button" data-bs-target="#carouselCard-8" data-bs-slide-to="0"
+                                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCard-8" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCard-8" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../../image/opportunities/Education/English teaching/image-1.png"
+                                                    class="d-block w-100" alt="image-1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../../image/opportunities/Education/English teaching/image-2.png"
+                                                    class="d-block w-100" alt="image-2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../../image/opportunities/Education/English teaching/image-3.png"
+                                                    class="d-block w-100" alt="image-3">
+                                            </div>
+                                        </div>
+                                        <!-- category tag -->
+                                        <div class="categories-tag ">
+                                            <span>ការអប់រំ</span>
+                                        </div>
+                                        <!-- favorite -->
+                                        <div class="favorite ">
+                                            <i class="bi bi-heart-fill"></i>
+                                        </div>
+                                        <!-- carousel controls -->
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselCard-8" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselCard-8" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title fw-medium fs-4">វគ្គបណ្តុះបណ្តាលរចនាក្រាហ្វិក</h3>
+                                <div class="location mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>សៀមរាប</span>
+                                </div>
+                                <p class="card-text mb-1">
+                                    ជួយបង្រៀនថ្នាក់ភាសាអង់គ្លេសនៅតាមតំបន់ជនបទ
+                                </p>
+                                <p class="text-muted small mb-3">រៀបចំដោយ: អង្គការបរិស្ថានកម្ពុជា</p>
+                                <div class="card-content">
+                                    <ul class="list-unstyled ps-2 mb-3">
+                                        <li class="mb-1">
+                                            <i class="bi bi-calendar-event pe-2"></i>
+                                            <span>២៥ មករា ២០២៥</span>
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="bi bi-clock pe-2"></i>
+                                            <span>ម៉ោង ៧:០០ - ១១:០០</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-people pe-2"></i>
+                                            <span>ត្រូវការ ២០ នាក់</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto">
+                                    <!-- Benefits -->
+                                    <div
+                                        class="benefits d-flex justify-content-around py-2 border-top border-bottom mb-3">
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-taxi-front-fill fs-4"></i>
+                                            <span class="small">រថយន្ត</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-house-fill fs-4"></i>
+                                            <span class="small">កន្លែងស្នាក់នៅ</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-fork-knife fs-4"></i>
+                                            <span class="small">អាហារ</span>
+                                        </div>
+                                    </div>
+                                    <!-- Buttons -->
+                                    <div class="card-action d-flex justify-content-between">
+                                        <a href="../Browse Opportunities/detailpages-card-1.html"
+                                            class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                        <a href="#" class="btn btn-primary">ដាក់ពាក្យ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-16 -->
+                    <div class="col-lg-4 opportunity-card " data-category="environment" data-location="siem-reap">
+                        <div class="card shadow-lg h-100" id="environment">
+                            <!-- card-top -->
+                            <div>
+                                <a href="#">
+                                    <div id="carouselCard-1"
+                                        class="carousel slide card-img-top carousel-top position-relative"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-indicators page">
+                                            <button type="button" data-bs-target="#carouselCard-1" data-bs-slide-to="0"
+                                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselCard-1" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselCard-1" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../../image/opportunities/Education/English teaching/image-1.png"
+                                                    class="d-block w-100" alt="image-1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../../image/opportunities/Education/English teaching/image-2.png"
+                                                    class="d-block w-100" alt="image-2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../../image/opportunities/Education/English teaching/image-3.png"
+                                                    class="d-block w-100" alt="image-3">
+                                            </div>
+                                        </div>
+                                        <!-- category tag -->
+                                        <div class="categories-tag ">
+                                            <span>ការអប់រំ</span>
+                                        </div>
+                                        <!-- favorite -->
+                                        <div class="favorite ">
+                                            <i class="bi bi-heart-fill"></i>
+                                        </div>
+                                        <!-- carousel controls -->
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselCard-1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselCard-1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title fw-medium fs-4">ការបង្រៀនភាសាអង់គ្លេស</h3>
+                                <div class="location mb-2">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>សៀមរាប</span>
+                                </div>
+                                <p class="card-text mb-1">
+                                    ជួយបង្រៀនថ្នាក់ភាសាអង់គ្លេសនៅតាមតំបន់ជនបទ
+                                </p>
+                                <p class="text-muted small mb-3">រៀបចំដោយ: អង្គការបរិស្ថានកម្ពុជា</p>
+                                <div class="card-content">
+                                    <ul class="list-unstyled ps-2 mb-3">
+                                        <li class="mb-1">
+                                            <i class="bi bi-calendar-event pe-2"></i>
+                                            <span>២៥ មករា ២០២៥</span>
+                                        </li>
+                                        <li class="mb-1">
+                                            <i class="bi bi-clock pe-2"></i>
+                                            <span>ម៉ោង ៧:០០ - ១១:០០</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-people pe-2"></i>
+                                            <span>ត្រូវការ ២០ នាក់</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto">
+                                    <!-- Benefits -->
+                                    <div
+                                        class="benefits d-flex justify-content-around py-2 border-top border-bottom mb-3">
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-taxi-front-fill fs-4"></i>
+                                            <span class="small">រថយន្ត</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-house-fill fs-4"></i>
+                                            <span class="small">កន្លែងស្នាក់នៅ</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-fork-knife fs-4"></i>
+                                            <span class="small">អាហារ</span>
+                                        </div>
+                                    </div>
+                                    <!-- Buttons -->
+                                    <div class="card-action d-flex justify-content-between">
+                                        <a href="#" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                        <a href="#" class="btn btn-primary">ដាក់ពាក្យ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- go-top-btn -->
+        <div>
+            <button onclick="topFunction()" id="go-top" title="Go to top">
+                <i class="bi bi-arrow-up-short"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-logo">
+                        <img src="../image/logo-removebg.png" alt="">
+                        <p class="footer-text mt-3">
+                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
+                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
+                            និងទំនុកចិត្តលើខ្លួនឯង។
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំនាក់ទំនង
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-envelope-at"></i>
+                                    <span class="ps-2">
+                                        volunteerCambo@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="ps-2">
+                                        Tul kok , Phmom Penh , Cambodia
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="ps-2">
+                                        +85568382800
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <h4>
+                            តាមដានយើង
+                        </h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="../../image/Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../image/Icon/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../image/Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../../image/Icon/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">
+                @ANT SCHOLARSHIP2 | GROUP9
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <form class="d-flex">
+                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
+                        <button type="submit" class="btn btn-primary rounded ms-2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/opportunities.js"></script>
+</body>
+
+</html>
