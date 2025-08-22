@@ -8,6 +8,7 @@
   font-family: Kantomruy;
   src: url(../Vendor/fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf);
 }
+
  :root {
   --top-header : #000000 ;
   --navabr : #FFFFFF ;
@@ -36,9 +37,6 @@
   --card-white: #2C2C2C;
   --footer: #0F172B;
 }
-
-
-
 body {
   font-family: "Kantomruy", "Poppins";
   background-color: var(--border-color);
