@@ -9,18 +9,18 @@
   src: url(../Vendor/fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf);
 }
 
-:root {
-  --top-header: #000000;
-  --navabr: #FFFFFF;
+ :root {
+  --top-header : #000000 ;
+  --navabr : #FFFFFF ;
   --primary-color: #007ACC;
   --secondary-color: #4DB8FF;
   --text-white-fixed: #FFFFFF;
   --text-black: #212536;
   --text-descript: #232531;
-  --white-bg: #FFFFFF;
-  --gray-bg: #F1F1F1;
-  --card-white: #FFFFFF;
-  --footer: #0F172B;
+  --white-bg: #FFFFFF ;
+  --gray-bg : #F1F1F1 ;
+  --card-white : #FFFFFF ;
+  --footer : #0F172B;
 }
 
 /* Dark Mode */
@@ -30,7 +30,7 @@
   --primary-color: #007ACC;
   --secondary-color: #4DB8FF;
   --text-white-fixed: #FFFFFF;
-  --text-black: #FFFFFF;
+  --text-black: #FFFFFF; 
   --text-descript: #CCCCCC;
   --white-bg: #1A1A1A;
   --gray-bg: #222222;
@@ -40,31 +40,37 @@
 
 body {
   font-family: "Kantomruy", "Poppins";
-  background-color: var(--border-color);
+  background-color: var(--white-bg);
 }
 
 /* ------------- Header -------------- */
 
 .top-header {
-  background-color: black;
+  background-color: var(--top-header);
   padding: 10px 0;
 }
 
 .top-header .nav-list .nav-link {
   padding: 0 20px;
-  color: #FFFFFF;
+  color: var(--text-white-fixed);
   font-size: 18px;
   border-right: 1px solid #fff;
 }
 
-.top-header .dropdown .btn {
-  color: #fff;
+.top-header .dropdown .dropdown-menu{
+  background-color: var(--white-bg);  
 }
-
+.top-header .dropdown .btn {
+  color: var(--text-white-fixed);
+}
+.top-header .dropdown .dropdown-menu li a:hover{
+  background-color: var(--primary-color) !important;
+}
 .top-header .dropdown .dropdown-menu li a span {
   display: inline-block;
   transform: translateY(1px);
   padding-left: 2px;
+  color: var(--text-black);
 }
 
 .top-header .dropdown .dropdown-menu li img {
@@ -72,6 +78,10 @@ body {
 }
 
 
+/* --- Navbar --- */
+.navbar {
+  background-color: var(--navabr) !important;
+}
 .navbar .navbar-brand img {
   width: 70px;
   margin-right: 8px;
@@ -81,40 +91,39 @@ body {
   display: flex;
   align-items: center;
   font-size: 32px;
-  color: var(--accent-primary);
+  color: var(--primary-color);
 }
 
 .navbar .navbar-nav .nav-item {
   padding-inline: 8px;
 }
-
 .navbar .nav-authentication a {
   display: inline-block;
   padding: 8px 20px;
-  background-color: var(--accent-primary);
-  color: var(--bg-color);
+  background-color: var(--primary-color);
+  color: var(--text-white-fixed);
   border-radius: 10px;
-  border: 1px solid var(--accent-primary);
+  border: 1px solid var(--primary-color);
 
 }
 
 .navbar .nav-authentication a.sign-up {
   background-color: transparent;
-  color: var(--btn-primary);
+  color: var(--text-black);
 }
 
 .navbar .nav-authentication a:hover {
-  background-color: var(--btn-primary);
-  color: var(--bg-color);
+  background-color: var(--secondary-color);
 }
 
 .navbar .navbar-nav .nav-link {
   font-size: 20px !important;
+  color: var(--text-black);
 }
 
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:hover {
-  color: var(--accent-primary);
+  color: var(--primary-color);
 }
 
 /* ------- Profile --------- */
@@ -163,15 +172,37 @@ body {
   transform: translateY(10px) !important;
 }
 
-
-
-
+/* ------ Globle class ----- */
+section {
+  padding: 60px 0;
+}
+.section-title h2 {
+  color: var(--text-black);
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.section-title p {
+  color: var(--text-black);
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card .card-body .card-title{
+  margin-bottom: 10px !important;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-black) !important;
+}
+.card .card-body .card-text {
+  font-size: 18px;
+  color: var(--text-descript);
+}
 
 /* ----- Footer -------- */
 footer {
-  /* background-color: #314158; */
-  background-color: #0f172b;
-  color: #fff;
+  background-color: var(--footer);
+  color: var(--text-white-fixed);
 }
 
 footer .footer-logo img {
@@ -198,4 +229,26 @@ footer .footer-social ul li a img {
 
 footer .footer-social ul li a:hover img {
   border-color: var(--btn-secondary);
+}
+
+
+.section-tile h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.section-tile p {
+  width: 800px;
+  margin-inline: auto;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.card .card-body .card-text {
+  font-size: 18px;
 }

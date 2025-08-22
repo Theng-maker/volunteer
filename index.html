@@ -9,6 +9,8 @@
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -17,17 +19,17 @@
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top shadow-sm">
         <div class="top-header">
             <div class="container d-flex justify-content-between align-items-center">
                 <ul class="nav-list list-unstyled d-flex m-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link ps-0">
+                        <a href="assets/page/aboutpage.html" class="nav-link ps-0">
                             អំពីយើង
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="assets/page/contactpage.html" class="nav-link">
                             ទំនាក់ទំនង
                         </a>
                     </li>
@@ -80,7 +82,7 @@
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/image/Logo.jpg" alt="">
+                    <img src="assets/image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
 
@@ -102,27 +104,27 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">
+                                <a class="nav-link" aria-current="page" href="index.html">
                                     ទំព័រដើម
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="assets/page/Authentication/Login.html">
                                     ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="assets/page/Authentication/login.html">
                                     ព្រឹត្តិការណ៏
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="assets/page/Authentication/login.html">
                                     សកម្មភាព
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="assets/page/Authentication/login.html">
                                     បរិច្ចាក
                                 </a>
                             </li>
@@ -132,12 +134,12 @@
 
                 <ul class="nav-authentication d-flex m-0 list-unstyled">
                     <li>
-                        <a href="#" class="login">
+                        <a href="assets/page/Authentication/login.html" class="login">
                             ចូលគណនី
                         </a>
                     </li>
                     <li class="ms-3">
-                        <a href="#" class="sign-up">
+                        <a href="assets/page/Authentication/register.html" class="sign-up">
                             បង្កើតគណនី
                         </a>
                     </li>
@@ -154,13 +156,17 @@
                         តោះ ចូលរួមស្ម័គ្រចិត្តទាំងអស់គ្នា!
                     </h2>
                     <p class="hero-decript lead mt-3">
-                        ការស្ម័គ្រចិត្តធ្វើឱ្យសង្គមប្រមូលផ្តុំជាធ្លុងមួយ ដើម្បីរួមគ្នាអភិវឌ្ឍសហគមន៍ និងថែមទាំងផ្តល់ជាមធ្យោបាយសម្រាប់ឱ្យប្រជាជន បង្ហាញពីតម្លៃរបស់ពួកគាត់ និងបញ្ជាក់សាជាថ្មីថាពួកគាត់មានចំណែកដ៏មានសារៈសំខាន់សម្រាប់សង្គម។ ការស្ម័គ្រចិត្តអាចកសាងតម្លៃខ្លួនឯង និងមានអារម្មណ៍ថាមានមោទនភាពពិតប្រាកដសម្រាប់រួមចំណែកបង្កើតពិភពលោកមួយដ៏ល្អប្រសើរ
+                        ការស្ម័គ្រចិត្តធ្វើឱ្យសង្គមប្រមូលផ្តុំជាធ្លុងមួយ ដើម្បីរួមគ្នាអភិវឌ្ឍសហគមន៍
+                        និងថែមទាំងផ្តល់ជាមធ្យោបាយសម្រាប់ឱ្យប្រជាជន បង្ហាញពីតម្លៃរបស់ពួកគាត់
+                        និងបញ្ជាក់សាជាថ្មីថាពួកគាត់មានចំណែកដ៏មានសារៈសំខាន់សម្រាប់សង្គម។
+                        ការស្ម័គ្រចិត្តអាចកសាងតម្លៃខ្លួនឯង
+                        និងមានអារម្មណ៍ថាមានមោទនភាពពិតប្រាកដសម្រាប់រួមចំណែកបង្កើតពិភពលោកមួយដ៏ល្អប្រសើរ
                     </p>
                     <div class="hero-action mt-4">
-                        <button type="button" class="btn hero-contact" >
+                        <button type="button" class="btn hero-contact">
                             ទាក់ទងមកយើង
                         </button>
-                        <button type="button" class="btn as-volunteer ms-3" >
+                        <button type="button" class="btn as-volunteer ms-3">
                             ក្លាយជាអ្នកស្ម័គ្រចិត្ត
                         </button>
                     </div>
@@ -204,6 +210,747 @@
 
             </div>
         </section>
+        <section class="about-us">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6">
+                        <div class="section-content">
+                            <h3 class="section-title">អំពីយើង</h3>
+                            <p class="section-decript">
+                                យើងជាក្រុមស្ម័គ្រចិត្តនៅកម្ពុជា ដែលបង្កើតឡើងដោយក្រុមយុវជន
+                                និងមនុស្សមានចិត្តក្តីស្រឡាញ់មនុស្សជាតិ។ យើងមានបំណងជួយដល់សហគមន៍ក្នុងតំបន់ត្រូវការ
+                                ដោយផ្តោតលើវិស័យអប់រំ ការពារបរិស្ថាន និងការអភិវឌ្ឍសហគមន៍។
+                            </p>
+                            <h3 class="section-sub-tilte">ពួកយើងមានបេសកកម្មដូចជា​៖​</h3>
+                            <ul class="mission-list list-unstyled">
+                                <li class="mt-4">
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/presentation.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ស្ម័គ្រចិត្តការអប់រំ
+                                        </h4>
+                                        <p class="mb-0">
+                                            ផ្តល់ការអប់រំ និងការបណ្តុះបណ្តាលដល់កុមារនិងយុវជន
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/community.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ស្ម័គ្រចិត្តតាមសហគមន៍
+                                        </h4>
+                                        <p class="mb-0">
+                                            ជួយសហគមន៍ក្នុងការអភិវឌ្ឍ និងបង្កើនគុណភាពជីវិត
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/event-list.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
+                                        </h4>
+                                        <p class="mb-0">
+                                            រៀបចំ និងចូលរួមក្នុងព្រឹត្តិការណ៍សង្គមដើម្បីបង្កើនការយល់ដឹង
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/green-earth.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
+                                        </h4>
+                                        <p class="mb-0">
+                                            ជួយការពារបរិស្ថាន និងបង្កើនការយល់ដឹងអំពីបរិស្ថាន
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="stretched-link"></a>
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/donation.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ការបរិច្ចាគ
+                                        </h4>
+                                        <p class="mb-0">
+                                            ជួយផ្តល់ជំនួយ និងធនធានដល់អ្នកដែលត្រូវការនៅក្នុងសហគមន៍
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="section-img text-center">
+                            <img src="assets/image/homepage/1.about.png" alt="about-us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="state-area position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-img">
+                                <img src="assets/image/Icon/social-worker.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body text-white text-center">
+
+                                <h3 class="display-1 fw-semibold mb-0">
+                                    <span class="counter" data-countto="650" data-duration="8000">
+                                        0
+                                    </span>+
+                                </h3>
+                                <p class="card-text fs-4">
+                                    ចំនួនអ្នកស្ម័គ្រចិត្ត
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-img">
+                                <img src="assets/image/Icon/plant.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body text-white text-center">
+
+                                <h3 class=" display-1 fw-semibold mb-0">
+                                    <span class="counter" data-countto="990" data-duration="8000">
+                                        0
+                                    </span>+
+                                </h3>
+                                <p class="card-text fs-4">
+                                    ចំនួនដើមឈើបានដាំ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-img">
+                                <img src="assets/image/Icon/children.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body text-white text-center">
+                                <h3 class=" display-1 fw-semibold mb-0">
+                                    <span class="counter" data-countto="300" data-duration="8000">
+                                        0
+                                    </span>+
+                                </h3>
+                                <p class="card-text fs-4">
+                                    ក្មេងទទួលការអប់រំ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-img">
+                                <img src="assets/image/Icon/event.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body text-white text-center">
+                                <h3 class="display-1 fw-semibold mb-0">
+                                    <span class="counter" data-countto="125" data-duration="8000">
+                                        0
+                                    </span>+
+
+                                </h3>
+
+                                <p class="card-text fs-4">
+                                    កម្មវិធីបានរៀបចំ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="opportunities-area">
+            <div class="container">
+                <div class="section-title">
+                    <h2>
+                        ឱកាសស្ម័គ្រចិត្ត
+                    </h2>
+                    <p class="w-75 mx-auto">
+                        ឱកាសស្ម័គ្រចិត្តផ្តល់ឱកាសដល់អ្នកក្នុងការចូលរួមជាមួយសហគមន៍។ អ្នកអាចជួយដល់ការអប់រំ ការពារបរិស្ថាន
+                        និងការអភិវឌ្ឍសហគមន៍។ ចូលរួមជាមួយយើងដើម្បីធ្វើឱ្យប្រជាជនយើងកាន់តែប្រសើរឡើង!
+                    </p>
+                </div>
+                <div class="swiper oppo-mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img src="assets/image/homepage/opportunity_04.jpg" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-0">
+                                        ការបង្រៀនភាសាអង់គ្លេស
+                                    </h3>
+                                    <p class="card-text mb-0">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>
+                                            ខេត្តកំពត
+                                        </span>
+                                    </p>
+                                    <p class="card-text mb-0">
+                                        <i class="bi bi-calendar-check"></i>
+                                        <span> ២៥ មេសា ២០២៥
+                                        </span>
+                                    </p>
+                                    <p class="card-text mb-0">
+                                        <i class="bi bi-clock"></i>
+                                        <span>
+                                            ម៉ោង ៧:០០ - ១១:០០
+                                        </span>
+                                    </p>
+                                    <p class="card-text mb-0">
+                                        <i class="bi bi-people"></i>
+                                        <span>
+                                            ចំនួន ២០ នាក់
+                                        </span>
+                                    </p>
+                                    <div
+                                        class="benefits d-flex mt-2 justify-content-around py-2 border-top border-bottom mb-3">
+                                        <div class="d-flex flex-column align-items-center benefits-item benefits-item">
+                                            <i class="bi bi-taxi-front-fill fs-4"></i>
+                                            <span class="small">មានរថយន្ត</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-house-fill fs-4"></i>
+                                            <span class="small">មានកន្លែងស្នាក់នៅ</span>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center benefits-item">
+                                            <i class="bi bi-fork-knife fs-4"></i>
+                                            <span class="small">មានអាហារ</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-link mt-3">
+                                        <a href="" class="btn btn-primary w-100 me-1">
+                                            ព័ត៌មានលម្អិត
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                            <img src="assets/image/homepage/opportunity_05.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">
+                                    យុទ្ធនាការសម្អាតឆ្នេរ
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>
+                                        ខេត្តកោះកុង
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-calendar-check"></i>
+                                    <span>
+                                        ថ្ងៃទី ១៥ ខែកញ្ញា ឆ្នាំ២០២៥
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-clock"></i>
+                                    <span>
+                                        ម៉ោង ៧:៣០ - ១១:៣០
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        ចំនួន ៥០ នាក់
+                                    </span>
+                                </p>
+                                <div
+                                    class="benefits d-flex mt-2 justify-content-around py-2 border-top border-bottom mb-3">
+                                    <div class="d-flex flex-column align-items-center benefits-item benefits-item">
+                                        <i class="bi bi-taxi-front-fill fs-4"></i>
+                                        <span class="small">មានរថយន្ត</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center benefits-item">
+                                        <i class="bi bi-house-fill fs-4"></i>
+                                        <span class="small">មានកន្លែងស្នាក់នៅ</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center benefits-item">
+                                        <i class="bi bi-fork-knife fs-4"></i>
+                                        <span class="small">មានអាហារ</span>
+                                    </div>
+                                </div>
+                                <div class="card-link mt-3">
+                                    <a href="" class="btn btn-primary w-100 me-1">
+                                        ព័ត៌មានលម្អិត
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                            <img src="assets/image/homepage/opportunity_03.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">
+                                    សម្អាតសហគមន៍
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>
+                                        ខេត្តកំពត
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-calendar-check"></i>
+                                    <span> ២៥ មេសា ២០២៥
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-clock"></i>
+                                    <span>
+                                        ម៉ោង ៧:០០ - ១១:០០
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        ចំនួន ២០ នាក់
+                                    </span>
+                                </p>
+                                <div
+                                    class="benefits d-flex mt-2 justify-content-around py-2 border-top border-bottom mb-3">
+                                    <div class="d-flex flex-column align-items-center benefits-item benefits-item">
+                                        <i class="bi bi-taxi-front-fill fs-4"></i>
+                                        <span class="small">មានរថយន្ត</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center benefits-item">
+                                        <i class="bi bi-house-fill fs-4"></i>
+                                        <span class="small">មានកន្លែងស្នាក់នៅ</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center benefits-item">
+                                        <i class="bi bi-fork-knife fs-4"></i>
+                                        <span class="small">មានអាហារ</span>
+                                    </div>
+                                </div>
+                                <div class="card-link mt-3">
+                                    <a href="" class="btn btn-primary w-100 me-1">
+                                        ព័ត៌មានលម្អិត
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                            <img src="assets/image/homepage/opportunity_04.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">
+                                    ការបង្រៀនភាសាអង់គ្លេស
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>
+                                        ខេត្តកំពត
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-calendar-check"></i>
+                                    <span> ២៥ មេសា ២០២៥
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-clock"></i>
+                                    <span>
+                                        ម៉ោង ៧:០០ - ១១:០០
+                                    </span>
+                                </p>
+                                <p class="card-text mb-0">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        ចំនួន ២០ នាក់
+                                    </span>
+                                </p>
+                                <div
+                                    class="benefits d-flex mt-2 justify-content-around py-2 border-top border-bottom mb-3">
+                                    <div class="d-flex flex-column align-items-center benefits-item benefits-item">
+                                        <i class="bi bi-taxi-front-fill fs-4"></i>
+                                        <span class="small">មានរថយន្ត</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center benefits-item">
+                                        <i class="bi bi-house-fill fs-4"></i>
+                                        <span class="small">មានកន្លែងស្នាក់នៅ</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center benefits-item">
+                                        <i class="bi bi-fork-knife fs-4"></i>
+                                        <span class="small">មានអាហារ</span>
+                                    </div>
+                                </div>
+                                <div class="card-link mt-3">
+                                    <a href="" class="btn btn-primary w-100 me-1">
+                                        ព័ត៌មានលម្អិត
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7">
+                        <div class="section-title">
+                            <h2>
+                                ក្លាយជាស្ម័គ្រចិត្តថ្ងៃនេះ!
+                            </h2>
+                            <p>
+                                កម្ពុជាកំពុងត្រូវការមនុស្សមានចិត្តស្ម័គ្រដូចអ្នក។ មិនថាអ្នកចូលរួមក្នុងការបង្រៀន
+                                ការដាំដើមឈើ ការជួយសហគមន៍ ឬចែករំលែកចំណេះដឹង
+                                អ្នកកំពុងចូលរួមបង្កើតការផ្លាស់ប្តូរដែលមានអត្ថន័យ។ ពួកយើងជឿជាក់ថា
+                                ការចូលរួមតូចៗរបស់ម្នាក់ៗអាចបង្កើតអនាគតដ៏ភ្លឺថ្លាសម្រាប់ប្រទេស។ ចូលរួមជាមួយយើងថ្ងៃនេះ
+                                ដើម្បីក្លាយជាផ្នែកមួយនៃការផ្លាស់ប្តូរដ៏អស្ចារ្យនេះ។
+                            </p>
+                            <a href="#" class="btn btn-primary mt-3">
+                                ចុះឈ្មោះឥឡូវនេះ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="donation-area">
+            <div class="container">
+                <div class="section-title">
+                    <h2>
+                        បរិច្ចាកដើម្បីជួយសហគមន៍
+                    </h2>
+                    <p class="w-75 mx-auto">
+                        ការបរិច្ចាគរបស់អ្នកអាចជួយផ្តល់ជំនួយដល់សហគមន៍ដែលមានតំរូវការខ្ពស់។ មិនថាជាប្រាក់
+                        ឧបករណ៍ ឬសម្ភារៈ អ្នកអាចជួយផ្តល់ជំនួយដល់កុមារនិងគ្រួសារដែលត្រូវការជាងនេះ។ សូមចូលរួមជាមួយយើង
+                        ដើម្បីធ្វើឱ្យប្រជាជនយើងកាន់តែប្រសើរឡើង!
+                    </p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-xl-5">
+                        <div class="donation-descript">
+                            <h3>
+                                ប្រភេទនៃការបរិច្ចាក៖
+                            </h3>
+                            <ul class="donation-list list-unstyled">
+                                <li class="mt-4 d-flex align-items-center">
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/donation.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            បរិច្ចាគប្រាក់
+                                        </h4>
+                                        <p class="mb-0">
+                                            បរិច្ចាគជាសាច់ប្រាក់ តាមរយៈ KHQR ឬធនាគារ
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="mt-4 d-flex align-items-center">
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/groceries.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ការបរិច្ចាគជារបស់របរ
+                                        </h4>
+                                        <p class="mb-0">
+                                            អាហារ ខោអាវ ឱសថ សម្ភារៈសាលា ឬឧបករណ៍ប្រើប្រាស់ប្រចាំថ្ងៃ
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="mt-4 d-flex align-items-center">
+                                    <div class="list-img">
+                                        <img src="assets/image/Icon/blood-donation.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="list-content ps-3">
+                                        <h4 class="mb-0">
+                                            ការបរិច្ចាគឈាម
+                                        </h4>
+                                        <p class="mb-0">
+                                            ការបរិច្ចាគឈាមរបស់អ្នកអាចជួយសង្គ្រោះជីវិតមនុស្សម្នាក់ឬច្រើន
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="donation-content">
+                            <div class="row gy-xl-5">
+
+                                <div class="col-xl-6">
+                                    <div class="donation-img">
+                                        <img src="assets/image/homepage/donation_01.jpg" alt=""
+                                            class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="donation-text">
+                                        <h4>
+                                            បរិច្ចាកប្រាក់
+                                        </h4>
+                                        <p>
+                                            “ការបរិច្ចាគជាសាច់ប្រាក់របស់អ្នកជួយផ្គត់ផ្គង់ធនធានសម្រាប់គម្រោងសង្គម
+                                            សេវាសុខាភិបាល និងការអប់រំ។ មិនថា បរិច្ចាគតិច ឬច្រើន
+                                            ក៏វាអាចបង្កើតភាពខុសគ្នាដល់ជីវិតមនុស្ស និងសហគមន៍។ ជួយអ្នកផ្សព្វផ្សាយការយល់ដឹង
+                                            និងស្រឡាញ់អ្នកជុំវិញខ្លួន!”
+                                        </p>
+                                        <a href="" type="button" class="btn btn-primary mt-3">
+                                            បរិច្ចាគឥឡូវនេះ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="donation-text">
+                                        <h4>
+                                            ការបរិច្ចាគជារបស់របរ
+                                        </h4>
+                                        <p>
+                                            “ការបរិច្ចាគជារបស់របរ គឺជាវិធីសាមញ្ញក្នុងការជួយសង្គម
+                                            និងអ្នកដែលត្រូវការជំនួយ។ អ្នកអាចចែកចាយអាហារ ខោអាវ សៀវភៅ ឬសម្ភារៈប្រចាំថ្ងៃ
+                                            ដើម្បីជួយកូនក្មេង និងគ្រួសារដែលមានភាពលំបាក។
+                                            ជំហានតូចៗរបស់អ្នកអាចបង្កើតភាពខុសគ្នាដ៏ធំសម្រាប់សហគមន៍។”
+                                        </p>
+                                        <a href="" type="button" class="btn btn-primary mt-3">
+                                            បរិច្ចាគឥឡូវនេះ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="donation-img">
+                                        <img src="assets/image/homepage/donation_02.jpg" alt=""
+                                            class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="donation-img">
+                                        <img src="assets/image/homepage/donation_03.jpg" alt=""
+                                            class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="donation-text">
+                                        <h4>
+                                            ការបរិច្ចាគឈាម
+                                        </h4>
+                                        <p>
+                                            “ការបរិច្ចាគឈាមរបស់អ្នកអាចសង្គ្រោះជីវិតមនុស្សម្នាក់ ឬច្រើន។
+                                            មិនថាអ្នកបរិច្ចាគតិច ឬច្រើន
+                                            ក៏វាមានតម្លៃខ្ពស់សម្រាប់អ្នកជំងឺដែលកំពុងត្រូវការជំនួយ។
+                                            ជំហានតូចៗរបស់អ្នកបង្ហាញពីចិត្តសប្បុរស និងភាពមេត្តា ដល់សហគមន៍
+                                            និងអ្នកជុំវិញខ្លួន។”
+                                        </p>
+                                        <a href="" type="button" class="btn btn-primary mt-3">
+                                            បរិច្ចាគឥឡូវនេះ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="testimonial-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6">
+                        <div class="section-content">
+                            <h3 class="section-title">មតិយោបល់របស់អ្នកស្ម័គ្រចិត្ត</h3>
+                            <p class="section-decript">
+                                ការចូលរួមស្ម័គ្រចិត្តមិនមែនជាការផ្លាស់ប្តូរដល់សហគមន៍តែប៉ុណ្ណោះទេ
+                                ប៉ុន្តែវាជាភាពជោគជ័យផ្លូវចិត្តសម្រាប់អ្នកផងដែរ។ សូមអានបទពិសោធន៍ និងរឿងពិតពីស្ម័គ្រចិត្ត
+                                និងអ្នកទទួលផល ដែលបានបង្ហាញពីអត្ថន័យនៃការចូលរួម
+                            </p>
+                            <button type="button" class="btn btn-primary w-50 ">អានបន្ថែម</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="testimonial-slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide d-flex align-items-center">
+                                        <div class="testimonial-img text-center">
+                                            <img src="assets/image/homepage/testimonial_01.jpg" alt=""
+                                                class="img-fluid">
+                                            <h3 class="mt-2 mb-0">
+                                                លី គីមសួន
+                                            </h3>
+                                            <p>
+                                                អ្នកស្ម័គ្រចិត្តការអប់រំ
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>
+                                                “ការចូលរួមជាស្ម័គ្រចិត្តក្នុងវិស័យអប់រំនេះ
+                                                បានផ្តល់ឱកាសដ៏អស្ចារ្យមួយឱ្យខ្ញុំ។ ខ្ញុំមានអារម្មណ៍ថា ការបង្រៀន
+                                                និងជួយសិស្សៗមិនត្រឹមតែជួយពួកគេឱ្យរៀនបានល្អប៉ុណ្ណោះទេ
+                                                ប៉ុន្តែវាក៏ធ្វើឱ្យខ្ញុំមានការលូតលាស់ផ្ទាល់ខ្លួនផងដែរ។
+                                                ពេលដែលឃើញកូនក្មេងមានមុខញញឹម
+                                                ពេលពួកគេចាប់ផ្តើមយល់ដឹងពីអ្វីដែលខ្ញុំបានបង្រៀន
+                                                នោះជាការទទួលបានដែលមានតម្លៃជាងអ្វីៗទាំងអស់។”
+                                            </p>
+                                            <p class="star m-0">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide d-flex align-items-center">
+                                        <div class="testimonial-img text-center">
+                                            <img src="assets/image/homepage/testimonial_02.jpg" alt=""
+                                                class="img-fluid">
+                                            <h3 class="mt-2 mb-0">
+                                                ចន្ទ មុនី
+                                            </h3>
+                                            <p>
+                                                អ្នកស្ម័គ្រចិត្តសហគមន៍
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>
+                                                “ការចូលរួមជាស្ម័គ្រចិត្តក្នុងសហគមន៍ ធ្វើឱ្យខ្ញុំបានយល់ច្បាស់ថា
+                                                ការប្រព្រឹត្តិការណ៍តូចៗអាចបង្កើតការផ្លាស់ប្តូរដ៏ធំមួយសម្រាប់សង្គម។
+                                                ពេលដែលយើងជួយសម្អាតជុំវិញភូមិ និងចែកចាយអាហារដល់គ្រួសារដែលមានភាពលំបាក
+                                                ខ្ញុំមានអារម្មណ៍ថា
+                                                ការប្តេជ្ញាចិត្តតិចតួចរបស់ខ្ញុំបានក្លាយជាកម្លាំងធំសម្រាប់សហគមន៍។
+                                                វាបង្កើតទំនាក់ទំនង និងភាពជាអ្នកមួយគ្នាដ៏រឹងមាំ។”
+                                            </p>
+                                            <p class="star m-0">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide d-flex align-items-center">
+                                        <div class="testimonial-img text-center">
+                                            <img src="assets/image/homepage/testimonial_03.jpg" alt=""
+                                                class="img-fluid">
+                                            <h3 class="mt-2 mb-0">
+                                                ចាន់ ចំរើន
+                                            </h3>
+                                            <p>
+                                                អ្នកស្ម័គ្រចិត្តថែររក្សាបរិស្ថាន
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>
+                                                “ការចូលរួមក្នុងសកម្មភាពស្ម័គ្រចិត្តសម្រាប់បរិស្ថាន
+                                                ធ្វើឱ្យខ្ញុំមានអារម្មណ៍ថា
+                                                ខ្ញុំកំពុងចូលរួមការពារពិភពលោកសម្រាប់ជំនាន់ក្រោយ។ ពេលយើងដាំដើមឈើ
+                                                និងសម្អាតជំុវិញសាលា ខ្ញុំមានអារម្មណ៍ថា
+                                                ខ្ញុំបានបង្កើតការផ្លាស់ប្តូរតិចតួចប៉ុន្តែមានតម្លៃ។
+                                                វាបង្រៀនឱ្យខ្ញុំស្រឡាញ់ធម្មជាតិ និងទទួលខុសត្រូវចំពោះសង្គម។”
+                                            </p>
+                                            <p class="star m-0">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide d-flex align-items-center">
+                                        <div class="testimonial-img text-center">
+                                            <img src="assets/image/homepage/testimonial_04.jpg" alt=""
+                                                class="img-fluid">
+                                            <h3 class="mt-2 mb-0">
+                                                កែវ​ សុជាតា
+                                            </h3>
+                                            <p>
+                                                អ្នកស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>
+                                                “ការចូលរួមជាស្ម័គ្រចិត្តក្នុងព្រឹត្តិការណ៍ធ្វើឱ្យខ្ញុំទទួលបានបទពិសោធន៍ថ្មីៗជាច្រើន។
+                                                ពេលធ្វើការជាក្រុមក្នុងការរៀបចំ និងជួយគ្រប់គ្រងព្រឹត្តិការណ៍
+                                                ខ្ញុំបានរៀនពីភាពជាអ្នកដឹកនាំ ការសហការណ៍ និងការដោះស្រាយបញ្ហា។
+                                                ការដែលបានឃើញព្រឹត្តិការណ៍ជោគជ័យ និងមានមនុស្សជាច្រើនរីករាយ
+                                                គឺជាការបំពេញចិត្តសម្រាប់ខ្ញុំ។ វាមិនត្រឹមតែជាជំនាញថ្មីទេ
+                                                ប៉ុន្តែវាជាបទពិសោធន៍ដែលខ្ញុំមិនអាចភ្លេចបានឡើយ។”
+                                            </p>
+                                            <p class="star m-0">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide d-flex align-items-center">
+                                        <div class="testimonial-img text-center">
+                                            <img src="assets/image/homepage/testimonial_05.jpg" alt=""
+                                                class="img-fluid">
+                                            <h3 class="mt-2 mb-0">
+                                                ផល សុភា
+                                            </h3>
+                                            <p>
+                                                អ្នកស្ម័គ្រចិត្តបរិច្ចាគ
+                                            </p>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>
+                                                “ការចូលរួមជាស្ម័គ្រចិត្តក្នុងការបរិច្ចាគ
+                                                ធ្វើឲ្យខ្ញុំបានជួបប្រទះជាមួយមនុស្សជាច្រើន
+                                                និងយល់ឃើញពីជីវិតពិតរបស់អ្នកដែលកំពុងត្រូវការជំនួយ។
+                                                ពេលខ្ញុំបានចែកចាយអំណោយអាហារ និងសម្ភារៈប្រចាំថ្ងៃ ឃើញពួកគេមានមុខញញឹម
+                                                និងមានសង្ឃឹមឡើងវិញ ខ្ញុំមានអារម្មណ៍ថា
+                                                ពេលវេលាតិចតួចរបស់ខ្ញុំមានតម្លៃជាងគេ។ វាមិនត្រឹមតែជាការជួយដល់អ្នកដទៃទេ
+                                                ប៉ុន្តែវាបានបង្រៀនឲ្យខ្ញុំមានចិត្តមេត្តា និងស្រឡាញ់អ្នកនៅជុំវិញខ្លួន។”
+                                            </p>
+                                            <p class="star m-0">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -221,44 +968,44 @@
                     </div>
                 </div>
                 <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                        <div class="footer-page">
-                            <h4>
-                                ទំព័រ
-                            </h4>
-                            <ul class="footer-ul list-unstyled">
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ទំព័រដើម
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ការងារស្ម័គ្រចិត្ត
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ព្រឹត្តិការណ៏
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        សកម្មភាព
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        បរិច្ចាក
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        អំពីយើង
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
                 <div class="col-xl-3 d-xl-flex justify-content-xl-center">
                     <div class="footer-page">
                         <h4>
@@ -331,7 +1078,9 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
