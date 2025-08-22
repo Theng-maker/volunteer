@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទំនាក់ទំនង</title>
+    <link rel="shortcut icon" href="../image/logo-removebg.png" type="image/x-icon">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-list list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            អំពីយើង
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            ទំនាក់ទំនង
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-action d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-globe2"></i>
+                            <span class="align-content-center">
+                                ភាសាខ្មែរ
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/Cambodia.png" alt="">
+                                    <span>
+                                        ភាសាខ្មែរ
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/england.png" alt="">
+                                    <span>
+                                        ភាសាអង់គ្លេស
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/arabic.png" alt="">
+                                    <span>
+                                        ភាសាអារ៉ាប់
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                        aria-label="Change to light theme">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand " href="#">
+                    <img src="../image/Logo.jpg" alt="">
+                    ស្ម័គ្រចិត្ត
+                </a>
+
+                <!-- Offcanvas toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
+                    <li>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="dropdown nav-notification">
+                            <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell-fill"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
+                                    3
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="ps-3">
+                                    <h3 class="fs-5">ការជូនដំណឹង</h3>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/facebook.png" alt="" class="">
+                                        <span class="ps-2">
+                                            Facebook <br>
+                                            អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
+                                            <span class="text-secondary">
+                                                ឥឡូវនេះ
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/setting.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការកំណត់ <br>
+                                            អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
+                                            <span class="text-secondary">
+                                                ៣០នាទីមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/mark.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការដាក់ពាក្យ <br>
+                                            ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
+                                            <span class="text-secondary">
+                                                ២ម៉ោងមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class=" my-3 d-flex justify-content-center">
+                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                        មើលការជូនដំណឹងទាំងអស់
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../image/profile.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="contact-area ">
+            <div class="container  rounded-3 ">
+                <div class="contact-title text-center py-3">
+                    <h2 class="fs-1 pb-3">សូមស្វាគមន៍!</h2>
+                    <p class="fs-4">យើងនៅទីនេះដើម្បីជួយអ្នក។ ទាក់ទងមកយើងសម្រាប់សំណួរ ការជួយ
+                        ឬព័ត៌មានបន្ថែម។សូមធ្វើការបំពេញព័ត៌មានរបស់លោកអ្នក ឬ ទំនាក់ទំនងតាមលេខទូរស័ព្ទខាងក្រោម
+                        ដើម្បីធ្វើការទំនាក់ទំនងទៅកាន់ពួកយើង។</p>
+                    <p​ class="fs-4">សូមអរគុណ</p>
+                </div>
+                <div class="row gy-3 mt-5  rounded-3 shadow-sm">
+                    <div class="col-12 col-xl-5 ">
+                        <div class="contact-info" data-aos="fade-right" data-aos-offset="200"
+                            data-aos-easing="ease-in-sine">
+                            <ul class="list-unstyled">
+                                <li class="py-2">
+                                    <a href="https://www.google.com/maps/place/Russey+Keo-Phnom+Penh,+Phnom+Penh/@11.5828198,104.9067671,17z/data=!4m15!1m8!3m7!1s0x31095168b0ff688f:0x7d67590c5b4575ca!2sRussey+Keo-Phnom+Penh,+Phnom+Penh!3b1!8m2!3d11.5823617!4d104.9071549!16s%2Fg%2F11b6_fkj0w!3m5!1s0x31095168b0ff688f:0x7d67590c5b4575ca!8m2!3d11.5823617!4d104.9071549!16s%2Fg%2F11b6_fkj0w?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D"
+                                        class="contact-link text-decoration-none " target="_blank">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-geo-alt"></i>
+                                        </div>
+                                        <div class="ps-3 mt-2 text-dark">
+                                            <h3 class="p-0 fs-5 ">
+                                                អាស័យដ្ឋាន
+                                            </h3>
+                                            <p class="p-0">
+                                                ផ្លូវលេខ210A សង្កាត់ទួកគក ខណ្ឌឬស្សីកែវ ភ្នំពេញ
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="tel:+85568382800" class="contact-link text-decoration-none">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-telephone"></i>
+                                        </div>
+                                        <div class="ps-3 mt-2 text-dark">
+                                            <h3 class="p-0 fs-5">
+                                                ទូរស័ព្ទទំនាក់ទំនង
+                                            </h3>
+                                            <p class="p-0">
+                                                +855 086 280 862
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="mailto:sengmenghorn82@gmail.com"
+                                        class="contact-link text-decoration-none ">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                        <div class="ps-3 mt-2 text-dark">
+                                            <h3 class="p-0 fs-5">
+                                                អ៊ីម៉ែល
+                                            </h3>
+                                            <p class="p-0 ">
+                                                sengmenghorn82@gmail.com
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="" class="contact-link text-decoration-none ">
+                                        <div class="contact-icon">
+                                            <i class="fa-solid fa-clock"></i>
+                                        </div>
+                                        <div class="ps-3 mt-2 text-dark">
+                                            <h3 class="p-0 fs-5">
+                                                ម៉ោងធ្វើការ
+                                            </h3>
+                                            <p class="p-0 ">
+                                                ថ្ងៃចន្ន​ ដល់​ សុក្រ​ ម៉ោងធ្វើការ​ ៧:00 ដល់ ៥:00នាទី
+
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="map">
+                                <iframe class="rounded-3"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.936540792771!2d104.88762230088359!3d11.572219359079677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e706d9cdf%3A0xb0bf13884e6cd05f!2sANT%20Technology%20Training%20Center!5e0!3m2!1sen!2skh!4v1754406107495!5m2!1sen!2skh"
+                                    width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-7 ">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-xl-6">
+                                    <div class="mb-4 form-floating">
+                                        <input type="text"  placeholder="នាមត្រកូល" class="form-control">
+                                        <label for="">នាមត្រកូល</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <div class="mb-4 form-floating">
+                                        <input type="email"  placeholder="នាមខ្លួន" class="form-control">
+                                        <label for="">នាមខ្លួន</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-4 form-floating">
+                                        <input type="email" placeholder="អ៊ីម៉ែល" class="form-control">
+                                        <label for="">អ៊ីម៉ែល</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-4 form-floating"">
+                                        <input type="tel"  placeholder="លេខទូរសព្ទ" class="form-control">
+                                        <label for="">លេខទូរសព្ទ</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name="" id=""  placeholder="ផ្ញើសារ..."></textarea>  
+                                        <label for="">ផ្ញើសារ...</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary fw-bold">បញ្ជូន</button>
+                            <button type="submit" class="btn btn-primary fw-bold ms-2">បោះបង់</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-logo">
+                        <img src="../image/logo-removebg.png" alt="">
+                        <p class="footer-text mt-3">
+                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
+                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
+                            និងទំនុកចិត្តលើខ្លួនឯង។
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំនាក់ទំនង
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-envelope-at"></i>
+                                    <span class="ps-2">
+                                        volunteerCambo@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="ps-2">
+                                        Tul kok , Phmom Penh , Cambodia
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="ps-2">
+                                        +85568382800
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <h4>
+                            តាមដានយើង
+                        </h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">
+                @ANT SCHOLARSHIP2 | GROUP9
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <form class="d-flex">
+                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
+                        <button type="submit" class="btn btn-primary rounded ms-2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>

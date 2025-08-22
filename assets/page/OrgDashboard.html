@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="../image/logo-removebg.png" type="image/x-icon">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/OrgDashboard.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-list list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            អំពីយើង
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            ទំនាក់ទំនង
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-action d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-globe2"></i>
+                            <span class="align-content-center">
+                                ភាសាខ្មែរ
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/Cambodia.png" alt="">
+                                    <span>
+                                        ភាសាខ្មែរ
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/england.png" alt="">
+                                    <span>
+                                        ភាសាអង់គ្លេស
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/arabic.png" alt="">
+                                    <span>
+                                        ភាសាអារ៉ាប់
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                        aria-label="Change to light theme">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand " href="#">
+                    <img src="../image/Logo.jpg" alt="">
+                    ស្ម័គ្រចិត្ត
+                </a>
+
+                <!-- Offcanvas toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    ផ្ទាំងគ្រប់គ្រង
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
+                    <li>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="dropdown nav-notification">
+                            <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell-fill"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
+                                    3
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="ps-3">
+                                    <h3 class="fs-5">ការជូនដំណឹង</h3>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/facebook.png" alt="" class="">
+                                        <span class="ps-2">
+                                            Facebook <br>
+                                            អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
+                                            <span class="text-secondary">
+                                                ឥឡូវនេះ
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/setting.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការកំណត់ <br>
+                                            អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
+                                            <span class="text-secondary">
+                                                ៣០នាទីមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/mark.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការដាក់ពាក្យ <br>
+                                            ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
+                                            <span class="text-secondary">
+                                                ២ម៉ោងមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class=" my-3 d-flex justify-content-center">
+                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                        មើលការជូនដំណឹងទាំងអស់
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="container py-4">
+
+            <!-- Profile Header -->
+            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm">
+                <img src="../image/ORG/Org-Logo.png" class="rounded-circle me-3" width="60" height="60" alt="Profile">
+                <div>
+                    <h5 class="mb-0">អង្គការបរិស្ថានកម្ពុជា</h5>
+                    <small class="text-muted">Cambodia Environment Organization • NGO</small>
+                </div>
+                <div class="ms-auto">
+                    <button class="btn btn-primary">+ បន្ថែមឱកាស</button>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#overview">ទិដ្ឋភាពទូទៅ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#opportunities">ឱកាស</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#applications">ការដាក់ពាក្យ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#analytics">វិភាគទិន្នន័យ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#settings">ការកំណត់</a>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content mt-4">
+
+                <!-- Overview -->
+                <div class="tab-pane fade show active" id="overview">
+                    <div class="container">
+
+                        <!-- Stats Row -->
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <div class="card card-custom p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-muted">ការងារសកម្ម</h6>
+                                            <h3>12</h3>
+                                            <small class="text-success">+3 ថ្មីៗ</small>
+                                        </div>
+                                        <div class="icon-box bg-primary">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card card-custom p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-muted">អ្នកស្ម័គ្រចិត្តសរុប</h6>
+                                            <h3>156</h3>
+                                            <small class="text-success">+24 ថ្មីៗ</small>
+                                        </div>
+                                        <div class="icon-box bg-success">
+                                            <i class="fa-solid fa-user-group"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card card-custom p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-muted">ព្រឹត្តិការណ៍ខែនេះ</h6>
+                                            <h3>8</h3>
+                                            <small class="text-success">+2 ថ្មីៗ</small>
+                                        </div>
+                                        <div class="icon-box bg-purple" style="background:#a569bd;">
+                                            <i class="fa-regular fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card card-custom p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="text-muted">ការវាយតម្លៃ</h6>
+                                            <h3>4.8</h3>
+                                            <small class="text-success">+0.2 ថ្មីៗ</small>
+                                        </div>
+                                        <div class="icon-box bg-warning">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Applications & Quick Actions -->
+                        <div class="row g-3 mt-3">
+                            <!-- Recent Applications -->
+                            <div class="col-md-6">
+                                <div class="card card-custom p-3">
+                                    <h6 class="fw-bold mb-3">ពាក្យសុំថ្មីៗ</h6>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="../image/ORG/Woman-profile.png" class="rounded-circle me-2">
+                                        <div>
+                                            <strong>សុភា ចាន់</strong><br>
+                                            <small class="text-muted">24 មករា 2025</small>
+                                        </div>
+                                        <span class="badge bg-warning text-dark ms-auto">កំពុងរង់ចាំ</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="../image/ORG/Man-profile1.png" class="rounded-circle me-2">
+                                        <div>
+                                            <strong>ដារា លី</strong><br>
+                                            <small class="text-muted">24 មករា 2025</small>
+                                        </div>
+                                        <span class="badge bg-success ms-auto">អនុម័ត</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../image/ORG/Man-profile2.png" class="rounded-circle me-2">
+                                        <div>
+                                            <strong>ពិសាក់ ស៊ុន</strong><br>
+                                            <small class="text-muted">23 មករា 2025</small>
+                                        </div>
+                                        <span class="badge bg-danger ms-auto">បានបដិសេធ</span>
+                                    </div>
+                                    <a href="#" class="d-block mt-2 text-primary small">មើលទាំងអស់</a>
+                                </div>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="col-md-6">
+                                <div class="card card-custom p-3">
+                                    <h6 class="fw-bold mb-3">Quick Actions</h6>
+                                    <a href="#" class="quick-action bg-light-blue"><i class="fa-solid fa-plus"></i>
+                                        Create New Opportunity</a>
+                                    <a href="#" class="quick-action bg-light-green"><i
+                                            class="fa-solid fa-user-group"></i> Manage Volunteers</a>
+                                    <a href="#" class="quick-action bg-light-purple"><i
+                                            class="fa-solid fa-chart-line"></i> View Reports</a>
+                                    <a href="#" class="quick-action bg-light-orange"><i
+                                            class="fa-solid fa-envelope"></i> Send Messages</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Opportunities -->
+                <div class="tab-pane fade" id="opportunities">
+
+                    <!-- Search / Filters / Add -->
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                        <div class="vh-search-wrap flex-grow-1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form-control vh-search" placeholder="ស្វែងរកឱកាស…">
+                        </div>
+                        <select class="form-select" style="max-width:250px;">
+                            <option selected>ស្ថានភាពទាំងអស់</option>
+                            <option>Available</option>
+                            <option>Closed</option>
+                            <option>Pending</option>
+                        </select>
+                        <button class="btn btn-primary"><i class="fa-solid fa-plus me-1"></i> បន្ថែម</button>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="vh-card p-3 mb-3 vh-hover">
+                        <div class="d-flex align-items-center">
+                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=10" alt="">
+                            <div class="flex-grow-1">
+                                <div class="fw-bold">សម្អាតសហគមន៍</div>
+                                <small class="text-muted">Community Cleanup</small>
+                                <div class="vh-op-line mt-1">
+                                    <i class="fa-regular fa-calendar"></i> ២៤ មករា ២០២៥ &nbsp;•&nbsp;
+                                    <i class="fa-solid fa-location-dot"></i> ភ្នំពេញ &nbsp;•&nbsp;
+                                    <i class="fa-solid fa-user-group"></i> 15/20
+                                </div>
+                                <small class="text-muted">ការចុះឈ្មោះ: 8</small>
+                            </div>
+                            <span class="vh-badge vh-badge--success">សកម្ម</span>
+                        </div>
+                        <div class="d-flex justify-content-end vh-row-actions mt-2">
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="vh-card p-3 mb-3 vh-hover">
+                        <div class="d-flex align-items-center">
+                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=11" alt="">
+                            <div class="flex-grow-1">
+                                <div class="fw-bold">ដាំដើមឈើ</div>
+                                <small class="text-muted">Tree Planting</small>
+                                <div class="vh-op-line mt-1">
+                                    <i class="fa-regular fa-calendar"></i> ៥ កុម្ភៈ ២០២៥ &nbsp;•&nbsp;
+                                    <i class="fa-solid fa-location-dot"></i> តាកែវ &nbsp;•&nbsp;
+                                    <i class="fa-solid fa-user-group"></i> 25/30
+                                </div>
+                                <small class="text-muted">ការចុះឈ្មោះ: 12</small>
+                            </div>
+                            <span class="vh-badge vh-badge--success">សកម្ម</span>
+                        </div>
+                        <div class="d-flex justify-content-end vh-row-actions mt-2">
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="vh-card p-3 mb-3 vh-hover">
+                        <div class="d-flex align-items-center">
+                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=12" alt="">
+                            <div class="flex-grow-1">
+                                <div class="fw-bold">អភិរក្សព្រៃឈើ</div>
+                                <small class="text-muted">Forest Conservation</small>
+                                <div class="vh-op-line mt-1">
+                                    <i class="fa-regular fa-calendar"></i> ១២ កុម្ភៈ ២០២៥ &nbsp;•&nbsp;
+                                    <i class="fa-solid fa-location-dot"></i> កំពង់ចាម &nbsp;•&nbsp;
+                                    <i class="fa-solid fa-user-group"></i> 8/15
+                                </div>
+                                <small class="text-muted">ការចុះឈ្មោះ: 3</small>
+                            </div>
+                            <span class="vh-badge vh-badge--warning">កំពុង</span>
+                        </div>
+                        <div class="d-flex justify-content-end vh-row-actions mt-2">
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applications -->
+                <div class="tab-pane fade" id="applications">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                        <div>
+                            <h5 class="mb-0">បញ្ជីការដាក់ពាក្យ</h5>
+                        </div>
+
+                        <!-- optional filters / search -->
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="vh-search-wrap" style="min-width:240px;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="search" class="form-control vh-search" placeholder="ស្វែងរកឈ្មោះ ឬឱកាស…" />
+                            </div>
+                            <select class="form-select" style="min-width:180px;">
+                                <option value="">ស្ថានភាពទាំងអស់</option>
+                                <option value="pending">កំពុងរង់ចាំ</option>
+                                <option value="approved">បានអនុម័ត</option>
+                                <option value="rejected">បានបដិសេធ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 vh-table">
+                            <thead>
+                                <tr>
+                                    <th>អ្នកស្ម័គ្រចិត្ត</th>
+                                    <th>ការងារ</th>
+                                    <th>កាលបរិច្ឆេទ</th>
+                                    <th>ស្ថានភាព</th>
+                                    <th class="text-end">សកម្មភាព</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Row 1 -->
+                                <tr>
+                                    <td data-label="Volunteer">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img class="rounded-circle object-fit-cover"
+                                                src="../image/ORG/Woman-profile.png" width="44" height="44"
+                                                alt="Sophea Chan avatar">
+                                            <div>
+                                                <div class="fw-semibold">សុភា ចាន់</div>
+                                                <small class="text-muted">Sophea Chan</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Opportunity">
+                                        <div class="fw-medium">សកម្មភាពសម្អាតសហគមន៍</div>
+                                        <small class="text-muted">បរិក្ខារ​ចូលរួម៖ ២ ថ្ងៃ</small>
+                                    </td>
+                                    <td data-label="Date"><span>២៤ មករា ២០២៥</span></td>
+                                    <td data-label="Status">
+                                        <span class="status-badge status-pending">
+                                            <i class="fa-regular fa-clock me-1"></i> កំពុងរង់ចាំ
+                                        </span>
+                                    </td>
+                                    <td class="text-end" data-label="Actions">
+                                        <div class="btn-group btn-group-sm" role="group" aria-label="Row actions">
+                                            <button class="btn btn-outline-secondary" title="មើល / View">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" title="អនុម័ត / Approve">
+                                                <i class="fa-regular fa-circle-check"></i>
+                                            </button>
+                                            <button class="btn btn-outline-danger" title="បដិសេធ / Reject">
+                                                <i class="fa-regular fa-circle-xmark"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 2 -->
+                                <tr>
+                                    <td data-label="Volunteer">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img class="rounded-circle object-fit-cover"
+                                                src="../image/ORG/Man-profile1.png" width="44" height="44"
+                                                alt="Dara Lee avatar">
+                                            <div>
+                                                <div class="fw-semibold">ដារា លី</div>
+                                                <small class="text-muted">Dara Lee</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Opportunity">
+                                        <div class="fw-medium">ដាំដើមឈើ</div>
+                                        <small class="text-muted">ចំនួនម៉ោង៖ ៩</small>
+                                    </td>
+                                    <td data-label="Date"><span>២៤ មករា ២០២៥</span></td>
+                                    <td data-label="Status">
+                                        <span class="status-badge status-approved">
+                                            <i class="fa-regular fa-circle-check me-1"></i> បានអនុម័ត
+                                        </span>
+                                    </td>
+                                    <td class="text-end" data-label="Actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-secondary" title="មើល / View">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-danger" title="ដកចេញ / Revoke">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 3 -->
+                                <tr>
+                                    <td data-label="Volunteer">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img class="rounded-circle object-fit-cover"
+                                                src="../image/ORG/Man-profile2.png" width="44" height="44"
+                                                alt="Pisach Sun avatar">
+                                            <div>
+                                                <div class="fw-semibold">ពិសាក់ ស៊ុន</div>
+                                                <small class="text-muted">Pisach Sun</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Opportunity">
+                                        <div class="fw-medium">អភិរក្សព្រៃឈើ</div>
+                                        <small class="text-muted">ចំនួនថ្ងៃ៖ ៣</small>
+                                    </td>
+                                    <td data-label="Date"><span>២៣ មករា ២០២៥</span></td>
+                                    <td data-label="Status">
+                                        <span class="status-badge status-rejected">
+                                            <i class="fa-regular fa-circle-xmark me-1"></i> បានបដិសេធ
+                                        </span>
+                                    </td>
+                                    <td class="text-end" data-label="Actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-secondary" title="មើល / View">
+                                                <i class="fa-regular fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-primary" title="កែប្រែ / Edit">
+                                                <i class="fa-regular fa-pen-to-square"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Analytics -->
+                <div class="tab-pane fade" id="analytics">
+                    <div class="card shadow-sm border-0 p-3 vh-analytics">
+
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                            <div>
+                                <h5 class="mb-0">ការវិភាគទិន្នន័យ</h5>
+                            </div>
+
+                            <!-- Filters -->
+                            <div class="d-flex align-items-center gap-2">
+                                <select class="form-select form-select-sm" id="ana-range" style="min-width:150px;">
+                                    <option value="30">30 ថ្ងៃ</option>
+                                    <option value="90" selected>90 ថ្ងៃ</option>
+                                    <option value="365">១ ឆ្នាំ</option>
+                                </select>
+                                <select class="form-select form-select-sm" id="ana-seg" style="min-width:170px;">
+                                    <option value="all" selected>Segment: ទាំងអស់</option>
+                                    <option value="org">Organization</option>
+                                    <option value="event">Events</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- KPI cards -->
+                        <div class="row g-3 mb-2">
+                            <div class="col-sm-6 col-xl-3">
+                                <div class="card h-100 border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="fw-semibold text-body">Total Volunteers</div>
+                                        <div class="fs-3 fw-bold">1,256</div>
+                                        <div class="text-success small"><i
+                                                class="fa-solid fa-arrow-trend-up me-1"></i>+8.2%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-3">
+                                <div class="card h-100 border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="fw-semibold text-body">Applications</div>
+                                        <div class="fs-3 fw-bold">432</div>
+                                        <div class="text-success small"><i
+                                                class="fa-solid fa-arrow-trend-up me-1"></i>+4.1%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-3">
+                                <div class="card h-100 border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="fw-semibold text-body">Approval Rate</div>
+                                        <div class="fs-3 fw-bold">72%</div>
+                                        <div class="text-danger small"><i
+                                                class="fa-solid fa-arrow-trend-down me-1"></i>−1.3%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-3">
+                                <div class="card h-100 border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="fw-semibold text-body">Active Opportunities</div>
+                                        <div class="fs-3 fw-bold">18</div>
+                                        <div class="text-success small"><i class="fa-solid fa-plus me-1"></i>+2 new
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Charts -->
+                        <div class="row g-3">
+                            <div class="col-lg-8">
+                                <div class="card border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                            <h6 class="mb-0">Volunteers by Month</h6>
+                                            <small class="text-body-secondary">ជាមួយចន្លោះពេលខាងលើ</small>
+                                        </div>
+                                        <canvas id="volunteersLine" height="120"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                            <h6 class="mb-0">Application Status</h6>
+                                            <small class="text-body-secondary">Pending / Approved / Rejected</small>
+                                        </div>
+                                        <canvas id="statusDonut" height="120"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="card border-0 bg-body-tertiary">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                            <h6 class="mb-0">Applications by Opportunity</h6>
+                                            <small class="text-body-secondary">Top 6</small>
+                                        </div>
+                                        <canvas id="oppsBar" height="110"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Settings -->
+                <div class="tab-pane fade" id="settings">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-1">ការកំណត់អង្គការ</h5>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="orgName" class="form-label">ឈ្មោះអង្គការ</label>
+                                        <input type="text" class="form-control" id="orgName"
+                                            placeholder="អង្គការបរិស្ថានកម្ពុជា">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="orgEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="orgEmail"
+                                            placeholder="info@environment.org.kh">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="orgPhone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="orgPhone"
+                                            placeholder="+855 23 123 456">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="orgWebsite" class="form-label">Website</label>
+                                        <input type="url" class="form-control" id="orgWebsite"
+                                            placeholder="www.environment.org.kh">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="orgAddress" class="form-label">អាស័យដ្ឋាន</label>
+                                        <textarea class="form-control" id="orgAddress" rows="2"
+                                            placeholder="ផ្លូវ ២៧១, ភ្នំពេញ"></textarea>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <h6 class="mb-2">បណ្តាញសង្គម</h6>
+                                <div class="row g-3">
+                                    <div class="col-md-6 col-lg-3">
+                                        <label class="form-label">Facebook</label>
+                                        <input type="url" class="form-control"
+                                            placeholder="https://facebook.com/yourpage">
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <label class="form-label">Instagram</label>
+                                        <input type="url" class="form-control"
+                                            placeholder="https://instagram.com/yourpage">
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <label class="form-label">Twitter / X</label>
+                                        <input type="url" class="form-control" placeholder="https://x.com/yourpage">
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <label class="form-label">LinkedIn</label>
+                                        <input type="url" class="form-control"
+                                            placeholder="https://linkedin.com/company/yourorg">
+                                    </div>
+                                </div>
+
+
+
+                                <hr class="my-4">
+
+                                <h6 class="mb-2">សុវត្ថិភាព / Security</h6>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="form-label">ពាក្យសម្ងាត់បច្ចុប្បន្ន</label>
+                                        <input type="password" class="form-control" placeholder="********">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">ពាក្យសម្ងាត់ថ្មី</label>
+                                        <input type="password" class="form-control" placeholder="********">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">បញ្ជាក់ពាក្យសម្ងាត់ថ្មី</label>
+                                        <input type="password" class="form-control" placeholder="********">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button type="reset" class="btn btn-outline-secondary me-2">កំណត់ឡើងវិញ</button>
+                                    <button type="submit" class="btn btn-primary">រក្សាទុកការផ្លាស់ប្តូរ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-logo">
+                        <img src="../image/logo-removebg.png" alt="">
+                        <p class="footer-text mt-3">
+                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
+                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
+                            និងទំនុកចិត្តលើខ្លួនឯង។
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំនាក់ទំនង
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-envelope-at"></i>
+                                    <span class="ps-2">
+                                        volunteerCambo@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="ps-2">
+                                        Tul kok , Phmom Penh , Cambodia
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="ps-2">
+                                        +85568382800
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <h4>
+                            តាមដានយើង
+                        </h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">
+                @ANT SCHOLARSHIP2 | GROUP9
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <form class="d-flex">
+                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
+                        <button type="submit" class="btn btn-primary rounded ms-2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script>
+        (() => {
+            // Pull Bootstrap CSS variables for colors
+            const rs = getComputedStyle(document.documentElement);
+            const COLOR = {
+                text: rs.getPropertyValue('--bs-body-color').trim() || '#212529',
+                border: rs.getPropertyValue('--bs-border-color').trim() || '#dee2e6',
+                primary: rs.getPropertyValue('--bs-primary').trim() || '#0d6efd',
+                success: rs.getPropertyValue('--bs-success').trim() || '#198754',
+                warning: rs.getPropertyValue('--bs-warning').trim() || '#ffc107',
+                danger: rs.getPropertyValue('--bs-danger').trim() || '#dc3545',
+                info: rs.getPropertyValue('--bs-info').trim() || '#0dcaf0'
+            };
+
+            Chart.defaults.color = COLOR.text;
+            Chart.defaults.borderColor = COLOR.border;
+            Chart.defaults.plugins.legend.labels.usePointStyle = true;
+            Chart.defaults.font.family = 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial';
+
+            // demo data (replace with real)
+            const months = ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+            const volunteers = [85, 102, 98, 120, 140, 160, 152, 168, 175, 182, 190, 210];
+
+            // Line chart
+            new Chart(document.getElementById('volunteersLine'), {
+                type: 'line',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: 'Volunteers',
+                        data: volunteers,
+                        tension: .35,
+                        fill: true,
+                        backgroundColor: withAlpha(COLOR.primary, .15),
+                        borderColor: COLOR.primary,
+                        pointRadius: 3
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: { grid: { display: false } },
+                        y: { beginAtZero: true, ticks: { stepSize: 50 } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // Donut chart
+            new Chart(document.getElementById('statusDonut'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Pending', 'Approved', 'Rejected'],
+                    datasets: [{
+                        data: [96, 312, 24],
+                        backgroundColor: [COLOR.warning, COLOR.success, COLOR.danger],
+                        borderWidth: 0
+                    }]
+                },
+                options: { cutout: '65%', plugins: { legend: { position: 'bottom' } } }
+            });
+
+            // Bar chart
+            new Chart(document.getElementById('oppsBar'), {
+                type: 'bar',
+                data: {
+                    labels: ['Cleanup', 'Tree Planting', 'Forest', 'Beach', 'Blood Drive', 'Tutoring'],
+                    datasets: [{
+                        label: 'Applications',
+                        data: [120, 86, 64, 58, 54, 50],
+                        borderRadius: 8,
+                        backgroundColor: [COLOR.primary, COLOR.info, '#6f42c1', '#ffd166', '#ef476f', '#118ab2']
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: { grid: { display: false } },
+                        y: { beginAtZero: true, ticks: { stepSize: 20 } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // helpers
+            function withAlpha(hex, a) {
+                const h = hex.replace('#', '');
+                const v = h.length === 3 ? h.split('').map(ch => ch + ch).join('') : h;
+                const n = parseInt(v, 16);
+                const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+                return `rgba(${r},${g},${b},${a})`;
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

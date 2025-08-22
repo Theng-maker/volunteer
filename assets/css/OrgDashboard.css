@@ -1,0 +1,346 @@
+/* =========================
+   Base / Shared Components
+   ========================= */
+.Org-brand {
+  margin-top: 150px;
+}
+
+.nav-tabs .nav-link {
+  font-weight: 500;
+  color: #555;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  color: #0d6efd;
+}
+
+.tab-content {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Quick actions */
+.quick-action {
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.quick-action i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.quick-action:hover {
+  opacity: 0.9;
+}
+
+.bg-light-blue {
+  background: #eef5ff;
+  color: #0d6efd;
+}
+
+.bg-light-green {
+  background: #e9f8f1;
+  color: #198754;
+}
+
+.bg-light-purple {
+  background: #f8f0ff;
+  color: #6f42c1;
+}
+
+.bg-light-orange {
+  background: #fff3e7;
+  color: #d35400;
+}
+.tab-content img{
+  width: 60px;
+  height: 60px;
+}
+
+/* =========================
+   Opportunities (cards list)
+   ========================= */
+#opportunities {
+  margin-top: 20px;
+}
+
+/* Search box */
+.vh-search-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.vh-search-wrap i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+}
+
+.vh-search {
+  padding-left: 35px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+
+/* Card */
+.vh-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.vh-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Image */
+.vh-op-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Card text */
+.vh-op-line {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.vh-op-line i {
+  color: var(--accent-primary);
+}
+
+/* Badge */
+.vh-badge {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Row actions (icons) */
+.vh-row-actions i {
+  margin-left: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--text-color);
+}
+
+.vh-row-actions i:hover {
+  color: var(--accent-primary);
+}
+
+/* =========================================
+   Volunteer Applications (table + responsive)
+   ========================================= */
+.vh-applications {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Table styling */
+.vh-table thead th {
+  font-weight: 600;
+  color: var(--text-title);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+
+.vh-table tbody td {
+  color: var(--text-color);
+  vertical-align: middle;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Avatars inside the table */
+.vh-table img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .35rem .7rem;
+  border-radius: 20px;
+  font-size: .85rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.status-pending {
+  background: #FFF7E6;
+  color: #A86F00;
+  border-color: #FCD9A2;
+}
+
+.status-approved {
+  background: #EAF9F1;
+  color: #157347;
+  border-color: #BCE7D2;
+}
+
+.status-rejected {
+  background: #FDE9EA;
+  color: #B02A37;
+  border-color: #F5C2C7;
+}
+
+/* Row action buttons group */
+.vh-actions .btn {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.vh-actions .btn:hover {
+  background: var(--card-bg);
+}
+
+/* Responsive table -> stacked cards on mobile */
+@media (max-width: 768px) {
+  .vh-table thead {
+    display: none;
+  }
+
+  .vh-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .vh-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 6px 0;
+  }
+
+  .vh-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-title);
+    padding-right: 1rem;
+  }
+
+  .vh-table tbody td:last-child {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+}
+
+/* =========================
+   Analytics Dashboard
+   ========================= */
+/* Wrapper follows your palette; BS 5.3 utilities handle most spacing/colors */
+.vh-analytics {
+  border-radius: .75rem;
+}
+
+/* KPI tiles (use your vars so dark mode matches site) */
+.vh-ana-kpi {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.vh-ana-kpi .kpi-title {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.vh-ana-kpi .kpi-value {
+  color: var(--text-title);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.vh-ana-kpi .kpi-trend {
+  font-size: .85rem;
+  margin-top: 4px;
+}
+
+.vh-ana-kpi .kpi-trend.up {
+  color: #198754;
+}
+
+/* Bootstrap success tone */
+.vh-ana-kpi .kpi-trend.down {
+  color: #B02A37;
+}
+
+/* Bootstrap danger tone  */
+
+/* Chart cards */
+.vh-ana-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.vh-ana-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .vh-analytics .card,
+  .vh-ana-card {
+    border-radius: .75rem;
+    padding: 12px;
+  }
+}
