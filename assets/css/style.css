@@ -9,30 +9,35 @@
   src: url(../Vendor/fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf);
 }
 
-:root {
-  --bg-color: #FFFFFF;
-  --text-title: #0D1B2A;
-  --text-color: #333333;
-  --card-bg: #F8F9FA;
-  --btn-primary: #4DB8FF;
-  --btn-secondary: #007ACC;
-  --accent-primary: #4DB8FF;
-  --accent-secondary: #00C2B2;
-  --border-color: #E0E0E0;
+ :root {
+  --top-header : #000000 ;
+  --navabr : #FFFFFF ;
+  --primary-color: #007ACC;
+  --secondary-color: #4DB8FF;
+  --text-white-fixed: #FFFFFF;
+  --text-black: #212536;
+  --text-descript: #232531;
+  --white-bg: #FFFFFF ;
+  --gray-bg : #F1F1F1 ;
+  --card-white : #FFFFFF ;
+  --footer : #0F172B;
 }
 
 /* Dark Mode */
 [data-theme="dark"] {
-  --bg-color: #0B0F14;
-  --text-title: #FFFFFF;
-  --text-color: #CCCCCC;
-  --card-bg: #1A1F25;
-  --btn-primary: #4DB8FF;
-  --btn-secondary: #3399FF;
-  --accent-primary: #4DB8FF;
-  --accent-secondary: #00D4C6;
-  --border-color: #2E2E2E;
+  --top-header: #000000;
+  --navabr: #21293B;
+  --primary-color: #007ACC;
+  --secondary-color: #4DB8FF;
+  --text-white-fixed: #FFFFFF;
+  --text-black: #FFFFFF; 
+  --text-descript: #CCCCCC;
+  --white-bg: #1A1A1A;
+  --gray-bg: #222222;
+  --card-white: #2C2C2C;
+  --footer: #0F172B;
 }
+
 
 body {
   font-family: "Kantomruy", "Poppins";
