@@ -68,29 +68,31 @@ body {
 }
 .top-header .dropdown .dropdown-menu li a span {
   display: inline-block;
-  transform: translateY(1px);
+  transform: translateY(-2px);
   padding-left: 2px;
   color: var(--text-black);
 }
 
 .top-header .dropdown .dropdown-menu li img {
   width: 20px;
+  height: 20px;
 }
 
 
 /* --- Navbar --- */
 .navbar {
   background-color: var(--navabr) !important;
+  padding: 4px 0 !important;
 }
 .navbar .navbar-brand img {
-  width: 70px;
+  width: 60px;
   margin-right: 8px;
 }
 
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: 24px;
   color: var(--primary-color);
 }
 
@@ -142,11 +144,12 @@ body {
 }
 
 .navbar .nav-action li .btn {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #EEEEEE;
   border-radius: 50%;
-  font-size: 26px;
+  font-size: 20px;
+  text-align: center;
   align-content: end;
   transition: 0.3s;
 }
@@ -173,6 +176,9 @@ body {
 }
 
 /* ------ Globle class ----- */
+a{
+  text-decoration: none;
+}
 section {
   padding: 60px 0;
 }
