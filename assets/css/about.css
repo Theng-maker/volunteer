@@ -28,7 +28,7 @@ section {
 
 /* -------- Start Our Story Section------- */
 .our-story .card .card-body .steps .steps-container:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   z-index: 9;
 }
 
@@ -40,7 +40,7 @@ section {
 .our-story .card .card-body .steps::after {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 2px;
   background-color: var(--text-black);
   opacity: 0.4;
   top: 0;
@@ -50,12 +50,10 @@ section {
 
 .our-story .card .card-body .steps .steps-container .content p {
   color: var(--text-descript);
-  font-size: 16px;
 }
 
 .our-story .card .card-body .steps .steps-container .content h2 {
   font-weight: 600;
-  font-size: 16px;
   color: var(--text-black);
 }
 
@@ -104,7 +102,7 @@ section {
 .our-story .card .card-body .steps .step-line {
   width: 40px;
   background-color: var(--text-black);
-  height: 1px;
+  height: 2px;
   margin-top: 31px;
   opacity: 0.4;
   flex-shrink: 0;
@@ -129,7 +127,7 @@ section {
 .our-story .card-img {
   width: 60px;
   height: 60px;
-  background-color: var(--white-bg);
+  background-color:rgb(6, 123, 57);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -138,7 +136,8 @@ section {
 
 .our-story .card-img i {
   font-size: 35px;
-  color: var(--primary-color);
+  font-weight:bold;
+  color: #fff;;
 }
 
 .our-story .card-counter:hover {
@@ -147,6 +146,8 @@ section {
 
 .our-story .card-counter {
   transition: 0.4s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color:  var(--card-white);
 }
 
 .our-story .card-counter .counter {
@@ -162,107 +163,6 @@ section {
 }
 
 /* ----------------------- end-counter ----------------*/
-
-/*-------------- start-section-statement ---------------*/
-.statement .statement-bg .statement-img:hover {
-  transform: translateY(-8px);
-}
-
-.statement .statement-bg .statement-img {
-  width: 100%;
-  height: 150px;
-  transition: 0.5s;
-  border-radius: 8px;
-  background: var(--card-white);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-              rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
-              rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-.statement .statement-bg .statement-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain !important;
-}
-/*-------------- end-section-statement ---------------*/
-
-/* ---------start-organized section---------- */
-.organization .partner-card {
-  transition: 0.3s;
-  border: 1px solid var(--primary-color);
-  background-color: var(--card-white);
-  color: var(--text-black);
-}
-
-.organization .partner-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
-}
-
-.organization .logo-wrap {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
-  border: 1px solid var(--primary-color);
-}
-
-.organization .partner-card .left-content {
-  width: calc(100% - 65px);
-  height: 100%;
-}
-
-.organization .logo-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.organization .badge-rounded {
-  border-radius: 30px
-}
-
-.organization .nav-pills .nav-link.active {
-  color: var(--text-white-fixed);
-  border-color: var(--primary-color);
-  background: var(--primary-color);
-  font-weight: 600;
-}
-/*-------------End organized section----------- */
-
-.stat-card {
-  border: 1px solid var(--gray-bg);
-  border-radius: 16px;
-  background: var(--card-white);
-  color: var(--text-black);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-              rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 12px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: var(--primary-color);
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 44px
-}
-
-.timeline-item .dot {
-  position: absolute;
-  left: 5px;
-  top: .3rem;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--primary-color);
-}
 
 /* -------- Team Section -------- */
 .team {
@@ -323,7 +223,7 @@ section {
   transition: all 0.6s ease;
 }
 
-.card .overlay {
+.team .card .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -342,7 +242,7 @@ section {
   border-radius: 10px;
 }
 
-.card.center:hover .overlay {
+.team .card.center:hover .overlay {
   opacity: 1;
   transform: scale(1);
 }
@@ -361,6 +261,7 @@ section {
   align-items: center;
   color: #fff;
   background-color: var(--primary-color);
+  text-decoration: none;
 }
 
 .team .card img {
@@ -371,32 +272,32 @@ section {
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.card.center {
+.team .card.center {
   z-index: 10;
   transition: 0.4s;
   transform: translate(-50%, -50%) scale(1.1) translateZ(0);
 }
 
-.card.center:hover {
+.team .card.center:hover {
   transform: translate(-50%, -50%) scale(1.1) translateZ(20px);
 }
 
-.card.left-1 {
+.team .card.left-1 {
   z-index: 5;
   transform: translate(calc(-50% - 320px), -50%) scale(0.9) translateZ(-50px);
   opacity: 0.7;
   filter: grayscale(0.3);
 }
 
-.card.right-1 {
+.team .card.right-1 {
   z-index: 5;
   transform: translate(calc(-50% + 320px), -50%) scale(0.9) translateZ(-50px);
   opacity: 0.7;
   filter: grayscale(0.3);
 }
 
-.card.left-2,
-.card.right-2 {
+.team .card.left-2,
+.team .card.right-2 {
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -50%) scale(0.8) translateZ(-200px);
@@ -539,3 +440,109 @@ section {
     right: -60px;
   }
 }
+
+/*-------------- start-section-statement ---------------*/
+.statement .statement-bg .statement-img:hover {
+  transform: translateY(-8px);
+}
+
+.statement .statement-bg .statement-img {
+  width: 100%;
+  height: 150px;
+  transition: 0.5s;
+  border-radius: 8px;
+  background: var(--card-white);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+              rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+              rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.statement .statement-bg .statement-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+}
+/*-------------- end-section-statement ---------------*/
+
+/* ---------start-organized section---------- */
+.organization .tab-content .tab-pane .partner-card {
+  transition: 0.4s;
+  background: var(--card-white);
+  color: var(--text-black);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.organization .tab-content .tab-pane .partner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.organization .tab-content .card .card-body .logo-wrap {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+}
+
+.organization .tab-content .tab-pane .partner-card .left-content {
+  width: calc(100% - 65px);
+  height: 100%;
+}
+
+.organization .tab-content .tab-pane .partner-card .logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.organization .tab-content .tab-pane .partner-card .left-content .badge-rounded {
+  border-radius: 30px;
+}
+
+.organization .nav-pills .nav-link.active {
+  color: var(--text-white-fixed);
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  font-weight: 600;
+}
+/*-------------End organized section----------- */
+
+.collaboration .stat-card {
+  border: 1px solid var(--gray-bg);
+  border-radius: 16px;
+  background: var(--card-white);
+  color: var(--text-black);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+              rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.collaboration .timeline,
+.collaboration .collaboration-mode
+{
+  background-color: var(--card-white);
+}
+.collaboration .timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.collaboration .timeline .timeline-item {
+  position: relative;
+  padding-left: 44px
+}
+
+.collaboration .timeline .timeline-item .dot {
+  position: absolute;
+  left: 5px;
+  top: .3rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
