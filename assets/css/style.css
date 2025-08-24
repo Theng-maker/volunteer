@@ -251,6 +251,17 @@ header.fixed-top{
   padding: 16px;
   color: var(--text-main);
 }
+/* Hard-set Bootstrap modal colors and remove any accidental transparency */
+#accountSettingsModal .modal-content {
+  /* Bootstrap var; ensure it's opaque white */
+  --bs-modal-bg: #fff;
+  background-color: var(--bs-modal-bg);
+}
+
+#accountSettingsModal .modal-content.vh-modal {
+  opacity: 1;               /* ensure no inherited opacity */
+  backdrop-filter: none;    /* if you experimented with blur */
+}
 
 .avatar {
   width: 40px;
@@ -407,6 +418,7 @@ header.fixed-top{
   background: #fff3e7;
   color: #d35400;
 }
+
 
 .tab-content .tab-pane img {
   width: 60px;
