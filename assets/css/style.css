@@ -2549,8 +2549,14 @@ section {
 .opportunity-card .card .carousel-top .carousel-control-prev,
 .opportunity-card .card .carousel-top .carousel-control-next {
   width: 30px;
+  transition: 0.4s;
+  display: none; 
 }
 
+.opportunity-card .card:hover .carousel-top .carousel-control-prev,
+.opportunity-card .card:hover .carousel-top .carousel-control-next {
+  display: block;
+}
 .opportunities-card-list .opportunity-card .card .card-body .location {
   color: gray;
   padding-left: 20px;
