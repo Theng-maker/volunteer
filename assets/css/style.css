@@ -103,11 +103,6 @@ header.fixed-top{
   z-index: 1050;
 }
 /* ---- Main donation card ---- */
-.vh-donate-card {
-  border-radius: 14px;
-  background: var(--bg-card);
-  box-shadow: var(--vh-shadow);
-}
 
 /* ===== Donation Type (pills) ===== */
 .vh-pill {
@@ -172,10 +167,6 @@ header.fixed-top{
   color: var(--text-main);
 }
 
-.donate-img {
-  height: 230px;
-}
-
 /* ===== Cause cards ===== */
 .vh-cause {
   display: block;
@@ -238,20 +229,6 @@ header.fixed-top{
   background: var(--bg-subtle);
 }
 
-/* ===== Donate CTA ===== */
-.vh-donate-cta {
-  background: linear-gradient(90deg, #6b7bff, #9b6bff);
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  padding: .9rem 1rem;
-  border-radius: 12px;
-  letter-spacing: .2px;
-}
-
-.vh-donate-cta:hover {
-  opacity: .95;
-}
 
 /* ===== Sidebar cards ===== */
 .vh-sticky {
