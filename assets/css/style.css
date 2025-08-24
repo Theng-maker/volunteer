@@ -97,6 +97,7 @@ body {
   background: var(--bg-page);
   color: var(--text-main);
   padding-top: var(--navbar-h) !important;
+  font-family: "Kantomruy", "Poppins";
 }
 header.fixed-top{
   z-index: 1050;
@@ -2189,9 +2190,6 @@ body {
 }
 
 /* ===== File: css/opportunities/detailpages.css ===== */
-body {
-  background-color: var(--bg-color);
-}
 
 /* ========================================================= */
 /* breadcrumb */
@@ -2340,11 +2338,16 @@ body {
 }
 
 /* ============================================================== */
+.organization{
+  background-color: none !important;
+  padding: 10px 0;
+}
 .organization p {
   font-size: 18px;
   text-indent: 35px;
   line-height: 35px;
   color: var(--text-color);
+ 
 }
 
 /* ============================================================== */
@@ -2411,9 +2414,6 @@ body {
   transform: scale(1.2);
 }
 
-body {
-  background-color: var(--bg-color);
-}
 
 /* ========================================================= */
 /* go to top button */
@@ -2441,7 +2441,7 @@ body {
 /* ========================================================= */
 /* Search*/
 .opportunity {
-  padding-top: 48px !important;
+  padding-top: 180px !important;
 }
 
 .opportunity .opportunity-search-filter .opportunity-search {
@@ -2592,14 +2592,14 @@ body {
   z-index: 20;
 }
 
-.opportunities-card-list .opportunity-card .card .carousel-top .page button {
+.opportunity-card .card .carousel-top .page button {
   width: 3px;
   padding: 2px;
   border-radius: 50%;
 }
 
-.opportunities-card-list .opportunity-card .card .carousel-top .carousel-control-prev,
-.opportunities-card-list .opportunity-card .card .carousel-top .carousel-control-next {
+.opportunity-card .card .carousel-top .carousel-control-prev,
+.opportunity-card .card .carousel-top .carousel-control-next {
   width: 30px;
 }
 
