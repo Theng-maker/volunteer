@@ -97,6 +97,7 @@ body {
   background: var(--bg-page);
   color: var(--text-main);
   padding-top: var(--navbar-h) !important;
+  font-family: "Kantomruy", "Poppins";
 }
 header.fixed-top{
   z-index: 1050;
@@ -367,19 +368,20 @@ header.fixed-top{
 }
 
 .tab-content {
+  width: 1200px;
   background: #fff;
   border: 1px solid #dee2e6;
   padding: 20px;
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.card-custom {
+.tab-content .card-custom {
   border: none;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.icon-box {
+.tab-content .icon-box {
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -390,7 +392,7 @@ header.fixed-top{
 }
 
 /* Quick actions */
-.quick-action {
+.tab-content .quick-action {
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 10px;
@@ -400,36 +402,36 @@ header.fixed-top{
   align-items: center;
 }
 
-.quick-action i {
+.tab-content .quick-action i {
   margin-right: 10px;
   font-size: 18px;
 }
 
-.quick-action:hover {
+.tab-content .quick-action:hover {
   opacity: 0.9;
 }
 
-.bg-light-blue {
+.tab-content .bg-light-blue {
   background: #eef5ff;
   color: #0d6efd;
 }
 
-.bg-light-green {
+.tab-content .bg-light-green {
   background: #e9f8f1;
   color: #198754;
 }
 
-.bg-light-purple {
+.tab-content .bg-light-purple {
   background: #f8f0ff;
   color: #6f42c1;
 }
 
-.bg-light-orange {
+.tab-content .bg-light-orange {
   background: #fff3e7;
   color: #d35400;
 }
 
-.tab-content img {
+.tab-content .tab-pane img {
   width: 60px;
   height: 60px;
 }
@@ -1248,18 +1250,6 @@ section {
   }
 }
 
-body {
-  margin: 0 !important;
-  width: 100%;
-  height: 100vh;
-  background: url('../image/homepage/state-area.png') no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .was-validated .form-control:valid,
 .form-control.is-valid {
   background-image: none !important;
@@ -1554,7 +1544,6 @@ body {
   color: var(--text-white-fixed);
 }
 
-
 /* ---event-banner------ */
  .event-banner{
    width: 100% ;
@@ -1598,35 +1587,6 @@ body {
   position: relative;
   padding-left: 30px;
 }
-
-.event-banner .card .card-body   ul li {
-   margin: 10px 0;
-   font-size: 19px;
-   color: #ffffff;
-   padding-left: 30px;
- }
-
- .event-banner .card .card-body .event-btn:hover{
-    color: #fff;
- }
- .event-banner .image-stack {
-   position: relative;
-   width: 100%;
-   height: 420px;
- }
-
- .event-banner .stack-img {
-   position: absolute;
-   width: 80%;
-   border-radius: 20px;
-   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.531);
-   transition: transform 0.4s ease, box-shadow 0.4s ease;
- }
- .event-banner .stack-img img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
- }
  .event-banner .image-stack .stack-img.img1 {
    width: 260px;
    height: 200px;
@@ -1731,7 +1691,7 @@ body {
 }
 
 /* -------- hero banner ------- */
-.hero-banner {
+/* .hero-banner {
   padding: 0;
   height: 100vh;
 }
@@ -1794,7 +1754,7 @@ body {
 
 .hero-banner.hero-home .hero-content .card-text {
   color: var(--text-white-fixed);
-}
+} */
 
 
 /* --- about us ------ */
@@ -2182,12 +2142,7 @@ body {
     border: 5px solid #007ACC;
   }
 }
-
 /* ===== File: css/opportunities/detailpages.css ===== */
-body {
-  background-color: var(--bg-color);
-}
-
 /* ========================================================= */
 /* breadcrumb */
 .breadcrumb-page {
@@ -2335,11 +2290,16 @@ body {
 }
 
 /* ============================================================== */
+.organization{
+  background-color: none !important;
+  padding: 10px 0;
+}
 .organization p {
   font-size: 18px;
   text-indent: 35px;
   line-height: 35px;
   color: var(--text-color);
+ 
 }
 
 /* ============================================================== */
@@ -2406,9 +2366,6 @@ body {
   transform: scale(1.2);
 }
 
-body {
-  background-color: var(--bg-color);
-}
 
 /* ========================================================= */
 /* go to top button */
@@ -2436,7 +2393,7 @@ body {
 /* ========================================================= */
 /* Search*/
 .opportunity {
-  padding-top: 48px !important;
+  padding-top: 180px !important;
 }
 
 .opportunity .opportunity-search-filter .opportunity-search {
@@ -2587,14 +2544,14 @@ body {
   z-index: 20;
 }
 
-.opportunities-card-list .opportunity-card .card .carousel-top .page button {
+.opportunity-card .card .carousel-top .page button {
   width: 3px;
   padding: 2px;
   border-radius: 50%;
 }
 
-.opportunities-card-list .opportunity-card .card .carousel-top .carousel-control-prev,
-.opportunities-card-list .opportunity-card .card .carousel-top .carousel-control-next {
+.opportunity-card .card .carousel-top .carousel-control-prev,
+.opportunity-card .card .carousel-top .carousel-control-next {
   width: 30px;
 }
 
@@ -3707,7 +3664,6 @@ a:hover,
    HERO BANNER (merged)
    ======================= */
 .hero-banner {
-  min-height: calc(100vh - var(--header-total));
   width: 100%;
   margin-top: 120px;
   height: 90vh;
@@ -5076,12 +5032,6 @@ a:hover,
 }
 
 /* ================= Global ================= */
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
 
 h1,
 h2,
