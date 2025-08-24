@@ -367,19 +367,20 @@ header.fixed-top{
 }
 
 .tab-content {
+  width: 1200px;
   background: #fff;
   border: 1px solid #dee2e6;
   padding: 20px;
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.card-custom {
+.tab-content .card-custom {
   border: none;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.icon-box {
+.tab-content .icon-box {
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -390,7 +391,7 @@ header.fixed-top{
 }
 
 /* Quick actions */
-.quick-action {
+.tab-content .quick-action {
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 10px;
@@ -400,36 +401,36 @@ header.fixed-top{
   align-items: center;
 }
 
-.quick-action i {
+.tab-content .quick-action i {
   margin-right: 10px;
   font-size: 18px;
 }
 
-.quick-action:hover {
+.tab-content .quick-action:hover {
   opacity: 0.9;
 }
 
-.bg-light-blue {
+.tab-content .bg-light-blue {
   background: #eef5ff;
   color: #0d6efd;
 }
 
-.bg-light-green {
+.tab-content .bg-light-green {
   background: #e9f8f1;
   color: #198754;
 }
 
-.bg-light-purple {
+.tab-content .bg-light-purple {
   background: #f8f0ff;
   color: #6f42c1;
 }
 
-.bg-light-orange {
+.tab-content .bg-light-orange {
   background: #fff3e7;
   color: #d35400;
 }
 
-.tab-content img {
+.tab-content .tab-pane img {
   width: 60px;
   height: 60px;
 }
@@ -1240,18 +1241,6 @@ section {
   }
 }
 
-body {
-  margin: 0 !important;
-  width: 100%;
-  height: 100vh;
-  background: url('../image/homepage/state-area.png') no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .was-validated .form-control:valid,
 .form-control.is-valid {
   background-image: none !important;
@@ -1532,7 +1521,7 @@ body {
   background-color: var(--secondary-color);
   color: var(--text-white-fixed);
 }
-
+/* 
 .hero-banner {
   width: 100%;
   height: 90vh;
@@ -1544,7 +1533,6 @@ body {
       rgba(0, 0, 0, 0.2)),
     url('https://img.freepik.com/free-vector/global-volunteer-solidarity-hands-up-banner-with-earth-map-vector_1017-48268.jpg?semt=ais_hybrid&w=740') no-repeat center center/cover;
   color: #fff;
-  /* text-shadow: 0 2px 8px rgba(0,0,0,0.6); */
   padding: 0 20px;
   position: relative;
   overflow: hidden;
@@ -1579,7 +1567,7 @@ body {
   left: 0;
   top: 0;
   color: #0c18c2;
-}
+} */
 
 .btn-hero {
   padding: 12px 35px;
@@ -1736,7 +1724,7 @@ body {
 }
 
 /* -------- hero banner ------- */
-.hero-banner {
+/* .hero-banner {
   padding: 0;
   height: 100vh;
 }
@@ -1799,7 +1787,7 @@ body {
 
 .hero-banner.hero-home .hero-content .card-text {
   color: var(--text-white-fixed);
-}
+} */
 
 
 /* --- about us ------ */
@@ -2189,10 +2177,6 @@ body {
 }
 
 /* ===== File: css/opportunities/detailpages.css ===== */
-body {
-  background-color: var(--bg-color);
-}
-
 /* ========================================================= */
 /* breadcrumb */
 .breadcrumb-page {
@@ -2411,9 +2395,6 @@ body {
   transform: scale(1.2);
 }
 
-body {
-  background-color: var(--bg-color);
-}
 
 /* ========================================================= */
 /* go to top button */
@@ -3712,7 +3693,6 @@ a:hover,
    HERO BANNER (merged)
    ======================= */
 .hero-banner {
-  min-height: calc(100vh - var(--header-total));
   width: 100%;
   margin-top: 120px;
   height: 90vh;
@@ -5081,12 +5061,6 @@ a:hover,
 }
 
 /* ================= Global ================= */
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
 
 h1,
 h2,
