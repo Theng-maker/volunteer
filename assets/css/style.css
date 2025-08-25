@@ -114,6 +114,9 @@ header.fixed-top {
   z-index: 1050;
 }
 
+a{
+  text-decoration: none;
+}
 /* ---- Main donation card ---- */
 
 /* ===== Donation Type (pills) ===== */
@@ -370,7 +373,7 @@ header.fixed-top {
   color: #0d6efd;
 }
 
-.tab-content {
+.org-dashboard .tab-content {
   width: 1200px;
   background: #fff;
   border: 1px solid #dee2e6;
@@ -378,13 +381,13 @@ header.fixed-top {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.tab-content .card-custom {
+.org-dashboard .tab-content .card-custom {
   border: none;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.tab-content .icon-box {
+.org-dashboard .tab-content .icon-box {
   width: 50px;
   height: 50px;
   border-radius: 10px;
@@ -395,7 +398,7 @@ header.fixed-top {
 }
 
 /* Quick actions */
-.tab-content .quick-action {
+.org-dashboard .tab-content .quick-action {
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 10px;
@@ -405,37 +408,37 @@ header.fixed-top {
   align-items: center;
 }
 
-.tab-content .quick-action i {
+.org-dashboard .tab-content .quick-action i {
   margin-right: 10px;
   font-size: 18px;
 }
 
-.tab-content .quick-action:hover {
+.org-dashboard .tab-content .quick-action:hover {
   opacity: 0.9;
 }
 
-.tab-content .bg-light-blue {
+.org-dashboard .tab-content .bg-light-blue {
   background: #eef5ff;
   color: #0d6efd;
 }
 
-.tab-content .bg-light-green {
+.org-dashboard .tab-content .bg-light-green {
   background: #e9f8f1;
   color: #198754;
 }
 
-.tab-content .bg-light-purple {
+.org-dashboard .tab-content .bg-light-purple {
   background: #f8f0ff;
   color: #6f42c1;
 }
 
-.tab-content .bg-light-orange {
+.org-dashboard .tab-content .bg-light-orange {
   background: #fff3e7;
   color: #d35400;
 }
 
 
-.tab-content .tab-pane img {
+.org-dashboard .tab-content .tab-pane img {
   width: 60px;
   height: 60px;
 }
@@ -1677,8 +1680,6 @@ header.fixed-top {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
-
 .card-event .tab-content .tab-pane .card .badge {
   font-size: 0.9rem;
   padding: 0.4em 0.6em;
@@ -2069,13 +2070,6 @@ header.fixed-top {
 .sponsor-area .card:hover {
   transform: translateY(-6px);
 }
-
-
-
-
-
-
-
 
 
 @media (max-width : 576px) {
@@ -2534,6 +2528,9 @@ header.fixed-top {
 }
 
 .opportunity-card .card .card-body .location {
+
+.opportunities-card-list .opportunity-card .card .card-body .location {
+
   color: gray;
   padding-left: 20px;
 }
@@ -2564,11 +2561,12 @@ header.fixed-top {
   margin-inline: 50px;
 }
 
-/* ===== File: css/style.css ===== */
+
 .offcanvas {
   top: var(--header-total);
   height: calc(100vh - var(--header-total));
 }
+
 h1,
 h2,
 h3,
@@ -2610,8 +2608,6 @@ h6 {
 .top-header .nav-list .nav-link:last-child {
   border-right: 0;
 }
-
-/* no extra line at end */
 
 .top-header .dropdown .btn {
   color: var(--text-white-fixed);
@@ -3192,6 +3188,7 @@ footer p.text-center {
 .bg-light-blue {
   background: #eef5ff;
   color: #0d6efd;
+  text-align: start;
 }
 
 .bg-light-green {
@@ -3540,7 +3537,7 @@ a:hover,
   border-color: color-mix(in srgb, #8a6d00 45%, var(--border-color));
 }
 
-.vh-badge-emblem {
+#tabAchievements .vh-badge-emblem {
   width: 52px;
   height: 52px;
   border-radius: 14px;
@@ -3550,13 +3547,13 @@ a:hover,
   font-size: 24px;
 }
 
-.vh-badge-tile:hover {
+#tabAchievements .vh-badge-tile:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 26px rgba(0, 0, 0, .08);
   border-color: var(--accent-primary);
 }
 
-.vh-org-logo {
+#tabRecs .vh-org-logo {
   width: 44px;
   height: 44px;
   border-radius: 10px;
@@ -5284,7 +5281,7 @@ a:hover,
 }
 
 #tabAchievements {
-  height: 60vh;
+  height: 70vh;
 }
 
 /* ================= Badge Card ================= */
@@ -5702,7 +5699,6 @@ a:hover,
   color: var(--text-white-fixed) !important;
 }
 
-
 /* ---- opportunities-area ----- */
 .opportunities-area {
   background-image: url('../image/homepage/dot-bg.webp');
@@ -5781,8 +5777,6 @@ a:hover,
   left: 58%;
   top: 22%;
 }
-
-
 
 /* ----- Donatiom-Area ---- */
 .donation-area {
@@ -5880,7 +5874,6 @@ a:hover,
   }
 }
 
-
 .question-area .accordion-collapse,
 .question-area .accordion-button {
   font-size: 18px;
@@ -5897,7 +5890,6 @@ a:hover,
 .question-area .accordion-button:not(.collapsed) {
   background-color: var(--gray-bg);
 }
-
 
 
 /* ------ Testimonials ------ */
@@ -5918,8 +5910,6 @@ a:hover,
   background: url('../image/homepage/shape-nine.png') no-repeat;
   transform: rotate(180deg);
 }
-
-
 
 
 /* ----- Sponsor ------ */
@@ -5993,12 +5983,6 @@ a:hover,
   padding: 20px;
   background-color: var(--card-white);
 }
-
-
-
-
-
-
 
 
 

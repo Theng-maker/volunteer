@@ -207,7 +207,7 @@
 
 
     </header>
-    <main class="flex-grow-1">
+    <main class="flex-grow-1 org-dashboard">
         <div class="container py-4">
 
             <!-- Profile Header -->
@@ -218,7 +218,113 @@
                     <small class="text-muted">Cambodia Environment Organization • NGO</small>
                 </div>
                 <div class="ms-auto">
-                    <button class="btn btn-primary">+ បន្ថែមឱកាស</button>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="createOpportunityModal" tabindex="-1"
+                        aria-labelledby="createOpportunityLabel" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="createOpportunityLabel">
+                                        <i class="bi bi-briefcase-fill me-2"></i> ឱកាសការងារថ្មី
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <form id="opportunityForm" class="needs-validation" novalidate>
+                                    <div class="modal-body">
+                                        <!-- Title -->
+                                        <div class="mb-3">
+                                            <label for="opTitle" class="form-label">ចំណងជើងការងារ</label>
+                                            <input type="text" class="form-control" id="opTitle"
+                                                placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍" required>
+                                            <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
+                                        </div>
+
+                                        <!-- Description -->
+                                        <div class="mb-3">
+                                            <label for="opDescription" class="form-label">ពិពណ៌នា</label>
+                                            <textarea class="form-control" id="opDescription" rows="4"
+                                                placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
+                                            <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
+                                        </div>
+
+                                        <!-- Row: Location + Start Date -->
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="opLocation" class="form-label">ទីតាំង</label>
+                                                <input type="text" class="form-control" id="opLocation"
+                                                    value="ភ្នំពេញ" required>
+                                                <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="opDate" class="form-label">កាលបរិច្ឆេទចាប់ផ្តើម</label>
+                                                <input type="date" class="form-control" id="opDate" required>
+                                                <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Row: Capacity + Status -->
+                                        <div class="row g-3 mt-0 mt-md-2">
+                                            <div class="col-md-6">
+                                                <label for="opCapacity" class="form-label">ចំនួនមុខតំណែង</label>
+                                                <input type="number" class="form-control" id="opCapacity" min="1"
+                                                    value="10" required>
+                                                <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="opStatus" class="form-label">ស្ថានភាព</label>
+                                                <select class="form-select" id="opStatus" required>
+                                                    <option value="" selected disabled>ជ្រើសរើសស្ថានភាព</option>
+                                                    <option>Available</option>
+                                                    <option>Pending</option>
+                                                    <option>Closed</option>
+                                                </select>
+                                                <div class="invalid-feedback">សូមជ្រើសរើសស្ថានភាព</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Cover Image (drag & drop + click) -->
+                                        <div class="mt-3">
+                                            <label class="form-label">រូបភាពគម្រូ / គម្រោង</label>
+                                            <div id="opImageDropzone" class="dropzone" role="button" tabindex="0">
+                                                <div class="small">
+                                                    <i class="bi bi-cloud-arrow-up-fill me-1"></i>
+                                                    ចុចដើម្បីជ្រើសរើស
+                                                </div>
+                                            </div>
+                                            <input type="file" id="opImageInput" class="d-none" accept="image/*" />
+                                            <div id="opImagePreview" class="mt-3 d-none">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <img id="opImageThumb" class="img-thumb" alt="Preview" />
+                                                    <div class="flex-grow-1">
+                                                        <div class="small fw-semibold" id="opImageName"></div>
+                                                        <div class="small text-muted" id="opImageMeta"></div>
+                                                        <button type="button" class="btn btn-sm btn-outline-danger mt-2"
+                                                            id="opImageRemove">Remove</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback d-block" id="opImageError"
+                                                style="display:none"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="bi bi-plus-lg me-1"></i> Post Opportunity
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -242,7 +348,7 @@
             </ul>
 
             <!-- Tab Content -->
-            <div class="tab-content mt-4">
+            <div class="tab-content mt-4 w-100">
 
                 <!-- Overview -->
                 <div class="tab-pane fade show active" id="overview">
@@ -346,7 +452,7 @@
                             <div class="col-md-6">
                                 <div class="card card-custom p-3">
                                     <h6 class="fw-bold mb-3">Quick Actions</h6>
-                                    <a href="#" class="quick-action bg-light-blue"><i class="fa-solid fa-plus"></i>
+                                    <a href="#" class="quick-action bg-light-blue" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">
                                         Create New Opportunity</a>
                                     <a href="#" class="quick-action bg-light-green"><i
                                             class="fa-solid fa-user-group"></i> Manage Volunteers</a>
@@ -376,7 +482,8 @@
                             <option>Closed</option>
                             <option>Pending</option>
                         </select>
-                        <button class="btn btn-primary"><i class="fa-solid fa-plus me-1"></i> បន្ថែម</button>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
+                    </a>
                     </div>
 
                     <!-- Item 1 -->
@@ -717,15 +824,14 @@
 
                             <form>
                                 <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
-                                        <label class="vh-avatar-uploader mb-0">
-                                            <input type="file" class="d-none" id="avatarInput" accept="image/*">
-                                            <span class="vh-avatar ring">
-                                                <img id="avatarPreview"
-                                                    src="../image/ORG/company-icon.png" alt="រូបភាព">
-                                            </span>
-                                            <span class="small text-body-secondary d-block mt-1">ជ្រើសរើសរូបភាព</span>
-                                        </label>
-                                    </div>
+                                    <label class="vh-avatar-uploader mb-0">
+                                        <input type="file" class="d-none" id="avatarInput" accept="image/*">
+                                        <span class="vh-avatar ring">
+                                            <img id="avatarPreview" src="../image/ORG/company-icon.png" alt="រូបភាព">
+                                        </span>
+                                        <span class="small text-body-secondary d-block mt-1">ជ្រើសរើសរូបភាព</span>
+                                    </label>
+                                </div>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="orgName" class="form-label">ឈ្មោះអង្គការ</label>
@@ -1058,6 +1164,80 @@
             }
         })();
     </script>
+    <script>
+  (function(){
+    // ----- Form validation -----
+    const form = document.getElementById('opportunityForm');
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) { event.preventDefault(); event.stopPropagation(); }
+      form.classList.add('was-validated');
+    }, false);
+
+    // ----- Image upload -----
+    const drop = document.getElementById('opImageDropzone');
+    const input = document.getElementById('opImageInput');
+    const previewWrap = document.getElementById('opImagePreview');
+    const thumb = document.getElementById('opImageThumb');
+    const nameEl = document.getElementById('opImageName');
+    const metaEl = document.getElementById('opImageMeta');
+    const removeBtn = document.getElementById('opImageRemove');
+    const errEl = document.getElementById('opImageError');
+
+    const MAX_SIZE = 2 * 1024 * 1024; // 2 MB
+    const VALID_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
+
+    function openPicker(){ input.click(); }
+    function showError(msg){ errEl.textContent = msg; errEl.style.display = 'block'; }
+    function clearError(){ errEl.textContent=''; errEl.style.display='none'; }
+
+    function handleFile(file){
+      clearError();
+      if (!file) return;
+      if (!VALID_TYPES.includes(file.type)) { showError('សូមផ្ទុកឡើងជារូបភាព PNG, JPG ឬ WebP។'); input.value=''; return; }
+      if (file.size > MAX_SIZE) { showError('រូបភាពមានទំហំធំពេក។ អតិបរមា 2 MB។'); input.value=''; return; }
+      const reader = new FileReader();
+      reader.onload = e => {
+        thumb.src = e.target.result;
+        nameEl.textContent = file.name;
+        metaEl.textContent = `${(file.size/1024).toFixed(0)} KB • ${file.type}`;
+        previewWrap.classList.remove('d-none');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Click / keyboard
+    drop.addEventListener('click', openPicker);
+    drop.addEventListener('keypress', e => { if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openPicker(); }});
+
+    // Drag & drop feedback
+    ['dragenter','dragover'].forEach(evt => drop.addEventListener(evt, e=>{ e.preventDefault(); e.stopPropagation(); drop.classList.add('dragover'); }));
+    ['dragleave','dragend','drop'].forEach(evt => drop.addEventListener(evt, e=>{ e.preventDefault(); e.stopPropagation(); drop.classList.remove('dragover'); }));
+
+    // Handle drop / picker
+    drop.addEventListener('drop', e => handleFile(e.dataTransfer.files[0]));
+    input.addEventListener('change', e => handleFile(e.target.files[0]));
+
+    // Remove/reset
+    removeBtn.addEventListener('click', () => {
+      input.value = '';
+      previewWrap.classList.add('d-none');
+      thumb.src = '';
+      nameEl.textContent = '';
+      metaEl.textContent = '';
+      clearError();
+    });
+
+    // Example: include the image in AJAX submit
+    // form.addEventListener('submit', e => {
+    //   e.preventDefault();
+    //   if (!form.checkValidity()) return;
+    //   const data = new FormData(form);
+    //   if (input.files[0]) data.append('cover_image', input.files[0]);
+    //   fetch('/api/opportunities', { method: 'POST', body: data })
+    //     .then(r => r.json()).then(console.log).catch(console.error);
+    // });
+  })();
+  </script>
 
 </body>
 
