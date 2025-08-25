@@ -3,7 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Poppins;
+  src: url(../Vendor/fonts/Poppins/Poppins-Black.ttf);
+}
 
+@font-face {
+  font-family: Kantomruy;
+  src: url(../Vendor/fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf);
+}
 :root {
   /* Header / nav */
   --top-header: #000000;
@@ -105,6 +113,7 @@ body {
 header.fixed-top {
   z-index: 1050;
 }
+
 a{
   text-decoration: none;
 }
@@ -703,12 +712,6 @@ a{
   box-sizing: border-box;
 }
 
-section {
-  padding: 40px 0;
-  background: var(--white-bg);
-  color: var(--text-black);
-}
-
 .about-mession .mession-title {
   padding-top: 150px;
 }
@@ -1279,8 +1282,6 @@ section {
   backdrop-filter: blur(20px);
 }
 
-
-
 .section-title img {
   width: 80px;
 }
@@ -1345,8 +1346,6 @@ section {
   transform: scale(1.1);
   color: #007bff;
 }
-
-
 
 
 /* ---- ORG Register--*/
@@ -1681,7 +1680,6 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
 .card-event .tab-content .tab-pane .card .badge {
   font-size: 0.9rem;
   padding: 0.4em 0.6em;
@@ -2074,13 +2072,6 @@ section {
 }
 
 
-
-
-
-
-
-
-
 @media (max-width : 576px) {
   .testimonial-area .testimonial-slide {
     height: 200px;
@@ -2205,7 +2196,7 @@ section {
 .section-heading {
   font-weight: 500;
   margin-bottom: 1.5rem;
-  color: var(--text-title);
+  color: var(--text-black);
 }
 
 .program-info p {
@@ -2284,7 +2275,9 @@ section {
   padding: 30px;
   border-radius: 20px;
 }
-
+.contact-card h3{
+  color: #212536;
+}
 .contact-card .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2389,12 +2382,10 @@ section {
 
 /* ========================================================= */
 /* Select-filter  */
-.opportunity .filter-category {
-  border-radius: 5px;
-}
-
+.opportunity .filter-category,
 .opportunity .filter-location {
   border-radius: 5px;
+  color: #212536;
 }
 
 /* ========================================================= */
@@ -2452,7 +2443,7 @@ section {
   font-weight: 500;
   border: 2px solid var(--btn-primary);
   background-color: var(--btn-primary);
-  color: var(--text-color);
+  color: var(--text-black);
 }
 
 /* ========================================================= */
@@ -2466,13 +2457,17 @@ section {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-card);
 }
 
 .opportunity-card .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
+.opportunity-card .card-title{
+  color: #212536 !important;
+  
+}
 .opportunity-card .card-body {
   display: flex;
   flex-direction: column;
@@ -2493,7 +2488,7 @@ section {
   content: '';
   position: absolute;
   background-color: var(--btn-primary);
-  color: var(--text-color);
+  color: var(--text-black);
   left: 20px;
   top: 20px;
   font-size: 14px;
@@ -2532,22 +2527,27 @@ section {
   display: block;
 }
 
+.opportunity-card .card .card-body .location {
+
 .opportunities-card-list .opportunity-card .card .card-body .location {
+
   color: gray;
   padding-left: 20px;
 }
 
-.opportunities-card-list .opportunity-card .card .card-body .card-content {
-  color: gray;
+.opportunity-card .card .card-body .card-content {
+  color: var(--text-muted);
   font-size: 18px;
 }
 
-.opportunities-card-list .opportunity-card .card .card-body .card-text {
+.opportunity-card .card .card-body .card-text {
   font-size: 20px;
 }
-
-.opportunities-card-list .opportunity-card .benefits-item i,
-.opportunities-card-list .opportunity-card .benefits-item span {
+.opportunity-card .card .card-body .text-orgainzation{
+  color: var(--text-black);
+}
+.opportunity-card .benefits-item i,
+.opportunity-card .benefits-item span {
   font-size: 15px;
   color: var(--text-color);
 }
@@ -2561,19 +2561,6 @@ section {
   margin-inline: 50px;
 }
 
-/* ===== File: css/style.css ===== */
-/* =======================
-   FONTS
-   ======================= */
-@font-face {
-  font-family: Poppins;
-  src: url(../Vendor/fonts/Poppins/Poppins-Black.ttf);
-}
-
-@font-face {
-  font-family: Kantomruy;
-  src: url(../Vendor/fonts/Kantumruy_Pro/KantumruyPro-VariableFont_wght.ttf);
-}
 
 .offcanvas {
   top: var(--header-total);
@@ -2621,8 +2608,6 @@ h6 {
 .top-header .nav-list .nav-link:last-child {
   border-right: 0;
 }
-
-/* no extra line at end */
 
 .top-header .dropdown .btn {
   color: var(--text-white-fixed);
@@ -2746,13 +2731,13 @@ h6 {
 }
 
 /* =======================
-   CARDS / TYPO UTILS
+  CARDS / TYPO UTILS
    ======================= */
 .card .card-body .card-title {
   margin-bottom: 10px !important;
   font-size: 24px;
   font-weight: 600;
-  color: var(--text-black) !important;
+  color: var(--text-black)!important;
 }
 
 .card .card-body .card-text {
