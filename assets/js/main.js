@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // ====================
   // Counter Number (jQuery)
   // ====================
-  if (typeof $ !== "undefined") {
+if (typeof $ !== "undefined") {
     $(".counter").each(function () {
       const $el = $(this);
       const countTo = Number($el.data("countto"));
@@ -129,7 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
   handleValidation("orgloginForm", "../homepage.html");
 
 
-  //
+  // Testimonials
+  
   
 
 
