@@ -1622,18 +1622,6 @@ a{
 }
 
 
-/* -------- hero banner ------- */
-.hero-banner {
-  padding: 0;
-  height: 100vh;
-}
-
-/* 
-.hero-banner .hero-content {
-  width: 50%;
-  bottom: 120px;
-  color: var(--text-white-fixed);
-=======
 .event-banner .image-stack .stack-img.img1 {
   width: 260px;
   height: 200px;
