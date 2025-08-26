@@ -18,1236 +18,1222 @@
 
 
 
-    <body  class="d-flex flex-column h-100">
-        <header class="fixed-top shadow-sm">
-            <div class="top-header">
-                <div class="container d-flex justify-content-between align-items-center">
-                    <ul class="nav-list list-unstyled d-flex m-0">
-                        <li class="nav-item">
-                            <a href="aboutpage.html" class="nav-link ps-0">
-                                អំពីយើង
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contactpage.html" class="nav-link">
-                                ទំនាក់ទំនង
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="nav-action d-flex align-items-center">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="bi bi-globe2"></i>
-                                <span class="align-content-center">
-                                    ភាសាខ្មែរ
-                                </span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../image/Icon/Cambodia.png" alt="">
-                                        <span>
-                                            ភាសាខ្មែរ
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../image/Icon/england.png" alt="">
-                                        <span>
-                                            ភាសាអង់គ្លេស
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../image/Icon/arabic.png" alt="">
-                                        <span>
-                                            ភាសាអារ៉ាប់
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
-                            aria-label="Change to light theme">
-                            <i class="bi bi-moon-fill"></i>
+<body class="d-flex flex-column h-100">
+    <header class="fixed-top shadow-sm">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-list list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a href="aboutpage.html" class="nav-link ps-0">
+                            អំពីយើង
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">
+                            ទំនាក់ទំនង
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-action d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-globe2"></i>
+                            <span class="align-content-center">
+                                ភាសាខ្មែរ
+                            </span>
                         </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <nav class="navbar navbar-expand-lg bg-white">
-                <div class="container">
-                    <a class="navbar-brand " href="#">
-                        <img src="../image/Logo.jpg" alt="">
-                        ស្ម័គ្រចិត្ត
-                    </a>
-
-                    <!-- Offcanvas toggle button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span>
-                            <i class="fa-solid fa-bars"></i>
-                        </span>
-                    </button>
-
-                    <!-- Offcanvas menu -->
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="homepage.html">
-                                        ទំព័រដើម
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Browse Opportunities/opportunities.html">
-                                        ការងារស្ម័គ្រចិត្ត
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="eventpage.html">
-                                        ព្រឹត្តិការណ៏
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="activity.html">
-                                        សកម្មភាព
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Donation.html">
-                                        បរិច្ចាក
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
-                        <li>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <div class="dropdown nav-notification">
-                                <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <i class="bi bi-bell-fill"></i>
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
-                                        3
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/Cambodia.png" alt="">
+                                    <span>
+                                        ភាសាខ្មែរ
                                     </span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li class="ps-3">
-                                        <h3 class="fs-5">ការជូនដំណឹង</h3>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-start" href="#">
-                                            <img src="../image/Icon/facebook.png" alt="" class="">
-                                            <span class="ps-2">
-                                                Facebook <br>
-                                                អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
-                                                <span class="text-secondary">
-                                                    ឥឡូវនេះ
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-start" href="#">
-                                            <img src="../image/Icon/setting.png" alt="" class="">
-                                            <span class="ps-2">
-                                                ការកំណត់ <br>
-                                                អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
-                                                <span class="text-secondary">
-                                                    ៣០នាទីមុន
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-start" href="#">
-                                            <img src="../image/Icon/mark.png" alt="" class="">
-                                            <span class="ps-2">
-                                                ការដាក់ពាក្យ <br>
-                                                ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
-                                                <span class="text-secondary">
-                                                    ២ម៉ោងមុន
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li class=" my-3 d-flex justify-content-center">
-                                        <a href="#"
-                                            class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
-                                            មើលការជូនដំណឹងទាំងអស់
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img src="../image/profile.png" alt="">
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="userprofile.html">
-                                            <i class="bi bi-person-circle"></i>
-                                            <span class="ps-1">
-                                                មើលគណនី
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="bi bi-gear"></i>
-                                            <span class="ps-1">
-                                                ការកំណត់
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item  text-danger sign-up" href="#">
-                                            <i class="bi bi-box-arrow-left"></i>
-                                            <span class="ps-1">
-                                                ចាកចេញ
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/england.png" alt="">
+                                    <span>
+                                        ភាសាអង់គ្លេស
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/arabic.png" alt="">
+                                    <span>
+                                        ភាសាអារ៉ាប់
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                        aria-label="Change to light theme">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
                 </div>
-            </nav>
 
-
-        </header>
-        <main class="flex-grow-1">
-            <section class="event-banner">
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-12 col-lg-7">
-                            <div class="card bg-transparent border-0 ">
-                                <div class="card-body ">
-                                    <h1> ព្រឹត្តិការណ៍ពិសេសដែលនឹងមកដល់ឆាប់ៗ</h1>
-                                    <p>ចូលរួមជាមួយយើងសម្រាប់កម្មវិធីដ៏អស្ចារ្យ ដែលនឹងផ្តល់បទពិសោធន៍ថ្មី
-                                        និងឱកាសសហការដ៏មានតម្លៃ។</p>
-                                    <ul class="list-unstyled  ">
-                                        <li>
-                                            <i class="fa-solid fa-star-half-stroke me-2"></i>
-                                            ជួយសហគមន៍កុមារកំព្រា ចាស់ជរា
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-book  me-2"></i>
-                                            ផ្តល់ការបង្រៀន និងចែករំលែកចំណេះដឹង
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-users me-2"></i>
-                                            បង្កើតបណ្ដាញសហគមន៍ និងការតភ្ជាប់មិត្តភាព
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-gift me-2"></i>
-                                            ចូលរួមក្នុងការផ្តល់ជំនួយ និងការផ្តល់អំណោយ
-                                        </li>
-                                    </ul>
-                                    <a href="#eventnew" role="button" class="btn event-btn btn-outline-warning mt-3 fs-5 px-4">មើលព្រឹត្តិការណ៍ថ្មីៗ</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-5">
-                            <div class="card image-stack border-0 bg-transparent">
-                                <img src="../image/even-soon/4.jpg"
-                                    alt="volunteer1" class="stack-img img1">
-                                <img src="../image/even-soon/7.jpg"
-                                    alt="volunteer2" class="stack-img img2">
-                                <img src="../image/even-soon/8.jpg"
-                                    alt="volunteer3" class="stack-img img3">
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="card-event" id="eventnew">
-                <div class="container ">
-                     <div class="row">
-                        <!-- Filter Tabs -->
-                        <div class="col-12 col-lg-6 mb-3">
-                            <ul class="nav  nav-underline  mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-all" type="button" role="tab"
-                                        aria-selected="true">ទាំងអស់</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-thisweek-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-thisweek" type="button" role="tab"
-                                        aria-selected="false">សប្តាហ៍នេះ</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-thismonth-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-thismonth" type="button" role="tab"
-                                        aria-selected="false">ខែនេះ</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-nextmonth-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-nextmonth" type="button" role="tab"
-                                        aria-selected="false">ខែក្រោយ</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <form action="" class="d-flex">
-                                <input type="text" class="form-control border-1" placeholder="ស្វែងរកព្រឹត្តិការណ៍">
-                                <button type="button" class="btn btn-primary ms-2 w-25 py-2">
-                                    <span>ស្វែងរក</span>
-
-                                </button>
-                            </form>
-                        </div>
-                        <div class="col-12">
-                            <div class="tab-content bg-transparent">
-                                <!-- All Events -->
-                                <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
-                                    aria-labelledby="pills-all-tab" tabindex="0">
-                                    <div class="row g-4 ">
-                                        <!-- Card 1 -->
-                                        <div class="col-md-4">
-                                            <div class="card position-relative h-100">
-                                                <img src="../image/even-soon/1.jpg" class="card-img-top" alt="event1">
-                                                <span
-                                                    class="badge bg-danger position-absolute top-0 start-0 m-2">សុខភាព</span>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ផ្សព្វផ្សាយអនាម័យនៅសាលារៀន</h5>
-                                                    <p class="card-text mb-1">
-                                                        ដើម្បីឪ្យកុមារយល់ដឹង​ពីការថែទាំសុខភាពការថែទាំសុខភាពប្រចាំថ្ងៃ
-                                                        របបអាហារ </p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal1">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Card 2 -->
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/3.jpg" class="card-img-top" alt="Event 2">
-                                                <span
-                                                    class="badge bg-warning position-absolute top-0 start-0 m-2">ពិសេស</span>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ផ្ដល់អាហារសម្រាប់មនុស្សចាស់</h5>
-                                                    <p class="card-text mb-1">
-                                                        ដល់អាហាររូបត្ថម្ភ
-                                                        និងថែទាំមនុស្សចាស់នៅសហគមន៍ដែលកំពុងជួបការខ្វះខាត </p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        ថ្ងៃសៅរ៍ ៣១ ខែមិថុនា ២០២៦
-                                                    </p>
-
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal2">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Card 3 -->
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/2.jpg" class="card-img-top" alt="Event 3">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ជួយសម្អាតតាមមាត់ទន្លេពេលបុណ្យអុំទូក</h5>
-                                                    <p class="card-text mb-1">
-                                                        ដើម្បីឪ្យបរិស្ថានក្នុងកំពុងពេលប្រារព្ធពិធីបុណ្យអុំទូកមានភាពស្រស់បំព្រងទាំង៣ថ្ងៃងាយស្រួលទស្សនាការប្រណាំងទូក
-                                                    </p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        ថ្ងៃអង្គារ៏ ០៥ ខែវិច្ឆិកា ២០២៥
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal3">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Card 4 -->
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/4.jpg" class="card-img-top" alt="Event 4">
-                                                <span
-                                                    class="badge bg-danger position-absolute top-0 start-0 m-2">ពិសេស</span>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">គម្រោងផ្ទះកុមារក្រីក្រ</h5>
-                                                    <p class="card-text mb-1">
-                                                        កម្មវិធីស្ម័គ្រចិត្តសម្រាប់ជួយផ្ដល់អាហារ សម្ភារៈសិក្សា
-                                                        និងរៀបចំសកម្មភាពកំសាន្តដល់កុមារក្រីក្រ។</p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        ថ្ងៃសៅរ៍ ៣០ ខែមេសា ឆ្នាំ២០២៦
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal4">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Card 5 -->
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/tree.jpg" class="card-img-top"
-                                                    alt="Event 5">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ដាំផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
-                                                    <p class="card-text mb-1">
-                                                        សកម្មភាពស្ម័គ្រចិត្តក្នុងការដាំផ្កានិងរុក្ខជាតិគឺដើម្បីបង្កើនភាពស្រស់ស្អាតលំអសួនតាមដងវិថីនិងបង្កើនបៃតងក្នុងក្រុង។
-                                                    </p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        ថ្ងៃសៅរ៍ ២០ ខែមករា ២០២៦
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal5">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Card 6 -->
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/srov.jpg" class="card-img-top"
-                                                    alt="Event 6">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
-                                                    <p class="card-text mb-1">
-                                                        ចូលរួមចែករំលែក និងរៀនបច្ចេកទេសថ្មីៗក្នុងការដាំ, ថែ,
-                                                        និងប្រមូលស្រែស្រូវ ដើម្បីបង្កើនផលិតភាព</p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal6">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- This Week -->
-                                <div class="tab-pane fade" id="pills-thisweek" role="tabpanel"
-                                    aria-labelledby="pills-thisweek-tab" tabindex="0">
-                                    <div class="row g-4">
-                                        <div class="col-md-4">
-                                            <div class="card position-relative h-100">
-                                                <img src="../image/even-soon/1.jpg" class="card-img-top" alt="event1">
-                                                <span
-                                                    class="badge bg-danger position-absolute top-0 start-0 m-2">សុខភាព</span>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ផ្សព្វផ្សាយអនាម័យនៅសាលារៀន</h5>
-                                                    <p class="card-text mb-1">
-                                                        ដើម្បីឪ្យកុមារយល់ដឹង​ពីការថែទាំសុខភាពការថែទាំសុខភាពប្រចាំថ្ងៃ
-                                                        របបអាហារ </p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal1">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/3.jpg" class="card-img-top" alt="Event 2">
-                                                <span
-                                                    class="badge bg-warning position-absolute top-0 start-0 m-2">ពិសេស</span>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ផ្ដល់អាហារសម្រាប់មនុស្សចាស់</h5>
-                                                    <p class="card-text mb-1">
-                                                        ដល់អាហាររូបត្ថម្ភ
-                                                        និងថែទាំមនុស្សចាស់នៅសហគមន៍ដែលកំពុងជួបការខ្វះខាត </p>
-                                                    <p class="card-text">
-                                                        <i class="bi bi-calendar4-event"></i>
-                                                        ថ្ងៃសៅរ៍ ៣១ ខែមិថុនា ២០២៦
-                                                    </p>
-
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal2">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- This Month -->
-                                <div class="tab-pane fade" id="pills-thismonth" role="tabpanel"
-                                    aria-labelledby="pills-thismonth-tab" tabindex="0">
-                                    <div class="row g-4">
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/2.jpg" class="card-img-top" alt="Event 3">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ជួយសម្អាតតាមមាត់ទន្លេពេលបុណ្យអុំទូក</h5>
-                                                    <p class="card-text mb-1">
-                                                        ដើម្បីឪ្យបរិស្ថានក្នុងកំពុងពេលប្រារព្ធពិធីបុណ្យអុំទូកមានភាពស្រស់បំព្រងទាំង៣ថ្ងៃងាយស្រួលទស្សនាការប្រណាំងទូក
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal3">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/4.jpg" class="card-img-top" alt="Event 4">
-                                                <span
-                                                    class="badge bg-danger position-absolute top-0 start-0 m-2">ពិសេស</span>
-                                                <div class="card-body">
-                                                    <h5 class="card-title">គម្រោងផ្ទះកុមារក្រីក្រ</h5>
-                                                    <p class="card-text mb-1">
-                                                        កម្មវិធីស្ម័គ្រចិត្តសម្រាប់ជួយផ្ដល់អាហារ សម្ភារៈសិក្សា
-                                                        និងរៀបចំសកម្មភាពកំសាន្តដល់កុមារក្រីក្រ។</p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal4">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Next Month -->
-                                <div class="tab-pane fade" id="pills-nextmonth" role="tabpanel"
-                                    aria-labelledby="pills-nextmonth-tab" tabindex="0">
-                                    <div class="row g-4">
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/tree.jpg" class="card-img-top"
-                                                    alt="Event 5">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ដាំផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
-                                                    <p class="card-text mb-1">
-                                                        សកម្មភាពស្ម័គ្រចិត្តក្នុងការដាំផ្កានិងរុក្ខជាតិគឺដើម្បីបង្កើនភាពស្រស់ស្អាតលំអសួនតាមដងវិថីនិងបង្កើនបៃតងក្នុងក្រុង។
-                                                    </p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal5">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="card position-relative  h-100">
-                                                <img src="../image/even-soon/srov.jpg" class="card-img-top"
-                                                    alt="Event 6">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
-                                                    <p class="card-text mb-1">
-                                                        ចូលរួមចែករំលែក និងរៀនបច្ចេកទេសថ្មីៗក្នុងការដាំ, ថែ,
-                                                        និងប្រមូលស្រែស្រូវ ដើម្បីបង្កើនផលិតភាព</p>
-                                                </div>
-                                                <div class="card-footer bg-transparent border-0 mb-2">
-                                                    <button class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#eventModal6">ព័ត៍មានលម្អិត</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                 <!-- Modal 1 -->
-                <div class="modal fade" id="eventModal1" tabindex="-1">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">ការផ្សព្វផ្សាយអនាម័យនៅសាលារៀន​</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <img src="../image/even-soon/1.jpg" class="card-img-top" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card border-0 ">
-                                                <div class="card-body​ border-1 shadow p-3 fs-5">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="card-text">
-                                                            <i class="bi bi-calendar-check "></i>
-                                                            <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
-                                                        </p>
-                                                        <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-alarm"></i>
-                                                        <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-geo-alt"></i>
-                                                        <strong>ទីកន្លែង: </strong>ភូមិស្រែកិន ស្រុកបាទី​​ ខេត្តតាកែវ
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-people"></i>
-                                                        <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
-                                                    <ul>
-                                                        <li>អាយុ ≥ 15</li>
-                                                        <li>ត្រូវការចំនួន ២០ នាក់</li>
-                                                        <li>ចូលចិត្តធ្វើសកម្មភាពសង្គម និងថែទាំមនុស្សចាស់</li>
-                                                        <li>​មានភាពឧស្សាហ៏ព្យាយាម</li>
-                                                    </ul>
-                                                    </p>
-                                                    <div>
-                                                        <strong>ពណ៌នា:</strong>
-                                                        អប់រំកុមារអំពីការរក្សាសុភាព និងអនាម័យ ដូចជា ការលាងដៃ,
-                                                        ការប្រើបង្គន់ឲ្យបានត្រឹមត្រូវ, និងការទប់ស្កាត់ជម្ងឺ​​
-                                                        របបអាហារដែលត្រូវញុាំ។
-                                                        កម្មវិធីនេះរួមបញ្ចូល៖
-                                                        <ul>
-                                                            <li>ការបង្រៀន​ វីដេអូអប់រំ</li>
-                                                            <li>ចែកឧបករណ៍សម្អាតដល់កុមារ</li>
-                                                            <li>ផ្សព្វផ្សាយអំពីការអភិរក្សបរិស្ថាន</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-telephone-forward"></i>
-                                                        <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
-                                                    <ul>
-                                                        <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
-                                                        <li>086 280 862</li>
-                                                    </ul>
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 2 -->
-                <div class="modal fade" id="eventModal2" tabindex="-1">
-                    <div class="modal-dialog modal-lg  modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">ផ្ដល់អាហារសម្រាប់មនុស្សចាស់</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <img src="../image/even-soon/3.jpg" class="card-img-top" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <div class="card-body border-1 shadow fs-5">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="card-text">
-                                                            <i class="bi bi-calendar-check "></i>
-                                                            <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
-                                                        </p>
-                                                        <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-alarm"></i>
-                                                        <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-geo-alt"></i>
-                                                        <strong>ទីកន្លែង: </strong>ភូមិស្រែកិន ស្រុកបាទី​​ ខេត្តតាកែវ
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-people"></i>
-                                                        <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
-                                                    <ul>
-                                                        <li>អាយុ ≥ 15</li>
-                                                        <li>ត្រូវការចំនួន ២០ នាក់</li>
-                                                        <li>ចូលចិត្តធ្វើសកម្មភាពសង្គម និងថែទាំមនុស្សចាស់</li>
-                                                        <li>​មានភាពឧស្សាហ៏ព្យាយាម</li>
-                                                    </ul>
-                                                    </p>
-                                                    <div>
-                                                        <strong>ពណ៌នា:</strong>
-                                                        សម្អាតឆ្នេររួមគ្នា ជាមួយស្ម័គ្រចិត្ត និងកុមារ។
-                                                        ចូលរួមកម្មវិធីសម្អាតឆ្នេរ ដើម្បីយកសំរាម
-                                                        និងធ្វើឲ្យបរិស្ថាននៅតំបន់ឆ្នេរស្អាត។
-                                                        អ្នកស្ម័គ្រចិត្តនឹងបានចូលរួមក្នុងសកម្មភាពដូចខាងក្រោម៖
-                                                        <ul>
-                                                            <li>សម្អាតឆ្នេរ និងយកសំរាម</li>
-                                                            <li>ចែកចាយថ្នាំសំអាត និងឧបករណ៍សម្រាប់ស្ម័គ្រចិត្ត</li>
-                                                            <li>ផ្សព្វផ្សាយអំពីការអភិរក្សបរិស្ថាន</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-telephone-forward"></i>
-                                                        <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
-                                                    <ul>
-                                                        <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
-                                                        <li>086 280 862</li>
-                                                    </ul>
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 3 -->
-                <div class="modal fade" id="eventModal3" tabindex="-1">
-                    <div class="modal-dialog modal-lg  modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">ជួយសម្អាតតាមមាត់ទន្លេពេលបុណ្យអុំទូក</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <img src="../image/even-soon/2.jpg" class="card-img-top" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <div class="card-body border-1 shadow fs-5">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="card-text">
-                                                            <i class="bi bi-calendar-check "></i>
-                                                            <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃអង្គារ៏ ០៥ ខែវិច្ឆិកា
-                                                            ២០២៥
-                                                        </p>
-                                                        <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-alarm"></i>
-                                                        <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ១០:០០ ព្រឹក
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-geo-alt"></i>
-                                                        <strong>ទីកន្លែង: </strong>មាត់ទន្លេចតុមុខព្រះបរមរាជ​វាំង,
-                                                        រាជធានីភ្នំពេញ
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-people"></i>
-                                                        <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
-                                                    <ul>
-                                                        <li>អាយុ ≥ 15</li>
-                                                        <li>ត្រូវការចំនួន ២០០ នាក់</li>
-                                                        <li>មានសុខភាពល្អ និងអាចធ្វើការកាយសម្បទាបាន</li>
-                                                        <li>​មានចំណង់ចំណូលចិត្តក្នុងការអភិរក្សបរិស្ថាន</li>
-                                                    </ul>
-                                                    </p>
-                                                    <div>
-                                                        <strong>ពណ៌នា:</strong>
-                                                        ក្នុងពេលបុណ្យអុំទូក ដែលជាពិធីបុណ្យសំខាន់របស់ជាតិ មានភ្ញៀវទេសចរ
-                                                        និងប្រជាពលរដ្ឋចូលរួមរាប់ពាន់នាក់។ ដូច្នេះ
-                                                        ការរក្សាភាពស្អាតតាមមាត់ទន្លេគឺជាកត្តាសំខាន់ក្នុងការទាក់ទាញទេសចរ
-                                                        និងបង្កើនភាពស្រស់ស្អាតឲ្យកាន់តែមានភាពទំនើប។គោលបំណងសំខាន់ៗ៖
-                                                        <ul>
-                                                            <li>ជំរុញឲ្យសហគមន៍ និងយុវជនចូលរួមថែរក្សាបរិស្ថាន។</li>
-                                                            <li>រក្សាភាពស្អាត និងអនាម័យតាមមាត់ទន្លេ
-                                                                ក្នុងពេលមានបុណ្យអុំទូក។</li>
-                                                            <li>បង្កើនការយល់ដឹងអំពីការកាត់បន្ថយកាកសំណល់
-                                                                និងការប្រើប្រាស់ធុងសំរាមត្រឹមត្រូវ។</li>
-                                                            <li>បង្កើតកិច្ចសហការរវាងអង្គការសង្គម ស្ថាប័ន
-                                                                និងស្ម័គ្រចិត្ត។</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-telephone-forward"></i>
-                                                        <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
-                                                    <ul>
-                                                        <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
-                                                        <li>086 280 862</li>
-                                                    </ul>
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 4 -->
-                <div class="modal fade" id="eventModal4" tabindex="-1">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">គម្រោងផ្ទះកុមារក្រីក្រ</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <img src="../image/even-soon/4.jpg" class="card-img-top" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <div class="card-body border-1 shadow fs-5">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="card-text">
-                                                            <i class="bi bi-calendar-check "></i>
-                                                            <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣០ ខែមេសា ឆ្នាំ២០២៦
-                                                        </p>
-                                                        <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-alarm"></i>
-                                                        <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-geo-alt"></i>
-                                                        <strong>ទីកន្លែង: </strong>ភូមិព្រែកធំ ឃុំកំពង់ចាម ស្រុកកំពង់ចាម
-                                                        ខេត្តកំពង់ចាម
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-people"></i>
-                                                        <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
-                                                    <ul>
-                                                        <li>អាយុ ≥ ១៦</li>
-                                                        <li>ត្រូវការចំនួន ២០ នាក់</li>
-                                                        <li>ចេះធ្វើការជាក្រុម</li>
-                                                        <li>មានចិត្តស្ម័គ្រជួយកុមារ​ ​​មានភាពឧស្សាហ៏ព្យាយាម</li>
-                                                    </ul>
-                                                    </p>
-                                                    <div>
-                                                        <strong>ពណ៌នា:</strong>
-                                                        គម្រោងនេះមានគោលបំណងក្នុងការចែករំលែកមាតុភាព
-                                                        និងផ្ដល់ឱកាសឲ្យកុមារដែលកំពុងរស់នៅក្នុងស្ថានភាពក្រីក្រទទួលបានការថែទាំផ្នែកអាហារ
-                                                        អប់រំ និងកំសាន្ត។
-                                                        ការចូលរួមរបស់ស្ម័គ្រចិត្តនឹងជួយជំរុញកុមារឲ្យមានទំនុកចិត្តលើខ្លួនឯង
-                                                        និងបង្កើតបរិយាកាសស្និទ្ធស្នាលក្នុងសហគមន៍។
-                                                        <ul>
-                                                            <li>ផ្ដល់អាហារូបត្ថម្ភដល់កុមារដែលខ្វះខាត។</li>
-                                                            <li>ចែកសម្ភារៈសិក្សា និងលើកទឹកចិត្តឲ្យចូលរៀន។</li>
-                                                            <li>រៀបចំសកម្មភាពកំសាន្ត ដើម្បីបង្កើតភាពរីករាយ
-                                                                និងកាត់បន្ថយស្ត្រេសរបស់កុមារ។</li>
-                                                            <li>បង្កើតទំនាក់ទំនងល្អរវាងកុមារ និងសហគមន៍។</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-telephone-forward"></i>
-                                                        <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
-                                                    <ul>
-                                                        <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
-                                                        <li>086 280 862</li>
-                                                    </ul>
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 5 -->
-                <div class="modal fade" id="eventModal5" tabindex="-1">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">ផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card card-img border-0">
-                                                <img src="../image/even-soon/tree.jpg" class="card-img-top" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <div class="card-body border-1 shadow fs-5">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="card-text">
-                                                            <i class="bi bi-calendar-check "></i>
-                                                            <strong>កាលបរិច្ឆេទ:​​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
-                                                        </p>
-                                                        <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-alarm"></i>
-                                                        <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-geo-alt"></i>
-                                                        <strong>ទីកន្លែង: </strong>ភូមិស្រែកិន ស្រុកបាទី​​ ខេត្តតាកែវ
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-people"></i>
-                                                        <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
-                                                    <ul>
-                                                        <li>អាយុ ≥ 15</li>
-                                                        <li>ត្រូវការចំនួន ៨០ នាក់</li>
-                                                        <li>មានចំណង់ចំណូលចិត្តក្នុងការដាំដើមឈើ/ផ្កា</li>
-                                                        <li>​ពាក់ឯកសណ្ឋានសមរម្យសម្រាប់ធ្វើការក្រៅផ្ទះ។</li>
-                                                    </ul>
-                                                    </p>
-                                                    <div>
-                                                        <strong>ពណ៌នា:</strong>
-                                                        ព្រឹត្តិការណ៍នេះមានគោលបំណងលើកស្ទួយស្មារតីថែរក្សាបរិស្ថាន
-                                                        និងបង្កើតទេសភាពបៃតងសម្រាប់សហគមន៍ទីក្រុង។
-                                                        ការដាំផ្កានឹងជួយឲ្យសួនសាធារណៈក្លាយជាកន្លែងសម្រាកសំខាន់សម្រាប់ប្រជាពលរដ្ឋ
-                                                        និងជួយកាត់បន្ថយភាពក្តៅនៃទីក្រុង។
-                                                        <ul>
-                                                            <li>បង្កើតបរិយាកាសបៃតង និងស្រស់ស្អាតក្នុងក្រុង។</li>
-                                                            <li>លើកទឹកចិត្តសាធារណៈឲ្យចូលរួមថែរក្សាបរិស្ថាន។</li>
-                                                            <li>ផ្តល់ជាកន្លែងម្លប់សម្រាកសម្រាប់សាធារណជន</li>
-                                                            <li>បង្កើតស្មារតីសហគមន៍ក្នុងការដាំ និងថែទាំផ្កា។</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-telephone-forward"></i>
-                                                        <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
-                                                    <ul>
-                                                        <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
-                                                        <li>086 280 862</li>
-                                                    </ul>
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 6 -->
-                <div class="modal fade" id="eventModal6" tabindex="-1">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <img src="../image/even-soon/srov.jpg" class="card-img-top" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card border-0">
-                                                <div class="card-body border-1 shadow fs-5">
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="card-text">
-                                                            <i class="bi bi-calendar-check "></i>
-                                                            <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣0 ខែ កក្កដា ២០២៦
-                                                        </p>
-                                                        <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-alarm"></i>
-                                                        <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-geo-alt"></i>
-                                                        <strong>ទីកន្លែង: </strong>ភូមិព្រែកត្នោត, ឃុំព្រែកត្នោត,
-                                                        ស្រុកស្ទឹងសែន, ខេត្តកណ្ដាល
-                                                    </p>
-                                                    <p>
-                                                        <i class="bi bi-people"></i>
-                                                        <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
-                                                    <ul>
-                                                        <li>អាយុ ≥ 15</li>
-                                                        <li>ត្រូវការចំនួន ១០ នាក់</li>
-                                                        <li>ចូលចិត្តកសិកម្ម និងចង់រៀនបច្ចេកទេសថ្មីៗ</li>
-                                                        <li>មានមនោសញ្ចេតនាចែករំលែកចំណេះដឹង</li>
-                                                    </ul>
-                                                    </p>
-                                                    <div>
-                                                        <strong>ពណ៌នា:</strong>
-                                                        ព្រឹត្តិការណ៍ “ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ” នេះ
-                                                        ផ្តល់ឱកាសឲ្យកសិករ និងស្ម័គ្រចិត្តក្នុងសហគមន៍ចូលរួម រៀន
-                                                        និងចែករំលែកបច្ចេកទេសកសិកម្មស្រែស្រូវ ដូចជា ការដាំ, ថែ, ប្រមូលផល
-                                                        និងគ្រប់គ្រងទឹកស្រែ។
-                                                        <ul>
-                                                            <li>ផ្តល់ចំណេះដឹងថ្មីៗ និងបច្ចេកទេសស្រែស្រូវឲ្យកសិករ</li>
-                                                            <li>លើកកម្ពស់ការសហការនិងសមាសភាពសហគមន៍</li>
-                                                            <li>ផជំរុញការអនុវត្តវិធីសាស្រ្តចំរើនផល</li>
-                                                        </ul>
-
-                                                    </div>
-                                                    <p>
-                                                        <i class="bi bi-telephone-forward"></i>
-                                                        <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
-                                                    <ul>
-                                                        <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
-                                                        <li>086 280 862</li>
-                                                    </ul>
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-        </main>
-
-
-        <footer class="footer mt-auto pt-5 pb-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4">
-                        <div class="footer-logo">
-                            <img src="../image/logo-removebg.png" alt="">
-                            <p class="footer-text mt-3">
-                                ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
-                                ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
-                                និងទំនុកចិត្តលើខ្លួនឯង។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                        <div class="footer-page">
-                            <h4>
-                                ទំព័រ
-                            </h4>
-                            <ul class="footer-ul list-unstyled">
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ទំព័រដើម
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ការងារស្ម័គ្រចិត្ត
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ព្រឹត្តិការណ៏
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        សកម្មភាព
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        បរិច្ចាក
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        អំពីយើង
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 d-xl-flex justify-content-xl-center">
-                        <div class="footer-page">
-                            <h4>
-                                ទំនាក់ទំនង
-                            </h4>
-                            <ul class="footer-ul list-unstyled">
-                                <li>
-                                    <a href="#" class="footer-link d-flex">
-                                        <i class="bi bi-envelope-at"></i>
-                                        <span class="ps-2">
-                                            volunteerCambo@gmail.com
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link d-flex">
-                                        <i class="bi bi-geo-alt"></i>
-                                        <span class="ps-2">
-                                            Tul kok , Phmom Penh , Cambodia
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link d-flex">
-                                        <i class="bi bi-telephone"></i>
-                                        <span class="ps-2">
-                                            +85568382800
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="footer-social">
-                            <h4>
-                                តាមដានយើង
-                            </h4>
-                            <ul class="list-unstyled d-flex">
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/facebook.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/telegram.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/instagram.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/twitter.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <p class="text-center">
-                    @ANT SCHOLARSHIP2 | GROUP9
-                </p>
-            </div>
-        </footer>
-
-
-
-        <!-- Modal Search -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-
-
-                        <form class="d-flex">
-                            <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                            <button type="submit" class="btn btn-primary rounded ms-2">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </form>
-
-
-
-
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- JS Script -->
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/main.js"></script>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand " href="homepage.html">
+                    <img src="../image/logo-removebg.png" alt="">
+                    ស្ម័គ្រចិត្ត
+                </a>
+
+                <!-- Offcanvas toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="homepage.html">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Browse Opportunities/opportunities.html">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="eventpage.html">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="activity.html">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Donation.html">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
+                    <li>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="dropdown nav-notification">
+                            <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell-fill"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
+                                    3
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="ps-3">
+                                    <h3 class="fs-5">ការជូនដំណឹង</h3>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/facebook.png" alt="" class="">
+                                        <span class="ps-2">
+                                            Facebook <br>
+                                            អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
+                                            <span class="text-secondary">
+                                                ឥឡូវនេះ
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/setting.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការកំណត់ <br>
+                                            អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
+                                            <span class="text-secondary">
+                                                ៣០នាទីមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/mark.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការដាក់ពាក្យ <br>
+                                            ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
+                                            <span class="text-secondary">
+                                                ២ម៉ោងមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class=" my-3 d-flex justify-content-center">
+                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                        មើលការជូនដំណឹងទាំងអស់
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../image/profile.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="userprofile.html">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
 
-    </body>
+    </header>
+    <main class="flex-grow-1">
+        <section class="event-banner">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-xl-7 d-flex justify-center">
+                        <div class="card bg-transparent border-0 ">
+                            <div class="card-body ">
+                                <h1> ព្រឹត្តិការណ៍ពិសេសដែលនឹងមកដល់ឆាប់ៗ</h1>
+                                <p>ចូលរួមជាមួយយើងសម្រាប់កម្មវិធីដ៏អស្ចារ្យ ដែលនឹងផ្តល់បទពិសោធន៍ថ្មី
+                                    និងឱកាសសហការដ៏មានតម្លៃ។</p>
+                                <ul class="list-unstyled ">
+                                    <li>
+                                        <i class="fa-solid fa-star-half-stroke me-2"></i>
+                                        ជួយសហគមន៍កុមារកំព្រា ចាស់ជរា
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-book  me-2"></i>
+                                        ផ្តល់ការបង្រៀន និងចែករំលែកចំណេះដឹង
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-users me-2"></i>
+                                        បង្កើតបណ្ដាញសហគមន៍ និងការតភ្ជាប់មិត្តភាព
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-gift me-2"></i>
+                                        ចូលរួមក្នុងការផ្តល់ជំនួយ និងការផ្តល់អំណោយ
+                                    </li>
+                                </ul>
+                                <a href="#eventnew" role="button"
+                                    class="btn event-btn btn-outline-warning mt-3 fs-5 px-4">មើលព្រឹត្តិការណ៍ថ្មីៗ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="card image-stack border-0 bg-transparent">
+                            <img src="../image/even-soon/4.jpg" alt="volunteer1" class="stack-img img1">
+                            <img src="../image/even-soon/7.jpg" alt="volunteer2" class="stack-img img2">
+                            <img src="../image/even-soon/8.jpg" alt="volunteer3" class="stack-img img3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-event" id="eventnew">
+            <div class="container ">
+                <div class="row">
+                    <!-- Filter Tabs -->
+                    <div class="col-12 col-lg-6 mb-3">
+                        <ul class="nav  nav-underline  mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-all" type="button" role="tab"
+                                    aria-selected="true">ទាំងអស់</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-thisweek-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-thisweek" type="button" role="tab"
+                                    aria-selected="false">សប្តាហ៍នេះ</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-thismonth-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-thismonth" type="button" role="tab"
+                                    aria-selected="false">ខែនេះ</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-nextmonth-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-nextmonth" type="button" role="tab"
+                                    aria-selected="false">ខែក្រោយ</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form action="" class="d-flex">
+                            <input type="text" class="form-control border-1" placeholder="ស្វែងរកព្រឹត្តិការណ៍">
+                            <button type="button" class="btn btn-primary ms-2 w-25 py-2">
+                                <span>ស្វែងរក</span>
+
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="tab-content bg-transparent">
+                            <!-- All Events -->
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                                aria-labelledby="pills-all-tab" tabindex="0">
+                                <div class="row g-4 ">
+                                    <!-- Card 1 -->
+                                    <div class="col-md-4">
+                                        <div class="card position-relative h-100">
+                                            <img src="../image/even-soon/1.jpg" class="card-img-top" alt="event1">
+                                            <span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-2">សុខភាព</span>
+                                            <div class="card-body">
+                                                <h5 class="card-title">ផ្សព្វផ្សាយអនាម័យនៅសាលារៀន</h5>
+                                                <p class="card-text mb-1">
+                                                    ដើម្បីឪ្យកុមារយល់ដឹង​ពីការថែទាំសុខភាពការថែទាំសុខភាពប្រចាំថ្ងៃ
+                                                    របបអាហារ </p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal1">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/3.jpg" class="card-img-top" alt="Event 2">
+                                            <span
+                                                class="badge bg-warning position-absolute top-0 start-0 m-2">ពិសេស</span>
+                                            <div class="card-body">
+                                                <h5 class="card-title">ផ្ដល់អាហារសម្រាប់មនុស្សចាស់</h5>
+                                                <p class="card-text mb-1">
+                                                    ដល់អាហាររូបត្ថម្ភ
+                                                    និងថែទាំមនុស្សចាស់នៅសហគមន៍ដែលកំពុងជួបការខ្វះខាត </p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    ថ្ងៃសៅរ៍ ៣១ ខែមិថុនា ២០២៦
+                                                </p>
+
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal2">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/2.jpg" class="card-img-top" alt="Event 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ជួយសម្អាតតាមមាត់ទន្លេពេលបុណ្យអុំទូក</h5>
+                                                <p class="card-text mb-1">
+                                                    ដើម្បីឪ្យបរិស្ថានក្នុងកំពុងពេលប្រារព្ធពិធីបុណ្យអុំទូកមានភាពស្រស់បំព្រងទាំង៣ថ្ងៃងាយស្រួលទស្សនាការប្រណាំងទូក
+                                                </p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    ថ្ងៃអង្គារ៏ ០៥ ខែវិច្ឆិកា ២០២៥
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal3">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 4 -->
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/4.jpg" class="card-img-top" alt="Event 4">
+                                            <span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-2">ពិសេស</span>
+                                            <div class="card-body">
+                                                <h5 class="card-title">គម្រោងផ្ទះកុមារក្រីក្រ</h5>
+                                                <p class="card-text mb-1">
+                                                    កម្មវិធីស្ម័គ្រចិត្តសម្រាប់ជួយផ្ដល់អាហារ សម្ភារៈសិក្សា
+                                                    និងរៀបចំសកម្មភាពកំសាន្តដល់កុមារក្រីក្រ។</p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    ថ្ងៃសៅរ៍ ៣០ ខែមេសា ឆ្នាំ២០២៦
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal4">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 5 -->
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/tree.jpg" class="card-img-top" alt="Event 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ដាំផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
+                                                <p class="card-text mb-1">
+                                                    សកម្មភាពស្ម័គ្រចិត្តក្នុងការដាំផ្កានិងរុក្ខជាតិគឺដើម្បីបង្កើនភាពស្រស់ស្អាតលំអសួនតាមដងវិថីនិងបង្កើនបៃតងក្នុងក្រុង។
+                                                </p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    ថ្ងៃសៅរ៍ ២០ ខែមករា ២០២៦
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal5">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 6 -->
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/srov.jpg" class="card-img-top" alt="Event 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
+                                                <p class="card-text mb-1">
+                                                    ចូលរួមចែករំលែក និងរៀនបច្ចេកទេសថ្មីៗក្នុងការដាំ, ថែ,
+                                                    និងប្រមូលស្រែស្រូវ ដើម្បីបង្កើនផលិតភាព</p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal6">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- This Week -->
+                            <div class="tab-pane fade" id="pills-thisweek" role="tabpanel"
+                                aria-labelledby="pills-thisweek-tab" tabindex="0">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card position-relative h-100">
+                                            <img src="../image/even-soon/1.jpg" class="card-img-top" alt="event1">
+                                            <span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-2">សុខភាព</span>
+                                            <div class="card-body">
+                                                <h5 class="card-title">ផ្សព្វផ្សាយអនាម័យនៅសាលារៀន</h5>
+                                                <p class="card-text mb-1">
+                                                    ដើម្បីឪ្យកុមារយល់ដឹង​ពីការថែទាំសុខភាពការថែទាំសុខភាពប្រចាំថ្ងៃ
+                                                    របបអាហារ </p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal1">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/3.jpg" class="card-img-top" alt="Event 2">
+                                            <span
+                                                class="badge bg-warning position-absolute top-0 start-0 m-2">ពិសេស</span>
+                                            <div class="card-body">
+                                                <h5 class="card-title">ផ្ដល់អាហារសម្រាប់មនុស្សចាស់</h5>
+                                                <p class="card-text mb-1">
+                                                    ដល់អាហាររូបត្ថម្ភ
+                                                    និងថែទាំមនុស្សចាស់នៅសហគមន៍ដែលកំពុងជួបការខ្វះខាត </p>
+                                                <p class="card-text">
+                                                    <i class="bi bi-calendar4-event"></i>
+                                                    ថ្ងៃសៅរ៍ ៣១ ខែមិថុនា ២០២៦
+                                                </p>
+
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal2">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- This Month -->
+                            <div class="tab-pane fade" id="pills-thismonth" role="tabpanel"
+                                aria-labelledby="pills-thismonth-tab" tabindex="0">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/2.jpg" class="card-img-top" alt="Event 3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ជួយសម្អាតតាមមាត់ទន្លេពេលបុណ្យអុំទូក</h5>
+                                                <p class="card-text mb-1">
+                                                    ដើម្បីឪ្យបរិស្ថានក្នុងកំពុងពេលប្រារព្ធពិធីបុណ្យអុំទូកមានភាពស្រស់បំព្រងទាំង៣ថ្ងៃងាយស្រួលទស្សនាការប្រណាំងទូក
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal3">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/4.jpg" class="card-img-top" alt="Event 4">
+                                            <span
+                                                class="badge bg-danger position-absolute top-0 start-0 m-2">ពិសេស</span>
+                                            <div class="card-body">
+                                                <h5 class="card-title">គម្រោងផ្ទះកុមារក្រីក្រ</h5>
+                                                <p class="card-text mb-1">
+                                                    កម្មវិធីស្ម័គ្រចិត្តសម្រាប់ជួយផ្ដល់អាហារ សម្ភារៈសិក្សា
+                                                    និងរៀបចំសកម្មភាពកំសាន្តដល់កុមារក្រីក្រ។</p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal4">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Next Month -->
+                            <div class="tab-pane fade" id="pills-nextmonth" role="tabpanel"
+                                aria-labelledby="pills-nextmonth-tab" tabindex="0">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/tree.jpg" class="card-img-top" alt="Event 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ដាំផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
+                                                <p class="card-text mb-1">
+                                                    សកម្មភាពស្ម័គ្រចិត្តក្នុងការដាំផ្កានិងរុក្ខជាតិគឺដើម្បីបង្កើនភាពស្រស់ស្អាតលំអសួនតាមដងវិថីនិងបង្កើនបៃតងក្នុងក្រុង។
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal5">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card position-relative  h-100">
+                                            <img src="../image/even-soon/srov.jpg" class="card-img-top" alt="Event 6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
+                                                <p class="card-text mb-1">
+                                                    ចូលរួមចែករំលែក និងរៀនបច្ចេកទេសថ្មីៗក្នុងការដាំ, ថែ,
+                                                    និងប្រមូលស្រែស្រូវ ដើម្បីបង្កើនផលិតភាព</p>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0 mb-2">
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#eventModal6">ព័ត៍មានលម្អិត</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="eventModal1" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ការផ្សព្វផ្សាយអនាម័យនៅសាលារៀន​</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <img src="../image/even-soon/1.jpg" class="card-img-top" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0 ">
+                                            <div class="card-body​ border-1 shadow p-3 fs-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="card-text">
+                                                        <i class="bi bi-calendar-check "></i>
+                                                        <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-alarm"></i>
+                                                    <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    <strong>ទីកន្លែង: </strong>ភូមិស្រែកិន ស្រុកបាទី​​ ខេត្តតាកែវ
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-people"></i>
+                                                    <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
+                                                <ul>
+                                                    <li>អាយុ ≥ 15</li>
+                                                    <li>ត្រូវការចំនួន ២០ នាក់</li>
+                                                    <li>ចូលចិត្តធ្វើសកម្មភាពសង្គម និងថែទាំមនុស្សចាស់</li>
+                                                    <li>​មានភាពឧស្សាហ៏ព្យាយាម</li>
+                                                </ul>
+                                                </p>
+                                                <div>
+                                                    <strong>ពណ៌នា:</strong>
+                                                    អប់រំកុមារអំពីការរក្សាសុភាព និងអនាម័យ ដូចជា ការលាងដៃ,
+                                                    ការប្រើបង្គន់ឲ្យបានត្រឹមត្រូវ, និងការទប់ស្កាត់ជម្ងឺ​​
+                                                    របបអាហារដែលត្រូវញុាំ។
+                                                    កម្មវិធីនេះរួមបញ្ចូល៖
+                                                    <ul>
+                                                        <li>ការបង្រៀន​ វីដេអូអប់រំ</li>
+                                                        <li>ចែកឧបករណ៍សម្អាតដល់កុមារ</li>
+                                                        <li>ផ្សព្វផ្សាយអំពីការអភិរក្សបរិស្ថាន</li>
+                                                    </ul>
+
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                    <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
+                                                <ul>
+                                                    <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
+                                                    <li>086 280 862</li>
+                                                </ul>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="eventModal2" tabindex="-1">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ផ្ដល់អាហារសម្រាប់មនុស្សចាស់</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <img src="../image/even-soon/3.jpg" class="card-img-top" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <div class="card-body border-1 shadow fs-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="card-text">
+                                                        <i class="bi bi-calendar-check "></i>
+                                                        <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-alarm"></i>
+                                                    <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    <strong>ទីកន្លែង: </strong>ភូមិស្រែកិន ស្រុកបាទី​​ ខេត្តតាកែវ
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-people"></i>
+                                                    <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
+                                                <ul>
+                                                    <li>អាយុ ≥ 15</li>
+                                                    <li>ត្រូវការចំនួន ២០ នាក់</li>
+                                                    <li>ចូលចិត្តធ្វើសកម្មភាពសង្គម និងថែទាំមនុស្សចាស់</li>
+                                                    <li>​មានភាពឧស្សាហ៏ព្យាយាម</li>
+                                                </ul>
+                                                </p>
+                                                <div>
+                                                    <strong>ពណ៌នា:</strong>
+                                                    សម្អាតឆ្នេររួមគ្នា ជាមួយស្ម័គ្រចិត្ត និងកុមារ។
+                                                    ចូលរួមកម្មវិធីសម្អាតឆ្នេរ ដើម្បីយកសំរាម
+                                                    និងធ្វើឲ្យបរិស្ថាននៅតំបន់ឆ្នេរស្អាត។
+                                                    អ្នកស្ម័គ្រចិត្តនឹងបានចូលរួមក្នុងសកម្មភាពដូចខាងក្រោម៖
+                                                    <ul>
+                                                        <li>សម្អាតឆ្នេរ និងយកសំរាម</li>
+                                                        <li>ចែកចាយថ្នាំសំអាត និងឧបករណ៍សម្រាប់ស្ម័គ្រចិត្ត</li>
+                                                        <li>ផ្សព្វផ្សាយអំពីការអភិរក្សបរិស្ថាន</li>
+                                                    </ul>
+
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                    <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
+                                                <ul>
+                                                    <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
+                                                    <li>086 280 862</li>
+                                                </ul>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 3 -->
+            <div class="modal fade" id="eventModal3" tabindex="-1">
+                <div class="modal-dialog modal-lg  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ជួយសម្អាតតាមមាត់ទន្លេពេលបុណ្យអុំទូក</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <img src="../image/even-soon/2.jpg" class="card-img-top" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <div class="card-body border-1 shadow fs-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="card-text">
+                                                        <i class="bi bi-calendar-check "></i>
+                                                        <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃអង្គារ៏ ០៥ ខែវិច្ឆិកា
+                                                        ២០២៥
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-alarm"></i>
+                                                    <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ១០:០០ ព្រឹក
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    <strong>ទីកន្លែង: </strong>មាត់ទន្លេចតុមុខព្រះបរមរាជ​វាំង,
+                                                    រាជធានីភ្នំពេញ
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-people"></i>
+                                                    <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
+                                                <ul>
+                                                    <li>អាយុ ≥ 15</li>
+                                                    <li>ត្រូវការចំនួន ២០០ នាក់</li>
+                                                    <li>មានសុខភាពល្អ និងអាចធ្វើការកាយសម្បទាបាន</li>
+                                                    <li>​មានចំណង់ចំណូលចិត្តក្នុងការអភិរក្សបរិស្ថាន</li>
+                                                </ul>
+                                                </p>
+                                                <div>
+                                                    <strong>ពណ៌នា:</strong>
+                                                    ក្នុងពេលបុណ្យអុំទូក ដែលជាពិធីបុណ្យសំខាន់របស់ជាតិ មានភ្ញៀវទេសចរ
+                                                    និងប្រជាពលរដ្ឋចូលរួមរាប់ពាន់នាក់។ ដូច្នេះ
+                                                    ការរក្សាភាពស្អាតតាមមាត់ទន្លេគឺជាកត្តាសំខាន់ក្នុងការទាក់ទាញទេសចរ
+                                                    និងបង្កើនភាពស្រស់ស្អាតឲ្យកាន់តែមានភាពទំនើប។គោលបំណងសំខាន់ៗ៖
+                                                    <ul>
+                                                        <li>ជំរុញឲ្យសហគមន៍ និងយុវជនចូលរួមថែរក្សាបរិស្ថាន។</li>
+                                                        <li>រក្សាភាពស្អាត និងអនាម័យតាមមាត់ទន្លេ
+                                                            ក្នុងពេលមានបុណ្យអុំទូក។</li>
+                                                        <li>បង្កើនការយល់ដឹងអំពីការកាត់បន្ថយកាកសំណល់
+                                                            និងការប្រើប្រាស់ធុងសំរាមត្រឹមត្រូវ។</li>
+                                                        <li>បង្កើតកិច្ចសហការរវាងអង្គការសង្គម ស្ថាប័ន
+                                                            និងស្ម័គ្រចិត្ត។</li>
+                                                    </ul>
+
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                    <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
+                                                <ul>
+                                                    <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
+                                                    <li>086 280 862</li>
+                                                </ul>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 4 -->
+            <div class="modal fade" id="eventModal4" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">គម្រោងផ្ទះកុមារក្រីក្រ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <img src="../image/even-soon/4.jpg" class="card-img-top" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <div class="card-body border-1 shadow fs-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="card-text">
+                                                        <i class="bi bi-calendar-check "></i>
+                                                        <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣០ ខែមេសា ឆ្នាំ២០២៦
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-alarm"></i>
+                                                    <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    <strong>ទីកន្លែង: </strong>ភូមិព្រែកធំ ឃុំកំពង់ចាម ស្រុកកំពង់ចាម
+                                                    ខេត្តកំពង់ចាម
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-people"></i>
+                                                    <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
+                                                <ul>
+                                                    <li>អាយុ ≥ ១៦</li>
+                                                    <li>ត្រូវការចំនួន ២០ នាក់</li>
+                                                    <li>ចេះធ្វើការជាក្រុម</li>
+                                                    <li>មានចិត្តស្ម័គ្រជួយកុមារ​ ​​មានភាពឧស្សាហ៏ព្យាយាម</li>
+                                                </ul>
+                                                </p>
+                                                <div>
+                                                    <strong>ពណ៌នា:</strong>
+                                                    គម្រោងនេះមានគោលបំណងក្នុងការចែករំលែកមាតុភាព
+                                                    និងផ្ដល់ឱកាសឲ្យកុមារដែលកំពុងរស់នៅក្នុងស្ថានភាពក្រីក្រទទួលបានការថែទាំផ្នែកអាហារ
+                                                    អប់រំ និងកំសាន្ត។
+                                                    ការចូលរួមរបស់ស្ម័គ្រចិត្តនឹងជួយជំរុញកុមារឲ្យមានទំនុកចិត្តលើខ្លួនឯង
+                                                    និងបង្កើតបរិយាកាសស្និទ្ធស្នាលក្នុងសហគមន៍។
+                                                    <ul>
+                                                        <li>ផ្ដល់អាហារូបត្ថម្ភដល់កុមារដែលខ្វះខាត។</li>
+                                                        <li>ចែកសម្ភារៈសិក្សា និងលើកទឹកចិត្តឲ្យចូលរៀន។</li>
+                                                        <li>រៀបចំសកម្មភាពកំសាន្ត ដើម្បីបង្កើតភាពរីករាយ
+                                                            និងកាត់បន្ថយស្ត្រេសរបស់កុមារ។</li>
+                                                        <li>បង្កើតទំនាក់ទំនងល្អរវាងកុមារ និងសហគមន៍។</li>
+                                                    </ul>
+
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                    <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
+                                                <ul>
+                                                    <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
+                                                    <li>086 280 862</li>
+                                                </ul>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 5 -->
+            <div class="modal fade" id="eventModal5" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card card-img border-0">
+                                            <img src="../image/even-soon/tree.jpg" class="card-img-top" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <div class="card-body border-1 shadow fs-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="card-text">
+                                                        <i class="bi bi-calendar-check "></i>
+                                                        <strong>កាលបរិច្ឆេទ:​​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-alarm"></i>
+                                                    <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    <strong>ទីកន្លែង: </strong>ភូមិស្រែកិន ស្រុកបាទី​​ ខេត្តតាកែវ
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-people"></i>
+                                                    <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
+                                                <ul>
+                                                    <li>អាយុ ≥ 15</li>
+                                                    <li>ត្រូវការចំនួន ៨០ នាក់</li>
+                                                    <li>មានចំណង់ចំណូលចិត្តក្នុងការដាំដើមឈើ/ផ្កា</li>
+                                                    <li>​ពាក់ឯកសណ្ឋានសមរម្យសម្រាប់ធ្វើការក្រៅផ្ទះ។</li>
+                                                </ul>
+                                                </p>
+                                                <div>
+                                                    <strong>ពណ៌នា:</strong>
+                                                    ព្រឹត្តិការណ៍នេះមានគោលបំណងលើកស្ទួយស្មារតីថែរក្សាបរិស្ថាន
+                                                    និងបង្កើតទេសភាពបៃតងសម្រាប់សហគមន៍ទីក្រុង។
+                                                    ការដាំផ្កានឹងជួយឲ្យសួនសាធារណៈក្លាយជាកន្លែងសម្រាកសំខាន់សម្រាប់ប្រជាពលរដ្ឋ
+                                                    និងជួយកាត់បន្ថយភាពក្តៅនៃទីក្រុង។
+                                                    <ul>
+                                                        <li>បង្កើតបរិយាកាសបៃតង និងស្រស់ស្អាតក្នុងក្រុង។</li>
+                                                        <li>លើកទឹកចិត្តសាធារណៈឲ្យចូលរួមថែរក្សាបរិស្ថាន។</li>
+                                                        <li>ផ្តល់ជាកន្លែងម្លប់សម្រាកសម្រាប់សាធារណជន</li>
+                                                        <li>បង្កើតស្មារតីសហគមន៍ក្នុងការដាំ និងថែទាំផ្កា។</li>
+                                                    </ul>
+
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                    <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
+                                                <ul>
+                                                    <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
+                                                    <li>086 280 862</li>
+                                                </ul>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 6 -->
+            <div class="modal fade" id="eventModal6" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <img src="../image/even-soon/srov.jpg" class="card-img-top" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card border-0">
+                                            <div class="card-body border-1 shadow fs-5">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="card-text">
+                                                        <i class="bi bi-calendar-check "></i>
+                                                        <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣0 ខែ កក្កដា ២០២៦
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-alarm"></i>
+                                                    <strong>ម៉ោង: </strong>ម៉ោង​៧:០០ ព្រឹក - ៥:០០ ល្ងាច
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    <strong>ទីកន្លែង: </strong>ភូមិព្រែកត្នោត, ឃុំព្រែកត្នោត,
+                                                    ស្រុកស្ទឹងសែន, ខេត្តកណ្ដាល
+                                                </p>
+                                                <p>
+                                                    <i class="bi bi-people"></i>
+                                                    <strong>លក្ខខណ្ឌសម្រាប់ចូលរួម:</strong>
+                                                <ul>
+                                                    <li>អាយុ ≥ 15</li>
+                                                    <li>ត្រូវការចំនួន ១០ នាក់</li>
+                                                    <li>ចូលចិត្តកសិកម្ម និងចង់រៀនបច្ចេកទេសថ្មីៗ</li>
+                                                    <li>មានមនោសញ្ចេតនាចែករំលែកចំណេះដឹង</li>
+                                                </ul>
+                                                </p>
+                                                <div>
+                                                    <strong>ពណ៌នា:</strong>
+                                                    ព្រឹត្តិការណ៍ “ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ” នេះ
+                                                    ផ្តល់ឱកាសឲ្យកសិករ និងស្ម័គ្រចិត្តក្នុងសហគមន៍ចូលរួម រៀន
+                                                    និងចែករំលែកបច្ចេកទេសកសិកម្មស្រែស្រូវ ដូចជា ការដាំ, ថែ, ប្រមូលផល
+                                                    និងគ្រប់គ្រងទឹកស្រែ។
+                                                    <ul>
+                                                        <li>ផ្តល់ចំណេះដឹងថ្មីៗ និងបច្ចេកទេសស្រែស្រូវឲ្យកសិករ</li>
+                                                        <li>លើកកម្ពស់ការសហការនិងសមាសភាពសហគមន៍</li>
+                                                        <li>ផជំរុញការអនុវត្តវិធីសាស្រ្តចំរើនផល</li>
+                                                    </ul>
+
+                                                </div>
+                                                <p>
+                                                    <i class="bi bi-telephone-forward"></i>
+                                                    <strong>អ្នករៀបចំ/ទំនាក់ទំនង:</strong>
+                                                <ul>
+                                                    <li>លោក​ សុធា មុន្នី - អ្នករៀបចំក្រុម</li>
+                                                    <li>086 280 862</li>
+                                                </ul>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បិទ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer mt-auto pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-logo">
+                        <img src="../image/logo-removebg.png" alt="">
+                        <p class="footer-text mt-3">
+                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
+                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
+                            និងទំនុកចិត្តលើខ្លួនឯង។
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំនាក់ទំនង
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-envelope-at"></i>
+                                    <span class="ps-2">
+                                        volunteerCambo@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="ps-2">
+                                        Tul kok , Phmom Penh , Cambodia
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="ps-2">
+                                        +85568382800
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <h4>
+                            តាមដានយើង
+                        </h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">
+                @ANT SCHOLARSHIP2 | GROUP9
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <form class="d-flex">
+                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
+                        <button type="submit" class="btn btn-primary rounded ms-2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+
+
+</body>
 
 
 </html>

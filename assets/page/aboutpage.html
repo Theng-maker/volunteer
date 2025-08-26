@@ -16,1158 +16,1237 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
+<body class="d-flex flex-column h-100">
+    <header class="fixed-top shadow-sm">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-list list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a href="aboutpage.html" class="nav-link ps-0">
+                            អំពីយើង
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">
+                            ទំនាក់ទំនង
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-action d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-globe2"></i>
+                            <span class="align-content-center">
+                                ភាសាខ្មែរ
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/Cambodia.png" alt="">
+                                    <span>
+                                        ភាសាខ្មែរ
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/england.png" alt="">
+                                    <span>
+                                        ភាសាអង់គ្លេស
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../image/Icon/arabic.png" alt="">
+                                    <span>
+                                        ភាសាអារ៉ាប់
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                        aria-label="Change to light theme">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
 
+            </div>
+        </div>
 
-    <body  class="d-flex flex-column h-100">
-        <header  class="fixed-top shadow-sm">
-            <div class="top-header">
-                <div class="container d-flex justify-content-between align-items-center">
-                    <ul class="nav-list list-unstyled d-flex m-0">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ps-0">
-                                អំពីយើង
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                ទំនាក់ទំនង
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="nav-action d-flex align-items-center">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand " href="#">
+                    <img src="../image/logo-removebg.png" alt="">
+                    ស្ម័គ្រចិត្ត
+                </a>
+
+                <!-- Offcanvas toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="homepage.html">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Browse Opportunities/opportunities.html">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="eventpage.html">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="activity.html">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Donation.html">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
+                    <li>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="dropdown nav-notification">
+                            <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <i class="bi bi-globe2"></i>
-                                <span class="align-content-center">
-                                    ភាសាខ្មែរ
+                                <i class="bi bi-bell-fill"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
+                                    3
                                 </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="ps-3">
+                                    <h3 class="fs-5">ការជូនដំណឹង</h3>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/facebook.png" alt="" class="">
+                                        <span class="ps-2">
+                                            Facebook <br>
+                                            អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
+                                            <span class="text-secondary">
+                                                ឥឡូវនេះ
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/setting.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការកំណត់ <br>
+                                            អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
+                                            <span class="text-secondary">
+                                                ៣០នាទីមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/mark.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការដាក់ពាក្យ <br>
+                                            ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
+                                            <span class="text-secondary">
+                                                ២ម៉ោងមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class=" my-3 d-flex justify-content-center">
+                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                        មើលការជូនដំណឹងទាំងអស់
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../image/profile.png" alt="">
                             </button>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                        <img src="../image/Icon/Cambodia.png" alt="">
-                                        <span>
-                                            ភាសាខ្មែរ
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
                                         </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                        <img src="../image/Icon/england.png" alt="">
-                                        <span>
-                                            ភាសាអង់គ្លេស
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../image/Icon/arabic.png" alt="">
-                                        <span>
-                                            ភាសាអារ៉ាប់
+                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
                                         </span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
-                            aria-label="Change to light theme">
-                            <i class="bi bi-moon-fill"></i>
-                        </button>
-                    </div>
-
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1">
+        <section class="about-mession">
+            <div class="container">
+                <div class="mession-title text-center mt-5">
+                    <div class="about-label  rounded-4 mx-auto fs-5">អំពីយើង</div>
+                    <h2 class="py-3">សូមស្វាគមន៍មកកាន់ស្ម័គ្រចិត្ត!</h2>
+                    <div class="line-style mx-auto mb-3"></div>
+                    <p class="mb-2 fs-5">យើងមានចក្ខុវិស័យឃើញសង្គមមានឱកាសស្មើគ្នា ដោយមនុស្សគ្រប់រូបទទួលបានអប់រំ
+                        និងជីវភាពប្រសើរឡើង។</p>
+                    <p class="fs-5">យើងតស៊ូដើម្បីផ្តល់ឱកាសអប់រំ ការបណ្តុះបណ្តាល និងគាំទ្រសហគមន៍ឱ្យមានជីវភាពប្រសើរឡើង
+                        តាមរយៈការច្នៃប្រឌិត និងសហការណ៍ជាមួយដៃគូដើម្បីផ្លាស់ប្តូរសង្គមឱ្យប្រសើរឡើង យើងបានកំណត់គោលដៅ។
+                    </p>
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-lg bg-white">
-                <div class="container">
-                    <a class="navbar-brand " href="#">
-                        <img src="../image/Logo.jpg" alt="">
-                        ស្ម័គ្រចិត្ត
-                    </a>
-
-                    <!-- Offcanvas toggle button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span>
-                            <i class="fa-solid fa-bars"></i>
-                        </span>
-                    </button>
-
-                    <!-- Offcanvas menu -->
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">
-                                        ទំព័រដើម
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        ការងារស្ម័គ្រចិត្ត
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        ព្រឹត្តិការណ៏
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        សកម្មភាព
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        បរិច្ចាក
-                                    </a>
-                                </li>
-                            </ul>
+        </section>
+        <section class="our-story">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-3 bg-transparent border-0">
+                            <div class="card-body p-4">
+                                <h2 class="card-title text-center">របៀបដែលយើងចាប់ផ្តើម</h2>
+                                <div class="line-style mx-auto mb-3"></div>
+                                <p class="card-text fs-5">យើងបានចាប់ផ្តើមបង្កើត <b>ស្ម័គ្រចិត្ត</b> នៅខែកក្កដា ឆ្នាំ
+                                    2020 បន្ទាប់ពីបានទទួលស្គាល់ការតស៊ូរបស់សិស្សជាច្រើនក្នុងការស្វែងរកទេពកោសល្យ
+                                    និងមុខវិជ្ជាដែលពួកគេចូលចិត្ត។ នេះច្រើនតែនាំទៅរកការបរាជ័យ
+                                    ការផ្លាស់ប្តូរដ៏សំខាន់នៅក្នុងឆ្នាំទីពីរ ឬទីបីនៃមហាវិទ្យាល័យ
+                                    ឬសូម្បីតែការបោះបង់ការសិក្សា។ បេសកកម្មរបស់យើងគឺផ្តល់ការណែនាំ
+                                    និងធនធានដើម្បីជួយសិស្សធ្វើការសម្រេចចិត្តដែលមានព័ត៌មានតាំងពីដំបូង។ លើសពីនេះ
+                                    យើងជួយសិស្សានុសិស្សដែលមានធនធានមានកម្រិតក្នុងការទទួលបានអាហារូបករណ៍
+                                    ដើម្បីគាំទ្រក្តីសុបិនរបស់ពួកគេ និងបន្តដំណើរសិក្សារបស់ពួកគេទាំងក្នុង
+                                    និងក្រៅប្រទេស។</p>
+                            </div>
                         </div>
                     </div>
-
-                    <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
-                        <li>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <div class="dropdown nav-notification">
-                                <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <i class="bi bi-bell-fill"></i>
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
-                                        3
-                                    </span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li class="ps-3">
-                                        <h3 class="fs-5">ការជូនដំណឹង</h3>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-start" href="#">
-                                            <img src="../image/Icon/facebook.png" alt="" class="">
-                                            <span class="ps-2">
-                                                Facebook <br>
-                                                អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
-                                                <span class="text-secondary">
-                                                    ឥឡូវនេះ
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-start" href="#">
-                                            <img src="../image/Icon/setting.png" alt="" class="">
-                                            <span class="ps-2">
-                                                ការកំណត់ <br>
-                                                អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
-                                                <span class="text-secondary">
-                                                    ៣០នាទីមុន
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex align-items-start" href="#">
-                                            <img src="../image/Icon/mark.png" alt="" class="">
-                                            <span class="ps-2">
-                                                ការដាក់ពាក្យ <br>
-                                                ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
-                                                <span class="text-secondary">
-                                                    ២ម៉ោងមុន
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li class=" my-3 d-flex justify-content-center">
-                                        <a href="#"
-                                            class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
-                                            មើលការជូនដំណឹងទាំងអស់
-                                        </a>
-                                    </li>
-                                </ul>
+                    <div class="col-12">
+                        <div class="card bg-transparent border-0">
+                            <div class="card-body">
+                                <div class="section-header text-center">
+                                    <h2 class="card-title text-center">ប្រវត្តិដំណើរការនៃការចាប់ផ្តើមក្រុម</h2>
+                                </div>
+                                <div class="steps">
+                                    <div class="steps-container">
+                                        <div class="content w-100">
+                                            <h2 class="fs-4">ឆ្នាំបង្កើត(Foundation Year)</h2>
+                                            <ul class="fs-5 ps-0">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ចាប់ផ្តើមគំនិតបង្កើតគម្រោងដោយក្រុមយុវជនតូចៗ។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    គោលបំណងដំបូង៖ ជួយសហគមន៍ក្នុងវិស័យអប់រំ និងបរិស្ថាន។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                                    រៀបចំការជួបជុំដំបូងជាមួយសហគមន៍ក្នុងតំបន់។
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-line"></div>
+                                        <div class="date">2020</div>
+                                    </div>
+                                    <div class="steps-container">
+                                        <div class="content w-100">
+                                            <h2 class="fs-4">ការចាប់ផ្តើមសកម្មភាព</h2>
+                                            <ul class="fs-5 ps-0">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    រៀបចំសកម្មភាពសម្អាតតំបន់សាធារណៈដំបូង។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ចូលរួមជាមួយកុមារ និងមាតាបិតាក្នុងការបង្រៀនអក្សរខ្មែរ និងគណិតវិទ្យា។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                                    ទទួលបានការគាំទ្រពីអាជ្ញាធរ និងស្ថាប័នមូលដ្ឋាន។
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-line"></div>
+                                        <div class="date">2021</div>
+                                    </div>
+                                    <div class="steps-container">
+                                        <div class="content w-100">
+                                            <h2 class="fs-4">ការពង្រីកបណ្តាញ</h2>
+                                            <ul class="fs-5 ps-0">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    បង្កើតក្រុមស្ម័គ្រចិត្តចំនួន 50 នាក់។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    រៀបចំកម្មវិធីដាំដើមឈើ និងការពារបរិស្ថាន។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                                    ចាប់ផ្តើមចូលរួមសកម្មភាពជាមួយស្ថាប័នអន្តរជាតិ។
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-line"></div>
+                                        <div class="date">2022</div>
+                                    </div>
+                                    <div class="steps-container">
+                                        <div class="content w-100">
+                                            <h2 class="fs-4">ការសម្រេចលទ្ធផលដំបូង</h2>
+                                            <ul class="fs-5 ps-0">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ជួយកុមារជាង 100 នាក់ក្នុងការអប់រំក្រៅម៉ោង។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ដាំដើមឈើជាង 200 ដើមនៅសាលារៀន និងវាលសាធារណៈ។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                                    ចូលរួមក្នុងការបណ្តុះបណ្តាលជំនាញជីវិតសម្រាប់យុវជន។
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-line"></div>
+                                        <div class="date">2023</div>
+                                    </div>
+                                    <div class="steps-container">
+                                        <div class="content w-100">
+                                            <h2 class="fs-4">ការទទួលស្គាល់</h2>
+                                            <ul class="fs-5 ps-0">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ទទួលបានរង្វាន់សកម្មភាពសង្គមលំដាប់ជាតិ។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ការចូលរួមស្ម័គ្រចិត្តកើនដល់ 400 នាក់។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                                    ទទួលបានការគាំទ្រពីអាជ្ញាធរ និងស្ថាប័នមូលដ្ឋាន។
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-line"></div>
+                                        <div class="date">2024</div>
+                                    </div>
+                                    <div class="steps-container">
+                                        <div class="content w-100">
+                                            <h2 class="fs-4">ការសម្រេចជោគជ័យធំ</h2>
+                                            <ul class="fs-5 ps-0">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    ចំនួនស្ម័គ្រចិត្តកើនដល់ 3,000 នាក់។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success "></i>
+                                                    បង្កើតគម្រោងថ្មីសម្រាប់ការការពារបរិស្ថាន។
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-success"></i>
+                                                    មានដៃគូរសហកាណ៏ជាច្រើនបានទាក់ទងមកយើង
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-line"></div>
+                                        <div class="date">2025</div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img src="../image/profile.png" alt="">
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="bi bi-person-circle"></i>
-                                            <span class="ps-1">
-                                                មើលគណនី
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="bi bi-gear"></i>
-                                            <span class="ps-1">
-                                                ការកំណត់
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item  text-danger sign-up" href="#">
-                                            <i class="bi bi-box-arrow-left"></i>
-                                            <span class="ps-1">
-                                                ចាកចេញ
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center pt-3">
+                            <h2>សម្រេចលទ្ធផល និងសមិទ្ធិផល</h2>
+                            <p class="fs-5">មើលសង្ខេបអំពីអ្វីដែលយើងបានសម្រេច និងសមិទ្ធិផលសំខាន់ៗក្នុងដំណើររបស់យើង។</p>
+                        </div>
+                        <div class="row py-4 g-4">
+                            <div class="col-6 col-md-3">
+                                <div class="card card-counter text-center h-100">
+                                    <div class="card-img mx-auto mt-3 ">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="counter">1000+</div>
+                                        <h3>គ្រួសារទទួលបានសុខភាព</h3>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card card-counter text-center  h-100">
+                                    <div class="card-img mx-auto mt-3">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="counter">500+</div>
+                                        <h3>កុមារទទួលបានអប់រំ</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card card-counter text-center  h-100">
+                                    <div class="card-img mx-auto mt-3">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="counter">200+</div>
+                                        <h3>យុវជនបានបណ្តុះបណ្តាលជំនាញ</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card card-counter text-center  h-100">
+                                    <div class="card-img mx-auto mt-3">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="counter">500+</div>
+                                        <h3>សហគមន៍បានអភិវឌ្ឍ</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2 class="text-center">សមាជិកក្រុម</h2>
+                <div class="carousel-container">
+                    <button class="nav-arrow left">‹</button>
+                    <div class="carousel-track">
+                        <div class="card" data-index="0">
+                            <img src="../image/member/theng.jpg" alt="Team Member 1">
+                            <div class="overlay">
+                                <h3​ class="card-title">លីម ប៊ុនថេង</h3>
+                                    <p class="card-text">
+                                        ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី៣
+                                        ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                        Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                    </p>
+                                    <div class="contact-social d-flex justify-content-center align-items-center">
+                                        <a class="icon" href="@Lim_Buntheng"><i class="fa-brands fa-telegram"></i></a>
+                                        <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card" data-index="1">
+                            <img src="../image/member/horn.jpg" alt="Team Member 2">
+                            <div class="overlay">
+                                <h3​ class="card-title">ហ៊ាន​ សេងហ៊ាន់</h3>
+                                    <p class="card-text">
+                                        ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
+                                        ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                        Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                    </p>
+                                    <div class="contact-social d-flex justify-content-center align-items-center">
+                                        <a class="icon"  target="_blank" href="https://t.me/Heanseng"><i class="fa-brands fa-telegram"></i></a>
+                                        <a class="icon mx-3" target="_blank" href="https://www.facebook.com/share/1AJsAcTM5L/"  ><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card" data-index="2">
+                            <img src="../image/member/sun.jpg"
+                                alt="Team Member 3">
+                            <div class="overlay">
+                                <h3​ class="card-title">លី គីមស៊ុន</h3>
+                                    <p class="card-text">
+                                        ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
+                                        ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                        Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                    </p>
+                                    <div class="contact-social d-flex justify-content-center align-items-center">
+                                        <a class="icon" href=""><i class="fa-brands fa-telegram"></i></a>
+                                        <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="card" data-index="3">
+                            <img src="../image/member/kry.jpg"
+                                alt="Team Member 4">
+                            <div class="overlay">
+                                <h3​ class="card-title">ប៉េស សុគ្រី</h3>
+                                    <p class="card-text">
+                                        ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
+                                        ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                        Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                    </p>
+                                    <div class="contact-social d-flex justify-content-center align-items-center">
+                                        <a class="icon" href=""><i class="fa-brands fa-telegram"></i></a>
+                                        <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-arrow right">›</button>
+                </div>
+
+                <div class="member-info">
+                    <h2 class="member-name">David Kim</h2>
+                    <p class="member-role">Founder</p>
+                </div>
+
+                <div class="dots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="statement">
+            <div class="container">
+                <div class="row  statement-bg rounded-3 pb-5 g-4 ">
+                    <div class="col-12">
+                        <h2 class="section-tile text-center mt-5">សេចក្តីថ្លែងអំណរគុណ</h2>
+                        <p class="text-center fs-4">សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅជូនចំពោះ</p>
+                        <p class="text-center fs-5 mb-4">
+                            ក្រសួង​ប្រៃសណីយ៍និងទូរគមនាគមន៍ មូលនិធិ ស.អ. និងថ្នាក់បណ្តុះបណ្តាលបច្ចេកវិទ្យាអាន​ ANT
+                            <br>
+                            ក្រុមរបស់ពួកយើងមានអារម្មណ៍សោមនស្សរីករាយដែលទទួលបាន​នូវ​
+                            អាហារូបករណ៍លើជំនាញការអភិវឌ្ឍន៍គេហទំព័រ <br>
+                            អាហារូបករណ៍​នេះពិតជាបានជួយសម្រាលបន្ទុកហិរញ្ញវត្តុនៃការចាយការសិក្សាដល់ក្រុមរបស់ពួកយើងទាំងអស់គ្នា​
+                            <br>
+                            ក្រុមរបស់ពួកយើងនិងប្តេជ្ញាការខិតខំប្រឹងប្រែងសិក្សា​​​​
+                            គឺដើម្បីកសាងសមត្តភាពក៏អាចចូលរួចចំណែកសង្គមនាពេលថ្ងៃអនាគត ។
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="statement-img ">
+                            <img src="../image/statement-logo/ant-logo-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="statement-img p-1">
+                            <img src="../image/statement-logo/cbrd-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="statement-img  ">
+                            <img src="../image/statement-logo/mptc-Logo-label-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="organization py-5 ">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
+                    <div>
+                        <h2 class="section-title mb-2">បញ្ជីដៃគូរ</h2>
+                        <p class="text-secondary">
+                            <span>NGO</span>
+                            <span class="mx-2">ស្ថាប័នអប់រំ</span>
+                            <span>ក្រុមសហគមន៍</span>
+                        </p>
+                    </div>
+                    <ul class="nav nav-pills" id="partnerFilter" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all" type="button"
+                                role="tab">ទាំងអស់</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ngo" type="button"
+                                role="tab">NGO</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#edu" type="button"
+                                role="tab">ស្ថាប័នអប់រំ</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#community" type="button"
+                                role="tab">ក្រុមសហគមន៍</button>
                         </li>
                     </ul>
                 </div>
-            </nav>
+                <div class="tab-content" id="partnerTabContent">
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/1.png" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class=" d-flex justify-content-between align-items-center p-0 ">
+                                                <h4 class="org-name m-0 ">អង្គការអភិវឌ្ឍជនបទកម្ពុជា</h4>
+                                                <span class="badge text-bg-primary badge-rounded ">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">អភិវឌ្ឍជនបទ ដូចជា កសិកម្ម
+                                                អាហារូបត្ថម្ភការគ្រប់គ្រងធនធានធម្មជាតិ និងសហគមន៍។</p>
+                                            <div class="d-flex gap-2">
+                                                <a target="_blank" href="https://opendevelopmentcambodia.net/km/tag/cambodian-rural-development-team-crdt/#!/story=post-164896" class="btn btn-sm btn-outline-primary"><i
+                                                        class="bi bi-globe"></i> Website</a>
+                                                <a target="_blank" href="https://web.facebook.com/p/%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%A2%E1%9E%97%E1%9E%B7%E1%9E%9C%E1%9E%8C%E1%9F%92%E1%9E%8D%E1%9E%93%E1%9F%8D%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9E%B7%E1%9E%8F%E1%9E%A2%E1%9F%92%E1%9E%93%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%94%E1%9E%91%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6-61554805223113/?_rdc=1&_rdr#"  class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/3.png"" alt="">
+                                            </div>
+                                            <div class=" left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">អង្គការសប្បុរសធម៌កម្ពុជា</h4>
+                                                <span class="badge text-bg-primary badge-rounded">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើអប់រំកុមារ
+                                                និងការការពារកុមារ ក្នុងតំបន់ជនបទ។</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="https://www.kfco-dna.org/" target="_blank"  class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/cambodiainternationalcharityorganization/?_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/5.jpg" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់</h4>
+                                                <span class="badge text-bg-primary badge-rounded">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើអប់រំកុមារ
+                                                និងការការពារកុមារ ក្នុងតំបន់ជនបទ។</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="https://www.maff.gov.kh/" target="_blank"  class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/maff.gov.kh/?_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/6.png" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">Green Life Group</h4>
+                                                <span class="badge text-bg-success badge-rounded">ក្រុមសហគមន៏</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើបរិស្ថានធម្មជាតិនិង
+                                                សុខភាពសាធារណៈ។</p>
+                                            <div class="d-flex gap-2">
+                                                <a href="https://glgcorp.com/" target="_blank"  class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="#https://web.facebook.com/greenlifepp/?_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/statement-logo/org3.png" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">ANT Tranning Center</h4>
+                                                <span class="badge text-bg-danger badge-rounded">ការអប់រំ</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើការបណ្តុះបណ្តាល STEM និង
+                                                Digital.</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="http://training.antkh.com/" target="_blank"
+                                                    class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/ant.com.kh/?locale=km_KH&_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/7.jpg" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">អង្គការខ្មែរដើម្បីការអប់រំ</h4>
+                                                <span class="badge text-bg-primary badge-rounded">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">បណ្តុះបណ្តាលអប់រំ
+                                                និងការពារសិទ្ធិព្រោះកុមារ នៅតំបន់ជនបទខេត្តបាត់ដំបង</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="https://www.khencambodia.org/khmer-home.html" target="_blank"
+                                                    class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/KhmerNGOforEducationKHEN/?locale=km_KH&_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
 
-        </header>
-        <main class="flex-grow-1">
-            <section class="about-mession">
-                <div class="container">
-                    <div class="mession-title text-center mt-5">
-                        <div class="about-label  rounded-4 mx-auto fs-5">អំពីយើង</div>
-                        <h2 class="py-3">សូមស្វាគមន៍មកកាន់ស្ម័គ្រចិត្ត!</h2>
-                        <div class="line-style mx-auto mb-3"></div>
-                        <p class="mb-2 fs-5">យើងមានចក្ខុវិស័យឃើញសង្គមមានឱកាសស្មើគ្នា ដោយមនុស្សគ្រប់រូបទទួលបានអប់រំ
-                            និងជីវភាពប្រសើរឡើង។</p>
-                        <p class="fs-5">យើងតស៊ូដើម្បីផ្តល់ឱកាសអប់រំ ការបណ្តុះបណ្តាល និងគាំទ្រសហគមន៍ឱ្យមានជីវភាពប្រសើរឡើង
-                            តាមរយៈការច្នៃប្រឌិត និងសហការណ៍ជាមួយដៃគូដើម្បីផ្លាស់ប្តូរសង្គមឱ្យប្រសើរឡើង យើងបានកំណត់គោលដៅ។
+                    <div class="tab-pane fade" id="ngo" role="tabpanel" tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/1.png" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class=" d-flex justify-content-between align-items-center p-0 ">
+                                                <h4 class="org-name m-0 ">អង្គការអភិវឌ្ឍជនបទកម្ពុជា</h4>
+                                                <span class="badge text-bg-primary badge-rounded ">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">អភិវឌ្ឍជនបទ ដូចជា កសិកម្ម
+                                                អាហារូបត្ថម្ភការគ្រប់គ្រងធនធានធម្មជាតិ និងសហគមន៍។</p>
+                                            <div class="d-flex gap-2">
+                                                <a target="_blank" href="https://opendevelopmentcambodia.net/km/tag/cambodian-rural-development-team-crdt/#!/story=post-164896" class="btn btn-sm btn-outline-primary"><i
+                                                        class="bi bi-globe"></i> Website</a>
+                                                <a target="_blank" href="https://web.facebook.com/p/%E1%9E%A2%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%A2%E1%9E%97%E1%9E%B7%E1%9E%9C%E1%9E%8C%E1%9F%92%E1%9E%8D%E1%9E%93%E1%9F%8D%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9E%B7%E1%9E%8F%E1%9E%A2%E1%9F%92%E1%9E%93%E1%9E%80%E1%9E%87%E1%9E%93%E1%9E%94%E1%9E%91%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6-61554805223113/?_rdc=1&_rdr#"  class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/3.png"" alt="">
+                                            </div>
+                                            <div class=" left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">អង្គការសប្បុរសធម៌កម្ពុជា</h4>
+                                                <span class="badge text-bg-primary badge-rounded">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើអប់រំកុមារ
+                                                និងការការពារកុមារ ក្នុងតំបន់ជនបទ។</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="https://www.kfco-dna.org/" target="_blank"  class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/cambodiainternationalcharityorganization/?_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/5.jpg" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">ក្រសួងកសិកម្ម រុក្ខាប្រមាញ់</h4>
+                                                <span class="badge text-bg-primary badge-rounded">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើអប់រំកុមារ
+                                                និងការការពារកុមារ ក្នុងតំបន់ជនបទ។</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="https://www.maff.gov.kh/" target="_blank"  class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/maff.gov.kh/?_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/7.jpg" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">អង្គការខ្មែរដើម្បីការអប់រំ</h4>
+                                                <span class="badge text-bg-primary badge-rounded">NGO</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">បណ្តុះបណ្តាលអប់រំ
+                                                និងការពារសិទ្ធិព្រោះកុមារ នៅតំបន់ជនបទខេត្តបាត់ដំបង</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="https://www.khencambodia.org/khmer-home.html" target="_blank"
+                                                    class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/KhmerNGOforEducationKHEN/?locale=km_KH&_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Only -->
+                    <div class="tab-pane fade" id="edu" role="tabpanel" tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/statement-logo/org3.png" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">ANT Tranning Center</h4>
+                                                <span class="badge text-bg-danger badge-rounded">ការអប់រំ</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើការបណ្តុះបណ្តាល STEM និង
+                                                Digital.</p>
+                                            <div class="d-flex gap-2"> 
+                                                <a href="http://training.antkh.com/" target="_blank"
+                                                    class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="https://web.facebook.com/ant.com.kh/?locale=km_KH&_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Community Only -->
+                    <div class="tab-pane fade" id="community" role="tabpanel" tabindex="0">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card partner-card h-100">
+                                    <div class="card-body d-flex">
+                                        <div class="logo-wrap">
+                                            <img src="../image/logo-org/6.png" alt="">
+                                        </div>
+                                        <div class="left-content ps-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="org-name m-0 ">Green Life Group</h4>
+                                                <span class="badge text-bg-success badge-rounded">ក្រុមសហគមន៏</span>
+                                            </div>
+                                            <p class="card-text  text-secondary mb-2">ផ្តោតលើបរិស្ថានធម្មជាតិនិង
+                                                សុខភាពសាធារណៈ។</p>
+                                            <div class="d-flex gap-2">
+                                                <a href="https://glgcorp.com/" target="_blank"  class="btn btn-sm btn-outline-primary"><i class="bi bi-globe"></i>
+                                                    Website</a>
+                                                <a href="#https://web.facebook.com/greenlifepp/?_rdc=1&_rdr#" target="_blank" class="btn btn-sm btn-outline-secondary"><i
+                                                        class="bi bi-facebook"></i> Page</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="collaboration py-5 ">
+            <div class="container">
+                <div class="row align-items-center g-4 mb-4">
+                    <div class="col-lg-7">
+                        <h2 class="section-title mb-2">ព័ត៌មានអំពីកិច្ចសហប្រតិបត្តិការ</h2>
+                        <p class=" mb-0 fs-5">ការសហការជាមួយដៃគូររបស់យើង មានទម្រង់ផ្សេងៗ៖
+                            កិច្ចព្រមព្រៀង
+                            (MOU/Agreement), សកម្មភាពរួម, ការចូលរួមសហគមន៍ និងឧបត្ថម្ភ។ ខាងក្រោមជាព័ត៌មានសង្ខេប។</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-4 stat-card  rounded-4 text-center">
+                                    <div class="fs-3 fw-bold">24+</div>
+                                    <div class="small ">កិច្ចព្រមព្រៀង MOU</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-4 stat-card  rounded-4 text-center">
+                                    <div class="fs-3 fw-bold">58+</div>
+                                    <div class="small ">សកម្មភាពរួម/ឆ្នាំ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="rounded-4 p-3 p-md-4 position-relative timeline">
+                            <div class="timeline-item mb-4">
+                                <span class="dot"></span>
+                                <h5 class="mb-1">សហការផ្នែកបណ្តុះបណ្តាលគ្រូ</h5>
+                                <p class=" mb-2">រៀបចំវគ្គបណ្តុះបណ្តាល​គ្រូបច្ចេកវិទ្យា ជាមួយ
+                                    <strong>XYZ Institute</strong> រៀងរាល់ត្រីមាស។
+                                </p>
+                                <span class="badge text-bg-primary">Workshops</span>
+                            </div>
+                            <div class="timeline-item mb-4">
+                                <span class="dot"></span>
+                                <h5 class="mb-1">គម្រោងបរិស្ថានជាមួយសហគមន៍</h5>
+                                <p class=" mb-2">ពីរោះសម្អាតសហគមន៍ និងដាំដើមឈើជាមួយ
+                                    <strong>Green Life Group</strong> ក្នុងខែ មេសា–ឧសភា។
+                                </p>
+                                <span class="badge text-bg-primary">Community Action</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="dot"></span>
+                                <h5 class="mb-1">MOU ជាមួយ NGO ថ្មី</h5>
+                                <p class=" mb-2">ចុះហត្ថលេខាលើកិច្ចព្រមព្រៀងសហការ ជាមួយ
+                                    <strong>ABC Foundation</strong> សម្រាប់កម្មវិធីអប់រំកុមារ។
+                                </p>
+                                <span class="badge text-bg-primary">MOU / Agreement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="rounded-4 p-3 p-md-4 h-100 collaboration-mode">
+                            <h5 class="mb-3 fw-semibold">ប្រភេទសហការ</h5>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex gap-3">
+                                    <div class=""><i class="bi bi-file-earmark-text fs-4"></i></div>
+                                    <div>
+                                        <div class="fw-semibold">កិច្ចព្រមព្រៀង (MOU)</div>
+                                        <p class=" mb-0">កំណត់គោលដៅ សិទ្ធិ
+                                            និងការទទួលខុសត្រូវរបស់ភាគីទាំងពីរ។</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class=""><i class="bi bi-people fs-4"></i></div>
+                                    <div>
+                                        <div class="fw-semibold">សកម្មភាពរួម</div>
+                                        <p class="mb-0">Workshop, Training, Hackathon, CareerTalk,
+                                            Field Trip…</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class=""><i class="bi bi-hand-thumbs-up fs-4"></i></div>
+                                    <div>
+                                        <div class="fw-semibold">ការចូលរួមសហគមន៍</div>
+                                        <p class="mb-0">សកម្មភាពសង្គម ដូចជា
+                                            ការសម្អាតនិងដាំដើមឈើជាមួយសហគមន៍។</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class=""><i class="bi bi-gift fs-4"></i></div>
+                                    <div>
+                                        <div class="fw-semibold">ការឧបត្ថម្ភ</div>
+                                        <p class="mb-0">
+                                            ផ្តល់ជំនួយសំរាប់គម្រោងនិងសកម្មភាពផ្សេងៗរបស់ដៃគូរ។</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer mt-auto pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-logo">
+                        <img src="../image/logo-removebg.png" alt="">
+                        <p class="footer-text mt-3">
+                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
+                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
+                            និងទំនុកចិត្តលើខ្លួនឯង។
                         </p>
                     </div>
                 </div>
-
-            </section>
-            <section class="our-story">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card mb-3 bg-transparent border-0">
-                                <div class="card-body p-4">
-                                    <h2 class="card-title text-center">របៀបដែលយើងចាប់ផ្តើម</h2>
-                                    <div class="line-style mx-auto mb-3"></div>
-                                    <p class="card-text fs-5">យើងបានចាប់ផ្តើមបង្កើត <b>ស្ម័គ្រចិត្ត</b> នៅខែកក្កដា ឆ្នាំ
-                                        2024 បន្ទាប់ពីបានទទួលស្គាល់ការតស៊ូរបស់សិស្សជាច្រើនក្នុងការស្វែងរកទេពកោសល្យ
-                                        និងមុខវិជ្ជាដែលពួកគេចូលចិត្ត។ នេះច្រើនតែនាំទៅរកការបរាជ័យ
-                                        ការផ្លាស់ប្តូរដ៏សំខាន់នៅក្នុងឆ្នាំទីពីរ ឬទីបីនៃមហាវិទ្យាល័យ
-                                        ឬសូម្បីតែការបោះបង់ការសិក្សា។ បេសកកម្មរបស់យើងគឺផ្តល់ការណែនាំ
-                                        និងធនធានដើម្បីជួយសិស្សធ្វើការសម្រេចចិត្តដែលមានព័ត៌មានតាំងពីដំបូង។ លើសពីនេះ
-                                        យើងជួយសិស្សានុសិស្សដែលមានធនធានមានកម្រិតក្នុងការទទួលបានអាហារូបករណ៍
-                                        ដើម្បីគាំទ្រក្តីសុបិនរបស់ពួកគេ និងបន្តដំណើរសិក្សារបស់ពួកគេទាំងក្នុង
-                                        និងក្រៅប្រទេស។</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card bg-transparent border-0">
-                                <div class="card-body">
-                                    <div class="section-header text-center">
-                                        <h2 class="card-title text-center">ប្រវត្តិក្រុមយើង</h2>
-                                    </div>
-                                    <div class="steps">
-                                        <div class="steps-container">
-                                            <div class="content w-100">
-                                                <h2 class="fs-4">ឆ្នាំបង្កើត(Foundation Year)</h2>
-                                                <ul class="fs-5 ps-0">
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        ចាប់ផ្តើមគំនិតបង្កើតគម្រោងដោយក្រុមយុវជនតូចៗ។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        គោលបំណងដំបូង៖ ជួយសហគមន៍ក្នុងវិស័យអប់រំ និងបរិស្ថាន។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success"></i>
-                                                        រៀបចំការជួបជុំដំបូងជាមួយសហគមន៍ក្នុងតំបន់។
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="step-line"></div>
-                                            <div class="date">2020</div>
-                                        </div>
-                                        <div class="steps-container">
-                                            <div class="content w-100">
-                                                <h2 class="fs-4">ការចាប់ផ្តើមសកម្មភាព</h2>
-                                                <ul class="fs-5 ps-0">
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        រៀបចំសកម្មភាពសម្អាតតំបន់សាធារណៈដំបូង។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        ចូលរួមជាមួយកុមារ និងមាតាបិតាក្នុងការបង្រៀនអក្សរខ្មែរ និងគណិតវិទ្យា។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success"></i>
-                                                        ទទួលបានការគាំទ្រពីអាជ្ញាធរ និងស្ថាប័នមូលដ្ឋាន។
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="step-line"></div>
-                                            <div class="date">2021</div>
-                                        </div>
-                                        <div class="steps-container">
-                                            <div class="content w-100">
-                                                <h2 class="fs-4">ការពង្រីកបណ្តាញ</h2>
-                                                 <ul class="fs-5 ps-0">
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        បង្កើតក្រុមស្ម័គ្រចិត្តចំនួន 50 នាក់។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        រៀបចំកម្មវិធីដាំដើមឈើ និងការពារបរិស្ថាន។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success"></i>
-                                                        ចាប់ផ្តើមចូលរួមសកម្មភាពជាមួយស្ថាប័នអន្តរជាតិ។
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="step-line"></div>
-                                            <div class="date">2022</div>
-                                        </div>
-                                        <div class="steps-container">
-                                            <div class="content w-100">
-                                                <h2 class="fs-4">ការសម្រេចលទ្ធផលដំបូង</h2>
-                                               <ul class="fs-5 ps-0">
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        ជួយកុមារជាង 100 នាក់ក្នុងការអប់រំក្រៅម៉ោង។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                       ដាំដើមឈើជាង 200 ដើមនៅសាលារៀន និងវាលសាធារណៈ។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success"></i>
-                                                        ចូលរួមក្នុងការបណ្តុះបណ្តាលជំនាញជីវិតសម្រាប់យុវជន។
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="step-line"></div>
-                                            <div class="date">2023</div>
-                                        </div>
-                                        <div class="steps-container">
-                                            <div class="content w-100">
-                                                <h2 class="fs-4">ការទទួលស្គាល់</h2>
-                                                <ul class="fs-5 ps-0">
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        ទទួលបានរង្វាន់សកម្មភាពសង្គមលំដាប់ជាតិ។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                       ការចូលរួមស្ម័គ្រចិត្តកើនដល់ 400 នាក់។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success"></i>
-                                                        ទទួលបានការគាំទ្រពីអាជ្ញាធរ និងស្ថាប័នមូលដ្ឋាន។
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="step-line"></div>
-                                            <div class="date">2024</div>
-                                        </div>
-                                        <div class="steps-container">
-                                            <div class="content w-100">
-                                                <h2 class="fs-4">ការសម្រេចជោគជ័យធំ</h2>
-                                                <ul class="fs-5 ps-0">
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                        ចំនួនស្ម័គ្រចិត្តកើនដល់ 3,000 នាក់។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success "></i>
-                                                       បង្កើតគម្រោងថ្មីសម្រាប់ការការពារបរិស្ថាន។
-                                                    </li>
-                                                    <li>
-                                                        <i class="bi bi-check-circle-fill text-success"></i>
-                                                        មានដៃគូរសហកាណ៏ជាច្រើនបានទាក់ទងមកយើង
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="step-line"></div>
-                                            <div class="date">2025</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-12">
-                            <div class="text-center pt-3">
-                                <h2>សម្រេចលទ្ធផល និងសមិទ្ធិផល</h2>
-                                <p class="fs-5">មើលសង្ខេបអំពីអ្វីដែលយើងបានសម្រេច និងសមិទ្ធិផលសំខាន់ៗក្នុងដំណើររបស់យើង។</p>
-                            </div>
-                            <div class="row py-4 g-4">
-                                <div class="col-6 col-md-3">
-                                    <div class="card card-counter text-center h-100">
-                                        <div class="card-img mx-auto mt-3 ">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="counter">1000+</div>
-                                            <h3>គ្រួសារទទួលបានសុខភាព</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <div class="card card-counter text-center  h-100">
-                                        <div class="card-img mx-auto mt-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="counter">500+</div>
-                                            <h3>កុមារទទួលបានអប់រំ</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <div class="card card-counter text-center  h-100">
-                                        <div class="card-img mx-auto mt-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="counter">200+</div>
-                                            <h3>យុវជនបានបណ្តុះបណ្តាលជំនាញ</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <div class="card card-counter text-center  h-100">
-                                        <div class="card-img mx-auto mt-3">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="counter">500+</div>
-                                            <h3>សហគមន៍បានអភិវឌ្ឍ</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-            </section>
-            <section class="team">
-                <div class="container">
-                    <h2 class="text-center">សមាជិកក្រុម</h2>
-                    <div class="carousel-container">
-                        <button class="nav-arrow left">‹</button>
-                        <div class="carousel-track">
-                            <div class="card" data-index="0">
-                                <img src="../image/member/horn.jpg" alt="Team Member 1">
-                                <div class="overlay">
-                                    <h3​ class="card-title">ហ៊ាន​ សេងហ៊ាន់</h3>
-                                        <p class="card-text">
-                                            ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
-                                            ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
-                                            Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
-                                        </p>
-                                        <div class="contact-social d-flex justify-content-center align-items-center">
-                                            <a class="icon" href=""><i class="fa-brands fa-telegram"></i></a>
-                                            <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="card" data-index="1">
-                                <img src="../image/member/sun.jpg" alt="Team Member 2">
-                                <div class="overlay">
-                                    <h3​ class="card-title">ហ៊ាន​ សេងហ៊ាន់</h3>
-                                        <p class="card-text">
-                                            ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
-                                            ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
-                                            Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
-                                        </p>
-                                        <div class="contact-social d-flex justify-content-center align-items-center">
-                                            <a class="icon" href=""><i class="fa-brands fa-telegram"></i></a>
-                                            <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="card" data-index="2">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900"
-                                    alt="Team Member 3">
-                                <div class="overlay">
-                                    <h3​ class="card-title">ហ៊ាន​ សេងហ៊ាន់</h3>
-                                        <p class="card-text">
-                                            ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
-                                            ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
-                                            Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
-                                        </p>
-                                        <div class="contact-social d-flex justify-content-center align-items-center">
-                                            <a class="icon" href=""><i class="fa-brands fa-telegram"></i></a>
-                                            <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="card" data-index="3">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900"
-                                    alt="Team Member 4">
-                                <div class="overlay">
-                                    <h3​ class="card-title">ហ៊ាន​ សេងហ៊ាន់</h3>
-                                        <p class="card-text">
-                                            ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
-                                            ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
-                                            Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
-                                        </p>
-                                        <div class="contact-social d-flex justify-content-center align-items-center">
-                                            <a class="icon" href=""><i class="fa-brands fa-telegram"></i></a>
-                                            <a class="icon mx-3" href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a class="icon" href=""><i class="fa-brands fa-facebook-messenger"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="nav-arrow right">›</button>
-                    </div>
-
-                    <div class="member-info">
-                        <h2 class="member-name">David Kim</h2>
-                        <p class="member-role">Founder</p>
-                    </div>
-
-                    <div class="dots">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
-                        <div class="dot" data-index="3"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="statement">
-                <div class="container">
-                    <div class="row  statement-bg rounded-3 pb-5 g-4 ">
-                        <div class="col-12">
-                            <h2 class="section-tile text-center mt-5">សេចក្តីថ្លែងអំណរគុណ</h2>
-                            <p class="text-center fs-4">សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅជូនចំពោះ</p>
-                            <p class="text-center fs-5 mb-4">
-                                ក្រសួង​ប្រៃសណីយ៍និងទូរគមនាគមន៍ មូលនិធិ ស.អ. និងថ្នាក់បណ្តុះបណ្តាលបច្ចេកវិទ្យាអាន​ ANT
-                                <br>
-                                ក្រុមរបស់ពួកយើងមានអារម្មណ៍សោមនស្សរីករាយដែលទទួលបាន​នូវ​
-                                អាហារូបករណ៍លើជំនាញការអភិវឌ្ឍន៍គេហទំព័រ <br>
-                                អាហារូបករណ៍​នេះពិតជាបានជួយសម្រាលបន្ទុកហិរញ្ញវត្តុនៃការចាយការសិក្សាដល់ក្រុមរបស់ពួកយើងទាំងអស់គ្នា​
-                                <br>
-                                ក្រុមរបស់ពួកយើងនិងប្តេជ្ញាការខិតខំប្រឹងប្រែងសិក្សា​​​​
-                                គឺដើម្បីកសាងសមត្តភាពក៏អាចចូលរួចចំណែកសង្គមនាពេលថ្ងៃអនាគត ។
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="statement-img ">
-                                <img src="../image/statement-logo/ant-logo-removebg-preview.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="statement-img p-1">
-                                <img  src="../image/statement-logo/cbrd-logo.png" alt="" >
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="statement-img  ">
-                                <img src="../image/statement-logo/mptc-Logo-label-removebg-preview.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="organization py-5 ">
-                <div class="container">
-                    <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
-                        <div>
-                            <h2 class="section-title mb-2">បញ្ជីដៃគូរ</h2>
-                            <p class="text-secondary">
-                                <span>NGO</span>
-                                <span class="mx-2">ស្ថាប័នអប់រំ</span>
-                                <span>ក្រុមសហគមន៍</span>
-                            </p>
-                        </div>
-                        <ul class="nav nav-pills" id="partnerFilter" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all"
-                                    type="button" role="tab">ទាំងអស់</button>
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ngo" type="button"
-                                    role="tab">NGO</button>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#edu" type="button"
-                                    role="tab">ស្ថាប័នអប់រំ</button>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#community" type="button"
-                                    role="tab">ក្រុមសហគមន៍</button>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="partnerTabContent">
-                        <div class="tab-pane fade show active" id="all" role="tabpanel" tabindex="0">
-                            <div class="row g-4">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/logo-org/1.png" alt="">
-                                            </div>
-                                            <div class="left-content ps-2">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h6 class="card-title mb-1">អង្គការអភិវឌ្ឍជនបទកម្ពុជា</h6>
-                                                    <span class="badge text-bg-primary badge-rounded">NGO</span>
-                                                </div>
-                                                <p class="card-text  text-secondary mb-2">អភិវឌ្ឍជនបទ ដូចជា កសិកម្ម អាហារូបត្ថម្ភការគ្រប់គ្រងធនធានធម្មជាតិ និងសហគមន៍។</p>
-                                                <div class="d-flex gap-2"> <a href="#"
-                                                        class="btn btn-sm btn-outline-primary"><i
-                                                            class="bi bi-globe"></i> Website</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
-                                                            class="bi bi-facebook"></i> Page</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/logo-org/3.png"" alt="">
-                                            </div>
-                                            <div class="left-content ps-2">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h6 class="card-title mb-1">អង្គការសប្បុរសធម៌កម្ពុជា</h6>
-                                                    <span class="badge text-bg-primary badge-rounded">NGO</span>
-                                                </div>
-                                                <p class="card-text  text-secondary mb-2">ផ្តោតលើអប់រំកុមារ
-                                                    និងការការពារកុមារ ក្នុងតំបន់ជនបទ។</p>
-                                                <div class="d-flex gap-2"> <a href="#"
-                                                        class="btn btn-sm btn-outline-primary"><i
-                                                            class="bi bi-globe"></i> Website</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
-                                                            class="bi bi-facebook"></i> Page</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/logo-org/5.jpg" alt="">
-                                            </div>
-                                            <div class="left-content ps-2">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h6 class="card-title mb-1">ក្រសួងកសិកម្មនិងកសិផល</h6>
-                                                    <span class="badge text-bg-primary badge-rounded">NGO</span>
-                                                </div>
-                                                <p class="card-text  text-secondary mb-2">ផ្តោតលើអប់រំកុមារ
-                                                    និងការការពារកុមារ ក្នុងតំបន់ជនបទ។</p>
-                                                <div class="d-flex gap-2"> <a href="#"
-                                                        class="btn btn-sm btn-outline-primary"><i
-                                                            class="bi bi-globe"></i> Website</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
-                                                            class="bi bi-facebook"></i> Page</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/logo-org/6.png" alt="">
-                                            </div>
-                                            <div class="left-content ps-2">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h6 class="card-title mb-1">Green Life Group</h6>
-                                                    <span class="badge text-bg-success badge-rounded">ក្រុមសហគមន៏</span>
-                                                </div>
-                                                <p class="card-text  text-secondary mb-2">ផ្តោតលើបរិស្ថានធម្មជាតិនិង
-                                                    សុខភាពសាធារណៈ។</p>
-                                                <div class="d-flex gap-2"> <a href="#"
-                                                        class="btn btn-sm btn-outline-primary"><i
-                                                            class="bi bi-globe"></i> Website</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
-                                                            class="bi bi-facebook"></i> Page</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/statement-logo/org3.png" alt="">
-                                            </div>
-                                            <div class="left-content ps-2">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h6 class="card-title mb-1">ANT Tranning Center</h6>
-                                                    <span class="badge text-bg-danger badge-rounded">ការអប់រំ</span>
-                                                </div>
-                                                <p class="card-text  text-secondary mb-2">ផ្តោតលើការបណ្តុះបណ្តាល STEM និង
-                                                    Digital.</p>
-                                                <div class="d-flex gap-2"> <a href="#"
-                                                        class="btn btn-sm btn-outline-primary"><i
-                                                            class="bi bi-globe"></i> Website</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
-                                                            class="bi bi-facebook"></i> Page</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/logo-org/7.jpg" alt="">
-                                            </div>
-                                            <div class="left-content ps-2">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h6 class="card-title mb-1">អង្គការខ្មែរដើម្បីការអប់រំ</h6>
-                                                    <span class="badge text-bg-primary badge-rounded">NGO</span>
-                                                </div>
-                                                <p class="card-text  text-secondary mb-2">ជា NGO ដៅបណ្តុះបណ្តាលអប់រំ និងការពារសិទ្ធិព្រោះកុមារ នៅតំបន់ជនបទខេត្តបាត់ដំបង</p>
-                                                <div class="d-flex gap-2"> <a href="#"
-                                                        class="btn btn-sm btn-outline-primary"><i
-                                                            class="bi bi-globe"></i> Website</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-secondary"><i
-                                                            class="bi bi-facebook"></i> Page</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="ngo" role="tabpanel" tabindex="0">
-                            <div class="row g-4">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex ">
-                                            <div class="logo-wrap">
-                                                <img src="../image/statement-logo//org2.jpg" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="left-content ps-3">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h5 class="card-title mb-1">ABC Foundation</h5>
-                                                    <span class="badge text-bg-primary badge-rounded">NGO</span>
-                                                </div>
-                                                <p class="card-text small text-secondary mb-2">អប់រំ និងការការពារកុមារ។
-                                                </p>
-                                                <a href="#" class="btn btn-sm btn-outline-primary"><i
-                                                        class="bi bi-globe"></i> Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Education Only -->
-                        <div class="tab-pane fade" id="edu" role="tabpanel" tabindex="0">
-                            <div class="row g-4">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex ">
-                                            <div class="logo-wrap ">
-                                                <img src="../image/statement-logo/org3.png" alt="" class="img-fluid" />
-                                            </div>
-                                            <div class="left-content ps-3">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h5 class="card-title mb-1">ANT Center</h5>
-                                                    <span
-                                                        class="badge text-bg-success badge-rounded">ស្ថាប័នអប់រំ</span>
-                                                </div>
-                                                <p class="card-text small text-secondary mb-2">បណ្តុះបណ្តាល STEM និង
-                                                    Digital.</p>
-                                                <a href="#" class="btn btn-sm btn-outline-primary"><i
-                                                        class="bi bi-globe"></i> Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Community Only -->
-                        <div class="tab-pane fade" id="community" role="tabpanel" tabindex="0">
-                            <div class="row g-4">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="card partner-card h-100">
-                                        <div class="card-body d-flex">
-                                            <div class="logo-wrap">
-                                                <img src="../image/statement-logo/abclogo.jpg" alt=""
-                                                    class="img-fluid" />
-                                            </div>
-                                            <div class="left-content ps-3">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <h5 class="card-title mb-1">Green Life Group</h5>
-                                                    <span class="badge text-bg-warning badge-rounded">ក្រុមសហគមន៍</span>
-                                                </div>
-                                                <p class="card-text small text-secondary mb-2">បរិស្ថាននិង
-                                                    សុខភាពសាធារណៈ។</p>
-                                                <a href="#" class="btn btn-sm btn-outline-primary"><i
-                                                        class="bi bi-globe"></i> Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                </div>
+                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំនាក់ទំនង
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-envelope-at"></i>
+                                    <span class="ps-2">
+                                        volunteerCambo@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="ps-2">
+                                        Tul kok , Phmom Penh , Cambodia
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="ps-2">
+                                        +85568382800
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <section class="collaboration py-5 ">
-                <div class="container">
-                    <div class="row align-items-center g-4 mb-4">
-                        <div class="col-lg-7">
-                            <h2 class="section-title mb-2">ព័ត៌មានអំពីកិច្ចសហប្រតិបត្តិការ</h2>
-                            <p class=" mb-0 fs-5">ការសហការជាមួយដៃគូររបស់យើង មានទម្រង់ផ្សេងៗ៖
-                                កិច្ចព្រមព្រៀង
-                                (MOU/Agreement), សកម្មភាពរួម, ការចូលរួមសហគមន៍ និងឧបត្ថម្ភ។ ខាងក្រោមជាព័ត៌មានសង្ខេប។</p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <div class="p-4 stat-card  rounded-4 text-center">
-                                        <div class="fs-3 fw-bold">24+</div>
-                                        <div class="small ">កិច្ចព្រមព្រៀង MOU</div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="p-4 stat-card  rounded-4 text-center">
-                                        <div class="fs-3 fw-bold">58+</div>
-                                        <div class="small ">សកម្មភាពរួម/ឆ្នាំ</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-lg-7">
-                            <div class="rounded-4 p-3 p-md-4 position-relative timeline">
-                                <div class="timeline-item mb-4">
-                                    <span class="dot"></span>
-                                    <h5 class="mb-1">សហការផ្នែកបណ្តុះបណ្តាលគ្រូ</h5>
-                                    <p class=" mb-2">រៀបចំវគ្គបណ្តុះបណ្តាល​គ្រូបច្ចេកវិទ្យា ជាមួយ
-                                        <strong>XYZ Institute</strong> រៀងរាល់ត្រីមាស។
-                                    </p>
-                                    <span class="badge text-bg-primary">Workshops</span>
-                                </div>
-                                <div class="timeline-item mb-4">
-                                    <span class="dot"></span>
-                                    <h5 class="mb-1">គម្រោងបរិស្ថានជាមួយសហគមន៍</h5>
-                                    <p class=" mb-2">ពីរោះសម្អាតសហគមន៍ និងដាំដើមឈើជាមួយ
-                                        <strong>Green Life Group</strong> ក្នុងខែ មេសា–ឧសភា។
-                                    </p>
-                                    <span class="badge text-bg-primary">Community Action</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="dot"></span>
-                                    <h5 class="mb-1">MOU ជាមួយ NGO ថ្មី</h5>
-                                    <p class=" mb-2">ចុះហត្ថលេខាលើកិច្ចព្រមព្រៀងសហការ ជាមួយ
-                                        <strong>ABC Foundation</strong> សម្រាប់កម្មវិធីអប់រំកុមារ។
-                                    </p>
-                                    <span class="badge text-bg-primary">MOU / Agreement</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5">
-                            <div class="rounded-4 p-3 p-md-4 h-100 collaboration-mode">
-                                <h5 class="mb-3 fw-semibold">ប្រភេទសហការ</h5>
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="d-flex gap-3">
-                                        <div class=""><i class="bi bi-file-earmark-text fs-4"></i></div>
-                                        <div>
-                                            <div class="fw-semibold">កិច្ចព្រមព្រៀង (MOU)</div>
-                                            <p class=" mb-0">កំណត់គោលដៅ សិទ្ធិ
-                                                និងការទទួលខុសត្រូវរបស់ភាគីទាំងពីរ។</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <div class=""><i class="bi bi-people fs-4"></i></div>
-                                        <div>
-                                            <div class="fw-semibold">សកម្មភាពរួម</div>
-                                            <p class="mb-0">Workshop, Training, Hackathon, CareerTalk,
-                                                Field Trip…</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <div class=""><i class="bi bi-hand-thumbs-up fs-4"></i></div>
-                                        <div>
-                                            <div class="fw-semibold">ការចូលរួមសហគមន៍</div>
-                                            <p class="mb-0">សកម្មភាពសង្គម ដូចជា
-                                                ការសម្អាតនិងដាំដើមឈើជាមួយសហគមន៍។</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                        <div class=""><i class="bi bi-gift fs-4"></i></div>
-                                        <div>
-                                            <div class="fw-semibold">ការឧបត្ថម្ភ</div>
-                                            <p class="mb-0">
-                                                ផ្តល់ជំនួយសំរាប់គម្រោងនិងសកម្មភាពផ្សេងៗរបស់ដៃគូរ។</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <h4>
+                            តាមដានយើង
+                        </h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../image/Icon/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer  class="footer mt-auto pt-5 pb-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4">
-                        <div class="footer-logo">
-                            <img src="../image/logo-removebg.png" alt="">
-                            <p class="footer-text mt-3">
-                                ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
-                                ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
-                                និងទំនុកចិត្តលើខ្លួនឯង។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                        <div class="footer-page">
-                            <h4>
-                                ទំព័រ
-                            </h4>
-                            <ul class="footer-ul list-unstyled">
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ទំព័រដើម
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ការងារស្ម័គ្រចិត្ត
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        ព្រឹត្តិការណ៏
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        សកម្មភាព
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        បរិច្ចាក
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link">
-                                        អំពីយើង
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 d-xl-flex justify-content-xl-center">
-                        <div class="footer-page">
-                            <h4>
-                                ទំនាក់ទំនង
-                            </h4>
-                            <ul class="footer-ul list-unstyled">
-                                <li>
-                                    <a href="#" class="footer-link d-flex">
-                                        <i class="bi bi-envelope-at"></i>
-                                        <span class="ps-2">
-                                            volunteerCambo@gmail.com
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link d-flex">
-                                        <i class="bi bi-geo-alt"></i>
-                                        <span class="ps-2">
-                                            Tul kok , Phmom Penh , Cambodia
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="footer-link d-flex">
-                                        <i class="bi bi-telephone"></i>
-                                        <span class="ps-2">
-                                            +85568382800
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="footer-social">
-                            <h4>
-                                តាមដានយើង
-                            </h4>
-                            <ul class="list-unstyled d-flex">
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/facebook.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/telegram.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/instagram.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="../image/Icon/twitter.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <p class="text-center">
-                    @ANT SCHOLARSHIP2 | GROUP9
-                </p>
             </div>
-        </footer>
+            <hr>
+            <p class="text-center">
+                @ANT SCHOLARSHIP2 | GROUP9
+            </p>
+        </div>
+    </footer>
 
-        <!-- Modal Search -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-
-
-                        <form class="d-flex">
-                            <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                            <button type="submit" class="btn btn-primary rounded ms-2">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </form>
+    <!-- Modal Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
 
 
+                    <form class="d-flex">
+                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
+                        <button type="submit" class="btn btn-primary rounded ms-2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
 
-                    </div>
+
+
+
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <!-- JS Script -->
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/main.js"></script>
+    <!-- JS Script -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 
 
-        <script>
-            const track = document.querySelector('.carousel-track');
-            const cards = Array.from(track.children);
-            const dots = Array.from(document.querySelectorAll('.dot'));
-            const leftBtn = document.querySelector('.nav-arrow.left');
-            const rightBtn = document.querySelector('.nav-arrow.right');
-            const memberName = document.querySelector('.member-name');
-            const memberRole = document.querySelector('.member-role');
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const cards = Array.from(track.children);
+        const dots = Array.from(document.querySelectorAll('.dot'));
+        const leftBtn = document.querySelector('.nav-arrow.left');
+        const rightBtn = document.querySelector('.nav-arrow.right');
+        const memberName = document.querySelector('.member-name');
+        const memberRole = document.querySelector('.member-role');
 
-            const members = [
-                { name: 'Lim Buntheng', role: 'Leader' },
-                { name: 'Hean Senghorn', role: 'Member' },
-                { name: 'Pes Sokry', role: 'Member' },
-                { name: 'Ly Kimsun', role: 'Member' }
-            ];
+        const members = [
+            { name: 'Lim Buntheng', role: 'Leader' },
+            { name: 'Hean Senghorn', role: 'Member' },
+            { name: 'Ly Kimsun', role: 'Member' },
+            { name: 'Pes Sokry', role: 'Member' }
+        ];
 
-            let currentIndex = 0;
+        let currentIndex = 0;
 
-            function updateCarousel() {
-                cards.forEach(card => {
-                    card.classList.remove('center', 'left-1', 'left-2', 'right-1', 'right-2');
-                });
-                dots.forEach(dot => dot.classList.remove('active'));
-
-                const total = cards.length;
-                const c = currentIndex;
-
-                cards[c].classList.add('center');
-                dots[c].classList.add('active');
-
-                cards[(c - 1 + total) % total].classList.add('left-1');
-                cards[(c - 2 + total) % total].classList.add('left-2');
-                cards[(c + 1) % total].classList.add('right-1');
-                cards[(c + 2) % total].classList.add('right-2');
-
-                // update member info
-                memberName.textContent = members[c].name;
-                memberRole.textContent = members[c].role;
-            }
-
-            // Arrow click
-            leftBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-                updateCarousel();
+        function updateCarousel() {
+            cards.forEach(card => {
+                card.classList.remove('center', 'left-1', 'left-2', 'right-1', 'right-2');
             });
+            dots.forEach(dot => dot.classList.remove('active'));
 
-            rightBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % cards.length;
-                updateCarousel();
-            });
+            const total = cards.length;
+            const c = currentIndex;
 
-            // Dot click
-            dots.forEach(dot => {
-                dot.addEventListener('click', () => {
-                    currentIndex = parseInt(dot.dataset.index);
-                    updateCarousel();
-                });
-            });
+            cards[c].classList.add('center');
+            dots[c].classList.add('active');
 
-            // Auto slide
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % cards.length;
-                updateCarousel();
-            }, 4000);
+            cards[(c - 1 + total) % total].classList.add('left-1');
+            cards[(c - 2 + total) % total].classList.add('left-2');
+            cards[(c + 1) % total].classList.add('right-1');
+            cards[(c + 2) % total].classList.add('right-2');
 
-            // Initial
+            // update member info
+            memberName.textContent = members[c].name;
+            memberRole.textContent = members[c].role;
+        }
+
+        // Arrow click
+        leftBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
             updateCarousel();
+        });
 
-        </script>
-    </body>
+        rightBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        });
+
+        // Dot click
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentIndex = parseInt(dot.dataset.index);
+                updateCarousel();
+            });
+        });
+
+        // Auto slide
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        }, 4000);
+
+        // Initial
+        updateCarousel();
+
+    </script>
+</body>
 
 </html>
