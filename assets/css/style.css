@@ -102,6 +102,9 @@ body {
 header.fixed-top{
   z-index: 1050;
 }
+a{
+  text-decoration: none;
+}
 /* ---- Main donation card ---- */
 
 /* ===== Donation Type (pills) ===== */

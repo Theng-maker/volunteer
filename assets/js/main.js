@@ -118,7 +118,7 @@ if (typeof $ !== "undefined") {
   handleValidation("passwordForm", "../Authentication/resetPw.html");
 
   // search account → found_acc
-  handleValidation("searchForm", "../Authentication/found_acc.html");
+  handleValidation("searchForm", "../Authentication/comfirmCode.html");
 
   // changrPw → login
   handleValidation("resetForm", "../Authentication/login.html");
