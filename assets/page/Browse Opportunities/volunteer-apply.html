@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ការងារស្ម័គ្រចិត្ត</title>
+    <link rel="shortcut icon" href="../../image/logo-removebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <main class="py-1 bg-light">
+        <div class="container-fluid my-2" style="width: calc(100% / 1.7);">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card shadow-lg border-0">
+                        <div class="row g-0">
+                            <div
+                                class="col-md-4 bg-primary text-white d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-start-2">
+                                <h1 class="display-6 fw-bold mb-2">ចូលរួមជាមួយយើង ដើម្បីបង្កើតការផ្លាស់ប្តូរ</h1>
+                                <p class="lead mb-3">ការងារស្ម័គ្រចិត្តរបស់អ្នកនឹងរួមចំណែកយ៉ាងសំខាន់ដល់សហគមន៍។</p>
+                                <img src="https://img.freepik.com/free-vector/global-volunteer-solidarity-hands-up-banner-with-earth-map-vector_1017-48268.jpg?semt=ais_hybrid&w=740"
+                                    alt="ក្រុមស្ម័គ្រចិត្ត" class="img-fluid rounded-4 shadow-lg"
+                                    style="max-height: 350px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-8 p-5">
+                                <h2 class="mb-1 text-center text-primary fw-bold">បំពេញពាក្យសុំស្ម័គ្រចិត្ត</h2>
+                                <p class="text-center text-muted m-3">
+                                    សូមបំពេញព័ត៌មានខាងក្រោមដើម្បីចាប់ផ្តើមដំណើរស្ម័គ្រចិត្តរបស់អ្នកជាមួយយើង។</p>
+                                <form id="volunteerForm" novalidate>
+                                    <fieldset class="mb-3">
+                                        <legend class="h5 text-secondary">ព័ត៌មានផ្ទាល់ខ្លួន</legend>
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <label for="fullName" class="form-label">ឈ្មោះពេញ <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="fullName" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="phone" class="form-label">លេខទូរស័ព្ទ <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="tel" class="form-control" id="phone" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="email" class="form-label">អ៊ីមែល <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="email" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="location" class="form-label">ខេត្ត/ក្រុង <span
+                                                        class="text-danger">*</span></label>
+                                                <select class="form-select" id="location" required>
+                                                    <option selected disabled value="">ជ្រើសរើសខេត្ត/ក្រុង</option>
+                                                    <option value="ភ្នំពេញ">ភ្នំពេញ</option>
+                                                    <option value="សៀមរាប">សៀមរាប</option>
+                                                    <option value="បាត់ដំបង">បាត់ដំបង</option>
+                                                    <option value="កំពត">កំពត</option>
+                                                    <option value="ផ្សេងៗ">ខេត្តផ្សេងៗ...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label">ភេទ <span class="text-danger">*</span></label>
+                                                <div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gender"
+                                                            id="male" value="ប្រុស" required>
+                                                        <label class="form-check-label" for="male">ប្រុស</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gender"
+                                                            id="female" value="ស្រី">
+                                                        <label class="form-check-label" for="female">ស្រី</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="mb-3">
+                                        <legend class="h5 text-secondary mb-3">ជំនាញ និងចំណាប់អារម្មណ៍</legend>
+                                        <div class="mb-3">
+                                            <label class="form-label">ប្រភេទការងារស្ម័គ្រចិត្ត <span
+                                                    class="text-danger">*</span></label>
+                                            <div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="volunteerType"
+                                                        id="fullTime" value="ពេញម៉ោង" required>
+                                                    <label class="form-check-label" for="fullTime">ពេញម៉ោង</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="volunteerType"
+                                                        id="partTime" value="ក្រៅម៉ោង">
+                                                    <label class="form-check-label" for="partTime">ក្រៅម៉ោង</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="volunteerType"
+                                                        id="projectBased" value="តាមគម្រោង">
+                                                    <label class="form-check-label" for="projectBased">តាមគម្រោង</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label class="form-label">ជំនាញ (អាចជ្រើសរើសច្រើន)</label>
+                                            <div>
+                                                <div class="btn-group-toggle" data-bs-toggle="buttons">
+                                                    <input type="checkbox" class="btn-check" id="education"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="education">អប់រំ</label>
+                                                    <input type="checkbox" class="btn-check" id="health"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="health">សុខភាព</label>
+                                                    <input type="checkbox" class="btn-check" id="it_tech"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="it_tech">បច្ចេកវិទ្យា</label>
+                                                    <input type="checkbox" class="btn-check" id="art_culture"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="art_culture">សិល្បៈ/វប្បធម៌</label>
+                                                    <input type="checkbox" class="btn-check" id="environment"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="environment">បរិស្ថាន</label>
+                                                    <input type="checkbox" class="btn-check" id="agriculture"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="agriculture">កសិកម្ម</label>
+                                                    <input type="checkbox" class="btn-check" id="other_skills"
+                                                        autocomplete="off">
+                                                    <label class="btn btn-outline-secondary rounded-pill me-2 mb-2"
+                                                        for="other_skills">ផ្សេងៗ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="mb-3">
+                                        <legend class="h5 text-secondary mb-3">ពេលវេលាដែលអាចធ្វើបាន</legend>
+                                        <p class="mb-3">សូមជ្រើសរើសពេលវេលាដែលអ្នកអាចចូលរួម (អាចជ្រើសរើសច្រើនបាន)</p>
+                                        <div class="row g-1">
+                                            <div class="col-12">
+                                                <legend class="h5 text-secondary mb-2">ថ្ងៃធ្វើការ</legend>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityMorningWeekday" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityMorningWeekday">ពេលព្រឹក</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityAfternoonWeekday" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityAfternoonWeekday">ពេលរសៀល</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityEveningWeekday" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityEveningWeekday">ពេលយប់</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-2">
+                                                <legend class="h5 text-secondary mb-2">ចុងសប្តាហ៍</legend>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityMorningWeekend" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityMorningWeekend">ពេលព្រឹក</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityAfternoonWeekend" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityAfternoonWeekend">ពេលរសៀល</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityEveningWeekend" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityEveningWeekend">ពេលយប់</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 mt-1">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="availabilityAnytime" name="availability">
+                                                    <label class="form-check-label"
+                                                        for="availabilityAnytime">គ្រប់ពេល</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="mb-3">
+                                        <label for="notes" class="form-label">កំណត់ត្រា/ចំណាប់អារម្មណ៍</label>
+                                        <textarea class="form-control" id="notes" rows="2"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cv" class="form-label fw-medium">Upload CV (optional)</label>
+                                        <input type="file" class="form-control rounded-3" id="cv">
+                                    </div>
+                                    <div class="form-check m-3">
+                                        <input class="form-check-input" type="checkbox" id="agree" required>
+                                        <label class="form-check-label small" for="agree">
+                                            ខ្ញុំយល់ព្រមតាមលក្ខខណ្ឌ និងប្ដេជ្ញាស្ម័គ្រចិត្តប្រកបដោយការទទួលខុសត្រូវ។
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                                            <i class="bi bi-person-add me-2"></i> ចុះឈ្មោះឥឡូវនេះ
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="alert alert-success mt-4 d-none text-center" id="successMessage">
+                                    <i class="bi bi-check-circle me-2"></i>🎉 អ្នកបានចុះឈ្មោះដោយជោគជ័យ!
+                                    យើងនឹងទាក់ទងអ្នកក្នុងពេលឆាប់ៗនេះ។
+                                </div>
+                                <div class="mt-4 d-flex justify-content-center">
+                                    <a href="../homepage.html" class="btn btn-primary btn-lg rounded-pill fs-6">ទៅកាន់ទំព័រដើម</a>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/opportunities.js"></script>
+    <script>
+        // Form submission handler
+        const volunteerForm = document.getElementById("volunteerForm");
+        const successMessage = document.getElementById("successMessage");
+        volunteerForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            successMessage.classList.remove("d-none");
+            volunteerForm.reset();
+        });
+    </script>
+</body>
+
+</html>
