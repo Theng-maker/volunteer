@@ -366,10 +366,6 @@ a {
   }
 }
 
-.Org-brand {
-  margin-top: 150px;
-}
-
 .nav-tabs .nav-link {
   font-weight: 500;
   color: #555;
@@ -716,11 +712,6 @@ a {
 }
 
 /* ===== File: css/about.css ===== */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 .about-mession .mession-title {
   padding-top: 150px;
@@ -3172,10 +3163,9 @@ footer p.text-center {
 /* =======================
    ORG / TABS / OPPORTUNITIES / TABLES / ANALYTICS
    ======================= */
-.Org-brand {
-  margin-top: 150px;
+.Org-brand{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
 .nav-tabs .nav-link {
   font-weight: 500;
   color: #555;
@@ -3194,13 +3184,6 @@ footer p.text-center {
   color: var(--primary-color);
   border-bottom-color: var(--secondary-color);
 }
-
-/* .tab-content {
-  background: #fff;
-  border: 1px solid #dee2e6;
-  padding: 20px;
-  border-radius: 0 0 .5rem .5rem;
-} */
 
 .tab-content img {
   width: 100%;
@@ -3702,168 +3685,6 @@ a:hover,
   font-size: 1.05rem;
   color: #fbbf24;
 }
-
-/* =======================
-   HERO BANNER (merged)
-   ======================= */
-/* .hero-banner {
-  width: 100%;
-  margin-top: 120px;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgba(103, 129, 222, 0.5),
-      rgba(0, 0, 0, 0.2)),
-    url('https://img.freepik.com/free-vector/global-volunteer-solidarity-hands-up-banner-with-earth-map-vector_1017-48268.jpg?semt=ais_hybrid&w=740') no-repeat center center/cover;
-  color: #fff;
-  padding: 0 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-banner h1 {
-  font-size: 52px;
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  animation: slideInDown 1s ease forwards;
-}
-
-.hero-banner p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  color: #fffdfd;
-  animation: fadeIn 1.5s ease forwards;
-}
-
-.hero-banner ul li {
-  margin: 10px 0;
-  font-size: 1.1rem;
-  color: #ffffff;
-  position: relative;
-  padding-left: 30px;
-}
-
-.hero-banner ul li i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #0c18c2;
-}
-
-.btn-hero {
-  padding: 12px 35px;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  background: linear-gradient(45deg, #ff6a00, #ee0979);
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  transition: all 0.4s ease;
-}
-
-.btn-hero:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
-  background: linear-gradient(45deg, #ee0979, #ff6a00);
-}
-
-.btn-outline-hero {
-  padding: 12px 35px;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  color: #fff;
-  background: transparent;
-  transition: all 0.4s ease;
-}
-
-.btn-outline-hero:hover {
-  background: #fff;
-  color: #ff6a00;
-  transform: translateY(-3px);
-}
-
-@keyframes slideInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
-
-/* Hero action buttons + slider variant merged */
-/* .hero-banner .hero-content {
-  width: 50%;
-  bottom: 120px;
-  color: var(--text-white-fixed);
-}
-
-.hero-banner .hero-content .hero-title {
-  font-size: 46px;
-}
-
-.hero-banner .hero-content .hero-decript {
-  font-size: 24px;
-}
-
-.hero-action .btn {
-  background-color: var(--primary-color);
-  color: var(--text-white-fixed);
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-size: 18px;
-  border: 1.5px solid transparent;
-}
-
-.hero-action .btn.as-volunteer {
-  background-color: transparent;
-  border-color: var(--primary-color);
-}
-
-.hero-action .btn:hover {
-  background-color: var(--secondary-color);
-}
-
-.hero-banner .hero-slide .carousel-item {
-  position: relative;
-}
-
-.hero-banner .hero-slide .carousel-item img {
-  height: 90vh;
-}
-
-.hero-banner .hero-slide .carousel-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 99;
-  background: linear-gradient(88deg, rgba(0, 0, 0, .67) 55%, rgba(255, 255, 255, 0) 100%);
-}
-
-.hero-banner.hero-home .hero-content {
-  bottom: 50px;
-}
-
-.hero-banner.hero-home .hero-content .card-text {
-  color: var(--text-white-fixed);
-} */
 
 /* =======================
    EVENT SOON (cards)
@@ -4892,9 +4713,6 @@ a:hover,
 
 /* ≤ 768px */
 @media (max-width: 768px) {
-  main {
-    margin-top: 150px;
-  }
 
   h1 {
     font-size: 1.6rem;
@@ -5960,8 +5778,6 @@ background: linear-gradient(89deg, rgba(254, 177, 23, 0.31) 23%, rgba(255, 255, 
 background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
 
-
-
 /* ---------- FAQ ----- */
 .question-area {
   position: relative;
@@ -6031,14 +5847,12 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 .sponsor-area {
   position: relative;
   background-image: url(../image/homepage/about.png);
-  /* background-color: var(--gray-bg); */
   overflow-x: hidden;
 }
 
 .sponsor-area .overlay {
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.628); */
   top: 0;
   left: 0;
 }
@@ -6098,8 +5912,6 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
   padding: 20px;
   background-color: var(--card-white);
 }
-
-
 
 @media (max-width : 576px) {
   .testimonial-area .testimonial-slide {
@@ -6223,10 +6035,6 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
   color: var(--accent-primary);
 }
 
-/* =====================================================
-   RESPONSIVE TWEAKS (TABLET + PHONE)
-   ===================================================== */
-
 /* ---------- iPad / small laptop (≤ 992px) ---------- */
 @media (max-width: 992px) {
   main {
@@ -6316,8 +6124,6 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
     padding: 10px 0;
   }
 
-  /* Recommendation / Opportunity cards:
-     stack meta lines, keep buttons full-width */
   .vh-op-card .btn,
   .vh-reco-card .btn {
     font-size: .95rem;
@@ -7122,3 +6928,4 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 .comment-kebab .btn {
   color: var(--text-muted);
 }
+
