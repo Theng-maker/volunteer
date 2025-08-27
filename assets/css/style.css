@@ -122,6 +122,11 @@ a {
   text-decoration: none;
 }
 
+
+.authentication-body {
+  height: 100vh;
+  align-content: center;
+}
 /* ---- Main donation card ---- */
 
 /* ===== Donation Type (pills) ===== */
@@ -1752,6 +1757,10 @@ a {
 }
 
 /* --- about us ------ */
+.about-us {
+  padding: 60px 0;
+}
+
 .about-us .section-title {
   font-size: 32px;
   color: var(--text-black);
@@ -1866,6 +1875,7 @@ a {
 
 /* ---- opportunities-area ----- */
 .opportunities-area {
+  padding: 60px 0;
   padding-bottom: 60px;
   background-color: var(--gray-bg);
 }
@@ -2706,6 +2716,18 @@ a {
 .top-header .dropdown .dropdown-menu li a:hover {
   background-color: var(--primary-color) !important;
   color: var(--text-white-fixed);
+}
+
+.top-header button[data-theme-toggle] {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eeeeee4e;
+  transition: 0.3s;
+}
+
+.top-header button[data-theme-toggle]:hover {
+  background-color: var(--primary-color);
 }
 
 /* =======================
@@ -6007,9 +6029,47 @@ a:hover,
 }
 
 /* Benrfits */
+.benefit-area {
+  padding: 60px 0;
+}
+
+.benefit-area .card {
+  border-radius: 20px;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}
+
+.benefit-area .card .card-img {
+  width: 30%;
+}
+
 .benefit-area .card .card-body .card-text span {
   color: var(--primary-color);
 }
+
+.benefit-area .col-xl-6:nth-child(1) .card {
+  background: #18AFFE;
+  background: linear-gradient(275deg, rgba(24, 175, 254, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+
+.benefit-area .col-xl-6:nth-child(2) .card {
+  background: #F741C3;
+  background: linear-gradient(84deg, rgba(247, 65, 195, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+.benefit-area .col-xl-4:nth-child(3) .card {
+  background: #4DE38C;
+background: linear-gradient(89deg, rgba(77, 227, 140, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+.benefit-area .col-xl-4:nth-child(4) .card {
+  background: #FEB117;
+background: linear-gradient(89deg, rgba(254, 177, 23, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+.benefit-area .col-xl-4:nth-child(5) .card {
+  background: #8050FF;
+background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+
 
 
 /* ---------- FAQ ----- */
@@ -6535,7 +6595,7 @@ a:hover,
 
 .hero-banner .hero-content {
   width: 50%;
-  bottom: 120px;
+  bottom: 25%;
   color: var(--text-white-fixed);
 }
 
@@ -6586,7 +6646,8 @@ a:hover,
 }
 
 .hero-banner.hero-home .hero-content {
-  bottom: 60px;
+  width: 50%;
+  bottom: 15%;
 }
 
 .hero-banner.hero-home .hero-content .card-text,
@@ -6612,6 +6673,7 @@ a:hover,
 
 /* --- about us ------ */
 .about-us {
+  padding: 60px 0;
   background-color: var(--bg-color);
 }
 
@@ -6694,8 +6756,12 @@ a:hover,
   }
 }
 
+.about-us .mission-list li {
+  margin-bottom: 25px;
+}
+
 .about-us .mission-list .list-content h4 {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--text-black);
 }
 
@@ -6835,6 +6901,7 @@ a:hover,
 
 /* ------ Upcoming Event ----- */
 .upcomming-area {
+  padding: 60px 0;
   background: url('../image/homepage/shape-thirteen.png');
 }
 
@@ -6843,6 +6910,9 @@ a:hover,
   backdrop-filter: blur(2px);
 }
 
+.upcomming-area .card:hover .card-body {
+  bottom: 0;
+}
 .upcomming-area .card .card-img {
   height: 300px;
 }
@@ -6850,8 +6920,9 @@ a:hover,
 .upcomming-area .card .card-body {
   z-index: 2;
   color: var(--text-white-fixed);
-  background-color: rgba(0, 0, 0, 0.594);
-  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.251);
+  bottom: -60px;
+  transition: 0.3s;
 }
 
 .upcomming-area .card .card-body .card-text,
@@ -6909,9 +6980,55 @@ a:hover,
 
 /* ----- Donatiom-Area ---- */
 .donation-area {
+  padding: 60px 0;
   background-color: var(--bg-color);
 }
 
+.donation-area .card {
+  height: 300px;
+  background-color: var(--card-white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  background: linear-gradient(88deg, rgba(62, 185, 245, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.donation-area .card .card-img {
+  width: 40%;
+  transition: 0.3s;
+}
+
+.donation-area .card .card-body {
+  width: 60%;
+}
+
+.donation-area .card .card-body i {
+  display: inline-block;
+  font-size: 20px;
+  transform: translateY(2.5px);
+  transition: 0.3s;
+}
+
+.donation-area .card .card-body .btn:hover i {
+  padding-left: 10px;
+}
+
+
+/* Sponsor */
+.sponsor {
+  padding: 60px 0;
+  background-color: var(--gray-bg);
+}
+
+.sponsor .card {
+  background-color: transparent;
+  border: none;
+}
+
+.sponsor .card img {
+  width: 150px;
+  height: 150px;
+  margin-inline: auto;
 .donation-area .card-1 {
   box-shadow: #007bff27 0px 7px 29px 0px;
 
@@ -6925,12 +7042,12 @@ a:hover,
   color: var(--primary-color);
   ;
   background-color: #007bff27;
-
 }
 
 /* ---- Call-to-Action --- */
 
 .cta-area {
+  padding: 60px 0;
   margin-top: 40px;
   background: url('../image/homepage/dot-bg.webp');
 }
@@ -6950,6 +7067,7 @@ a:hover,
 
 /* ---------- FAQ ----- */
 .question-area {
+  padding: 60px 0;
   position: relative;
   background-color: var(--gray-bg);
 
@@ -7002,6 +7120,7 @@ a:hover,
 
 /* ------ Testimonials ------ */
 .testimonial-area {
+  padding: 60px 0;
   position: relative;
   background: url('../image/homepage/shape-nine.png') no-repeat -10%;
   /* height: 100vh; */
@@ -7019,6 +7138,10 @@ a:hover,
   transform: rotate(180deg);
 }
 
+@media (max-width : 576px) {
+  .hero-banner .hero-content {
+    width: 90%;
+    bottom: 10%;
 /* ----- Sponsor ------ */
 .sponsor-area {
   position: relative;
@@ -7078,20 +7201,12 @@ a:hover,
   to {
     right: -4%;
   }
-}
 
-.sponsor-area .card img {
-  width: 100px;
-  height: 100px;
-  margin-inline: auto;
-}
+  .hero-banner.hero-home .hero-content {
+    width: 90%;
+    bottom: 5%;
+  }
 
-.sponsor-area .card {
-  padding: 20px;
-  background-color: var(--card-white);
-}
-
-@media (max-width : 576px) {
   .testimonial-area .testimonial-slide {
     height: 200px;
     border-radius: 10px;

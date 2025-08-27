@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   handleValidation("passwordForm", "../Authentication/resetPw.html");
 
   // search account → found_acc
-  handleValidation("searchForm", "../Authentication/found_acc.html");
+  handleValidation("searchForm", "../Authentication/comfirmCode.html");
 
   // changrPw → login
   handleValidation("resetForm", "../Authentication/login.html");
@@ -125,8 +125,66 @@ document.addEventListener("DOMContentLoaded", function () {
   // orgRegisterForm → login
   handleValidation("orgRegisterForm", "../Authentication/login.html");
   // orgloginForm → homepage
+  handleValidation("orgloginForm", "../orghomepage.html");
+
+  //DOnation
+  $(".donate-btn").hover(
+    function () {
+      $(this)
+        .closest(".donation-card")
+        .find(".card-img")
+        .css("transform", "scale(1.08)");
+    },
+    function () {
+      $(this)
+        .closest(".donation-card")
+        .find(".card-img")
+        .css("transform", "scale(1)");
+    }
+  );
+
+  // Sponsor
+
+  var swiper = new Swiper(".sponsor-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      "@2.00": {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
   handleValidation("orgloginForm", "../homepage.html");
 
   // Testimonials
-
 });
