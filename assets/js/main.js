@@ -184,4 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  handleValidation("orgloginForm", "../homepage.html");
+
+  // Testimonials
 });
