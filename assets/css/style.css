@@ -32,7 +32,6 @@
   --text-descript: #232531;
   --text-title: #0D1B2A;
   --text-color: #333333;
- 
 
   /* Surfaces */
   --white-bg: #FFFFFF;
@@ -81,7 +80,6 @@
   --text-title: #FFFFFF;
   --text-color: #CCCCCC;
 
-
   /* Surfaces */
   --white-bg: #1A1A1A;
   --gray-bg: #222222;
@@ -122,11 +120,11 @@ a {
   text-decoration: none;
 }
 
-
 .authentication-body {
   height: 100vh;
   align-content: center;
 }
+
 /* ---- Main donation card ---- */
 
 /* ===== Donation Type (pills) ===== */
@@ -718,6 +716,11 @@ a {
 }
 
 /* ===== File: css/about.css ===== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .about-mession .mession-title {
   padding-top: 150px;
@@ -1673,6 +1676,7 @@ a {
   box-shadow: 4px 12px 35px rgba(0, 0, 0, 0.93);
 }
 
+
 /* ------ Event Soon Start ------ */
 
 .card-event {
@@ -2144,7 +2148,7 @@ a {
 /* ========================================================= */
 /* breadcrumb */
 .breadcrumb-page {
-  padding-top: 160px;
+  padding-top: 180px;
   padding-left: 50px;
 }
 
@@ -2416,7 +2420,7 @@ a {
   border: none;
   border-radius: 6px;
   background: var(--btn-primary);
-  color: var(--text-white-fixed);
+  color: var(--text-title);
   cursor: pointer;
 }
 
@@ -2483,7 +2487,7 @@ a {
   font-weight: 500;
   border: 2px solid var(--btn-primary);
   background-color: var(--btn-primary);
-  color: var(--text-white-fixed);
+  color: var(--text-black);
 }
 
 /* ========================================================= */
@@ -2540,7 +2544,16 @@ a {
   z-index: 20;
 }
 
-
+.opportunity-card .card .carousel-top .favorite i {
+  content: '';
+  position: absolute;
+  color: var(--btn-secondary);
+  left: 360px;
+  top: 15px;
+  font-size: 28px;
+  border-radius: 50px;
+  z-index: 20;
+}
 
 .opportunity-card .card .carousel-top .page button {
   width: 3px;
@@ -2594,71 +2607,19 @@ a {
   margin-inline: 50px;
 }
 
-@media(min-width:1400px) {
-  .opportunity-card .card .carousel-top .favorite i {
-    position: absolute;
-    color: var(--btn-secondary);
-    left: 360px;
-    top: 15px;
-    font-size: 28px;
-    border-radius: 50px;
-    z-index: 20;
-  }
-}
-
- @media (min-width:1200px) and (max-width:1399px) {
-  .opportunity-card .card .carousel-top .favorite i {
-      position: absolute;
-      color: var(--btn-secondary);
-      left: 300px;
-      top: 15px;
-      font-size: 28px;
-      border-radius: 50px;
-      z-index: 20;
-    }
-}
-@media (min-width:992px) and (max-width:1199px) {
-  .opportunity-card .card .carousel-top .favorite i {
-      position: absolute;
-      color: var(--btn-secondary);
-      left: 250px;
-      top: 15px;
-      font-size: 28px;
-      border-radius: 50px;
-      z-index: 20;
-    }
-} 
-@media(max-width:991px){
-  .opportunity-card .card .carousel-top .favorite i {
-      content: '';
-      position: absolute;
-      color: var(--btn-secondary);
-      left: 290px;
-      top: 15px;
-      font-size: 28px;
-      border-radius: 50px;
-      z-index: 20;
-    }
-}
-@media (max-width:600px){
-  .opportunity-card .card .carousel-top .favorite i {
-      content: '';
-      position: absolute;
-      color: var(--btn-secondary);
-      left: 320px;
-      top: 15px;
-      font-size: 28px;
-      border-radius: 50px;
-      z-index: 20;
-    }
-}
-
-
-/* ===================================== */
 
 .offcanvas {
   top: var(--header-total);
   height: calc(100vh - var(--header-total));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-title);
 }
 
 .section-title h2 {
@@ -2741,15 +2702,13 @@ a {
 .navbar .navbar-brand img {
   width: 60px;
   margin-right: 8px;
-  border-radius: 50%;
 }
 
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
   font-size: 24px;
-  font-weight: 600;
-  color: var(--btn-primary);
+  color: var(--primary-color);
 }
 
 .navbar .navbar-nav .nav-item {
@@ -4054,91 +4013,22 @@ a:hover,
    ABOUT / OUR STORY / TEAM (scoped & de-duped)
    ======================= */
 
-.mission-area {
-  position: relative;
-  /* background:url('../image/homepage/pattern-4.png') no-repeat center center/cover; */
-  background-color: var(--gray-bg); 
+/* About mission */
+.about-mession .mession-title {
+  margin-top: 48px !important;
 }
 
-.mission-area .line-style {
+.about-mession .mession-title .about-label {
   width: 120px;
-  height: 3px;
-  background: linear-gradient(90deg,var(--primary-color),var(--secondary-color));
-  border-radius: 2px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--text-white-fixed);
 }
-.mission-area .mission-card {
-  background-color: var(--card-white);
-  color: var(--text-descript);
-  padding: 3rem 1.5rem 2rem 1.5rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.4s, background-color 0.4s;
-}
-.mission-area .mission-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  background-color: var(--gray-bg);
-}
-.mission-area .mission-card::before {
-  content: attr(data-bgtext);
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 55px;
-  font-weight: 700;
-  z-index: 0;
-  color: #1e4cd41b;
-}
-.mission-area .mission-card img {
-  width: 80px;
-  height: 80px;
-  z-index: 1;
-}
-.mission-area .mission-card h4 {
-  font-size: 1.5rem;
-  z-index: 1;
-  position: relative;
-}
-.mission-area.mission-card p {
-  color: var(--text-descript);
-  z-index: 1;
-  position: relative;
-}
-@media(max-width:820px){
-  .mission-area{
-    margin-top: 0px;
-  }
-}
-@media(max-width: 767.98px){
-  .mission-area .mission-card {
-    padding: 2rem 1.5rem;
-  }
 
-  .mission-area .mission-card::before {
-    font-size: 3rem;
-  }
-
-  .mission-area .mission-card img {
-    width: 50px;
-    height: 50px;
-  }
-}
 /* Our Story timeline */
-.our-story .right-dec .card-text{
-  background-color: var(--bg-card);
-  border-radius: 10px;
-}
-.our-story .card.left-img{
-  width: 100%;
-  height: 550px;
-}
-.our-story .card.left-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .our-story .card .card-body .steps {
   position: relative;
   margin-top: 32px;
@@ -6658,12 +6548,12 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 
 
 .hero-banner .carousel-control-prev,
-.hero-banner .carousel-control-next {
+.carousel-control-next {
   width: 8% !important;
 }
 
 .hero-banner .carousel-control-prev-icon,
-.hero-banner .carousel-control-next-icon {
+.carousel-control-next-icon {
   background-color: #565656;
   width: 50px;
   height: 50px;
@@ -6913,6 +6803,7 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 .upcomming-area .card:hover .card-body {
   bottom: 0;
 }
+
 .upcomming-area .card .card-img {
   height: 300px;
 }
@@ -7029,19 +6920,6 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
   width: 150px;
   height: 150px;
   margin-inline: auto;
-.donation-area .card-1 {
-  box-shadow: #007bff27 0px 7px 29px 0px;
-
-}
-
-.donation-area .card .card-icon {
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  ;
-  background-color: #007bff27;
 }
 
 /* ---- Call-to-Action --- */
@@ -7142,64 +7020,6 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
   .hero-banner .hero-content {
     width: 90%;
     bottom: 10%;
-/* ----- Sponsor ------ */
-.sponsor-area {
-  position: relative;
-  background-image: url(../image/homepage/about.png);
-  /* background-color: var(--gray-bg); */
-  overflow-x: hidden;
-}
-
-.sponsor-area .overlay {
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.628); */
-  top: 0;
-  left: 0;
-}
-
-.sponsor-area::before {
-  content: '';
-  position: absolute;
-  background: url(../image/homepage/icon-four.png) no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: -10%;
-  z-index: 2;
-  animation: sponsor1 5s linear infinite alternate;
-}
-
-.sponsor-area::after {
-  content: '';
-  position: absolute;
-  background: url(../image/homepage/icon-four.png) no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -10%;
-  transform: rotate(180deg);
-  z-index: 2;
-  animation: sponsor2 3s linear infinite alternate;
-}
-
-@keyframes sponsor1 {
-  from {
-    left: -10%;
-  }
-
-  to {
-    left: -4%;
-  }
-}
-
-@keyframes sponsor2 {
-  from {
-    right: -10%;
-  }
-
-  to {
-    right: -4%;
   }
 
   .hero-banner.hero-home .hero-content {
@@ -7234,73 +7054,4 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
     border-radius: 50%;
     border: 5px solid #007ACC;
   }
-}
-
-
-.comments-panel {
-  background: var(--bg-subtle);      /* use subtle bg from your root */
-  border-radius: 12px;
-  padding: 12px 14px;
-  border: 1px solid var(--border-color);
-}
-
-.comments-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 6px;
-  margin-bottom: 10px;
-}
-
-.comments-header .count {
-  font-weight: 600;
-  color: var(--text-title);
-}
-
-.comment-item {
-  display: flex;
-  gap: 10px;
-  padding: 10px 0;
-}
-
-.comment-item + .comment-item {
-  border-top: 1px dashed var(--border-color);
-}
-
-.comment-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.comment-author {
-  font-weight: 700;
-  color: var(--text-title);
-}
-
-.comment-time {
-  color: var(--text-muted);
-  font-size: .875rem;
-}
-
-.comment-text {
-  margin: .25rem 0 .5rem;
-  color: var(--text-main);
-}
-
-.comment-actions {
-  color: var(--text-muted);
-  font-size: .875rem;
-  display: flex;
-  gap: 16px;
-}
-
-.comment-actions i {
-  vertical-align: -1px;
-}
-
-.comment-kebab .btn {
-  color: var(--text-muted);
 }
