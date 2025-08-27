@@ -713,11 +713,6 @@ a {
 }
 
 /* ===== File: css/about.css ===== */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 .about-mession .mession-title {
   padding-top: 150px;
@@ -2139,7 +2134,7 @@ a {
 /* ========================================================= */
 /* breadcrumb */
 .breadcrumb-page {
-  padding-top: 180px;
+  padding-top: 160px;
   padding-left: 50px;
 }
 
@@ -2411,7 +2406,7 @@ a {
   border: none;
   border-radius: 6px;
   background: var(--btn-primary);
-  color: var(--text-white-fixed );
+  color: var(--text-white-fixed);
   cursor: pointer;
 }
 
@@ -2535,16 +2530,7 @@ a {
   z-index: 20;
 }
 
-.opportunity-card .card .carousel-top .favorite i {
-  content: '';
-  position: absolute;
-  color: var(--btn-secondary);
-  left: 360px;
-  top: 15px;
-  font-size: 28px;
-  border-radius: 50px;
-  z-index: 20;
-}
+
 
 .opportunity-card .card .carousel-top .page button {
   width: 3px;
@@ -2598,19 +2584,71 @@ a {
   margin-inline: 50px;
 }
 
+@media(min-width:1400px) {
+  .opportunity-card .card .carousel-top .favorite i {
+    position: absolute;
+    color: var(--btn-secondary);
+    left: 360px;
+    top: 15px;
+    font-size: 28px;
+    border-radius: 50px;
+    z-index: 20;
+  }
+}
+
+ @media (min-width:1200px) and (max-width:1399px) {
+  .opportunity-card .card .carousel-top .favorite i {
+      position: absolute;
+      color: var(--btn-secondary);
+      left: 300px;
+      top: 15px;
+      font-size: 28px;
+      border-radius: 50px;
+      z-index: 20;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .opportunity-card .card .carousel-top .favorite i {
+      position: absolute;
+      color: var(--btn-secondary);
+      left: 250px;
+      top: 15px;
+      font-size: 28px;
+      border-radius: 50px;
+      z-index: 20;
+    }
+} 
+@media(max-width:991px){
+  .opportunity-card .card .carousel-top .favorite i {
+      content: '';
+      position: absolute;
+      color: var(--btn-secondary);
+      left: 290px;
+      top: 15px;
+      font-size: 28px;
+      border-radius: 50px;
+      z-index: 20;
+    }
+}
+@media (max-width:600px){
+  .opportunity-card .card .carousel-top .favorite i {
+      content: '';
+      position: absolute;
+      color: var(--btn-secondary);
+      left: 320px;
+      top: 15px;
+      font-size: 28px;
+      border-radius: 50px;
+      z-index: 20;
+    }
+}
+
+
+/* ===================================== */
 
 .offcanvas {
   top: var(--header-total);
   height: calc(100vh - var(--header-total));
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--text-title);
 }
 
 .section-title h2 {
@@ -2681,13 +2719,15 @@ h6 {
 .navbar .navbar-brand img {
   width: 60px;
   margin-right: 8px;
+  border-radius: 50%;
 }
 
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
   font-size: 24px;
-  color: var(--primary-color);
+  font-weight: 600;
+  color: var(--btn-primary);
 }
 
 .navbar .navbar-nav .nav-item {
