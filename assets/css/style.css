@@ -30,6 +30,7 @@
   --text-descript: #232531;
   --text-title: #0D1B2A;
   --text-color: #333333;
+ 
 
   /* Surfaces */
   --white-bg: #FFFFFF;
@@ -77,6 +78,7 @@
   --text-descript: #CCCCCC;
   --text-title: #FFFFFF;
   --text-color: #CCCCCC;
+
 
   /* Surfaces */
   --white-bg: #1A1A1A;
@@ -1662,7 +1664,6 @@ a{
   transform: scale(0.95);
   box-shadow: 4px 12px 35px rgba(0, 0, 0, 0.93);
 }
-
 
 /* ------ Event Soon Start ------ */
 
@@ -3973,22 +3974,91 @@ a:hover,
    ABOUT / OUR STORY / TEAM (scoped & de-duped)
    ======================= */
 
-/* About mission */
-.about-mession .mession-title {
-  margin-top: 48px !important;
+.mission-area {
+  position: relative;
+  /* background:url('../image/homepage/pattern-4.png') no-repeat center center/cover; */
+  background-color: var(--gray-bg); 
 }
 
-.about-mession .mession-title .about-label {
+.mission-area .line-style {
   width: 120px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary-color);
-  color: var(--text-white-fixed);
+  height: 3px;
+  background: linear-gradient(90deg,var(--primary-color),var(--secondary-color));
+  border-radius: 2px;
+}
+.mission-area .mission-card {
+  background-color: var(--card-white);
+  color: var(--text-descript);
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.4s, background-color 0.4s;
+}
+.mission-area .mission-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background-color: var(--gray-bg);
+}
+.mission-area .mission-card::before {
+  content: attr(data-bgtext);
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 55px;
+  font-weight: 700;
+  z-index: 0;
+  color: #1e4cd41b;
+}
+.mission-area .mission-card img {
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+}
+.mission-area .mission-card h4 {
+  font-size: 1.5rem;
+  z-index: 1;
+  position: relative;
+}
+.mission-area.mission-card p {
+  color: var(--text-descript);
+  z-index: 1;
+  position: relative;
+}
+@media(max-width:820px){
+  .mission-area{
+    margin-top: 0px;
+  }
+}
+@media(max-width: 767.98px){
+  .mission-area .mission-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .mission-area .mission-card::before {
+    font-size: 3rem;
+  }
+
+  .mission-area .mission-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* Our Story timeline */
+.our-story .right-dec .card-text{
+  background-color: var(--bg-card);
+  border-radius: 10px;
+}
+.our-story .card.left-img{
+  width: 100%;
+  height: 550px;
+}
+.our-story .card.left-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Our Story timeline */
 .our-story .card .card-body .steps {
   position: relative;
   margin-top: 32px;
