@@ -125,8 +125,8 @@ a {
   align-content: center;
 }
 
-/* ---- Main donation card ---- */
 
+/* ---- Main donation card ---- */
 /* ===== Donation Type (pills) ===== */
 .vh-pill {
   border: 1px solid var(--border);
@@ -716,11 +716,6 @@ a {
 }
 
 /* ===== File: css/about.css ===== */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 .about-mession .mession-title {
   padding-top: 150px;
@@ -2148,7 +2143,7 @@ a {
 /* ========================================================= */
 /* breadcrumb */
 .breadcrumb-page {
-  padding-top: 180px;
+  padding-top: 160px;
   padding-left: 50px;
 }
 
@@ -2189,7 +2184,6 @@ a {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-
 
 /* ============================================================== */
 /* Counter Card */
@@ -2249,7 +2243,6 @@ a {
 }
 
 /* ============================================================== */
-
 .quick-info ul {
   list-style-type: none;
   padding-left: 0;
@@ -2262,7 +2255,6 @@ a {
   font-size: 18px;
 }
 
-/* ============================================================== */
 /*  */
 .skill-require ul li,
 .tasks ul li {
@@ -2272,7 +2264,6 @@ a {
 }
 
 /*  */
-/* ============================================================== */
 .impact-testimonials {
   background-color: var(--btn-secondary);
   color: white;
@@ -2284,14 +2275,12 @@ a {
   color: white;
 }
 
-/* ============================================================== */
 .impact-testimonials .feedback img {
   width: 70px;
   height: 70px;
   object-fit: cover;
 }
 
-/* ============================================================== */
 .organization {
   background-color: none !important;
   padding: 10px 0;
@@ -2302,15 +2291,12 @@ a {
   text-indent: 35px;
   line-height: 35px;
   color: var(--text-color);
-
 }
 
-/* ============================================================== */
 .courage-card {
   background-color: var(--btn-secondary);
 }
 
-/* ============================================================== */
 /* contact-card */
 .contact-card {
   background: linear-gradient(135deg, #f8f9fa, #e9ecef);
@@ -2373,7 +2359,6 @@ a {
   transform: scale(1.2);
 }
 
-
 /* ========================================================= */
 /* go to top button */
 #go-top {
@@ -2396,11 +2381,10 @@ a {
   background-color: #555;
 }
 
-
 /* ========================================================= */
 /* Search*/
 .opportunity {
-  padding-top: 180px !important;
+  padding-top: 170px !important;
 }
 
 .opportunity .opportunity-search-filter .opportunity-search {
@@ -2420,7 +2404,7 @@ a {
   border: none;
   border-radius: 6px;
   background: var(--btn-primary);
-  color: var(--text-title);
+  color: var(--text-white-fixed);
   cursor: pointer;
 }
 
@@ -2459,14 +2443,14 @@ a {
 .opportunity .category-icons .tab {
   overflow: hidden;
   display: flex;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .opportunity .category-icons .tab button {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 5px 16px;
+  padding: 5px 12px;
   transition: 0.3s;
   font-size: 15px;
 }
@@ -2487,7 +2471,7 @@ a {
   font-weight: 500;
   border: 2px solid var(--btn-primary);
   background-color: var(--btn-primary);
-  color: var(--text-black);
+  color: var(--text-white-fixed);
 }
 
 /* ========================================================= */
@@ -2511,7 +2495,6 @@ a {
 
 .opportunity-card .card-title {
   color: #212536 !important;
-
 }
 
 .opportunity-card .card-body {
@@ -2545,10 +2528,9 @@ a {
 }
 
 .opportunity-card .card .carousel-top .favorite i {
-  content: '';
   position: absolute;
   color: var(--btn-secondary);
-  left: 360px;
+  right: 15px;
   top: 15px;
   font-size: 28px;
   border-radius: 50px;
@@ -2574,7 +2556,6 @@ a {
 }
 
 .opportunities-card-list .opportunity-card .card .card-body .location {
-
   color: gray;
   padding-left: 20px;
 }
@@ -2600,75 +2581,105 @@ a {
 
 .opportunity-card .card .card-body .card-action a {
   margin-top: auto;
-  padding: 20px;
-  background-color: var(--btn-secondary);
   padding: 8px;
-  color: #fff;
   margin-inline: 50px;
+  color: var(--btn-secondary);
+  background-color: transparent;
+  border: 1px solid var(--btn-secondary);
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@media(min-width:1400px) {
-  .opportunity-card .card .carousel-top .favorite i {
-    position: absolute;
-    color: var(--btn-secondary);
-    left: 360px;
-    top: 15px;
-    font-size: 28px;
-    border-radius: 50px;
-    z-index: 20;
-  }
+.opportunity-card .card .card-body .card-action a:hover {
+  background-color: var(--btn-secondary);
+  color: #fff;
 }
 
 @media (min-width:1200px) and (max-width:1399px) {
-  .opportunity-card .card .carousel-top .favorite i {
-    position: absolute;
-    color: var(--btn-secondary);
-    left: 300px;
-    top: 15px;
-    font-size: 28px;
-    border-radius: 50px;
-    z-index: 20;
+  .opportunity {
+    padding-top: 170px !important;
+  }
+
+  .opportunity-card .card .card-body .card-action a {
+    margin-inline: 35px;
   }
 }
 
-@media (min-width:992px) and (max-width:1199px) {
-  .opportunity-card .card .carousel-top .favorite i {
-    position: absolute;
-    color: var(--btn-secondary);
-    left: 250px;
-    top: 15px;
-    font-size: 28px;
-    border-radius: 50px;
-    z-index: 20;
+@media (min-width:993px) and (max-width:1199px) {
+  .opportunity {
+    padding-top: 160px !important;
+  }
+
+  .opportunity-card .card .card-body .card-action a {
+    margin-inline: 20px;
   }
 }
 
-@media(max-width:991px) {
-  .opportunity-card .card .carousel-top .favorite i {
-    content: '';
+@media (max-width:992px) {
+  .opportunity {
+    padding-top: 60px !important;
+  }
+
+  .opportunity-card .card .card-body .card-action a {
+    margin-inline: 15px;
+  }
+
+  .opportunity .category-icons .filter-btn button {
     position: absolute;
-    color: var(--btn-secondary);
-    left: 290px;
-    top: 15px;
-    font-size: 28px;
-    border-radius: 50px;
-    z-index: 20;
+    right: 35px;
+    top: 220px;
+    z-index: 30;
   }
 }
 
-@media (max-width:600px) {
-  .opportunity-card .card .carousel-top .favorite i {
-    content: '';
+@media (max-width:768px) {
+  .opportunity {
+    padding-top: 10px !important;
+  }
+
+  .opportunity-card .card .card-body .card-action a {
+    margin-inline: 50px;
+  }
+
+  .opportunity .category-icons .filter-btn button {
     position: absolute;
-    color: var(--btn-secondary);
-    left: 320px;
-    top: 15px;
-    font-size: 28px;
-    border-radius: 50px;
-    z-index: 20;
+    right: 20px;
+    top: 220px;
+    z-index: 30;
   }
 }
 
+@media (max-width:576px) {
+  .opportunity {
+    padding-top: 90px !important;
+  }
+
+  .opportunity .category-icons .filter-btn button {
+    position: absolute;
+    right: 30px;
+    top: 220px;
+    z-index: 30;
+  }
+
+  #go-top {
+    right: 35px;
+  }
+}
+
+@media (max-width:427px) {
+  .opportunity-card .card .card-body .card-action a {
+    margin-inline: 30px;
+  }
+
+  .opportunity .category-icons .filter-btn button {
+    position: absolute;
+    right: 10px;
+    top: 220px;
+    z-index: 30;
+  }
+}
 
 /* ===================================== */
 /* ========================================= */
@@ -2678,14 +2689,6 @@ a {
   height: calc(100vh - var(--header-total));
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--text-title);
-}
 
 .section-title h2 {
   color: var(--text-black);
@@ -2748,7 +2751,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #eeeeee4e !important; 
+  background-color: #eeeeee4e !important;
   transition: 0.3s;
 }
 
@@ -6012,17 +6015,20 @@ a:hover,
   background: #F741C3;
   background: linear-gradient(84deg, rgba(247, 65, 195, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
+
 .benefit-area .col-xl-4:nth-child(3) .card {
   background: #4DE38C;
-background: linear-gradient(89deg, rgba(77, 227, 140, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(89deg, rgba(77, 227, 140, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
+
 .benefit-area .col-xl-4:nth-child(4) .card {
   background: #FEB117;
-background: linear-gradient(89deg, rgba(254, 177, 23, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(89deg, rgba(254, 177, 23, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
+
 .benefit-area .col-xl-4:nth-child(5) .card {
   background: #8050FF;
-background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
 
 
