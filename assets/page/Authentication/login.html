@@ -16,19 +16,23 @@
 
         <section>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-xl-5">
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-xl-8 d-flex authentication-form">
+                        <div class="login-img">
+                            <img src="https://shiptotal.in/CRM/assets/image/image_login.jpg" alt=""
+                                class="img-fluid h-100">
+                        </div>
                         <div class="login-area">
                             <div class="section-title text-center">
                                 <img src="../../image/logo-removebg.png" alt="Logo" class="logo mb-3">
                                 <h2>ចូលប្រើប្រាស់គណនី</h2>
                             </div>
-                            <form id="loginForm" class="row gy-2 gy-xl-3 needs-validation" novalidate>
+                            <form id="loginForm" class="row gy-2 gy-xl-2 needs-validation" novalidate>
                                 <div class="col-xl-12">
                                     <div>
                                         <label for="email" class="form-label">អ៊ីមែល ៖</label>
-                                        <input type="email" class="form-control" id="email" placeholder="បញ្ចូលអ៊ីមែល" value="VolunteerCambo@gamail.com"
-                                            required>
+                                        <input type="email" class="form-control" id="email" placeholder="បញ្ចូលអ៊ីមែល"
+                                            value="VolunteerCambo@gamail.com" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ។</div>
                                     </div>
                                 </div>
@@ -36,11 +40,17 @@
                                     <div>
                                         <label for="password" class="form-label">ពាក្យសម្ងាត់ ៖</label>
                                         <input type="password" class="form-control" id="password"
-                                            placeholder="បញ្ចូលពាក្យសម្ងាត់" value="VolunteerCambo"  required>
+                                            placeholder="បញ្ចូលពាក្យសម្ងាត់" value="VolunteerCambo" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់។</div>
                                     </div>
                                 </div>
-                                <div class="col-xl-12">
+                                <div class="col-xl-12 d-flex justify-content-between">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked
+                                            required>
+                                        <label class="form-check-label" for="exampleCheck1">ចងចាំខ្ញុំ</label>
+                                        <div class="invalid-feedback">សូមចាំសញ្ញាចុងខ្ញុំ!</div>
+                                    </div>
                                     <p class="text-center m-0">
                                         <a href="../Authentication/forget.html">ភ្លេចពាក្យសម្ងាត់?</a>
                                     </p>

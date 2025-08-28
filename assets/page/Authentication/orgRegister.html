@@ -14,116 +14,110 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
-<body class="org-login">
+<body class="org-login authentication-body">
     <main>
-        
+
         <section>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-7">
+                    <div class="col-12 col-xl-9 d-flex authentication-form">
+                        <div class="login-img">
+                            <img src="../../image/homepage/org-login.png" alt=""
+                                class="img-fluid h-100">
+                        </div>
                         <div class="login-area org-register">
                             <div class="section-title text-center">
-                <img src="../../image/logo-removebg.png" alt="Logo" class="logo mb-1">
-                <h2>បង្កើតគណនីរបស់អង្គការ</h2>
-            </div>
-            <form id="orgRegisterForm" class="row gy-2 needs-validation" novalidate>
-                <div class="col-xl-12">
-                    <div>
-                        <label for="firstname" class="form-label">ឈ្មោះអង្គការ ៖</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="បញ្ចូលឈ្មោះអង្គការ"
-                            required>
-                        <div class="invalid-feedback">សូមបញ្ចូលឈ្មោះអង្គការ។</div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div>
-                        <label for="email" class="form-label">អ៊ីមែល ៖</label>
-                        <input type="email" class="form-control" id="email" placeholder="បញ្ចូលអ៊ីមែល" required>
-                        <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ។</div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div>
-                        <label for="phone" class="form-label">លេខទូរស័ព្ទ ៖</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="បញ្ចូលលេខទូរស័ព្ទ" required>
-                        <div class="invalid-feedback">សូមបញ្ចូលលេខទូរស័ព្ទ។</div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div>
-                        <label for="password" class="form-label">ពាក្យសម្ងាត់ ៖</label>
-                        <input type="password" class="form-control" id="password" placeholder="បញ្ចូលពាក្យសម្ងាត់"
-                            required>
-                        <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់។</div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div>
-                        <label for="password" class="form-label">ប្រភេទអង្គការ ៖</label>
-                        <select id="select-beast" placeholder="ជ្រើសរើសអង្គការ" autocomplete="on"
-                            class="w-100 form-control">
-                            <option value="">ជ្រើសរើសអង្គការ</option>
-                            <option value="4">អង្គការបរិស្ថាន</option>
-                            <option value="1">អង្គការសុខាភិបាល</option>
-                            <option value="3">អង្គការសហគមន៏</option>
-                            <option value="5">អង្គការមនុស្សធម៏</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div>
-                        <label for="website" class="form-label">គេហទំព័រ ៖</label>
-                        <input type="url" class="form-control" id="website" placeholder="បញ្ចូលតំណភ្ជាប់" required>
-                        <div class="invalid-feedback">សូមបញ្ចូលតំណគេហទំព័រត្រឹមត្រូវ។</div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div>
-                        <label for="facebook" class="form-label">តំណភ្ជាប់ហ្វេសប៊ុក ៖</label>
-                        <input type="url" class="form-control" id="facebook" placeholder="បញ្ចូលតំណភ្ជាប់" required>
-                        <div class="invalid-feedback">សូមបញ្ចូលតំណហ្វេសប៊ុកត្រឹមត្រូវ។</div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <label for="file-input" class="form-label">រូបសញ្ញាអង្គការ ៖</label>
-                    <div class="wrapper">
-                        <div class="upload">
-                            <div class="border">
-                                <div class="icons fa-2x">
-                                    <i class="fas fa-file-image"></i>
-                                    <i class="fas fa-file-alt"></i>
-                                    <i class="fas fa-file-pdf"></i>
-                                </div>
-                                <p>
-                                    បញ្ចូលរូបសញ្ញាអង្គការ
-                                    <a href="#" id="file-browser">រុករក</a> កុំព្យូទ័ររបស់អ្នក
-                                </p>
-                                <input type="file" id="file-input" accept="image/*, .pdf, .doc,.docx" required>
-                                <div class="invalid-feedback">សូមបញ្ចូលរូបសញ្ញាអង្គការ។</div>
+                                <img src="../../image/logo-removebg.png" alt="Logo" class="logo mb-1">
+                                <h2>បង្កើតគណនីរបស់អង្គការ</h2>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div>
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                        <label class="form-check-label" for="exampleCheck1">លក្ខខណ្ឌ និង គោរពគោលការណ៏ឯកជន
-                        </label>
-                        <div class="invalid-feedback">ត្រូវតែយល់ព្រមមុនពេលបន្ត។</div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <button type="submit" class="text-white btn btn-primary w-100">
-                        បង្កើតគណនី
-                    </button>
-                </div>
-                <div class="col-xl-12">
-                    <p class="text-center">
-                        មានគណនីអង្គការរួចហើយ?
-                        <a href="../Authentication/orgLogin.html">ចូលគណនី</a>
-                    </p>
-                </div>
-            </form>
+                            <form id="orgRegisterForm" class="row gy-2 needs-validation" novalidate>
+                                <div class="col-xl-12">
+                                    <div>
+                                        <label for="firstname" class="form-label">ឈ្មោះអង្គការ ៖</label>
+                                        <input type="text" class="form-control" value="អង្គការមនុស្សធម៏ដើម្បីកម្ពុជា" id="firstname"
+                                            placeholder="បញ្ចូលឈ្មោះអង្គការ" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលឈ្មោះអង្គការ។</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div>
+                                        <label for="email" class="form-label">អ៊ីមែល ៖</label>
+                                        <input type="email" class="form-control" value="CamVolunteer@gmail.com" id="email" placeholder="បញ្ចូលអ៊ីមែល"
+                                            required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ។</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div>
+                                        <label for="phone" class="form-label">លេខទូរស័ព្ទ ៖</label>
+                                        <input type="tel" class="form-control" value="+855 683 828 00" id="phone"
+                                            placeholder="បញ្ចូលលេខទូរស័ព្ទ" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលលេខទូរស័ព្ទ។</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div>
+                                        <label for="password" class="form-label">ពាក្យសម្ងាត់ ៖</label>
+                                        <input type="password" class="form-control" value="SokryPes@123" id="password"
+                                            placeholder="បញ្ចូលពាក្យសម្ងាត់" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់។</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div>
+                                        <label for="password" class="form-label">ប្រភេទអង្គការ ៖</label>
+                                        <select id="select-beast" placeholder="ជ្រើសរើសអង្គការ" autocomplete="on"
+                                            class="w-100 form-control">
+                                            <option value="">ជ្រើសរើសអង្គការ</option>
+                                            <option value="4">អង្គការបរិស្ថាន</option>
+                                            <option value="1">អង្គការសុខាភិបាល</option>
+                                            <option value="3">អង្គការសហគមន៏</option>
+                                            <option value="5">អង្គការមនុស្សធម៏</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-12">
+                                    <label for="file-input" class="form-label">រូបសញ្ញាអង្គការ ៖</label>
+                                    <div class="wrapper">
+                                        <div class="upload">
+                                            <div class="border">
+                                                <div class="icons fa-2x">
+                                                    <i class="fas fa-file-image"></i>
+                                                    <i class="fas fa-file-alt"></i>
+                                                    <i class="fas fa-file-pdf"></i>
+                                                </div>
+                                                <p>
+                                                    បញ្ចូលរូបសញ្ញាអង្គការ
+                                                    <a href="#" id="file-browser">រុករក</a> កុំព្យូទ័ររបស់អ្នក
+                                                </p>
+                                                <input type="file" id="file-input" accept="image/*, .pdf, .doc,.docx">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div>
+                                        <input type="checkbox" class="form-check-input"  id="exampleCheck1" checked required>
+                                        <label class="form-check-label" for="exampleCheck1">លក្ខខណ្ឌ និង
+                                            គោរពគោលការណ៏ឯកជន
+                                        </label>
+                                        <div class="invalid-feedback">ត្រូវតែយល់ព្រមមុនពេលបន្ត។</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <button type="submit" class="text-white btn btn-primary w-100">
+                                        បង្កើតគណនី
+                                    </button>
+                                </div>
+                                <div class="col-xl-12">
+                                    <p class="text-center">
+                                        មានគណនីអង្គការរួចហើយ?
+                                        <a href="../Authentication/orgLogin.html">ចូលគណនី</a>
+                                    </p>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

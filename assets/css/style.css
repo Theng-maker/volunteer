@@ -1290,13 +1290,22 @@ a {
   box-shadow: none !important;
 }
 
-.login-area {
-  padding: 30px;
+/* ------- Authication ------- */
+.authentication-form{
   border-radius: 20px;
   border: 1px solid #cacaca;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   backdrop-filter: blur(20px);
+  padding-left: 0;
+  overflow: hidden;
+}
+.authentication-body .login-img{
+  width: 45%;
+}
+.authentication-body .login-area {
+  width: 55%;
+  padding: 30px;
 }
 
 .section-title img {
@@ -1331,58 +1340,18 @@ a {
 }
 
 
-/* -------- Found acc ---- */
-.found-acc-area {
-  width: 550px;
-}
 
-.found-acc-area ul {
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  border-radius: 10px;
-}
-
-.found-acc-area ul li {
-  margin-bottom: 20px;
-}
-
-.found-acc-area ul li .account-img img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  transform: 0.3s;
-}
-
-.found-acc-area ul li h4 {
-  font-size: 22px;
-
-}
-
-.found-acc-area ul li:hover .account-img img,
-.found-acc-area ul li:hover h4 {
-  transform: scale(1.1);
-  color: #007bff;
-}
 
 
 /* ---- ORG Register--*/
-.org-login {
-  height: auto;
-  padding: 10px 0;
-  background-color: #3C86C5;
-  background-position: bottom;
+.org-login .login-area{
+  padding-block: 10px;
 }
-
-.org-register {
-  /* width: 800px; */
-  padding: 10px 30px;
-}
-
-.org-register .section-title h2 {
+.org-login .section-title h2 {
   margin-bottom: 5px;
 }
 
-.org-register .ts-control {
+.org-login .ts-control {
   border: none;
   padding: 4px;
 }
@@ -1393,12 +1362,12 @@ a {
   font-size: 16px !important;
 }
 
-.org-register .wrapper {
+.org-login .wrapper {
   text-align: center;
   position: relative;
 }
 
-.org-register .wrapper input {
+.org-login .wrapper input {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1760,392 +1729,6 @@ a {
   margin-bottom: 20px;
 }
 
-/* --- about us ------ */
-.about-us {
-  padding: 60px 0;
-}
-
-.about-us .section-title {
-  font-size: 32px;
-  color: var(--text-black);
-}
-
-.about-us .section-decript {
-  font-size: 18px;
-  color: var(--text-descript);
-}
-
-.about-us .section-sub-tilte {
-  color: var(--text-black);
-}
-
-.about-us .mission-list li {
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  position: relative;
-}
-
-.about-us .mission-list li:hover h4 {
-  color: var(--primary-color);
-}
-
-.about-us .mission-list li:hover .list-img {
-  animation: border 2s linear infinite;
-}
-
-@keyframes border {
-  0% {
-    border-color: transparent;
-    border-top-color: #007ACC;
-  }
-
-  33% {
-    border-color: transparent;
-    border-right-color: #007ACC;
-  }
-
-  66% {
-    border-color: transparent;
-    border-bottom-color: #007ACC;
-  }
-
-  100% {
-    border-color: transparent;
-    border-left-color: #007ACC;
-  }
-}
-
-.about-us .mission-list .list-content h4 {
-  font-size: 20px;
-  color: var(--text-black);
-}
-
-.about-us .mission-list .list-content p {
-  color: var(--text-black);
-}
-
-.about-us .mission-list li .list-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #3399FF;
-  padding: 10px;
-  transition: 0.3s;
-}
-
-/* ----- Stata area -----*/
-.state-area {
-  /* margin: 60px 0; */
-  padding: 100px 0;
-  background-image: url('../image/homepage/state-area.png');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  opacity: 0.9;
-}
-
-.state-area::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.336);
-  top: 0;
-}
-
-.state-area .card {
-  position: relative;
-}
-
-.state-area .card .card-body .card-title {
-  font-size: 40px;
-}
-
-.state-area .card .card-img {
-  position: absolute;
-  background-color: #3399FF;
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  border-radius: 50%;
-  top: -10px;
-}
-
-.state-area .card p {
-  color: var(--text-white-fixed) !important;
-}
-
-
-/* ---- opportunities-area ----- */
-.opportunities-area {
-  padding: 60px 0;
-  padding-bottom: 60px;
-  background-color: var(--gray-bg);
-}
-
-.opportunities-area .card {
-  transition: 0.3s;
-  background-color: var(--card-white);
-}
-
-.opportunities-area .card:hover {
-  border: 1px solid #007ACC;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transform: translateY(-6px);
-}
-
-.opportunities-area .card .benefits {
-  color: var(--text-black);
-}
-
-/* ------ Upcoming Event ----- */
-.upcomming-area .section-title {
-  font-size: 32px;
-  color: var(--text-black);
-}
-
-.upcomming-area .section-decript {
-  font-size: 18px;
-  color: var(--text-descript);
-}
-
-.upcomming-area .upcoming-event ul li {
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.upcomming-area .upcoming-event ul li::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 65px;
-  background-color: #3399FF;
-  top: calc(100% - 32px);
-  left: 4.6%;
-}
-
-.upcomming-area .upcoming-event .list-date {
-  width: 80px;
-  height: 80px;
-}
-
-.upcomming-area .upcoming-event .list-date p {
-  width: 70px;
-  height: 70px;
-  align-content: center;
-  text-align: center;
-  border: 3px solid var(--primary-color);
-  color: var(--text-black);
-}
-
-.upcomming-area .upcoming-event .list-content {
-  color: var(--text-black);
-  width: calc(100% - 80px);
-}
-
-.upcomming-area .upcoming-event .list-content p {
-  font-size: 18px;
-  color: var(--text-descript);
-}
-
-
-
-
-/* ----- Donatiom-Area ---- */
-.donation-area {
-  background-color: var(--bg-color);
-}
-
-.donation-area .section-title {
-  font-size: 34px;
-}
-
-.donation-area .donation-descript {
-  font-size: 18px;
-  color: var(--text-black);
-}
-
-.donation-area li .list-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #3399FF;
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.donation-area .donation-content {
-  color: var(--text-black);
-}
-
-
-/* ---- Call-to-Action --- */
-.call-to-action {
-  padding: 80px 0;
-  background-color: #80D8EC;
-  position: relative;
-  background-image: url('../image/homepage/CTA.jpg');
-  background-repeat: no-repeat;
-  background-position: 25%;
-}
-
-.call-to-action::before {
-  content: '';
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.288);
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
-.call-to-action .section-title {
-  position: relative;
-  z-index: 2;
-}
-
-.call-to-action .section-title h2,
-.call-to-action .section-title p {
-  color: var(--text-white-fixed);
-}
-
-.call-to-action .section-title a {
-  margin: auto;
-  width: 50%;
-  margin-left: calc(50% - 25%);
-}
-
-
-/* ---------- FAQ ----- */
-.question-area {
-  background-color: var(--gray-bg);
-}
-
-.question-area .accordion-collapse,
-.question-area .accordion-button {
-  font-size: 18px;
-}
-
-.question-area .accordion-button:focus {
-  box-shadow: none !important;
-}
-
-.question-area .collapse {
-  visibility: visible !important;
-}
-
-.question-area .accordion-button:not(.collapsed) {
-  background-color: var(--gray-bg);
-}
-
-
-
-/* ------ Testimonials ------ */
-/* .testimonial-area{
-  background-color: var(--gray-bg);
-} */
-.testimonial-area .section-title {
-  font-size: 34px;
-  color: var(--text-black);
-}
-
-.testimonial-area .section-decript {
-  font-size: 18px;
-  color: var(--text-black);
-}
-
-.testimonial-area .testimonial-slide {
-  height: 280px;
-  color: var(--text-black);
-  background-color: var(--card-white);
-  border-radius: 10px;
-}
-
-.testimonial-area .testimonial-slide .swiper {
-  width: 100%;
-  height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 10px;
-
-}
-
-.testimonial-area .testimonial-slide .testimonial-img {
-  width: 40% !important;
-}
-
-.testimonial-area .testimonial-slide .testimonial-img img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid var(--primary-color);
-}
-
-.testimonial-area .testimonial-slide .testimonial-content {
-  width: 60%;
-  font-size: 17px;
-  margin: 20px !important;
-}
-
-.testimonial-area .testimonial-slide .testimonial-content .star {
-  color: goldenrod;
-}
-
-
-
-/* ----- Sponsor ------ */
-.sponsor-area {
-  background-color: var(--gray-bg);
-}
-
-.sponsor-area .card img {
-  width: 100px;
-  height: 100px;
-  margin-inline: auto;
-}
-
-.sponsor-area .card {
-  background-color: var(--card-white);
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.sponsor-area .card:hover {
-  transform: translateY(-6px);
-}
-
-
-@media (max-width : 576px) {
-  .testimonial-area .testimonial-slide {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .line-3 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-img {
-    width: 35%;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-content {
-    width: 65%;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid #007ACC;
-  }
-}
-
-/* ===== File: css/opportunities/detailpages.css ===== */
-/* ========================================================= */
 /* breadcrumb */
 .breadcrumb-page {
   padding-top: 180px;
@@ -2757,15 +2340,33 @@ h6 {
   color: #fff !important;
 }
 
-.navbar .nav-action li .btn {
+.navbar .nav-action li .btn  , 
+.navbar .btn{
   width: 40px;
   height: 40px;
   background-color: #EEEEEE;
   border-radius: 50%;
   font-size: 20px;
   text-align: center;
-  align-content: end;
-  transition: .3s;
+  align-content: center;
+  transition: 0.3s;
+}
+
+ .navbar .nav-action li .btn[data-bs-toggle="modal"] span ,
+ .navbar .btn[data-bs-toggle="dropdown"] span{
+  display: inline-block;
+  margin-left: -2px !important;
+ }
+.navbar [data-bs-toggle="offcanvas"] span
+{
+  display: inline-block;
+  margin-left: -5px !important;
+}
+.navbar .btn[data-bs-toggle="offcanvas"] ,
+.navbar .btn[data-bs-toggle="dropdown"]{
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .navbar .nav-action li .btn:hover {
@@ -3703,171 +3304,7 @@ a:hover,
   color: #fbbf24;
 }
 
-/* =======================
-   HERO BANNER (merged)
-   ======================= */
-/* .hero-banner {
-  width: 100%;
-  margin-top: 120px;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgba(103, 129, 222, 0.5),
-      rgba(0, 0, 0, 0.2)),
-    url('https://img.freepik.com/free-vector/global-volunteer-solidarity-hands-up-banner-with-earth-map-vector_1017-48268.jpg?semt=ais_hybrid&w=740') no-repeat center center/cover;
-  color: #fff;
-  padding: 0 20px;
-  position: relative;
-  overflow: hidden;
-}
 
-.hero-banner h1 {
-  font-size: 52px;
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  animation: slideInDown 1s ease forwards;
-}
-
-.hero-banner p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  color: #fffdfd;
-  animation: fadeIn 1.5s ease forwards;
-}
-
-.hero-banner ul li {
-  margin: 10px 0;
-  font-size: 1.1rem;
-  color: #ffffff;
-  position: relative;
-  padding-left: 30px;
-}
-
-.hero-banner ul li i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #0c18c2;
-}
-
-.btn-hero {
-  padding: 12px 35px;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  background: linear-gradient(45deg, #ff6a00, #ee0979);
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  transition: all 0.4s ease;
-}
-
-.btn-hero:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
-  background: linear-gradient(45deg, #ee0979, #ff6a00);
-}
-
-.btn-outline-hero {
-  padding: 12px 35px;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  color: #fff;
-  background: transparent;
-  transition: all 0.4s ease;
-}
-
-.btn-outline-hero:hover {
-  background: #fff;
-  color: #ff6a00;
-  transform: translateY(-3px);
-}
-
-@keyframes slideInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
-
-/* Hero action buttons + slider variant merged */
-/* .hero-banner .hero-content {
-  width: 50%;
-  bottom: 120px;
-  color: var(--text-white-fixed);
-}
-
-.hero-banner .hero-content .hero-title {
-  font-size: 46px;
-}
-
-.hero-banner .hero-content .hero-decript {
-  font-size: 24px;
-}
-
-.hero-action .btn {
-  background-color: var(--primary-color);
-  color: var(--text-white-fixed);
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-size: 18px;
-  border: 1.5px solid transparent;
-}
-
-.hero-action .btn.as-volunteer {
-  background-color: transparent;
-  border-color: var(--primary-color);
-}
-
-.hero-action .btn:hover {
-  background-color: var(--secondary-color);
-}
-
-.hero-banner .hero-slide .carousel-item {
-  position: relative;
-}
-
-.hero-banner .hero-slide .carousel-item img {
-  height: 90vh;
-}
-
-.hero-banner .hero-slide .carousel-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 99;
-  background: linear-gradient(88deg, rgba(0, 0, 0, .67) 55%, rgba(255, 255, 255, 0) 100%);
-}
-
-.hero-banner.hero-home .hero-content {
-  bottom: 50px;
-}
-
-.hero-banner.hero-home .hero-content .card-text {
-  color: var(--text-white-fixed);
-} */
-
-/* =======================
-   EVENT SOON (cards)
-   ======================= */
 
 .card-event .tab-content {
   width: 100%;
@@ -4559,287 +3996,7 @@ a:hover,
   }
 }
 
-/* =======================
-   STATS (state-area) – from new block, merged
-   ======================= */
-.state-area {
-  position: relative;
-  /* for overlay */
-  /* margin: 60px 0; */
-  padding: 100px 0;
-  background-image: url('../image/homepage/state-area.png');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  opacity: 0.9;
-}
 
-.state-area::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.336);
-}
-
-.state-area .card {
-  position: relative;
-}
-
-.state-area .card .card-body .card-title {
-  font-size: 40px;
-}
-
-.state-area .card .card-img {
-  position: absolute;
-  background-color: var(--btn-secondary);
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  border-radius: 50%;
-  top: -10px;
-}
-
-.state-area .card p {
-  color: var(--text-white-fixed) !important;
-}
-
-/* =======================
-   OPPORTUNITIES AREA – from new block
-   ======================= */
-.opportunities-area {
-  padding-bottom: 60px;
-  background-color: var(--gray-bg);
-}
-
-.opportunities-area .card {
-  transition: 0.3s;
-  background-color: var(--card-white);
-}
-
-.opportunities-area .card:hover {
-  border: 1px solid var(--primary-color);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transform: translateY(-6px);
-}
-
-.opportunities-area .card .benefits {
-  color: var(--text-black);
-}
-
-/* =======================
-   UPCOMING EVENTS – from new block
-   ======================= */
-.upcomming-area .section-title {
-  font-size: 32px;
-  color: var(--text-black);
-}
-
-.upcomming-area .section-decript {
-  font-size: 18px;
-  color: var(--text-descript);
-}
-
-.upcomming-area .upcoming-event ul li {
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.upcomming-area .upcoming-event ul li::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 65px;
-  background-color: var(--btn-secondary);
-  top: calc(100% - 32px);
-  left: 4.6%;
-}
-
-.upcomming-area .upcoming-event .list-date {
-  width: 80px;
-  height: 80px;
-}
-
-.upcomming-area .upcoming-event .list-date p {
-  width: 70px;
-  height: 70px;
-  align-content: center;
-  text-align: center;
-  border: 3px solid var(--primary-color);
-  color: var(--text-black);
-}
-
-.upcomming-area .upcoming-event .list-content {
-  color: var(--text-black);
-  width: calc(100% - 80px);
-}
-
-.upcomming-area .upcoming-event .list-content p {
-  font-size: 18px;
-  color: var(--text-descript);
-}
-
-/* =======================
-   DONATION AREA (wrapper) – from new block
-   ======================= */
-.donation-area {
-  background-color: var(--bg-color);
-}
-
-.donation-area .section-title {
-  font-size: 34px;
-}
-
-.donation-area .donation-descript {
-  font-size: 18px;
-  color: var(--text-black);
-}
-
-.donation-area li .list-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid var(--btn-secondary);
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.donation-area .donation-content {
-  color: var(--text-black);
-}
-
-/* =======================
-   CALL-TO-ACTION – from new block
-   ======================= */
-.call-to-action {
-  padding: 80px 0;
-  background-color: #80D8EC;
-  position: relative;
-  background-image: url('../image/homepage/CTA.jpg');
-  background-repeat: no-repeat;
-  background-position: 25%;
-}
-
-.call-to-action::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.288);
-}
-
-.call-to-action .section-title {
-  position: relative;
-  z-index: 2;
-}
-
-.call-to-action .section-title h2,
-.call-to-action .section-title p {
-  color: var(--text-white-fixed);
-}
-
-.call-to-action .section-title a {
-  margin: auto;
-  width: 50%;
-  margin-left: calc(50% - 25%);
-}
-
-/* =======================
-   FAQ (Question Area) – from new block
-   ======================= */
-.question-area {
-  background-color: var(--gray-bg);
-}
-
-.question-area .accordion-collapse,
-.question-area .accordion-button {
-  font-size: 18px;
-}
-
-.question-area .accordion-button:focus {
-  box-shadow: none !important;
-}
-
-.question-area .collapse {
-  visibility: visible !important;
-}
-
-.question-area .accordion-button:not(.collapsed) {
-  background-color: var(--gray-bg);
-}
-
-/* =======================
-   TESTIMONIALS SECTION – from new block
-   ======================= */
-.testimonial-area .section-title {
-  font-size: 34px;
-  color: var(--text-black);
-}
-
-.testimonial-area .section-decript {
-  font-size: 18px;
-  color: var(--text-black);
-}
-
-.testimonial-area .testimonial-slide {
-  height: 280px;
-  color: var(--text-black);
-  background-color: var(--card-white);
-  border-radius: 10px;
-}
-
-.testimonial-area .testimonial-slide .swiper {
-  width: 100%;
-  height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 10px;
-}
-
-.testimonial-area .testimonial-slide .testimonial-img {
-  width: 40% !important;
-}
-
-.testimonial-area .testimonial-slide .testimonial-img img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid var(--primary-color);
-}
-
-.testimonial-area .testimonial-slide .testimonial-content {
-  width: 60%;
-  font-size: 17px;
-  margin: 20px !important;
-}
-
-.testimonial-area .testimonial-slide .testimonial-content .star {
-  color: goldenrod;
-}
-
-/* =======================
-   SPONSOR SECTION – from new block
-   ======================= */
-.sponsor-area {
-  background-color: var(--gray-bg);
-}
-
-.sponsor-area .card img {
-  width: 100px;
-  height: 100px;
-  margin-inline: auto;
-}
-
-.sponsor-area .card {
-  background-color: var(--card-white);
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.sponsor-area .card:hover {
-  transform: translateY(-6px);
-}
-
-/* =======================
-   RESPONSIVE
-   ======================= */
 /* Tablets ≤ 992px */
 @media (max-width: 992px) {
   main {
@@ -5048,34 +4205,7 @@ a:hover,
     padding: 10px 8px;
   }
 
-  /* Testimonial-area specifics from new block */
-  .testimonial-area .testimonial-slide {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .line-3 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-img {
-    width: 35%;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-content {
-    width: 65%;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid var(--primary-color);
-  }
+  
 }
 
 /* ≤ 380px */
@@ -5474,662 +4604,24 @@ a:hover,
   margin-bottom: 20px;
 }
 
-/* -------- hero banner ------- */
-.home .hero-banner {
-  padding: 0;
-  height: 100vh;
-}
 
-.home .hero-banner .hero-content {
-  width: 50%;
-  bottom: 120px;
-  color: var(--text-white-fixed);
-}
 
-.home .hero-banner .hero-content .hero-title {
-  font-size: 46px;
-}
 
 
-.hero-banner .hero-content .hero-decript {
-  font-size: 24px;
-}
 
-.home .hero-action .btn {
-  background-color: var(--primary-color);
-  color: var(--text-white-fixed);
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-size: 18px;
-  border: 1.5px solid transparent;
-}
 
-.home .hero-action .btn.as-volunteer {
-  background-color: transparent;
-  border-color: #007ACC;
-}
 
-.home .hero-action .btn:hover {
-  background-color: var(--secondary-color);
-}
 
 
-.home .hero-banner .hero-slide .carousel-item img {
-  height: 100vh;
-}
 
-.home .hero-banner .hero-slide .carousel-item {
-  position: relative;
-}
 
-.home .hero-banner .hero-slide .carousel-item::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.428);
-  background: linear-gradient(88deg, rgba(0, 0, 0, 0.67) 55%, rgba(255, 255, 255, 0) 100%);
-  top: 0;
-  z-index: 2;
-}
 
-.home .hero-banner.hero-home .hero-content {
-  bottom: 80px;
-}
 
-.home .hero-banner.hero-home .hero-content .card-text {
-  color: var(--text-white-fixed);
-}
 
 
-.home .hero-banner .carousel-control-prev,
-.carousel-control-next {
-  width: 8% !important;
-  z-index: 99;
-}
 
 
-.hero-banner .carousel-control-prev-icon,
-.hero-banner .carousel-control-next-icon {
-  background-color: #565656;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-size: 30px;
-}
 
-/* --- about us ------ */
-.about-us {
-  background-color: var(--bg-color);
-}
-
-.about-us span {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--primary-color);
-}
-
-.about-us .section-title {
-  font-size: 32px;
-  color: var(--text-black);
-}
-
-.about-us .section-decript {
-  font-size: 18px;
-  color: var(--text-descript);
-  transform: translateY(-1.5px);
-}
-
-.about-us .section-sub-tilte {
-  color: var(--text-black);
-}
-
-.about-us .about-us-img {
-  background-color: var(--gray-bg);
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.about-us .about-us-img img {
-  width: 90%;
-  margin-inline: auto;
-  transform: translateY(80px);
-}
-
-.about-us .about-us-content {
-  border-radius: 10px;
-  padding: 20px;
-  background-color: var(--gray-bg);
-  background: #60c8fc;
-  background: linear-gradient(88deg, rgba(96, 200, 252, 0.04) 6%, rgba(255, 255, 255, 0) 100%);
-}
-
-.about-us .mission-list li {
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  position: relative;
-}
-
-.about-us .mission-list li:hover h4 {
-  color: var(--primary-color);
-}
-
-.about-us .mission-list li:hover .list-img {
-  animation: border 2s linear infinite;
-}
-
-@keyframes border {
-  0% {
-    border-color: transparent;
-    border-top-color: #007ACC;
-  }
-
-  33% {
-    border-color: transparent;
-    border-right-color: #007ACC;
-  }
-
-  66% {
-    border-color: transparent;
-    border-bottom-color: #007ACC;
-  }
-
-  100% {
-    border-color: transparent;
-    border-left-color: #007ACC;
-  }
-}
-
-.about-us .mission-list .list-content h4 {
-  font-size: 20px;
-  color: var(--text-black);
-}
-
-.about-us .mission-list .list-content p {
-  color: var(--text-black);
-}
-
-.about-us .mission-list li .list-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #3399FF;
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.about-us .pattern img,
-.about-us .pattern .box {
-  position: absolute;
-  opacity: 0.6;
-}
-
-.about-us .pattern .box {
-  background-color: var(--gray-bg);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-.about-us .pattern .box1 {
-  right: 4%;
-  top: 15%;
-  z-index: -2;
-}
-
-.about-us .pattern .box2 {
-  left: 4%;
-  top: 60%;
-  z-index: -2;
-}
-
-.about-us .about-pattern {
-  opacity: 1;
-  bottom: 0;
-  right: 0;
-}
-
-.about-us .about-pattern2 {
-  opacity: 1;
-  top: 0;
-  left: 0;
-  transform: rotate(180deg);
-}
-
-.about-us .pattern .pattern_01 {
-  right: 15%;
-}
-
-.about-us .pattern .pattern_02 {
-  right: 20%;
-  top: 50%;
-}
-
-.about-us .pattern .pattern_03 {
-  left: 15%;
-  top: 20%;
-  z-index: -2;
-}
-
-.about-us .pattern .pattern_01,
-.about-us .pattern .pattern_02,
-.about-us .pattern .pattern_03 {
-  animation: pattern 3s linear infinite alternate;
-}
-
-@keyframes pattern {
-  from {
-    transform: scale(0.8);
-  }
-
-  to {
-    transform: scale(1);
-  }
-
-}
-
-/* ----- Stata area -----*/
-.state-area {
-  margin-top: 60px;
-  padding: 100px 0;
-  background-image: url('../image/homepage/state-area.png');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  opacity: 0.9;
-}
-
-.state-area::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.336);
-  top: 0;
-}
-
-.state-area .card {
-  position: relative;
-}
-
-.state-area .card .card-body .card-title {
-  font-size: 40px;
-}
-
-.state-area .card .card-img {
-  position: absolute;
-  background-color: #3399FF;
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  border-radius: 50%;
-  top: -10px;
-}
-
-.state-area .card p {
-  color: var(--text-white-fixed) !important;
-}
-
-/* ---- opportunities-area ----- */
-.opportunities-area {
-  background-image: url('../image/homepage/dot-bg.webp');
-  padding-bottom: 60px;
-  background-color: var(--gray-bg);
-}
-
-.opportunities-area .card {
-  transition: 0.3s;
-  background-color: var(--card-white);
-}
-
-.opportunities-area .card:hover {
-  border: 1px solid #007ACC;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transform: translateY(-6px);
-}
-
-.opportunities-area .card .benefits {
-  color: var(--text-black);
-}
-
-/* ------ Upcoming Event ----- */
-.upcomming-area {
-  background: url('../image/homepage/shape-thirteen.png');
-}
-
-.upcomming-area .card {
-  background-color: var(--card-white);
-  padding-block: 0 !important;
-}
-
-.upcomming-area .card-1 {
-  border: none;
-  box-shadow: 7px 0px 15px -5px rgba(0, 0, 0, 0.3);
-}
-
-.upcomming-area .card-2 {
-  border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.upcomming-area .card .card-date {
-  color: var(--text-white-fixed);
-  line-height: 12px;
-  background-color: #007ACC;
-  padding-block: 32px;
-}
-
-.upcomming-area .card .card-date h2 {
-  font-size: 50px !important;
-}
-
-.upcomming-area .icon .patter-1 {
-  left: 5%;
-  top: 30%;
-}
-
-.upcomming-area .icon .patter-2 {
-  right: 10%;
-  top: 12%;
-  transform: rotate(45deg);
-}
-
-.upcomming-area .icon .box {
-  width: 200px;
-  height: 200px;
-  background-color: var(--gray-bg);
-  border-radius: 50%;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  top: 50%;
-  left: 4%;
-}
-
-.upcomming-area .icon .box2 {
-  left: 58%;
-  top: 22%;
-}
-
-/* ----- Donatiom-Area ---- */
-.donation-area {
-  background-color: var(--bg-color);
-}
-
-.donation-area .section-title {
-  font-size: 34px;
-}
-
-.donation-area .donation-descript {
-  font-size: 18px;
-  color: var(--text-black);
-}
-
-.donation-area li .list-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #3399FF;
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.donation-area .donation-content {
-  color: var(--text-black);
-}
-
-.donation-area img {
-  /* height: 250px; */
-  width: 100%;
-}
-
-/* ---- Call-to-Action --- */
-.call-to-action {
-  padding: 80px 0;
-  background-color: #80D8EC;
-  position: relative;
-  background-image: url('../image/homepage/CTA.jpg');
-  background-repeat: no-repeat;
-  background-position: 25%;
-}
-
-.call-to-action::before {
-  content: '';
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.288);
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
-.call-to-action .section-title {
-  position: relative;
-  z-index: 2;
-}
-
-.call-to-action .section-title h2,
-.call-to-action .section-title p {
-  color: var(--text-white-fixed);
-}
-
-.call-to-action .section-title a {
-  margin: auto;
-  width: 50%;
-  margin-left: calc(50% - 25%);
-}
-
-/* Benrfits */
-.benefit-area {
-  padding: 60px 0;
-}
-
-.benefit-area .card {
-  border-radius: 20px;
-  flex-direction: row;
-  height: 100%;
-  overflow: hidden;
-}
-
-.benefit-area .card .card-img {
-  width: 30%;
-}
-
-.benefit-area .card .card-body .card-text span {
-  color: var(--primary-color);
-}
-
-.benefit-area .col-xl-6:nth-child(1) .card {
-  background: #18AFFE;
-  background: linear-gradient(275deg, rgba(24, 175, 254, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
-}
-
-.benefit-area .col-xl-6:nth-child(2) .card {
-  background: #F741C3;
-  background: linear-gradient(84deg, rgba(247, 65, 195, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
-}
-.benefit-area .col-xl-4:nth-child(3) .card {
-  background: #4DE38C;
-background: linear-gradient(89deg, rgba(77, 227, 140, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
-}
-.benefit-area .col-xl-4:nth-child(4) .card {
-  background: #FEB117;
-background: linear-gradient(89deg, rgba(254, 177, 23, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
-}
-.benefit-area .col-xl-4:nth-child(5) .card {
-  background: #8050FF;
-background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
-}
-
-
-
-/* ---------- FAQ ----- */
-.question-area {
-  position: relative;
-  background-color: var(--gray-bg);
-
-}
-
-.question-area::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background: url('../image/homepage/shape-two.png') no-repeat;
-  z-index: 1;
-  animation: quiz 3s linear infinite alternate;
-}
-
-@keyframes quiz {
-  from {
-    transform: scale(0.95);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-.question-area .accordion-collapse,
-.question-area .accordion-button {
-  font-size: 18px;
-}
-
-.question-area .accordion-button:focus {
-  box-shadow: none !important;
-}
-
-.question-area .collapse {
-  visibility: visible !important;
-}
-
-.question-area .accordion-button:not(.collapsed) {
-  background-color: var(--gray-bg);
-}
-
-
-/* ------ Testimonials ------ */
-.testimonial-area {
-  position: relative;
-  background: url('../image/homepage/shape-nine.png') no-repeat -10%;
-  overflow-x: hidden;
-}
-
-.testimonial-area::before {
-  content: '';
-  position: absolute;
-  right: -10%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../image/homepage/shape-nine.png') no-repeat;
-  transform: rotate(180deg);
-}
-
-
-/* ----- Sponsor ------ */
-.sponsor-area {
-  position: relative;
-  background-image: url(../image/homepage/about.png);
-  /* background-color: var(--gray-bg); */
-  overflow-x: hidden;
-}
-
-.sponsor-area .overlay {
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.628); */
-  top: 0;
-  left: 0;
-}
-
-.sponsor-area::before {
-  content: '';
-  position: absolute;
-  background: url(../image/homepage/icon-four.png) no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: -10%;
-  z-index: 2;
-  animation: sponsor1 5s linear infinite alternate;
-}
-
-.sponsor-area::after {
-  content: '';
-  position: absolute;
-  background: url(../image/homepage/icon-four.png) no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -10%;
-  transform: rotate(180deg);
-  z-index: 2;
-  animation: sponsor2 3s linear infinite alternate;
-}
-
-@keyframes sponsor1 {
-  from {
-    left: -10%;
-  }
-
-  to {
-    left: -4%;
-  }
-}
-
-@keyframes sponsor2 {
-  from {
-    right: -10%;
-  }
-
-  to {
-    right: -4%;
-  }
-}
-
-.sponsor-area .card img {
-  width: 100px;
-  height: 100px;
-  margin-inline: auto;
-}
-
-.sponsor-area .card {
-  padding: 20px;
-  background-color: var(--card-white);
-}
-
-
-
-@media (max-width : 576px) {
-  .testimonial-area .testimonial-slide {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .line-3 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-img {
-    width: 35%;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-content {
-    width: 65%;
-  }
-
-  .testimonial-area .testimonial-slide .testimonial-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid #007ACC;
-  }
-}
 
 /* Responsive stacking */
 @media (max-width: 768px) {
@@ -6598,7 +5090,7 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 .about-us .about-us-img img {
   width: 90%;
   margin-inline: auto;
-  transform: translateY(80px);
+  transform: translateY(100px);
 }
 
 .about-us .about-us-content {
@@ -6770,7 +5262,7 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 /* ---- opportunities-area ----- */
 .opportunities-area {
   background-image: url('../image/homepage/dot-bg.webp');
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: var(--gray-bg);
 }
 
@@ -6867,6 +5359,47 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
 .upcomming-area .icon .box2 {
   left: 58%;
   top: 22%;
+}
+/* Benrfits */
+.benefit-area {
+  padding: 60px 0;
+}
+
+.benefit-area .card {
+  border-radius: 20px;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}
+
+.benefit-area .card .card-img {
+  width: 30%;
+}
+
+.benefit-area .card .card-body .card-text span {
+  color: var(--primary-color);
+}
+
+.benefit-area .col-xl-6:nth-child(1) .card {
+  background: #18AFFE;
+  background: linear-gradient(275deg, rgba(24, 175, 254, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+
+.benefit-area .col-xl-6:nth-child(2) .card {
+  background: #F741C3;
+  background: linear-gradient(84deg, rgba(247, 65, 195, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+.benefit-area .col-xl-4:nth-child(3) .card {
+  background: #4DE38C;
+background: linear-gradient(89deg, rgba(77, 227, 140, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+.benefit-area .col-xl-4:nth-child(4) .card {
+  background: #FEB117;
+background: linear-gradient(89deg, rgba(254, 177, 23, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
+}
+.benefit-area .col-xl-4:nth-child(5) .card {
+  background: #8050FF;
+background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
 
 /* ----- Donatiom-Area ---- */
@@ -7015,8 +5548,56 @@ background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 
   background: url('../image/homepage/shape-nine.png') no-repeat;
   transform: rotate(180deg);
 }
+.testimonial-area .section-title {
+  font-size: 34px;
+  color: var(--text-black);
+}
+
+.testimonial-area .section-decript {
+  font-size: 18px;
+  color: var(--text-black);
+}
+
+.testimonial-area .testimonial-slide {
+  height: 280px;
+  color: var(--text-black);
+  background-color: var(--card-white);
+  border-radius: 10px;
+}
+
+.testimonial-area .testimonial-slide .swiper {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+
+}
+
+.testimonial-area .testimonial-slide .testimonial-img {
+  width: 40% !important;
+}
+
+.testimonial-area .testimonial-slide .testimonial-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+}
+
+.testimonial-area .testimonial-slide .testimonial-content {
+  width: 60%;
+  font-size: 17px;
+  margin: 20px !important;
+}
+
+.testimonial-area .testimonial-slide .testimonial-content .star {
+  color: goldenrod;
+}
 
 @media (max-width : 576px) {
+  body{
+    overflow-x: hidden;
+  }
   .hero-banner .hero-content {
     width: 90%;
     bottom: 10%;

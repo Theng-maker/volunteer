@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <!-- Swipper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -70,7 +70,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
@@ -87,12 +87,43 @@
                 </a>
 
                 <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
+                <div class="d-flex">
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn navbar-toggler ms-2 border-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    <i class="bi bi-person-fill-gear"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="assets/page/Authentication/login.html">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            ចូលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="assets/page/Authentication/register.html">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            បង្កើតគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span>
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+
+                </div>
 
                 <!-- Offcanvas menu -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -109,30 +140,29 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="assets/page/Authentication/Login.html">
+                                <a class="nav-link" href="assets/page/opportunities.html">
                                     ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="assets/page/Authentication/login.html">
+                                <a class="nav-link" href="assets/page/eventpage.html">
                                     ព្រឹត្តិការណ៏
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="assets/page/Authentication/login.html">
+                                <a class="nav-link" href="assets/page/activity.html">
                                     សកម្មភាព
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="assets/page/Authentication/login.html">
+                                <a class="nav-link" href="assets/page/Donation.html">
                                     បរិច្ចាក
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
-                <ul class="nav-authentication d-flex m-0 list-unstyled">
+                <ul class="nav-authentication d-xl-flex m-0 list-unstyled d-none d-xl-block">
                     <li>
                         <a href="assets/page/Authentication/login.html" class="login">
                             ចូលគណនី
@@ -221,15 +251,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
-                        <div class="about-us-img h-100">
-                            <img src="assets/image/homepage/about-list.webp" alt="" class="img-fluid">
+                        <div class="about-us-img h-100 ">
+                            <img src="assets/image/homepage/about-list.webp" alt="" class="img-fluid about-landing-img">
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="about-us-content position-relative">
                             <span>អំពីយើង</span>
                             <h2 class="section-title mt-3 lh-sm">
-                                យើងជាក្រុមស្ម័គ្រចិត្តនៅកម្ពុជា <br>
                                 គោលបំណង និងបេសកកម្មរបស់ពួកយើង
                             </h2>
                             <p class="section-decript mt-2">
@@ -239,7 +268,7 @@
                             </p>
                             <ul class="mission-list list-unstyled">
                                 <li class="mt-4">
-                                    <a href="#" class="stretched-link"></a>
+                                    <a href="assets/page/Authentication/login.html" class="stretched-link"></a>
                                     <div class="list-img">
                                         <img src="assets/image/Icon/presentation.png" alt="" class="img-fluid">
                                     </div>
@@ -388,7 +417,7 @@
                         <h2 class="text-start">
                             ឱកាសស្ម័គ្រចិត្ត
                         </h2>
-                        <p class="w-75 text-start">
+                        <p class="w-75 text-start line-3">
                             ឱកាសស្ម័គ្រចិត្តផ្តល់ឱកាសដល់អ្នកក្នុងការចូលរួមជាមួយសហគមន៍។ អ្នកអាចជួយដល់ការអប់រំ
                             ការពារបរិស្ថាន
                             និងការអភិវឌ្ឍសហគមន៍។ ចូលរួមជាមួយយើងដើម្បីធ្វើឱ្យប្រជាជនយើងកាន់តែប្រសើរឡើង!
@@ -582,7 +611,7 @@
                     <h2 class="mb-3">
                         ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ
                     </h2>
-                    <p class="w-75 mx-auto">
+                    <p class="w-75 mx-auto line-3">
                         ព្រឹត្តិការណ៍ដ៏ពិសេស នឹងត្រូវប្រព្រឹត្តឡើងនៅពេលឆាប់ៗខាងមុខនេះ។
                         កម្មវិធីនេះនឹងផ្តល់នូវបទពិសោធន៍ថ្មីៗ ពោរពេញដោយកម្រិតភាពសប្បាយរីករាយ ការសិក្សា
                         និងឱកាសក្នុងការបង្កើតទំនាក់ទំនងថ្មីៗ។
@@ -603,7 +632,7 @@
                                 <img src="assets/image/opportunities/Environment/card-2/img-6.png" alt=""
                                     class="card-img img-fluid object-fit-cover position-absolute">
                             </div>
-                            <div class="card-body position-absolute lh-sm">
+                            <div class="card-body position-absolute lh-sm w-100">
                                 <h3 class="card-title">
                                     ការសម្អាតឆ្នេរ
                                 </h3>
@@ -630,7 +659,7 @@
                                 <img src="assets/image/opportunities/Childcare/card-4/img-3.png" alt=""
                                     class="card-img img-fluid object-fit-cover position-absolute">
                             </div>
-                            <div class="card-body position-absolute lh-sm">
+                            <div class="card-body position-absolute lh-sm w-100">
                                 <h3 class="card-title">
                                     ការមើលថែទាំកុមារ
                                 </h3>
@@ -657,7 +686,7 @@
                                 <img src="assets/image/opportunities/Environment/card-11/img-1.png" alt=""
                                     class="card-img img-fluid object-fit-cover position-absolute">
                             </div>
-                            <div class="card-body position-absolute lh-sm">
+                            <div class="card-body position-absolute lh-sm w-100">
                                 <h3 class="card-title">
                                     វគ្គសិក្សាបរិស្ថាន
                                 </h3>
@@ -684,7 +713,7 @@
                                 <img src="assets/image/opportunities/Environment/card-11/img-2.png" alt=""
                                     class="card-img img-fluid object-fit-cover position-absolute">
                             </div>
-                            <div class="card-body position-absolute lh-sm">
+                            <div class="card-body position-absolute lh-sm w-100">
                                 <h3 class="card-title">
                                     ដាំឈើជាសហគមន៍
                                 </h3>
@@ -700,11 +729,11 @@
                 </div>
             </div>
         </section>
-        <section class="cta-area ">
+        <section class="cta-area">
             <div class="container">
                 <div class="cta-content">
                     <div class="row">
-                        <div class="col-xl-7">
+                        <div class="col-12 col-xl-7">
                             <div class="section-title text-center">
                                 <h2>
                                     ក្លាយជាស្ម័គ្រចិត្តថ្ងៃនេះ!
@@ -721,11 +750,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-5">
+                        <div class="col-12 col-xl-5">
                             <div class="cta-img position-relative d-flex justify-content-center">
                                 <img src="assets/image/homepage/cta-phone.png" alt=""
                                     class="position-absolute cta-phone">
-                                <!-- <img src="../image/homepage/cta-ipad.png" alt=""> -->
                             </div>
                         </div>
                     </div>
@@ -740,148 +768,154 @@
                     <h2>
                         អត្ថប្រយោជន៍នៃការស្ម័គ្រចិត្ត
                     </h2>
-                    <p>
+                    <p class="w-75 mx-auto line-3">
                         ការស្ម័គ្រចិត្តជួយអភិវឌ្ឍខ្លួនឯង ដោយផ្តល់ឱកាសឲ្យយើងទទួលបានបទពិសោធន៍ថ្មីៗ
                         បង្កើនជំនាញ និងជឿជាក់លើខ្លួនឯង។ វាជាដំណើរដ៏មានតម្លៃសម្រាប់ការលូតលាស់ផ្ទាល់ខ្លួន។
 
                     </p>
                 </div>
-                <div class="row mt-4">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        ស្ម័គ្រចិត្តការអប់រំ
-                                    </h3>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយកុមារ និងយុវជនទទួលបានឱកាសសិក្សា
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយកុមារ និងយុវជនទទួលបានឱកាសសិក្សា
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយកុមារ និងយុវជនទទួលបានឱកាសសិក្សា
-                                    </p>
-                                </div>
+                <div class="row gy-4 mt-4">
+                    <div class="col-12 col-xl-6">
+                        <div class="card flex-row">
+                            <img src="assets/image/homepage/benefits_01.png" alt="" class="card-img">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    ស្ម័គ្រចិត្តការអប់រំ
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើនចំណេះដឹង និងជំនាញផ្ទាល់ខ្លួន
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    ជួយកុមារ និងយុវជនទទួលបានឱកាសសិក្សា
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើនការយល់ដឹង និងទំនួលខុសត្រូវសង្គម
+                                </p>
                             </div>
+
                         </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        ស្ម័គ្រចិត្តតាមសហគមន៍
-                                    </h3>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយសហគមន៍មានភាពរឹងមាំ និងមានឯកភាព
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើនគុណភាពជីវិតរបស់ប្រជាជន
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើតទំនាក់ទំនងល្អរវាងអ្នកស្ម័គ្រចិត្ត និងសហគមន៍
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    ស្ម័គ្រចិត្តតាមសហគមន៍
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    ជួយសហគមន៍មានភាពរឹងមាំ និងមានឯកភាព
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើនគុណភាពជីវិតរបស់ប្រជាជន
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើតទំនាក់ទំនងល្អរវាងអ្នកស្ម័គ្រចិត្ត និងសហគមន៍
+                                </p>
                             </div>
+                            <img src="assets/image/homepage/benefits_02.png" alt="" class="card-img">
                         </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
-                                    </h3>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បទពិសោធន៍ក្នុងការរៀបចំ និងគ្រប់គ្រងព្រឹត្តិការណ៍
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើនជំនាញទំនាក់ទំនង និងការងារជាក្រុម
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយសហគមន៍ឲ្យមានសាមគ្គីភាពកាន់តែច្រើន
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បទពិសោធន៍ក្នុងការរៀបចំ និងគ្រប់គ្រងព្រឹត្តិការណ៍
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើនជំនាញទំនាក់ទំនង និងការងារជាក្រុម
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    ជួយសហគមន៍ឲ្យមានសាមគ្គីភាពកាន់តែច្រើន
+                                </p>
                             </div>
+                            <img src="assets/image/homepage/benefits_03.png" alt="" class="card-img">
                         </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
-                                    </h3>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយថែរក្សាបរិស្ថានស្អាត និងមានសុខភាពល្អ
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើតការយល់ដឹង និងទំនួលខុសត្រូវរួមក្នុងសង្គម
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        អ្នកស្ម័គ្រចិត្តទទួលបានបទពិសោធន៍ថ្មី និងអារម្មណ៍រីករាយក្នុងការថែរក្សាភពផែនដី
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    ជួយថែរក្សាបរិស្ថានស្អាត និងមានសុខភាពល្អ
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើតការយល់ដឹង និងទំនួលខុសត្រូវរួមក្នុងសង្គម
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    អ្នកស្ម័គ្រចិត្តទទួលបានបទពិសោធន៍ថ្មី និងអារម្មណ៍រីករាយក្នុងការថែរក្សាភពផែនដី
+                                </p>
                             </div>
+                            <img src="assets/image/homepage/benefits_04.png" alt="" class="card-img">
                         </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0">
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        ការបរិច្ចាក
-                                    </h3>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយសង្គម និងអ្នកដែលត្រូវការ
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើតឥទ្ធិពលវិជ្ជមានរយៈពេលវែង
-                                    </p>
-                                    <p class="card-text mb-0">
-                                        <span class="me-1">
-                                            <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើនសេចក្តីអត់ធ្មត់ និងការចែករំលែក
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    ការបរិច្ចាក
+                                </h3>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    ជួយសង្គម និងអ្នកដែលត្រូវការ
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើតឥទ្ធិពលវិជ្ជមានរយៈពេលវែង
+                                </p>
+                                <p class="card-text mb-0">
+                                    <span class="me-1">
+                                        <i class="bi bi-check-circle"></i>
+                                    </span>
+                                    បង្កើនសេចក្តីអត់ធ្មត់ និងការចែករំលែក
+                                </p>
                             </div>
+                            <img src="assets/image/homepage/benefits_05.png" alt="" class="card-img">
                         </div>
                     </div>
                 </div>
@@ -897,7 +931,7 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 mb-3">
                         <div class="question-img position-relative z-2 h-100">
                             <img src="assets/image/homepage/cta-ipad.png" alt="" class="img-fluid rounded-3">
                         </div>
@@ -999,7 +1033,7 @@
         <section class="testimonial-area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 mb-4">
                         <div class="section-content">
                             <h3 class="section-title">មតិយោបល់របស់អ្នកស្ម័គ្រចិត្ត</h3>
                             <p class="section-decript">
@@ -1186,7 +1220,7 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-xl-4 d-flex justify-content-end">
                     <div class="footer-page">
                         <h4>
