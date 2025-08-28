@@ -207,11 +207,11 @@
 
 
     </header>
-    <main class="flex-grow-1 org-dashboard">
-        <div class="container py-4">
+    <main class="flex-grow-1 org-dashboard mt-5">
+        <div class="container py-4 mt-5">
 
             <!-- Profile Header -->
-            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm">
+            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm mt-4">
                 <img src="../image/ORG/Org-Logo.png" class="rounded-circle me-3" width="60" height="60" alt="Profile">
                 <div>
                     <h5 class="mb-0">អង្គការបរិស្ថានកម្ពុជា</h5>
@@ -476,7 +476,7 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input class="form-control vh-search" placeholder="ស្វែងរកឱកាស…">
                         </div>
-                        <select class="form-select" style="max-width:250px;">
+                        <select class="form-select" style="max-width:200px;">
                             <option selected>ស្ថានភាពទាំងអស់</option>
                             <option>Available</option>
                             <option>Closed</option>
@@ -568,11 +568,11 @@
 
                         <!-- optional filters / search -->
                         <div class="d-flex align-items-center gap-2">
-                            <div class="vh-search-wrap" style="min-width:240px;">
+                            <div class="vh-search-wrap" style="min-width:180px;">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                <input type="search" class="form-control vh-search" placeholder="ស្វែងរកឈ្មោះ ឬឱកាស…" />
+                                <input type="search" class="form-control vh-search" placeholder="ស្វែងរកឈ្មោះ…" />
                             </div>
-                            <select class="form-select" style="min-width:180px;">
+                            <select class="form-select" style="min-width:140px;">
                                 <option value="">ស្ថានភាពទាំងអស់</option>
                                 <option value="pending">កំពុងរង់ចាំ</option>
                                 <option value="approved">បានអនុម័ត</option>
@@ -595,7 +595,7 @@
                             <tbody>
                                 <!-- Row 1 -->
                                 <tr>
-                                    <td data-label="Volunteer">
+                                    <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
                                             <img class="rounded-circle object-fit-cover"
                                                 src="../image/ORG/Woman-profile.png" width="44" height="44"
@@ -606,17 +606,17 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-label="Opportunity">
-                                        <div class="fw-medium">សកម្មភាពសម្អាតសហគមន៍</div>
-                                        <small class="text-muted">បរិក្ខារ​ចូលរួម៖ ២ ថ្ងៃ</small>
+                                    <td data-label="ការងារ">
+                                        <div class="fw-medium">សម្អាតសហគមន៍</div>
+                                        <small class="text-muted">​ចូលរួម៖ ២ ថ្ងៃ</small>
                                     </td>
-                                    <td data-label="Date"><span>២៤ មករា ២០២៥</span></td>
-                                    <td data-label="Status">
+                                    <td data-label="កាលបរិច្ឆេទ"><span>២៤ មករា ២០២៥</span></td>
+                                    <td data-label="ស្ថានភាព">
                                         <span class="status-badge status-pending">
                                             <i class="fa-regular fa-clock me-1"></i> កំពុងរង់ចាំ
                                         </span>
                                     </td>
-                                    <td class="text-end" data-label="Actions">
+                                    <td class="text-end" data-label="សកម្មភាព">
                                         <div class="btn-group btn-group-sm" role="group" aria-label="Row actions">
                                             <button class="btn btn-outline-secondary" title="មើល / View">
                                                 <i class="fa-regular fa-eye"></i>
@@ -633,7 +633,7 @@
 
                                 <!-- Row 2 -->
                                 <tr>
-                                    <td data-label="Volunteer">
+                                    <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
                                             <img class="rounded-circle object-fit-cover"
                                                 src="../image/ORG/Man-profile1.png" width="44" height="44"
@@ -644,23 +644,23 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-label="Opportunity">
+                                    <td data-label="ការងារ">
                                         <div class="fw-medium">ដាំដើមឈើ</div>
                                         <small class="text-muted">ចំនួនម៉ោង៖ ៩</small>
                                     </td>
-                                    <td data-label="Date"><span>២៤ មករា ២០២៥</span></td>
-                                    <td data-label="Status">
+                                    <td data-label="កាលបរិច្ឆេទ"><span>២៤ មករា ២០២៥</span></td>
+                                    <td data-label="ស្ថានភាព">
                                         <span class="status-badge status-approved">
                                             <i class="fa-regular fa-circle-check me-1"></i> បានអនុម័ត
                                         </span>
                                     </td>
-                                    <td class="text-end" data-label="Actions">
+                                    <td class="text-end" data-label="សកម្មភាព">
                                         <div class="btn-group btn-group-sm">
                                             <button class="btn btn-outline-secondary" title="មើល / View">
                                                 <i class="fa-regular fa-eye"></i>
                                             </button>
-                                            <button class="btn btn-outline-danger" title="ដកចេញ / Revoke">
-                                                <i class="fa-regular fa-trash-can"></i>
+                                            <button class="btn btn-outline-danger" title="បដិសេធ / Reject">
+                                                <i class="fa-regular fa-circle-xmark"></i>
                                             </button>
                                         </div>
                                     </td>
@@ -668,7 +668,7 @@
 
                                 <!-- Row 3 -->
                                 <tr>
-                                    <td data-label="Volunteer">
+                                    <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
                                             <img class="rounded-circle object-fit-cover"
                                                 src="../image/ORG/Man-profile2.png" width="44" height="44"
@@ -679,17 +679,17 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-label="Opportunity">
+                                    <td data-label="ការងារ">
                                         <div class="fw-medium">អភិរក្សព្រៃឈើ</div>
                                         <small class="text-muted">ចំនួនថ្ងៃ៖ ៣</small>
                                     </td>
-                                    <td data-label="Date"><span>២៣ មករា ២០២៥</span></td>
-                                    <td data-label="Status">
+                                    <td data-label="កាលបរិច្ឆេទ"><span>២៣ មករា ២០២៥</span></td>
+                                    <td data-label="ស្ថានភាព">
                                         <span class="status-badge status-rejected">
                                             <i class="fa-regular fa-circle-xmark me-1"></i> បានបដិសេធ
                                         </span>
                                     </td>
-                                    <td class="text-end" data-label="Actions">
+                                    <td class="text-end" data-label="សកម្មភាព">
                                         <div class="btn-group btn-group-sm">
                                             <button class="btn btn-outline-secondary" title="មើល / View">
                                                 <i class="fa-regular fa-eye"></i>
@@ -807,7 +807,7 @@
                                             <h6 class="mb-0">Applications by Opportunity</h6>
                                             <small class="text-body-secondary">Top 6</small>
                                         </div>
-                                        <canvas id="oppsBar" height="110"></canvas>
+                                        <canvas id="oppsBar" height="210"></canvas>
                                     </div>
                                 </div>
                             </div>
