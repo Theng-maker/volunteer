@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   handleValidation("resetForm", "../Authentication/login.html");
 
   // orgRegisterForm → login
-  handleValidation("orgRegisterForm", "../Authentication/login.html");
+  handleValidation("orgRegisterForm", "../Authentication/orglogin.html");
   // orgloginForm → homepage
   handleValidation("orgloginForm", "../orghomepage.html");
 

@@ -72,7 +72,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
@@ -81,21 +81,12 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
                 <a class="navbar-brand " href="#">
                     <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -106,12 +97,12 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="homepage.html">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
                                     ទំព័រដើម
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Browse Opportunities/opportunities.html">
+                                <a class="nav-link" href="opportunities.html">
                                     ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
@@ -137,7 +128,9 @@
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
                         <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -150,7 +143,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -203,11 +196,11 @@
                         <div class="dropdown">
                             <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <img src="../image/profile.png" alt="">
+                                <img src="../image/ORG/Org-Logo.png" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a class="dropdown-item" href="OrgDashboard.html">
+                                    <a class="dropdown-item" href="../page/OrgDashboard.html">
                                         <i class="bi bi-person-circle"></i>
                                         <span class="ps-1">
                                             មើលគណនី
@@ -215,7 +208,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="OrgDashboard.html">
+                                    <a class="dropdown-item" href="#">
                                         <i class="bi bi-gear"></i>
                                         <span class="ps-1">
                                             ការកំណត់
@@ -223,7 +216,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item  text-danger sign-up" href="homepage.html">
+                                    <a class="dropdown-item  text-danger sign-up" href="#">
                                         <i class="bi bi-box-arrow-left"></i>
                                         <span class="ps-1">
                                             ចាកចេញ
@@ -233,6 +226,14 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -241,17 +242,15 @@
     </header>
     <main>
         <section class="hero-banner hero-home position-relative">
-            <div class="container">
-                <div class="hero-content position-absolute z-3">
+            <div class="container d-flex justify-content-center">
+                <div class="hero-content position-absolute z-3 text-center">
                     <h2 class="hero-title lead fw-medium">
-                        តោះ ចូលរួមស្ម័គ្រចិត្តទាំងអស់គ្នា!
+                        តោះ! ចូលរួមស្ម័គ្រចិត្តទាំងអស់គ្នា
                     </h2>
-                    <p class="hero-decript lead mt-3">
+                    <p class="hero-decript lead mt-3 mb-4 line-3">
                         ការស្ម័គ្រចិត្តធ្វើឱ្យសង្គមប្រមូលផ្តុំជាធ្លុងមួយ ដើម្បីរួមគ្នាអភិវឌ្ឍសហគមន៍
                         និងថែមទាំងផ្តល់ជាមធ្យោបាយសម្រាប់ឱ្យប្រជាជន បង្ហាញពីតម្លៃរបស់ពួកគាត់
                         និងបញ្ជាក់សាជាថ្មីថាពួកគាត់មានចំណែកដ៏មានសារៈសំខាន់សម្រាប់សង្គម។
-                        ការស្ម័គ្រចិត្តអាចកសាងតម្លៃខ្លួនឯង
-                        និងមានអារម្មណ៍ថាមានមោទនភាពពិតប្រាកដសម្រាប់រួមចំណែកបង្កើតពិភពលោកមួយដ៏ល្អប្រសើរ
                     </p>
                     <div class="hero-action mt-4">
                         <button type="button" class="btn hero-contact">
@@ -262,11 +261,11 @@
                         </button>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-xl-3">
+                        <div class="col-6 col-xl-3">
                             <div class="card bg-transparent border-0">
                                 <div class="card-body text-white text-center">
 
-                                    <h3 class="display-3 fw-semibold mb-0">
+                                    <h3 class="display-4 fw-semibold mb-0">
                                         <span class="counter" data-countto="650" data-duration="8000">
                                             0
                                         </span>+
@@ -277,7 +276,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-6 col-xl-3">
                             <div class="card bg-transparent border-0">
                                 <div class="card-body text-white text-center">
 
@@ -292,7 +291,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-6 col-xl-3">
                             <div class="card bg-transparent border-0">
                                 <div class="card-body text-white text-center">
                                     <h3 class=" display-4 fw-semibold mb-0">
@@ -306,7 +305,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-6 col-xl-3">
                             <div class="card bg-transparent border-0">
                                 <div class="card-body text-white text-center">
                                     <h3 class="display-4 fw-semibold mb-0">
@@ -376,15 +375,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
-                        <div class="about-us-img h-100">
-                            <img src="../image/homepage/about-list.webp" alt="" class="img-fluid">
+                        <div class="about-us-img h-100 d-flex justify-content-center">
+                            <img src="../image/homepage/about_02" alt="" class="img-fluid ">
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="about-us-content position-relative">
                             <span>អំពីយើង</span>
                             <h2 class="section-title mt-3 lh-sm">
-                                យើងជាក្រុមស្ម័គ្រចិត្តនៅកម្ពុជា <br>
                                 គោលបំណង និងបេសកកម្មរបស់ពួកយើង
                             </h2>
                             <p class="section-decript mt-2">
@@ -484,7 +482,7 @@
                         </p>
                     </div>
                     <div class="section-link">
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-outline-primary">
                             មើលបន្ថែមទៀត
                         </a>
                     </div>
@@ -536,7 +534,7 @@
                                     </div>
                                 </div>
                                 <div class="card-link mt-3">
-                                    <a href="" class="btn btn-primary w-100 me-1">
+                                    <a href="" class="btn btn-outline-primary w-100 me-1">
                                         ព័ត៌មានលម្អិត
                                     </a>
                                 </div>
@@ -591,7 +589,7 @@
                                     </div>
                                 </div>
                                 <div class="card-link mt-3">
-                                    <a href="" class="btn btn-primary w-100 me-1">
+                                    <a href="" class="btn btn-outline-primary w-100 me-1">
                                         ព័ត៌មានលម្អិត
                                     </a>
                                 </div>
@@ -645,7 +643,7 @@
                                     </div>
                                 </div>
                                 <div class="card-link mt-3">
-                                    <a href="" class="btn btn-primary w-100 me-1">
+                                    <a href="" class="btn btn-outline-primary w-100 me-1">
                                         ព័ត៌មានលម្អិត
                                     </a>
                                 </div>
@@ -653,12 +651,8 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </section>
-
 
 
         <section class="upcomming-area position-relative">
@@ -839,74 +833,118 @@
                     </p>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-xl-3">
-                        <div class="card card-1">
-                            <div class="card-icon mx-auto mt-3 rounded-circle text-center align-content-center">
-                                <i class="bi bi-currency-dollar"></i>
-                            </div>
-                            <div class="card-body text-center">
+                    <div class="col-xl-6">
+                        <div class="card donation-card d-flex flex-row-reverse px-3 align-items-center overflow-hidden">
+                            <img src="../image/homepage/donation-1.png" alt="" class="card-img img-fluid h-100">
+                            <div class="card-body">
                                 <h3 class="card-title">
-                                    បរិច្ចាកប្រាក់
+                                    ការបរិច្ចាកប្រាក់ និងសម្ភារៈ
                                 </h3>
                                 <p class="card-text">
-                                    “ការបរិច្ចាគជាសាច់ប្រាក់របស់អ្នកជួយផ្គត់ផ្គង់ធនធានសម្រាប់គម្រោងសង្គម សេវាសុខាភិបាល
-                                    និងការអប់រំ។ ជួយអ្នកផ្សព្វផ្សាយការយល់ដឹង និងស្រឡាញ់អ្នកជុំវិញខ្លួន!”
+                                    “ការផ្តល់ជំនួយផ្ទាល់ពីចិត្តសប្បុរស ដោយបង្រៀនឲ្យយើងចែករំលែកធនធាន ឬវត្ថុដែលមានតម្លៃ
+                                    ដើម្បីជួយសង្គម និងអ្នកកំព្រាក្រីក្រ”
                                 </p>
+                                <a href="" class="donate-btn btn btn-outline-primary mt-2 px-4 rounded-5">
+                                    <span class="m-0">
+                                        បរិច្ចាគឥឡូវនេះ
+                                    </span>
+                                    <i class="bi bi-arrow-right-short"></i>
+
+                                </a>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="card card-1">
-                            <div class="card-icon mx-auto mt-3 rounded-circle text-center align-content-center">
-                                <i class="bi bi-currency-dollar"></i>
-                            </div>
-                            <div class="card-body text-center">
+                    <div class="col-xl-6">
+                        <div class="card donation-card d-flex flex-row-reverse px-3 align-items-center overflow-hidden">
+                            <img src="../image/homepage/donation-2.png" alt="" class="card-img ">
+                            <div class="card-body">
                                 <h3 class="card-title">
-                                    បរិច្ចាកប្រាក់
+                                    ការបរិច្ចាកឈាម
                                 </h3>
                                 <p class="card-text">
-                                    “ការបរិច្ចាគជាសាច់ប្រាក់របស់អ្នកជួយផ្គត់ផ្គង់ធនធានសម្រាប់គម្រោងសង្គម សេវាសុខាភិបាល
-                                    និងការអប់រំ។ ជួយអ្នកផ្សព្វផ្សាយការយល់ដឹង និងស្រឡាញ់អ្នកជុំវិញខ្លួន!”
+                                    “ការបរិច្ចាកឈាមមិនត្រឹមតែជួយអ្នកជំងឺទេ
+                                    ប៉ុន្តែថែមទាំងមានអត្ថប្រយោជន៍ដល់សុខភាពអ្នកបរិច្ចាកផងដែរ”
                                 </p>
+                                <a href="" class="donate-btn btn btn-outline-primary mt-2 px-4 rounded-5">
+                                    <span class="m-0">
+                                        បរិច្ចាគឥឡូវនេះ
+                                    </span>
+                                    <i class="bi bi-arrow-right-short"></i>
+
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="card card-1">
-                            <div class="card-icon mx-auto mt-3 rounded-circle text-center align-content-center">
-                                <i class="bi bi-currency-dollar"></i>
-                            </div>
-                            <div class="card-body text-center">
-                                <h3 class="card-title">
-                                    បរិច្ចាកប្រាក់
-                                </h3>
-                                <p class="card-text">
-                                    “ការបរិច្ចាគជាសាច់ប្រាក់របស់អ្នកជួយផ្គត់ផ្គង់ធនធានសម្រាប់គម្រោងសង្គម សេវាសុខាភិបាល
-                                    និងការអប់រំ។ ជួយអ្នកផ្សព្វផ្សាយការយល់ដឹង និងស្រឡាញ់អ្នកជុំវិញខ្លួន!”
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="card card-1">
-                            <div class="card-icon mx-auto mt-3 rounded-circle text-center align-content-center">
-                                <i class="bi bi-currency-dollar"></i>
-                            </div>
-                            <div class="card-body text-center">
-                                <h3 class="card-title">
-                                    បរិច្ចាកប្រាក់
-                                </h3>
-                                <p class="card-text">
-                                    “ការបរិច្ចាគជាសាច់ប្រាក់របស់អ្នកជួយផ្គត់ផ្គង់ធនធានសម្រាប់គម្រោងសង្គម សេវាសុខាភិបាល
-                                    និងការអប់រំ។ ជួយអ្នកផ្សព្វផ្សាយការយល់ដឹង និងស្រឡាញ់អ្នកជុំវិញខ្លួន!”
-                                </p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
 
             </div>
 
+        </section>
+
+
+        <section class="sponsor">
+            <div class="container">
+                <div class="section-title">
+                    <h2>ដៃគូសហការ</h2>
+                    <p>
+                        សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅចំពោះដៃគូសហការ ដែលបានគាំទ្រ និងសហការយ៉ាងមានតម្លៃជានិច្ច
+                    </p>
+                </div>
+                <div class="swiper sponsor-slider mt-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="assets/page/register.html">
+                                    <img src="../image/logo-org/1.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="assets/page/register.html">
+                                    <img src="../image/logo-org/7.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="assets/page/register.html">
+                                    <img src="../image/logo-org/3.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="assets/page/register.html">
+                                    <img src="../image/logo-org/4.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="assets/page/register.html">
+                                    <img src="../image/logo-org/5.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <a href="assets/page/register.html">
+                                    <img src="../image/logo-org/1.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="benefit-area">
@@ -921,10 +959,10 @@
 
                     </p>
                 </div>
-                <div class="row mt-4">
-                    <div class="row">
-                        <div class="col-xl-4">
-                            <div class="card border-0">
+                    <div class="row gy-4 mt-4">
+                        <div class="col-xl-6">
+                            <div class="card flex-row py-4">
+                                <img src="../image/homepage/benefits_01.png" alt="" class="card-img">
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         ស្ម័គ្រចិត្តការអប់រំ
@@ -933,7 +971,7 @@
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
                                         </span>
-                                        ជួយកុមារ និងយុវជនទទួលបានឱកាសសិក្សា
+                                        បង្កើនចំណេះដឹង និងជំនាញផ្ទាល់ខ្លួន
                                     </p>
                                     <p class="card-text mb-0">
                                         <span class="me-1">
@@ -945,13 +983,15 @@
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
                                         </span>
-                                        ជួយកុមារ និងយុវជនទទួលបានឱកាសសិក្សា
+                                        បង្កើនការយល់ដឹង និងទំនួលខុសត្រូវសង្គម
                                     </p>
                                 </div>
+                                
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0">
+                        <div class="col-xl-6">
+                            <div class="card py-4">
+
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         ស្ម័គ្រចិត្តតាមសហគមន៍
@@ -975,10 +1015,12 @@
                                         បង្កើតទំនាក់ទំនងល្អរវាងអ្នកស្ម័គ្រចិត្ត និងសហគមន៍
                                     </p>
                                 </div>
+                                <img src="../image/homepage/benefits_02.png" alt="" class="card-img">
                             </div>
                         </div>
                         <div class="col-xl-4">
-                            <div class="card border-0">
+                            <div class="card">
+
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
@@ -987,25 +1029,25 @@
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
                                         </span>
-                                        បទពិសោធន៍ក្នុងការរៀបចំ និងគ្រប់គ្រងព្រឹត្តិការណ៍
+                                        រៀបចំ និងគ្រប់គ្រងព្រឹត្តិការណ៍
                                     </p>
                                     <p class="card-text mb-0">
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
                                         </span>
-                                        បង្កើនជំនាញទំនាក់ទំនង និងការងារជាក្រុម
+                                        បង្កើនទំនាក់ទំនង និងការងារជាក្រុម
                                     </p>
                                     <p class="card-text mb-0">
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        ជួយសហគមន៍ឲ្យមានសាមគ្គីភាពកាន់តែច្រើន
+                                        </span>សហគមន៍មានសាមគ្គីភាព
                                     </p>
                                 </div>
+                                <img src="../image/homepage/benefits_03.png" alt="" class="card-img">
                             </div>
                         </div>
                         <div class="col-xl-4">
-                            <div class="card border-0">
+                            <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
@@ -1014,25 +1056,24 @@
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
                                         </span>
-                                        ជួយថែរក្សាបរិស្ថានស្អាត និងមានសុខភាពល្អ
+                                        បរិស្ថានស្អាត និងមានសុខភាពល្អ
                                     </p>
                                     <p class="card-text mb-0">
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        បង្កើតការយល់ដឹង និងទំនួលខុសត្រូវរួមក្នុងសង្គម
+                                        </span>យល់ដឹង និងទំនួលខុសត្រូវក្នុងសង្គម
                                     </p>
                                     <p class="card-text mb-0">
                                         <span class="me-1">
                                             <i class="bi bi-check-circle"></i>
-                                        </span>
-                                        អ្នកស្ម័គ្រចិត្តទទួលបានបទពិសោធន៍ថ្មី និងអារម្មណ៍រីករាយក្នុងការថែរក្សាភពផែនដី
+                                        </span>អារម្មណ៍រីករាយក្នុងការថែរក្សាភពផែនដី
                                     </p>
                                 </div>
+                                <img src="../image/homepage/benefits_04.png" alt="" class="card-img">
                             </div>
                         </div>
                         <div class="col-xl-4">
-                            <div class="card border-0">
+                            <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">
                                         ការបរិច្ចាក
@@ -1056,10 +1097,10 @@
                                         បង្កើនសេចក្តីអត់ធ្មត់ និងការចែករំលែក
                                     </p>
                                 </div>
+                                <img src="../image/homepage/benefits_05.png" alt="" class="card-img">
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
         <section class="question-area">
