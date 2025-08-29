@@ -22,7 +22,7 @@
 
 <body class="d-flex flex-column h-100">
     <!-- header -->
-    <header class="fixed-top  shadow-sm">
+    <header class="fixed-top shadow-sm">
         <div class="top-header">
             <div class="container d-flex justify-content-between align-items-center">
                 <ul class="nav-list list-unstyled d-flex m-0">
@@ -48,55 +48,46 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/england.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/arabic.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                 </div>
-    
+
             </div>
         </div>
-    
-        <nav class="navbar navbar-expand-lg bg-white">
+
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
-                <a class="navbar-brand " href="homepage.html">
-                    <img src="../image/Logo.jpg" alt="">
+                <a class="navbar-brand " href="#">
+                    <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-    
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-    
                 <!-- Offcanvas menu -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -107,7 +98,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="homepage.html">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
                                     ទំព័រដើម
                                 </a>
                             </li>
@@ -134,10 +125,13 @@
                         </ul>
                     </div>
                 </div>
+
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -150,7 +144,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -190,7 +184,7 @@
                                         </span>
                                     </a>
                                 </li>
-    
+
                                 <li class=" my-3 d-flex justify-content-center">
                                     <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
                                         មើលការជូនដំណឹងទាំងអស់
@@ -201,10 +195,11 @@
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <img src="../image/profile.png" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-person-circle"></i>
@@ -222,7 +217,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         <span class="ps-1">
                                             ចាកចេញ
@@ -232,10 +227,19 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                    </li>
                 </ul>
             </div>
         </nav>
-    
+
+
     </header>
     <main class="flex-grow-1">
         <div class="container">
@@ -1045,26 +1049,115 @@
     </footer>
 x
     <!-- Modal Search -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade searchModal fs-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content px-4 rounded-4">
+                <div class="modal-header pb-0 justify-content-between">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-circle fs-3"></i>
+                    </button>
                 </div>
-                <div class="modal-body">
-
-
-
-                    <form class="d-flex">
-                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                        <button type="submit" class="btn btn-primary rounded ms-2">
-                            <i class="bi bi-search"></i>
-                        </button>
+                <div class="modal-body pb-0">
+                    <form class="position-relative">
+                        <span>
+                            <i class="bi bi-search position-absolute"></i>
+                        </span>
+                        <input type="text" class="w-100 rounded" placeholder="ស្វែងរកទីនេះ..."
+                            value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
                     </form>
-
-
-
+                    <p class="mt-3 mb-1 fw-semibold">
+                        <i class="bi bi-clock-history"></i>
+                        <span>
+                            ធ្លាប់បានស្វែងរក
+                        </span>
+                    </p>
+                    <ul class="search-list list-unstyled ">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="#" class="w-100 d-inline-block ">
+                                    ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="#" class="w-100 d-inline-block ">
+                                    ស្ម័គ្រចិត្តថែទាំកុមារ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="#" class="w-100 d-inline-block  ">
+                                    បរិច្ចាគ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="#" class="w-100 d-inline-block  ">
+                                    ទាក់ទងតាមណា?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="#" class="w-100 d-inline-block  ">
+                                   សុំរបៀបចុះឈ្មោះ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <div class="mt-2 w-100 text-center text-primary">
+                            <button type="button">
+                                លុបទាំងអស់
+                            </button>
+                        </div>
+                    </ul>
+                    
+                    <ul class="search-action list-unstyled mt-4 d-flex justify-content-center">
+                        <li class="pe-4">
+                            <a href="#">
+                                ទំនាក់ទំនង
+                            </a>
+                        </li>
+                        <li class="px-4">
+                            <a href="#">
+                                អំពីយើង
+                            </a>
+                        </li>
+                        <li class="ps-4">
+                            <a href="#">
+                                មើលគណនី
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>

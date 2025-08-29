@@ -412,6 +412,7 @@ a {
 
 .navbar .nav-action li .btn:hover {
   background-color: #CCCCCC;
+  color: black;
 }
 
 .navbar .nav-action li .btn img {
@@ -428,6 +429,79 @@ a {
 .navbar .nav-action .nav-notification img {
   width: 50px;
   transform: translateY(10px) !important;
+}
+
+.searchModal .modal-content{
+  background-color: var(--card-white);
+  color: var(--text-black);
+}
+.searchModal .modal-header h1{
+  font-size: 28px !important;
+  font-weight: 600 !important;
+}
+.searchModal .modal-header button{
+  color: var(--text-black);
+}
+.searchModal .modal-header button:hover{
+  color: var(--primary-color);
+}
+.searchModal .modal-body form span i{
+  transform: translateY(10px) translateX(10px);
+}
+.searchModal .modal-body form  input {
+  background-color: var(--card-white);
+  font-size: 18px;
+  padding-block: 12px;
+  padding-left: 40px;
+  border: transparent;
+  border-bottom: 1px solid gray;
+  transition: 0.3s;
+  color: var(--primary-color);
+}
+.searchModal .modal-body form  input:focus{
+  outline: none !important;
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px !important;
+}
+.searchModal .modal-body .search-list li{
+  position: relative;
+  transition: 0.3s;
+  padding: 10px 0;
+  color: var(--text-black);
+}
+.searchModal .modal-body .search-list li a{
+  color: var(--text-black);
+}
+.searchModal .modal-body .search-list li:hover{
+  background-color: var(--secondary-color);
+   color: #fff;
+}
+.searchModal .modal-body .search-list li:hover a{
+  color: #fff;
+}
+.searchModal .modal-body .search-list li::before{
+  position: absolute;
+  content: "\f52a";  
+  font-family: "bootstrap-icons";
+  left: 10px;
+  top: 10px;
+}
+.searchModal .modal-body .search-list li p{
+  padding-left: 50px;
+  padding-right: 10px !important;
+  margin: 0;
+}
+
+.searchModal .modal-body .search-action li a{
+  color: var(--text-black);
+  transition: 0.3s;
+}
+.searchModal .modal-body .search-action li a:hover{
+  color: var(--primary-color);
+}
+.searchModal .modal-body .search-action li:nth-child(2){
+  border-left: 2px solid var(--text-black);
+  border-right: 2px solid var(--text-black);
 }
 
 /* ======================= CARDS / TYPO UTILS ====================== */
@@ -624,6 +698,11 @@ footer p.text-center {
   height: 50px;
   border-radius: 50%;
   background-size: 30px;
+}
+.hero-banner .carousel-indicators [data-bs-target]{
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
 }
 
 /* --- about us ------ */
@@ -1176,6 +1255,10 @@ footer p.text-center {
   .hero-banner.hero-home .hero-content {
     width: 90%;
     bottom: 5%;
+  }
+
+  .searchModal .modal-content{
+    padding-inline: 0 !important;
   }
 
   .navbar .nav-action .nav-notification .dropdown-menu {
