@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="shortcut icon" href="../image/logo-removebg.png" type="image/x-icon">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/Donation.css"> -->
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header class="fixed-top shadow-sm">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-list list-unstyled d-flex m-0">
+                    <li class="nav-item">
+                        <a href="../page/landing_about.html" class="nav-link ps-0">
+                            អំពីយើង
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../page/contactpage.html" class="nav-link ">
+                            ទំនាក់ទំនង
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-action d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-globe2"></i>
+                            <span class="align-content-center">
+                                ភាសាខ្មែរ
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="../image/Icon/Cambodia.png" alt="">
+                                    <span class="ps-2">
+                                        ភាសាខ្មែរ
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="../image/Icon/england.png" alt="">
+                                    <span class="ps-2">
+                                        ភាសាអង់គ្លេស
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <img src="../image/Icon/arabic.png" alt="">
+                                    <span class="ps-2">
+                                        ភាសាអារ៉ាប់
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-0 text-white" data-theme-toggle
+                        aria-label="Change to light theme">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-xl bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../image/logo-removebg.png" alt="">
+                    ស្ម័គ្រចិត្ត
+                </a>
+
+                <!-- Offcanvas toggle button -->
+                <div class="d-flex">
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn navbar-toggler ms-2 border-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    <i class="bi bi-person-fill-gear"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="assets/page/Authentication/login.html">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            ចូលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="assets/page/Authentication/register.html">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            បង្កើតគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span>
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../page/landing_homepage.html">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/landing_oppornity.html">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/landing_event.html">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/landing_activity.html">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../page/landing_donation.html">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav-authentication d-xl-flex m-0 list-unstyled d-none d-xl-block">
+                    <li>
+                        <a href="../page/Authentication/login.html" class="login">
+                            ចូលគណនី
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="../page/Authentication/register.html" class="sign-up">
+                            បង្កើតគណនី
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- MAIN -->
+    <main class="flex-grow-1 mt-5">
+        <section class="container mt-5">
+            <div class="row g-3 mb-3 mt-5 pt-5">
+
+                <!-- Koma Angkor -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card donate-card shadow-sm border-0 h-100">
+                        <!-- Card Image -->
+                        <img src="../image/Donation/Koma Angkor Children’s Hospital.jpg" class="card-img-top donate-img"
+                            alt="Koma Angkor Hospital">
+                        <div class="card-body">
+                            <h6 class="mb-1">Koma Angkor Children’s Hospital</h6>
+                            <small class="text-body-secondary">សម្រាមកុមារអង្គរវត្ត • Siem Reap</small>
+                            <span class="badge text-bg-primary float-end">Healthcare</span>
+
+                            <p class="small text-body-secondary mt-3">
+                                ជួយគាំទ្រការថែទាំសុខភាពកុមារ ដោយផ្តល់ថ្នាំ វិភាគ និងការថែទាំបន្ទាន់ឥតគិតថ្លៃ។
+                            </p>
+
+                            <div class="d-flex justify-content-between small">
+                                <span>Raised: <strong>$45,200</strong></span>
+                                <span>Goal: <strong>$100,000</strong></span>
+                            </div>
+                            <div class="progress my-2 donate-progress">
+                                <div class="progress-bar bg-primary" style="width:45%"></div>
+                            </div>
+
+                            <div class="row g-2 mt-2">
+                                <div class="col">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                        data-bs-target="#koma-angkor">
+                                        Donate
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="koma-angkor" tabindex="-1"
+                                        aria-labelledby="koma-angkorLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="koma-angkorLabel">
+                                                        មន្ទីរពេទ្យកុមារអង្គរ
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="card border-0">
+                                                        <img src="../image/Donation/QR-Koma-Angkor.png"
+                                                            class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text">
+                                                                ការបរិច្ចាគរបស់លោកអ្នកជួយផ្តល់សេវាព្យាបាលឥតគិតថ្លៃ
+                                                                និងមានគុណភាព ដល់កុមារដែលកំពុងត្រូវការជំនួយ។
+                                                                សូម ស្កែន QR ដើម្បីធ្វើបរិច្ចាគតាមរយៈ KHQR។
+                                                                ការបរិច្ចាគទោះតិចតួចក៏អាចជួយជីវិតកុមារជាច្រើនបានដែរ ❤️
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuntha Bopha -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card donate-card shadow-sm border-0 h-100">
+                        <img src="../image/Donation/Kantha Bopha.jpg" class="card-img-top donate-img"
+                            alt="Kuntha Bopha Hospital">
+                        <div class="card-body">
+                            <h6 class="mb-1">Jayavarman VII – Kantha Bopha</h6>
+                            <small class="text-body-secondary">មន្ទីរពេទ្យកុមារ • Phnom Penh & Siem Reap</small>
+                            <span class="badge text-bg-success float-end">Children</span>
+
+                            <p class="small text-body-secondary mt-3">
+                                ជួយថែទាំកុមារក្រីក្រ ជាមួយនឹងសេវាពេទ្យឥតគិតថ្លៃ និងការព្យាបាលជំងឺធ្ងន់ធ្ងរ។
+                            </p>
+
+                            <div class="d-flex justify-content-between small">
+                                <span>Raised: <strong>$68,400</strong></span>
+                                <span>Goal: <strong>$150,000</strong></span>
+                            </div>
+                            <div class="progress my-2 donate-progress">
+                                <div class="progress-bar bg-success" style="width:46%"></div>
+                            </div>
+
+                            <div class="row g-2 mt-2">
+                                <div class="col">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                        data-bs-target="#kuntha-bopha">
+                                        Donate
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="kuntha-bopha" tabindex="-1"
+                                        aria-labelledby="kuntha-bophaLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="kuntha-bophaLabel">
+                                                        មន្ទីរពេទ្យគន្ធបុប្ផា</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="card border-0">
+                                                        <img src="../image/Donation/Kantha-Bopha-qr.jpg"
+                                                            class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text">
+                                                                មន្ទីរពេទ្យគន្ធបុប្ផាផ្តល់សេវាព្យាបាលឥតគិតថ្លៃដល់កុមារទូទាំងប្រទេស។លោកអ្នកអាចចូលរួមជួយដោយ
+                                                                ស្កែន QR ខាងក្រោម ដើម្បីធ្វើបរិច្ចាគ។
+
+                                                                ✨ ការបរិច្ចាគរបស់លោកអ្នក គឺជាជីវិតរបស់កុមារ ✨</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donate Blood -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card donate-card shadow-sm border-0 h-100">
+                        <img src="../image/Donation/Khmer-Soviet.jpg" class="card-img-top donate-img"
+                            alt="Donate Blood">
+                        <div class="card-body">
+                            <h6 class="mb-1">Donate Blood • ខែនេះ</h6>
+                            <span class="badge text-bg-danger float-end">Urgent</span>
+
+                            <p class="small text-body-secondary mt-3">
+                                ដូរឈាមម្តង អាចជួយសង្គ្រោះជីវិតបានច្រើន។ ចុះបញ្ជីកាលបរិច្ឆេទ និងទីតាំងដែលសមស្រប។
+                            </p>
+
+                            <div class="d-flex justify-content-between small">
+                                <span>Registered: <strong>432</strong></span>
+                                <span>Target: <strong>800</strong></span>
+                            </div>
+                            <div class="progress my-2 donate-progress">
+                                <div class="progress-bar bg-danger" style="width:54%"></div>
+                            </div>
+
+                            <div class="row g-2 mt-2">
+                                <div class="col">
+                                    <a href="https://maps.app.goo.gl/zKZzbcv5gDuwFqE5A"
+                                        class="btn btn-outline-danger w-100" target="_blank">Find a location</a>
+                                </div>
+                                <div class="col">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"
+                                        data-bs-target="#donateBloodModal">Register
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="donateBloodModal" tabindex="-1"
+                                        aria-labelledby="donateBloodModalLabel" aria-hidden="true">
+                                        <div
+                                            class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title kh" id="donateBloodModalLabel">🩸
+                                                        បែបបទចុះឈ្មោះបរិច្ចាគឈាម</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <!-- ====== INSERT FORM HERE ====== -->
+                                                    <form id="donationForm" class="needs-validation" novalidate>
+                                                        <div class="row g-3">
+                                                            <div class="col-md-6">
+                                                                <label for="fullName"
+                                                                    class="form-label required">ឈ្មោះពេញ</label>
+                                                                <input type="text" class="form-control" id="fullName"
+                                                                    required>
+                                                                <div class="invalid-feedback">សូមបញ្ចូលឈ្មោះ</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="dob"
+                                                                    class="form-label required">ថ្ងៃខែឆ្នាំកំណើត</label>
+                                                                <input type="date" class="form-control" id="dob"
+                                                                    required>
+                                                                <div class="invalid-feedback">
+                                                                    សូមបញ្ចូលថ្ងៃកំណើតត្រឹមត្រូវ
+                                                                    (អាយុ 18–60)។</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="phone" class="form-label required">ទូរស័ព្ទ
+                                                                    /
+                                                                    Phone</label>
+                                                                <input type="tel" class="form-control" id="phone"
+                                                                    pattern="^[0-9+\s-]{8,20}$" required>
+                                                                <div class="invalid-feedback">
+                                                                    សូមបញ្ចូលលេខទូរស័ព្ទត្រឹមត្រូវ។</div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="bloodGroup"
+                                                                    class="form-label required">ក្រុមឈាម</label>
+                                                                <select class="form-select" id="bloodGroup" required>
+                                                                    <option value="" disabled selected>ជ្រើសរើស…
+                                                                    </option>
+                                                                    <option>A</option>
+                                                                    <option>B</option>
+                                                                    <option>AB</option>
+                                                                    <option>O</option>
+                                                                    <option>Unknown</option>
+                                                                </select>
+                                                                <div class="invalid-feedback">សូមជ្រើសរើសក្រុមឈាម។</div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="address"
+                                                                    class="form-label">អាសយដ្ឋាន</label>
+                                                                <textarea class="form-control" id="address"
+                                                                    rows="2"></textarea>
+                                                            </div>
+                                                            <div class="col-12 form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="consent" required>
+                                                                <label class="form-check-label" for="consent">
+                                                                    ខ្ញុំយល់ព្រមបរិច្ចាគឈាមដោយស្ម័គ្រចិត្ត
+                                                                </label>
+                                                                <div class="invalid-feedback">សូមយល់ព្រមលក្ខខណ្ឌ។</div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <!-- ====== END FORM ====== -->
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" form="donationForm"
+                                                        class="btn btn-primary">ដាក់ស្នើ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill bg-light text-dark border">A+</span>
+                                <span class="badge rounded-pill bg-light text-dark border">A-</span>
+                                <span class="badge rounded-pill bg-light text-dark border">B+</span>
+                                <span class="badge rounded-pill bg-light text-dark border">O+</span>
+                                <span class="badge rounded-pill bg-light text-dark border">AB+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container" style="margin-top: 80px;">
+            <div class="row g-4">
+                <!-- Donation Section -->
+                <div class="container">
+                    <div class="row g-4">
+                        <!-- LEFT: Main form -->
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <form class="card border-0 shadow-sm vh-donate-card">
+                                <div class="card-body">
+
+                                    <!-- Title -->
+                                    <div class="mb-3">
+                                        <h5 class="mb-0">ផ្តល់ជំនួយរបស់អ្នក</h5>
+                                    </div>
+
+                                    <!-- Donation Type -->
+                                    <div class="mb-3">
+                                        <label class="form-label">ប្រភេទបរិច្ចាគ</label>
+                                        <div class="row g-2">
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="donationType" id="typeOnce"
+                                                    value="once" checked>
+                                                <label class="btn vh-pill w-100" for="typeOnce">
+                                                    <i class="bi bi-gift"></i> ១ ដង
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="donationType"
+                                                    id="typeMonthly" value="monthly">
+                                                <label class="btn vh-pill w-100" for="typeMonthly">
+                                                    <i class="bi bi-graph-up"></i> ប្រចាំខែ
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Amount -->
+                                    <div class="mb-3">
+                                        <label class="form-label">ចំនួនទឹកប្រាក់</label>
+                                        <div class="row g-2">
+                                            <!-- Preset amounts -->
+                                            <div class="col-4 col-sm-2">
+                                                <input class="btn-check" type="radio" name="amount" id="amt10"
+                                                    value="10">
+                                                <label class="btn vh-amount w-100" for="amt10">$10</label>
+                                            </div>
+                                            <div class="col-4 col-sm-2">
+                                                <input class="btn-check" type="radio" name="amount" id="amt25"
+                                                    value="25">
+                                                <label class="btn vh-amount w-100" for="amt25">$25</label>
+                                            </div>
+                                            <div class="col-4 col-sm-2">
+                                                <input class="btn-check" type="radio" name="amount" id="amt50"
+                                                    value="50">
+                                                <label class="btn vh-amount w-100" for="amt50">$50</label>
+                                            </div>
+                                            <div class="col-4 col-sm-2">
+                                                <input class="btn-check" type="radio" name="amount" id="amt100"
+                                                    value="100">
+                                                <label class="btn vh-amount w-100" for="amt100">$100</label>
+                                            </div>
+                                            <div class="col-4 col-sm-2">
+                                                <input class="btn-check" type="radio" name="amount" id="amt250"
+                                                    value="250">
+                                                <label class="btn vh-amount w-100" for="amt250">$250</label>
+                                            </div>
+                                            <div class="col-4 col-sm-2">
+                                                <input class="btn-check" type="radio" name="amount" id="amt500"
+                                                    value="500">
+                                                <label class="btn vh-amount w-100" for="amt500">$500</label>
+                                            </div>
+
+                                            <!-- Custom amount -->
+                                            <div class="col-12">
+                                                <div class="input-group">
+                                                    <span class="input-group-text">$</span>
+                                                    <input type="number" min="1" class="form-control"
+                                                        placeholder="បញ្ចូលចំនួន">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Choose Cause -->
+                                    <div class="mb-3">
+                                        <label class="form-label">ជ្រើសរើសគោលបំណង</label>
+
+                                        <div class="row g-2">
+                                            <!-- Cause 1 -->
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="cause" id="causeGeneral"
+                                                    value="general" checked>
+                                                <label class="vh-cause w-100" for="causeGeneral">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <div class="vh-cause-icon bg-danger-subtle text-danger">
+                                                            <i class="bi bi-heart-fill"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold">គាំទ្រកម្មវិធីទូទៅ</div>
+                                                            <div class="progress vh-progress my-2">
+                                                                <div class="progress-bar bg-primary" style="width:65%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between small">
+                                                                <span>$45,000</span><span>$100,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <!-- Cause 2 -->
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="cause" id="causeEdu"
+                                                    value="education">
+                                                <label class="vh-cause w-100" for="causeEdu">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <div class="vh-cause-icon bg-primary-subtle text-primary">
+                                                            <i class="bi bi-mortarboard-fill"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold">អប់រំ</div>
+                                                            <div class="progress vh-progress my-2">
+                                                                <div class="progress-bar bg-primary" style="width:40%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between small">
+                                                                <span>$12,000</span><span>$30,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <!-- Cause 3 -->
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="cause" id="causeEnv"
+                                                    value="environment">
+                                                <label class="vh-cause w-100" for="causeEnv">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <div class="vh-cause-icon bg-success-subtle text-success">
+                                                            <i class="bi bi-tree-fill"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold">ការពារធនធានធម្មជាតិ</div>
+                                                            <div class="progress vh-progress my-2">
+                                                                <div class="progress-bar bg-primary" style="width:62%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between small">
+                                                                <span>$62,000</span><span>$100,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <!-- Cause 4 -->
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="cause" id="causeCommunity"
+                                                    value="community">
+                                                <label class="vh-cause w-100" for="causeCommunity">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <div class="vh-cause-icon bg-purple-subtle text-purple">
+                                                            <i class="bi bi-people-fill"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold">សហគមន៍</div>
+                                                            <div class="progress vh-progress my-2">
+                                                                <div class="progress-bar bg-primary" style="width:20%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between small">
+                                                                <span>$8,000</span><span>$40,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <!-- Cause 5 -->
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="cause" id="causeHousing"
+                                                    value="housing">
+                                                <label class="vh-cause w-100" for="causeHousing">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <div class="vh-cause-icon bg-warning-subtle text-warning">
+                                                            <i class="bi bi-house-door-fill"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold">ជំនួយលំនៅឋាន</div>
+                                                            <div class="progress vh-progress my-2">
+                                                                <div class="progress-bar bg-primary" style="width:55%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between small">
+                                                                <span>$55,000</span><span>$120,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <!-- Cause 6 -->
+                                            <div class="col-sm-6">
+                                                <input class="btn-check" type="radio" name="cause" id="causeFood"
+                                                    value="food">
+                                                <label class="vh-cause w-100" for="causeFood">
+                                                    <div class="d-flex align-items-start gap-2">
+                                                        <div class="vh-cause-icon bg-orange-subtle text-orange">
+                                                            <i class="fa-solid fa-bowl-food"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold">អាហារសុវត្ថិភាព</div>
+                                                            <div class="progress vh-progress my-2">
+                                                                <div class="progress-bar bg-primary" style="width:12%">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between small">
+                                                                <span>$12,000</span><span>$100,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Donor Information -->
+                                    <div class="mb-3">
+                                        <h6 class="mb-2">ពត៌មានអ្នកបរិច្ចាគ</h6>
+                                        <div class="row g-2">
+                                            <div class="col-md-6">
+                                                <label class="form-label">នាមខ្លួន</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">នាមត្រកូល</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">អ៊ីមែល</label>
+                                                <input type="email" class="form-control" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">លេខទូរស័ព្ទ</label>
+                                                <input type="tel" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Payment method -->
+                                    <div class="mb-3">
+                                        <label class="form-label">វិធីទូទាត់</label>
+                                        <div class="row g-2">
+                                            <div class="col-md-6">
+                                                <input class="btn-check" type="radio" name="pay" id="payCard" checked>
+                                                <label class="btn vh-pay w-100" for="payCard"><i
+                                                        class="bi bi-credit-card"></i> កាត</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input class="btn-check" type="radio" name="pay" id="payBank">
+                                                <label class="btn vh-pay w-100" for="payBank"><i
+                                                        class="bi bi-cash-coin"></i> ធនាគារ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Options -->
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="news" checked>
+                                            <label class="form-check-label" for="news">ទទួលព័ត៌មានថ្មីៗ</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <button class="btn vh-donate-cta" type="submit">បរិច្ចាគ</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- RIGHT: Sidebar -->
+                        <div class="col-lg-4 order-1 order-lg-2">
+
+                            <!-- Security -->
+                            <div class="card shadow-sm border-0 mb-3">
+                                <div class="card-body">
+                                    <h6 class="mb-3">ការពារ និងសុវត្ថិភាព</h6>
+                                    <ul class="list-unstyled m-0">
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-shield-lock text-success me-2"></i>
+                                            <span>ការទូទាត់មានសុវត្ថិភាព</span>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-lock-fill text-success me-2"></i>
+                                            <span>ការពារ​ឯកជនភាពអ្នកបរិច្ចាគ</span>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-file-earmark-lock text-success me-2"></i>
+                                            <span>SSL encrypted transactions</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Help -->
+                            <div class="card shadow-sm border-0 mb-3">
+                                <div class="card-body">
+                                    <h6 class="mb-3">ត្រូវការជំនួយ?</h6>
+                                    <ul class="list-unstyled m-0 small">
+                                        <li class="mb-1"><i class="bi bi-telephone me-2"></i>+855 23 123 456</li>
+                                        <li class="mb-1"><i class="bi bi-envelope me-2"></i>donate@volunteerhub.kh</li>
+                                        <li><i class="bi bi-globe me-2"></i>www.volunteerhub.kh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Selected cause -->
+                            <div class="card shadow-sm border-0 vh-sticky">
+                                <div class="card-body">
+                                    <h6 class="mb-3">គោលបំណងដែលបានជ្រើសរើស</h6>
+                                    <div class="d-flex align-items-start gap-2">
+                                        <div class="vh-cause-icon bg-danger-subtle text-danger">
+                                            <i class="bi bi-heart-fill"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="fw-semibold">General Fund</div>
+                                            <small class="text-secondary">គាំទ្រកម្មវិធីទូទៅរបស់អង្គការ</small>
+                                            <div class="progress vh-progress my-2">
+                                                <div class="progress-bar bg-primary" style="width:45%"></div>
+                                            </div>
+                                            <div class="d-flex justify-content-between small">
+                                                <span>$45,000</span><span>$100,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="mt-1">
+            <div class="container">
+                <div class="text-center mb-3">
+                    <h5 class="mb-0">មតិពីអ្នកបរិច្ចាគ</h5>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="testimonial">
+                            <div class="mb-2 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-3">
+                                "ការបរិច្ចាគបានផ្តល់ឱ្យខ្ញុំនូវអារម្មណ៍ថាខ្ញុំកំពុងចូលរួមចំណែកដល់សង្គម។"</p>
+                            <div class="d-flex align-items-center gap-2">
+                                <img src="https://i.pravatar.cc/80?img=32" class="avatar" alt="">
+                                <div>
+                                    <div class="fw-semibold">សុភា ចាន់</div><small class="text-body-secondary">Phnom
+                                        Penh</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial">
+                            <div class="mb-2 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            </div>
+                            <p class="mb-3">
+                                "ខ្ញុំមានអារម្មណ៍ល្អណាស់ដែលបានឃើញផលវិជ្ជមានពីការបរិច្ចាគរបស់ខ្ញុំ។"</p>
+                            <div class="d-flex align-items-center gap-2">
+                                <img src="https://i.pravatar.cc/80?img=14" class="avatar" alt="">
+                                <div>
+                                    <div class="fw-semibold">ដារា លី</div><small class="text-body-secondary">Siem
+                                        Reap</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ (no JS – uses details/summary) -->
+        <section class="mt-5 faq">
+            <div class="container">
+                <div class="text-center mb-3">
+                    <h5 class="mb-0">សំណួរញឹកញាប់</h5>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <details class="faq-item" open>
+                            <summary>ខ្ញុំអាចបរិច្ចាកដោយរបៀបណា?</summary>
+                            <div class="faq-body">អ្នកអាចជ្រើសរើសបរិច្ចាក ១ ដង ឬប្រចាំខែ ហើយទូទាត់តាម
+                                កាត/PayPal/ធនាគារ។</div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>តើទុនត្រូវបានប្រើប្រាស់ជាអ្វីខ្លះ?</summary>
+                            <div class="faq-body">95% ឆ្លងកាត់ទៅលើសកម្មភាពសង្គមដោយផ្ទាល់ (គម្រោងបរិស្ថាន,
+                                សម្អាតសហគមន៍, ដាំដើមឈើ ...).</div>
+                        </details>
+                        <details class="faq-item">
+                            <summary>តើខ្ញុំអាចទទួលបង្កាន់ដៃបរិច្ចាកទេ?</summary>
+                            <div class="faq-body">
+                                បាទ/ចាស៎—យើងនឹងផ្ញើអ៊ីមែលបញ្ចាក់ជាមួយបង្កាន់ដៃបរិច្ចាកបន្ទាប់ពីទូទាត់ជោគជ័យ។
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-auto pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-logo">
+                        <img src="assets/image/logo-removebg.png" alt="">
+                        <p class="footer-text mt-3">
+                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
+                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
+                            និងទំនុកចិត្តលើខ្លួនឯង។
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំព័រ
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ការងារស្ម័គ្រចិត្ត
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    ព្រឹត្តិការណ៏
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    សកម្មភាព
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    បរិច្ចាក
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                    <div class="footer-page">
+                        <h4>
+                            ទំនាក់ទំនង
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-envelope-at"></i>
+                                    <span class="ps-2">
+                                        volunteerCambo@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="ps-2">
+                                        Tul kok , Phmom Penh , Cambodia
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link d-flex">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="ps-2">
+                                        +85568382800
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-social">
+                        <h4>
+                            តាមដានយើង
+                        </h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/image/Icon/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/image/Icon/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/image/Icon/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/image/Icon/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">
+                @ANT SCHOLARSHIP2 | GROUP9
+            </p>
+        </div>
+    </footer>
+        <!-- Modal Search -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <form class="d-flex">
+                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
+                        <button type="submit" class="btn btn-primary rounded ms-2">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        (function () {
+            const form = document.getElementById('donationForm');
+            const dobInput = document.getElementById('dob');
+
+            function validAge(value) {
+                if (!value) return false;
+                const dob = new Date(value);
+                const ageDifMs = Date.now() - dob.getTime();
+                const age = new Date(ageDifMs).getUTCFullYear() - 1970;
+                return age >= 18 && age <= 60;
+            }
+
+            form.addEventListener('submit', function (event) {
+                if (!validAge(dobInput.value)) {
+                    dobInput.setCustomValidity("Invalid");
+                } else {
+                    dobInput.setCustomValidity("");
+                }
+
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    event.preventDefault(); // remove this if posting to backend
+                    alert("✅ Registration submitted!");
+                    form.reset();
+                    bootstrap.Modal.getInstance(document.getElementById('donateBloodModal')).hide();
+                }
+
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

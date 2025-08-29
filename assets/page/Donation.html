@@ -44,32 +44,32 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/england.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/arabic.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
@@ -78,21 +78,12 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
                 <a class="navbar-brand " href="#">
                     <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -103,12 +94,12 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="homepage.html">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
                                     ទំព័រដើម
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Browse Opportunities/opportunities.html">
+                                <a class="nav-link" href="opportunities.html">
                                     ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
@@ -123,7 +114,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Donation.html">
+                                <a class="nav-link active" href="Donation.html">
                                     បរិច្ចាក
                                 </a>
                             </li>
@@ -133,8 +124,10 @@
 
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -147,7 +140,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -202,7 +195,7 @@
                                 aria-expanded="false">
                                 <img src="../image/profile.png" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-person-circle"></i>
@@ -229,6 +222,14 @@
                                 </li>
                             </ul>
                         </div>
+                    </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
                     </li>
                 </ul>
             </div>

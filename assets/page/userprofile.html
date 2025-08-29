@@ -22,12 +22,12 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <ul class="nav-list list-unstyled d-flex m-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link ps-0">
+                        <a href="aboutpage.html" class="nav-link ps-0">
                             អំពីយើង
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="contactpage.html" class="nav-link">
                             ទំនាក់ទំនង
                         </a>
                     </li>
@@ -43,32 +43,32 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="assets/image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                <a class="dropdown-item d-flex" href="#">
+                                    <img src="../image/Icon/Cambodia.png" alt="">
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="assets/image/Icon/england.png" alt="">
-                                    <span>
+                                <a class="dropdown-item d-flex" href="#">
+                                    <img src="../image/Icon/england.png" alt="">
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="assets/image/Icon/arabic.png" alt="">
-                                    <span>
+                                <a class="dropdown-item d-flex" href="#">
+                                    <img src="../image/Icon/arabic.png" alt="">
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
@@ -77,21 +77,12 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/image/Logo.jpg" alt="">
+                <a class="navbar-brand " href="#">
+                    <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -102,27 +93,27 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
                                     ទំព័រដើម
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="opportunities.html">
                                     ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="eventpage.html">
                                     ព្រឹត្តិការណ៏
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="activity.html">
                                     សកម្មភាព
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="Donation.html">
                                     បរិច្ចាក
                                 </a>
                             </li>
@@ -130,20 +121,119 @@
                     </div>
                 </div>
 
-                <ul class="nav-authentication d-flex m-0 list-unstyled">
+                <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <a href="#" class="login">
-                            ចូលគណនី
-                        </a>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
+                        </button>
                     </li>
-                    <li class="ms-3">
-                        <a href="#" class="sign-up">
-                            បង្កើតគណនី
-                        </a>
+                    <li>
+                        <div class="dropdown nav-notification">
+                            <button class="btn p-0 position-relative" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-bell-fill"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 fw-normal">
+                                    3
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end ">
+                                <li class="ps-3">
+                                    <h3 class="fs-5">ការជូនដំណឹង</h3>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/facebook.png" alt="" class="">
+                                        <span class="ps-2">
+                                            Facebook <br>
+                                            អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
+                                            <span class="text-secondary">
+                                                ឥឡូវនេះ
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/setting.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការកំណត់ <br>
+                                            អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
+                                            <span class="text-secondary">
+                                                ៣០នាទីមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-start" href="#">
+                                        <img src="../image/Icon/mark.png" alt="" class="">
+                                        <span class="ps-2">
+                                            ការដាក់ពាក្យ <br>
+                                            ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
+                                            <span class="text-secondary">
+                                                ២ម៉ោងមុន
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class=" my-3 d-flex justify-content-center">
+                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                        មើលការជូនដំណឹងទាំងអស់
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../image/profile.png" alt="" class="img-fluid">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="userprofile.html">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
                     </li>
                 </ul>
             </div>
         </nav>
+
 
     </header>
 
