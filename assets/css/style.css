@@ -324,6 +324,7 @@ a {
   width: 60px;
   margin-right: 8px;
   border-radius: 50%;
+  background-color: white;
 }
 
 .navbar .navbar-brand {
@@ -556,12 +557,12 @@ footer p.text-center {
 }
 
 .hero-banner .hero-content .hero-title {
-  font-size: 46px;
+  font-size: 70px;
   color: var(--text-white-fixed);
 }
 
 .hero-banner .hero-content .hero-decript {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .hero-action .btn {
@@ -2832,7 +2833,7 @@ footer p.text-center {
   height: 220px;
   object-fit: cover;
 }
-
+.hero-banner
 .nav-underline .nav-link.active,
 .nav-underline .show>.nav-link {
   font-weight: 600;
@@ -3293,7 +3294,6 @@ footer p.text-center {
   .opportunity {
     padding-top: 170px !important;
   }
-
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 35px;
   }
@@ -3311,7 +3311,7 @@ footer p.text-center {
 
 @media (max-width:992px) {
   .opportunity {
-    padding-top: 60px !important;
+    padding-top: 160px !important;
   }
 
   .opportunity-card .card .card-body .card-action a {
@@ -3320,7 +3320,7 @@ footer p.text-center {
 
   .opportunity .category-icons .filter-btn button {
     position: absolute;
-    right: 35px;
+    right: 30px;
     top: 220px;
     z-index: 30;
   }
@@ -3328,16 +3328,15 @@ footer p.text-center {
 
 @media (max-width:768px) {
   .opportunity {
-    padding-top: 10px !important;
+    padding-top: 160px !important;
   }
 
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 50px;
   }
-
   .opportunity .category-icons .filter-btn button {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 220px;
     z-index: 30;
   }
@@ -3345,13 +3344,13 @@ footer p.text-center {
 
 @media (max-width:576px) {
   .opportunity {
-    padding-top: 90px !important;
+    padding-top: 150px !important;
   }
 
   .opportunity .category-icons .filter-btn button {
     position: absolute;
-    right: 30px;
-    top: 220px;
+    right: 10px;
+    top: 210px;
     z-index: 30;
   }
 
@@ -3361,6 +3360,9 @@ footer p.text-center {
 }
 
 @media (max-width:427px) {
+  .opportunity {
+      padding-top: 60px !important;
+    }
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 30px;
   }
