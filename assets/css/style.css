@@ -2887,7 +2887,7 @@ footer p.text-center {
 }
 @media (max-width:992px) {
   .opportunity {
-    padding-top: 60px !important;
+    padding-top: 160px !important;
   }
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 15px;
@@ -2928,6 +2928,9 @@ footer p.text-center {
   }
 }
 @media (max-width:427px) {
+  .opportunity {
+      padding-top: 60px !important;
+    }
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 30px;
   }
