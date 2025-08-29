@@ -132,12 +132,10 @@ a {
 .login-area form .form-label {
   font-size: 18px;
 }
+
 .login-area form .form-control:focus {
   border-color: #007bff;
   box-shadow: none
-}
-.login-area form .form-control::placeholder{
-  padding-block: 14px !important;
 }
 
 .login-area form .login-list img {
