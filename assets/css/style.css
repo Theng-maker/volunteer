@@ -30,7 +30,7 @@
   --text-white-fixed: #FFFFFF;
   --text-black: #212536;
   --text-descript: #232531;
-  --text-title: #0D1B2A;
+  --text-title: #464646;
   --text-color: #333333;
   --text-eventcard:rgba(25, 25, 25, 0.82);
 
@@ -4385,6 +4385,22 @@ a:hover,
 .collaboration .collaboration-mode {
   background-color: var(--card-white);
 }
+.collaboration .collaboration-mode p{
+  font-size: 18px;
+}
+.collaboration .collaboration-mode .icons i{
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4d4d4;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
 .collaboration .timeline::before {
   content: "";
   position: absolute;
@@ -4401,7 +4417,7 @@ a:hover,
 .collaboration .timeline .timeline-item .dot {
   position: absolute;
   left: 5px;
-  top: .3rem;
+  top: 0.3rem;
   width: 16px;
   height: 16px;
   border-radius: 50%;
