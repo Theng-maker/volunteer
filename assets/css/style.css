@@ -1937,7 +1937,22 @@ footer p.text-center {
 .collaboration .collaboration-mode {
   background-color: var(--bg-card);
 }
+.collaboration .collaboration-mode p {
+  font-size: 18px;
+}
 
+.collaboration .collaboration-mode .icons i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4d4d4;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
 .collaboration .timeline::before {
   content: "";
   position: absolute;
@@ -2638,27 +2653,27 @@ footer p.text-center {
   }
 
   .event-banner .stack-img {
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 140px;
   }
 
   .event-banner .image-stack .stack-img.img1 {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+
   }
 
   .event-banner .image-stack .stack-img.img2 {
-    top: 40%;
+    top: 35%;
     left: 0%;
   }
 
   .event-banner .image-stack .stack-img.img3 {
-    top: 40%;
-    left: calc(100% - 220px);
+    top: 35%;
+    left: calc(100% - 180px);
   }
 }
-
 /* ------ Event Soon Start ------ */
 .card-event {
   padding: 90px 0px;
