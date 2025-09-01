@@ -138,7 +138,6 @@ a {
   border-color: #007bff;
   box-shadow: none
 }
-
 .login-area form .form-control::placeholder {
   padding-block: 14px !important;
 }
@@ -437,8 +436,6 @@ a {
 }
 
 .searchModal .modal-content {
-  background-color: var(--card-white);
-.searchModal .modal-content {
   background-color: var(--bg-card);
   color: var(--text-black);
 }
@@ -467,9 +464,6 @@ a {
 .searchModal .modal-body form span i {
   transform: translateY(10px) translateX(10px);
 }
-
-.searchModal .modal-body form input {
-  background-color: var(--card-white);
 
 .searchModal .modal-body form input {
   background-color: var(--bg-card);
@@ -3626,7 +3620,7 @@ footer p.text-center {
 
 @media (max-width:427px) {
   .opportunity {
-    padding-top: 60px !important;
+    padding-top: 150px !important;
   }
 
   .opportunity-card .card .card-body .card-action a {
