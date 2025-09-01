@@ -126,6 +126,9 @@ document.addEventListener("DOMContentLoaded", function () {
   handleValidation("orgRegisterForm", "../Authentication/orglogin.html");
   // orgloginForm → homepage
   handleValidation("orgloginForm", "../orghomepage.html");
+  handleValidation("orgforgetForm", "../Authentication/orgComfirm.html");
+  handleValidation("orgCfForm", "../Authentication/orgResetpw.html");
+  handleValidation("orgresetForm", "../Authentication/orgLogin.html");
 
   //DOnation
   $(".donate-btn").hover(
@@ -187,4 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
   handleValidation("orgloginForm", "../homepage.html");
 
   // Testimonials
+  
+  
 });
