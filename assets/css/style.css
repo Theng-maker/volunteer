@@ -137,6 +137,9 @@ a {
   border-color: #007bff;
   box-shadow: none
 }
+.login-area form .form-control::placeholder {
+  padding-block: 14px !important;
+}
 
 .login-area form .login-list img {
   width: 30px;
@@ -550,7 +553,6 @@ footer {
   background: var(--footer);
   color: var(--text-white-fixed);
   width: 100%;
-  margin-top: 40px;
 }
 
 footer .footer-logo img {
@@ -1032,6 +1034,7 @@ footer p.text-center {
   border-radius: 20px;
   flex-direction: row;
   height: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
 }
 
@@ -1043,12 +1046,12 @@ footer p.text-center {
   color: var(--primary-color);
 }
 
-.benefit-area .col-xl-6:nth-child(1) .card {
+.benefit-area .col-md-6:nth-child(1) .card {
   background: #18AFFE;
   background: linear-gradient(275deg, rgba(24, 175, 254, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
 
-.benefit-area .col-xl-6:nth-child(2) .card {
+.benefit-area .col-md-6:nth-child(2) .card {
   background: #F741C3;
   background: linear-gradient(84deg, rgba(247, 65, 195, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
@@ -1067,6 +1070,15 @@ footer p.text-center {
   background: #8050FF;
   background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
+
+.benefit-area .pattern-1{
+  background: url('../image/homepage/pattern-9.png') no-repeat right bottom;
+}
+.benefit-area .pattern-2{
+  background: url('../image/homepage/pattern-9.png') no-repeat right bottom;
+  transform: rotate(180deg);
+}
+
 
 /* ----- Donatiom-Area ---- */
 .donation-area {
@@ -1107,6 +1119,8 @@ footer p.text-center {
 /* Sponsor */
 .sponsor {
   padding: 60px 0;
+  background: url('../image/homepage/pattern_02.png') no-repeat center;
+  background-size: cover;
   background-color: var(--gray-bg);
 }
 
@@ -1119,7 +1133,12 @@ footer p.text-center {
   width: 150px;
   height: 150px;
   margin-inline: auto;
+  background-color: #fff;
+  border-radius: 50%;
 }
+
+
+
 
 /* ---- Call-to-Action --- */
 
@@ -1133,6 +1152,14 @@ footer p.text-center {
   padding: 60px;
   background-color: var(--gray-bg);
   border-radius: 10px;
+  background: url('../image/homepage/cta-bg.avif') no-repeat center;
+  background-size: cover;
+  color: var(--text-white-fixed);
+}
+
+.cta-area .cta-content h2,
+.cta-area .cta-content p {
+  color: var(--text-white-fixed);
 }
 
 .cta-area .cta-img .cta-phone {
@@ -1193,6 +1220,11 @@ footer p.text-center {
 .question-area .accordion-button:not(.collapsed) {
   background-color: var(--primary-color);
   color: var(--text-white-fixed);
+}
+.question-area .pattern-1{
+  background: url('../image/homepage/pattern_02.png') no-repeat center;
+  background-size: cover;
+  z-index: 2;
 }
 
 /* ------ Testimonials ------ */
@@ -1261,7 +1293,61 @@ footer p.text-center {
   color: goldenrod;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+  .hero-banner .hero-content {
+    width: 80%;
+    bottom: 20%;
+  }
+
+  .hero-banner.hero-home .hero-content {
+    width: 80%;
+    bottom: 5%;
+  }
+
+  .hero-banner .hero-content .hero-title {
+    font-size: 50px;
+  }
+
+  .hero-banner .hero-content .hero-decript {
+    font-size: 24px;
+  }
+
+  .hero-banner .banner-state .card-text {
+    font-size: 20px;
+  }
+
+  .line-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .cta-area {
+    margin-top: 0px;
+  }
+
+  .cta-area .cta-content {
+    padding: 40px;
+  }
+
+  .cta-area .cta-content .row {
+    flex-direction: row-reverse;
+  }
+
+  .cta-area .cta-img .cta-phone {
+    height: 350px;
+    transform: rotate(0deg);
+    top: -100px;
+  }
+
+  .donation-area .section-title p {
+    width: 90% !important;
+  }
+}
+
+@media (max-width:768px) {
   .hero-banner .hero-content {
     width: 90%;
     bottom: 10%;
@@ -1272,6 +1358,24 @@ footer p.text-center {
     bottom: 5%;
   }
 
+  .cta-area {
+    padding: 0px;
+  }
+
+  .cta-area .cta-content .cta-img {
+    display: none;
+    opacity: 0;
+  }
+
+  .authentication-body .login-img {
+    width: 0%;
+  }
+  .authentication-body .login-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
   .searchModal .modal-content {
     padding-inline: 0 !important;
   }
