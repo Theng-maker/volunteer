@@ -132,11 +132,13 @@ a {
 .login-area form .form-label {
   font-size: 18px;
 }
+
 .login-area form .form-control:focus {
   border-color: #007bff;
   box-shadow: none
 }
-.login-area form .form-control::placeholder{
+
+.login-area form .form-control::placeholder {
   padding-block: 14px !important;
 }
 
@@ -433,24 +435,29 @@ a {
   transform: translateY(10px) !important;
 }
 
-.searchModal .modal-content{
+.searchModal .modal-content {
   background-color: var(--card-white);
   color: var(--text-black);
 }
-.searchModal .modal-header h1{
+
+.searchModal .modal-header h1 {
   font-size: 28px !important;
   font-weight: 600 !important;
 }
-.searchModal .modal-header button{
+
+.searchModal .modal-header button {
   color: var(--text-black);
 }
-.searchModal .modal-header button:hover{
+
+.searchModal .modal-header button:hover {
   color: var(--primary-color);
 }
-.searchModal .modal-body form span i{
+
+.searchModal .modal-body form span i {
   transform: translateY(10px) translateX(10px);
 }
-.searchModal .modal-body form  input {
+
+.searchModal .modal-body form input {
   background-color: var(--card-white);
   font-size: 18px;
   padding-block: 12px;
@@ -460,48 +467,57 @@ a {
   transition: 0.3s;
   color: var(--primary-color);
 }
-.searchModal .modal-body form  input:focus{
+
+.searchModal .modal-body form input:focus {
   outline: none !important;
   border-bottom: 1px solid var(--primary-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px !important;
 }
-.searchModal .modal-body .search-list li{
+
+.searchModal .modal-body .search-list li {
   position: relative;
   transition: 0.3s;
   padding: 10px 0;
   color: var(--text-black);
 }
-.searchModal .modal-body .search-list li a{
+
+.searchModal .modal-body .search-list li a {
   color: var(--text-black);
 }
-.searchModal .modal-body .search-list li:hover{
+
+.searchModal .modal-body .search-list li:hover {
   background-color: var(--secondary-color);
-   color: #fff;
-}
-.searchModal .modal-body .search-list li:hover a{
   color: #fff;
 }
-.searchModal .modal-body .search-list li::before{
+
+.searchModal .modal-body .search-list li:hover a {
+  color: #fff;
+}
+
+.searchModal .modal-body .search-list li::before {
   position: absolute;
-  content: "\f52a";  
+  content: "\f52a";
   font-family: "bootstrap-icons";
   left: 10px;
   top: 10px;
 }
-.searchModal .modal-body .search-list li p{
+
+.searchModal .modal-body .search-list li p {
   padding-left: 50px;
   padding-right: 10px !important;
   margin: 0;
 }
 
-.searchModal .modal-body .search-action li a{
+.searchModal .modal-body .search-action li a {
   color: var(--text-black);
   transition: 0.3s;
 }
-.searchModal .modal-body .search-action li a:hover{
+
+.searchModal .modal-body .search-action li a:hover {
   color: var(--primary-color);
 }
-.searchModal .modal-body .search-action li:nth-child(2){
+
+.searchModal .modal-body .search-action li:nth-child(2) {
   border-left: 2px solid var(--text-black);
   border-right: 2px solid var(--text-black);
 }
@@ -538,7 +554,6 @@ footer {
   background: var(--footer);
   color: var(--text-white-fixed);
   width: 100%;
-  margin-top: 40px;
 }
 
 footer .footer-logo img {
@@ -701,7 +716,8 @@ footer p.text-center {
   border-radius: 50%;
   background-size: 30px;
 }
-.hero-banner .carousel-indicators [data-bs-target]{
+
+.hero-banner .carousel-indicators [data-bs-target] {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50%;
@@ -1019,6 +1035,7 @@ footer p.text-center {
   border-radius: 20px;
   flex-direction: row;
   height: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
 }
 
@@ -1030,12 +1047,12 @@ footer p.text-center {
   color: var(--primary-color);
 }
 
-.benefit-area .col-xl-6:nth-child(1) .card {
+.benefit-area .col-md-6:nth-child(1) .card {
   background: #18AFFE;
   background: linear-gradient(275deg, rgba(24, 175, 254, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
 
-.benefit-area .col-xl-6:nth-child(2) .card {
+.benefit-area .col-md-6:nth-child(2) .card {
   background: #F741C3;
   background: linear-gradient(84deg, rgba(247, 65, 195, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
@@ -1054,6 +1071,15 @@ footer p.text-center {
   background: #8050FF;
   background: linear-gradient(89deg, rgba(128, 80, 255, 0.31) 23%, rgba(255, 255, 255, 0) 100%);
 }
+
+.benefit-area .pattern-1{
+  background: url('../image/homepage/pattern-9.png') no-repeat right bottom;
+}
+.benefit-area .pattern-2{
+  background: url('../image/homepage/pattern-9.png') no-repeat right bottom;
+  transform: rotate(180deg);
+}
+
 
 /* ----- Donatiom-Area ---- */
 .donation-area {
@@ -1094,6 +1120,8 @@ footer p.text-center {
 /* Sponsor */
 .sponsor {
   padding: 60px 0;
+  background: url('../image/homepage/pattern_02.png') no-repeat center;
+  background-size: cover;
   background-color: var(--gray-bg);
 }
 
@@ -1106,7 +1134,12 @@ footer p.text-center {
   width: 150px;
   height: 150px;
   margin-inline: auto;
+  background-color: #fff;
+  border-radius: 50%;
 }
+
+
+
 
 /* ---- Call-to-Action --- */
 
@@ -1120,6 +1153,14 @@ footer p.text-center {
   padding: 60px;
   background-color: var(--gray-bg);
   border-radius: 10px;
+  background: url('../image/homepage/cta-bg.avif') no-repeat center;
+  background-size: cover;
+  color: var(--text-white-fixed);
+}
+
+.cta-area .cta-content h2,
+.cta-area .cta-content p {
+  color: var(--text-white-fixed);
 }
 
 .cta-area .cta-img .cta-phone {
@@ -1180,6 +1221,11 @@ footer p.text-center {
 .question-area .accordion-button:not(.collapsed) {
   background-color: var(--primary-color);
   color: var(--text-white-fixed);
+}
+.question-area .pattern-1{
+  background: url('../image/homepage/pattern_02.png') no-repeat center;
+  background-size: cover;
+  z-index: 2;
 }
 
 /* ------ Testimonials ------ */
@@ -1248,7 +1294,61 @@ footer p.text-center {
   color: goldenrod;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+  .hero-banner .hero-content {
+    width: 80%;
+    bottom: 20%;
+  }
+
+  .hero-banner.hero-home .hero-content {
+    width: 80%;
+    bottom: 5%;
+  }
+
+  .hero-banner .hero-content .hero-title {
+    font-size: 50px;
+  }
+
+  .hero-banner .hero-content .hero-decript {
+    font-size: 24px;
+  }
+
+  .hero-banner .banner-state .card-text {
+    font-size: 20px;
+  }
+
+  .line-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .cta-area {
+    margin-top: 0px;
+  }
+
+  .cta-area .cta-content {
+    padding: 40px;
+  }
+
+  .cta-area .cta-content .row {
+    flex-direction: row-reverse;
+  }
+
+  .cta-area .cta-img .cta-phone {
+    height: 350px;
+    transform: rotate(0deg);
+    top: -100px;
+  }
+
+  .donation-area .section-title p {
+    width: 90% !important;
+  }
+}
+
+@media (max-width:768px) {
   .hero-banner .hero-content {
     width: 90%;
     bottom: 10%;
@@ -1259,7 +1359,25 @@ footer p.text-center {
     bottom: 5%;
   }
 
-  .searchModal .modal-content{
+  .cta-area {
+    padding: 0px;
+  }
+
+  .cta-area .cta-content .cta-img {
+    display: none;
+    opacity: 0;
+  }
+
+  .authentication-body .login-img {
+    width: 0%;
+  }
+  .authentication-body .login-area {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .searchModal .modal-content {
     padding-inline: 0 !important;
   }
 
@@ -1267,7 +1385,8 @@ footer p.text-center {
     width: 350px;
     transform: translateX(60px);
   }
-  .about-us .about-us-img{
+
+  .about-us .about-us-img {
     height: 400px !important;
   }
 
@@ -2916,8 +3035,8 @@ footer p.text-center {
   height: 220px;
   object-fit: cover;
 }
-.hero-banner
-.nav-underline .nav-link.active,
+
+.hero-banner .nav-underline .nav-link.active,
 .nav-underline .show>.nav-link {
   font-weight: 600;
   color: var(--primary-color);
@@ -3377,6 +3496,7 @@ footer p.text-center {
   .opportunity {
     padding-top: 170px !important;
   }
+
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 35px;
   }
@@ -3417,6 +3537,7 @@ footer p.text-center {
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 50px;
   }
+
   .opportunity .category-icons .filter-btn button {
     position: absolute;
     right: 15px;
@@ -3444,8 +3565,9 @@ footer p.text-center {
 
 @media (max-width:427px) {
   .opportunity {
-      padding-top: 60px !important;
-    }
+    padding-top: 60px !important;
+  }
+
   .opportunity-card .card .card-body .card-action a {
     margin-inline: 30px;
   }
