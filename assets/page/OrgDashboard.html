@@ -256,53 +256,43 @@
         <div class="container py-4 mt-5">
 
             <!-- Profile Header -->
-            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm mt-4">
+            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm mt-4" data-aos="fade-down">
                 <img src="../image/ORG/Org-Logo.png" class="rounded-circle me-3" width="60" height="60" alt="Profile">
                 <div>
                     <h5 class="mb-0">អង្គការបរិស្ថានកម្ពុជា</h5>
                     <small>Cambodia Environment Organization • NGO</small>
                 </div>
-                <div class="ms-auto">
+                <div class="ms-auto" data-aos="fade-left" data-aos-delay="200">
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
                     </a>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="createOpportunityModal" tabindex="-1"
-                        aria-labelledby="createOpportunityLabel" aria-hidden="true" data-bs-backdrop="static">
+                    <div class="modal fade" id="createOpportunityModal" tabindex="-1" aria-labelledby="createOpportunityLabel"
+                        aria-hidden="true" data-bs-backdrop="static">
                         <div class="modal-dialog modal-lg modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="createOpportunityLabel">
                                         <i class="bi bi-briefcase-fill me-2"></i> ឱកាសការងារថ្មី
                                     </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-
                                 <form id="opportunityForm" class="needs-validation" novalidate>
                                     <div class="modal-body">
-                                        <!-- Title -->
                                         <div class="mb-3">
                                             <label for="opTitle" class="form-label">ចំណងជើងការងារ</label>
                                             <input type="text" class="form-control" id="opTitle"
                                                 placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍" required>
                                             <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
                                         </div>
-
-                                        <!-- Description -->
                                         <div class="mb-3">
                                             <label for="opDescription" class="form-label">ពិពណ៌នា</label>
                                             <textarea class="form-control" id="opDescription" rows="4"
                                                 placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
                                             <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
                                         </div>
-
-                                        <!-- Row: Location + Start Date -->
                                         <div class="row g-3">
                                             <div class="col-md-6">
                                                 <label for="opLocation" class="form-label">ទីតាំង</label>
-                                                <input type="text" class="form-control" id="opLocation"
-                                                    value="ភ្នំពេញ" required>
+                                                <input type="text" class="form-control" id="opLocation" value="ភ្នំពេញ" required>
                                                 <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
                                             </div>
                                             <div class="col-md-6">
@@ -311,13 +301,11 @@
                                                 <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
                                             </div>
                                         </div>
-
-                                        <!-- Row: Capacity + Status -->
                                         <div class="row g-3 mt-0 mt-md-2">
                                             <div class="col-md-6">
                                                 <label for="opCapacity" class="form-label">ចំនួនមុខតំណែង</label>
-                                                <input type="number" class="form-control" id="opCapacity" min="1"
-                                                    value="10" required>
+                                                <input type="number" class="form-control" id="opCapacity" min="1" value="10"
+                                                    required>
                                                 <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ
                                                 </div>
                                             </div>
@@ -332,8 +320,6 @@
                                                 <div class="invalid-feedback">សូមជ្រើសរើសស្ថានភាព</div>
                                             </div>
                                         </div>
-
-                                        <!-- Cover Image (drag & drop + click) -->
                                         <div class="mt-3">
                                             <label class="form-label">រូបភាពគម្រូ / គម្រោង</label>
                                             <div id="opImageDropzone" class="dropzone" role="button" tabindex="0">
@@ -354,14 +340,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="invalid-feedback d-block" id="opImageError"
-                                                style="display:none"></div>
+                                            <div class="invalid-feedback d-block" id="opImageError" style="display:none"></div>
                                         </div>
                                     </div>
-
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                         <button type="submit" class="btn btn-primary">
                                             <i class="bi bi-plus-lg me-1"></i> Post Opportunity
                                         </button>
@@ -372,9 +355,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Tabs -->
-            <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs">
+            <!-- Tab -->
+            <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs" data-aos="fade-up" data-aos-delay="200">
                 <li class="nav-item">
                     <a class="nav-link active" data-bs-toggle="tab" href="#overview">ទិដ្ឋភាពទូទៅ</a>
                 </li>
@@ -398,10 +380,9 @@
                 <!-- Overview -->
                 <div class="tab-pane fade show active" id="overview">
                     <div class="container">
-
-                        <!-- Stats Row -->
+                
                         <div class="row g-3">
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
@@ -415,7 +396,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
@@ -429,7 +410,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
@@ -443,7 +424,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
@@ -458,11 +439,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Applications & Quick Actions -->
+                
                         <div class="row g-3 mt-3">
-                            <!-- Recent Applications -->
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-right">
                                 <div class="card card-custom p-3">
                                     <h6 class="fw-bold mb-3">ពាក្យសុំថ្មីៗ</h6>
                                     <div class="d-flex align-items-center mb-3">
@@ -492,31 +471,28 @@
                                     <a href="#" class="d-block mt-2 text-primary small">មើលទាំងអស់</a>
                                 </div>
                             </div>
-
-                            <!-- Quick Actions -->
-                            <div class="col-md-6">
+                
+                            <div class="col-md-6" data-aos="fade-left">
                                 <div class="card card-custom p-3">
                                     <h6 class="fw-bold mb-3">Quick Actions</h6>
-                                    <a href="#" class="quick-action bg-light-blue" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">
+                                    <a href="#" class="quick-action bg-light-blue" data-bs-toggle="modal"
+                                        data-bs-target="#createOpportunityModal">
                                         Create New Opportunity</a>
-                                    <a href="#" class="quick-action bg-light-green"><i
-                                            class="fa-solid fa-user-group"></i> Manage Volunteers</a>
-                                    <a href="#" class="quick-action bg-light-purple"><i
-                                            class="fa-solid fa-chart-line"></i> View Reports</a>
-                                    <a href="#" class="quick-action bg-light-orange"><i
-                                            class="fa-solid fa-envelope"></i> Send Messages</a>
+                                    <a href="#" class="quick-action bg-light-green"><i class="fa-solid fa-user-group"></i> Manage
+                                        Volunteers</a>
+                                    <a href="#" class="quick-action bg-light-purple"><i class="fa-solid fa-chart-line"></i> View
+                                        Reports</a>
+                                    <a href="#" class="quick-action bg-light-orange"><i class="fa-solid fa-envelope"></i> Send
+                                        Messages</a>
                                 </div>
                             </div>
                         </div>
-
+                
                     </div>
                 </div>
-
                 <!-- Opportunities -->
-                <div class="tab-pane fade" id="opportunities">
-
-                    <!-- Search / Filters / Add -->
-                    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                <div class="tab-pane fade" id="opportunities">                
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-3" data-aos="fade-up">
                         <div class="vh-search-wrap flex-grow-1">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input class="form-control vh-search" placeholder="ស្វែងរកឱកាស…">
@@ -528,11 +504,9 @@
                             <option>Pending</option>
                         </select>
                         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
-                    </a>
+                        </a>
                     </div>
-
-                    <!-- Item 1 -->
-                    <div class="vh-card p-3 mb-3 vh-hover">
+                    <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right">
                         <div class="d-flex align-items-center">
                             <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=10" alt="">
                             <div class="flex-grow-1">
@@ -554,9 +528,7 @@
                             <i class="fa-solid fa-download"></i>
                         </div>
                     </div>
-
-                    <!-- Item 2 -->
-                    <div class="vh-card p-3 mb-3 vh-hover">
+                    <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right" data-aos-delay="100">
                         <div class="d-flex align-items-center">
                             <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=11" alt="">
                             <div class="flex-grow-1">
@@ -577,10 +549,8 @@
                             <i class="fa-regular fa-trash-can"></i>
                             <i class="fa-solid fa-download"></i>
                         </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="vh-card p-3 mb-3 vh-hover">
+                    </div>              
+                    <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right" data-aos-delay="200">
                         <div class="d-flex align-items-center">
                             <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=12" alt="">
                             <div class="flex-grow-1">
@@ -606,12 +576,11 @@
 
                 <!-- Applications -->
                 <div class="tab-pane fade" id="applications">
-                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2" data-aos="fade-up">
                         <div>
                             <h5 class="mb-0">បញ្ជីការដាក់ពាក្យ</h5>
                         </div>
-
-                        <!-- optional filters / search -->
+                
                         <div class="d-flex align-items-center gap-2">
                             <div class="vh-search-wrap" style="min-width:180px;">
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -625,8 +594,8 @@
                             </select>
                         </div>
                     </div>
-
-                    <div class="table-responsive">
+                
+                    <div class="table-responsive" data-aos="fade-up" data-aos-delay="100">
                         <table class="table align-middle mb-0 vh-table">
                             <thead>
                                 <tr>
@@ -638,13 +607,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Row 1 -->
-                                <tr>
+                                <tr data-aos="fade-up" data-aos-delay="200">
                                     <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
-                                            <img class="rounded-circle object-fit-cover"
-                                                src="../image/ORG/Woman-profile.png" width="44" height="44"
-                                                alt="Sophea Chan avatar">
+                                            <img class="rounded-circle object-fit-cover" src="../image/ORG/Woman-profile.png" width="44"
+                                                height="44" alt="Sophea Chan avatar">
                                             <div>
                                                 <div class="fw-semibold">សុភា ចាន់</div>
                                                 <small class="text-muted">Sophea Chan</small>
@@ -675,14 +642,12 @@
                                         </div>
                                     </td>
                                 </tr>
-
-                                <!-- Row 2 -->
-                                <tr>
+                
+                                <tr data-aos="fade-up" data-aos-delay="300">
                                     <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
-                                            <img class="rounded-circle object-fit-cover"
-                                                src="../image/ORG/Man-profile1.png" width="44" height="44"
-                                                alt="Dara Lee avatar">
+                                            <img class="rounded-circle object-fit-cover" src="../image/ORG/Man-profile1.png" width="44"
+                                                height="44" alt="Dara Lee avatar">
                                             <div>
                                                 <div class="fw-semibold">ដារា លី</div>
                                                 <small class="text-muted">Dara Lee</small>
@@ -710,14 +675,12 @@
                                         </div>
                                     </td>
                                 </tr>
-
-                                <!-- Row 3 -->
-                                <tr>
+                
+                                <tr data-aos="fade-up" data-aos-delay="400">
                                     <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
-                                            <img class="rounded-circle object-fit-cover"
-                                                src="../image/ORG/Man-profile2.png" width="44" height="44"
-                                                alt="Pisach Sun avatar">
+                                            <img class="rounded-circle object-fit-cover" src="../image/ORG/Man-profile2.png" width="44"
+                                                height="44" alt="Pisach Sun avatar">
                                             <div>
                                                 <div class="fw-semibold">ពិសាក់ ស៊ុន</div>
                                                 <small class="text-muted">Pisach Sun</small>
@@ -745,22 +708,20 @@
                                         </div>
                                     </td>
                                 </tr>
-
+                
                             </tbody>
                         </table>
                     </div>
-                </div>
-
-                <!-- Analytics -->
+                </div>             
+                <!-- Analytics -->              
                 <div class="tab-pane fade" id="analytics">
                     <div class="card shadow-sm border-0 p-3 vh-analytics">
-
-                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3" data-aos="fade-up">
                             <div>
                                 <h5 class="mb-0">ការវិភាគទិន្នន័យ</h5>
                             </div>
-
-                            <!-- Filters -->
+                
                             <div class="d-flex align-items-center gap-2">
                                 <select class="form-select form-select-sm" id="ana-range" style="min-width:150px;">
                                     <option value="30">30 ថ្ងៃ</option>
@@ -774,16 +735,14 @@
                                 </select>
                             </div>
                         </div>
-
-                        <!-- KPI cards -->
-                        <div class="row g-3 mb-2">
+                
+                        <div class="row g-3 mb-2" data-aos="fade-up" data-aos-delay="100">
                             <div class="col-sm-6 col-xl-3">
                                 <div class="card h-100 border-0 bg-body-tertiary">
                                     <div class="card-body">
                                         <div class="fw-semibold text-body">Total Volunteers</div>
                                         <div class="fs-3 fw-bold">1,256</div>
-                                        <div class="text-success small"><i
-                                                class="fa-solid fa-arrow-trend-up me-1"></i>+8.2%</div>
+                                        <div class="text-success small"><i class="fa-solid fa-arrow-trend-up me-1"></i>+8.2%</div>
                                     </div>
                                 </div>
                             </div>
@@ -792,8 +751,7 @@
                                     <div class="card-body">
                                         <div class="fw-semibold text-body">Applications</div>
                                         <div class="fs-3 fw-bold">432</div>
-                                        <div class="text-success small"><i
-                                                class="fa-solid fa-arrow-trend-up me-1"></i>+4.1%</div>
+                                        <div class="text-success small"><i class="fa-solid fa-arrow-trend-up me-1"></i>+4.1%</div>
                                     </div>
                                 </div>
                             </div>
@@ -802,8 +760,7 @@
                                     <div class="card-body">
                                         <div class="fw-semibold text-body">Approval Rate</div>
                                         <div class="fs-3 fw-bold">72%</div>
-                                        <div class="text-danger small"><i
-                                                class="fa-solid fa-arrow-trend-down me-1"></i>−1.3%</div>
+                                        <div class="text-danger small"><i class="fa-solid fa-arrow-trend-down me-1"></i>−1.3%</div>
                                     </div>
                                 </div>
                             </div>
@@ -818,9 +775,8 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Charts -->
-                        <div class="row g-3">
+                
+                        <div class="row g-3" data-aos="fade-up" data-aos-delay="200">
                             <div class="col-lg-8">
                                 <div class="card border-0 bg-body-tertiary">
                                     <div class="card-body">
@@ -832,7 +788,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                
                             <div class="col-lg-4">
                                 <div class="card border-0 bg-body-tertiary">
                                     <div class="card-body">
@@ -844,7 +800,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                
                             <div class="col-12">
                                 <div class="card border-0 bg-body-tertiary">
                                     <div class="card-body">
@@ -858,17 +814,18 @@
                             </div>
                         </div>
                     </div>
-
+                
                 </div>
 
                 <!-- Settings -->
                 <div class="tab-pane fade" id="settings">
-                    <div class="card shadow-sm mb-4">
+                    <div class="card shadow-sm mb-4" data-aos="fade-up">
                         <div class="card-body">
                             <h5 class="card-title mb-1">ការកំណត់អង្គការ</h5>
-
+                
                             <form>
-                                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                                <div class="d-flex align-items-center justify-content-center gap-3 mb-3" data-aos="zoom-in"
+                                    data-aos-delay="100">
                                     <label class="vh-avatar-uploader mb-0">
                                         <input type="file" class="d-none" id="avatarInput" accept="image/*">
                                         <span class="vh-avatar ring">
@@ -877,26 +834,22 @@
                                         <span class="small text-body-secondary d-block mt-1">ជ្រើសរើសរូបភាព</span>
                                     </label>
                                 </div>
-                                <div class="row g-3">
+                                <div class="row g-3" data-aos="fade-up" data-aos-delay="200">
                                     <div class="col-md-6">
                                         <label for="orgName" class="form-label">ឈ្មោះអង្គការ</label>
-                                        <input type="text" class="form-control" id="orgName"
-                                            placeholder="អង្គការបរិស្ថានកម្ពុជា">
+                                        <input type="text" class="form-control" id="orgName" placeholder="អង្គការបរិស្ថានកម្ពុជា">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="orgEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="orgEmail"
-                                            placeholder="info@environment.org.kh">
+                                        <input type="email" class="form-control" id="orgEmail" placeholder="info@environment.org.kh">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="orgPhone" class="form-label">Phone</label>
-                                        <input type="tel" class="form-control" id="orgPhone"
-                                            placeholder="+855 23 123 456">
+                                        <input type="tel" class="form-control" id="orgPhone" placeholder="+855 23 123 456">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="orgWebsite" class="form-label">Website</label>
-                                        <input type="url" class="form-control" id="orgWebsite"
-                                            placeholder="www.environment.org.kh">
+                                        <input type="url" class="form-control" id="orgWebsite" placeholder="www.environment.org.kh">
                                     </div>
                                     <div class="col-12">
                                         <label for="orgAddress" class="form-label">អាស័យដ្ឋាន</label>
@@ -904,20 +857,18 @@
                                             placeholder="ផ្លូវ ២៧១, ភ្នំពេញ"></textarea>
                                     </div>
                                 </div>
-
-                                <hr class="my-4">
-
-                                <h6 class="mb-2">បណ្តាញសង្គម</h6>
-                                <div class="row g-3">
+                
+                                <hr class="my-4" data-aos="fade-up" data-aos-delay="300">
+                
+                                <h6 class="mb-2" data-aos="fade-up" data-aos-delay="400">បណ្តាញសង្គម</h6>
+                                <div class="row g-3" data-aos="fade-up" data-aos-delay="500">
                                     <div class="col-md-6 col-lg-3">
                                         <label class="form-label">Facebook</label>
-                                        <input type="url" class="form-control"
-                                            placeholder="https://facebook.com/yourpage">
+                                        <input type="url" class="form-control" placeholder="https://facebook.com/yourpage">
                                     </div>
                                     <div class="col-md-6 col-lg-3">
                                         <label class="form-label">Instagram</label>
-                                        <input type="url" class="form-control"
-                                            placeholder="https://instagram.com/yourpage">
+                                        <input type="url" class="form-control" placeholder="https://instagram.com/yourpage">
                                     </div>
                                     <div class="col-md-6 col-lg-3">
                                         <label class="form-label">Twitter / X</label>
@@ -925,17 +876,14 @@
                                     </div>
                                     <div class="col-md-6 col-lg-3">
                                         <label class="form-label">LinkedIn</label>
-                                        <input type="url" class="form-control"
-                                            placeholder="https://linkedin.com/company/yourorg">
+                                        <input type="url" class="form-control" placeholder="https://linkedin.com/company/yourorg">
                                     </div>
                                 </div>
-
-
-
-                                <hr class="my-4">
-
-                                <h6 class="mb-2">សុវត្ថិភាព / Security</h6>
-                                <div class="row g-3">
+                
+                                <hr class="my-4" data-aos="fade-up" data-aos-delay="600">
+                
+                                <h6 class="mb-2" data-aos="fade-up" data-aos-delay="700">សុវត្ថិភាព / Security</h6>
+                                <div class="row g-3" data-aos="fade-up" data-aos-delay="800">
                                     <div class="col-md-4">
                                         <label class="form-label">ពាក្យសម្ងាត់បច្ចុប្បន្ន</label>
                                         <input type="password" class="form-control" placeholder="********">
@@ -949,15 +897,14 @@
                                         <input type="password" class="form-control" placeholder="********">
                                     </div>
                                 </div>
-
-                                <div class="d-flex justify-content-end mt-4">
+                
+                                <div class="d-flex justify-content-end mt-4" data-aos="fade-up" data-aos-delay="900">
                                     <button type="reset" class="btn btn-outline-secondary me-2">កំណត់ឡើងវិញ</button>
                                     <button type="submit" class="btn btn-primary">រក្សាទុកការផ្លាស់ប្តូរ</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-
                 </div>
 
             </div>
