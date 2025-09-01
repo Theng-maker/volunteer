@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -961,8 +963,6 @@
             </div>
         </div>
     </main>
-
-
     <footer class="footer mt-auto pt-5 pb-3">
         <div class="container">
             <div class="row">
@@ -1115,6 +1115,10 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         (() => {
             // Pull Bootstrap CSS variables for colors
@@ -1269,16 +1273,6 @@
       metaEl.textContent = '';
       clearError();
     });
-
-    // Example: include the image in AJAX submit
-    // form.addEventListener('submit', e => {
-    //   e.preventDefault();
-    //   if (!form.checkValidity()) return;
-    //   const data = new FormData(form);
-    //   if (input.files[0]) data.append('cover_image', input.files[0]);
-    //   fetch('/api/opportunities', { method: 'POST', body: data })
-    //     .then(r => r.json()).then(console.log).catch(console.error);
-    // });
   })();
   </script>
 
