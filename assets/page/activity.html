@@ -15,8 +15,16 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
+<style>
+    .card{
+        background-color: var(--bg-card);
+    }
+    h6, small, p {
+        color: var(--text-black);
+    }
+</style>
 <body class="d-flex flex-column h-100 ">
+    <!-- header -->
     <header class="fixed-top shadow-sm">
         <div class="top-header">
             <div class="container d-flex justify-content-between align-items-center">
@@ -68,18 +76,17 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 text-white" data-theme-toggle
-                        aria-label="Change to light theme">
+                    <button type="button" class="border-0 text-white" data-theme-toggle aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                 </div>
-
+    
             </div>
         </div>
-
+    
         <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="homepage.html">
                     <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
@@ -93,12 +100,12 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="homepage.html">
+                                <a class="nav-link " aria-current="page" href="homepage.html">
                                     ទំព័រដើម
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="opportunities.html">
+                                <a class="nav-link " href="opportunities.html">
                                     ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
@@ -120,7 +127,7 @@
                         </ul>
                     </div>
                 </div>
-
+    
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
                         <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -179,7 +186,7 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                                 <li class=" my-3 d-flex justify-content-center">
                                     <a href="#">
                                         មើលការជូនដំណឹងទាំងអស់
@@ -190,8 +197,7 @@
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../image/profile.png" alt="">
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -233,8 +239,8 @@
                 </ul>
             </div>
         </nav>
-
-
+    
+    
     </header>
     <main class="flex-grow-1 pb-4 mt-5 activity">
         <section class="activity-feed py-5 mt-5">
@@ -309,7 +315,7 @@
                                         height="48" alt="Luffy">
                                     <div>
                                         <h6 class="mb-0">Monkey D. Luffy</h6>
-                                        <small class="text-muted">មួយម៉ោងមុន</small>
+                                        <small class="">មួយម៉ោងមុន</small>
                                     </div>
                                 </div>
                                 <p class="mt-3 mb-2">បរិច្ចាគសម្ភារៈសិក្សាដល់កុមារកំព្រា នៅសាលាបាណន់។</p>
@@ -387,7 +393,7 @@
                                         height="48" alt="Zoro">
                                     <div>
                                         <h6 class="mb-0">Roronoa Zoro</h6>
-                                        <small class="text-muted">ម្សិលមិញ</small>
+                                        <small class="">ម្សិលមិញ</small>
                                     </div>
                                 </div>
                                 <p class="mt-3 mb-2">សកម្មភាពសម្អាតឆ្នេរដ៏រីករាយជាមួយក្រុមអ្នកស្ម័គ្រចិត្ត។</p>
@@ -430,7 +436,7 @@
                                         height="48" alt="Nami">
                                     <div>
                                         <h6 class="mb-0">Nami</h6>
-                                        <small class="text-muted">2 ថ្ងៃមុន</small>
+                                        <small class="">2 ថ្ងៃមុន</small>
                                     </div>
                                 </div>
                                 <p class="mt-3 mb-2">ចែកចាយអាហារដល់គ្រួសារដែលត្រូវការជំនួយ នៅក្នុងភូមិ។</p>
@@ -473,7 +479,7 @@
                                         height="48" alt="Sanji">
                                     <div>
                                         <h6 class="mb-0">Sanji</h6>
-                                        <small class="text-muted">3 ថ្ងៃមុន</small>
+                                        <small class="">3 ថ្ងៃមុន</small>
                                     </div>
                                 </div>
                                 <p class="mt-3 mb-2">បានចម្អិនម្ហូបឲ្យកុមារកំព្រា ក្នុងកម្មវិធីសប្បុរសធម៌។</p>
@@ -522,12 +528,12 @@
     </main>
 
 
-    <footer class="pt-5 pb-3">
+   <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 mb-4 mb-xl-0">
                     <div class="footer-logo">
-                        <img src="../image/logo-removebg.png" alt="" class="mx-auto mx-xl-0">
+                        <a href="homepage.html"><img src="../image/logo-removebg.png" class="mx-auto mx-xl-0" alt=""></a>
                         <p class="footer-text mt-3">
                             ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
                             ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
@@ -535,6 +541,7 @@
                         </p>
                     </div>
                 </div>
+              
                 <div class="col-6 col-xl-4 d-flex justify-content-end">
                     <div class="footer-page">
                         <h4>
