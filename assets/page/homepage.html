@@ -88,42 +88,156 @@
                     ស្ម័គ្រចិត្ត
                 </a>
                 <!-- Offcanvas menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header d-flex align-items-center pb-0">
+                        <div class="d-flex align-items-center">
+                            <img src="../image/logo_no_bg.jpg" alt="">
+                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        </div>
+                        <button type="button" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body pt-1">
+                        <hr>
+                        <form class="position-relative">
+                            <span>
+                                <i class="bi bi-search position-absolute"></i>
+                            </span>
+                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
+                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
+                        </form>
+                        <hr>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="fs-5 mt-2">
+                                ទំព័រ ៖
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="homepage.html">
-                                    ទំព័រដើម
+                                    <i class="bi bi-house"></i>
+                                    <span>
+                                        ទំព័រដើម
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="opportunities.html">
-                                    ការងារស្ម័គ្រចិត្ត
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>
+                                        ការងារស្ម័គ្រចិត្ត
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="eventpage.html">
-                                    ព្រឹត្តិការណ៏
+                                    <i class="bi bi-calendar4-event"></i>
+                                    <span>
+                                        ព្រឹត្តិការណ៏
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="activity.html">
-                                    សកម្មភាព
+                                    <i class="bi bi-activity"></i>
+                                    <span>
+                                        សកម្មភាព
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Donation.html">
-                                    បរិច្ចាក
+                                    <i class="bi bi-gift"></i>
+                                    <span>
+                                        បរិច្ចាក
+                                    </span>
                                 </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul
+                            class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutpage.html">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        អំពីយើង
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="userprofile.html">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>
+                                        ទំនាក់ទំនង
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../image/profile.png" alt="" class="rounded-circle">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="userprofile.html">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="userprofile.html">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">
+                            ការងារស្ម័គ្រចិត្ត
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventpage.html">
+                            ព្រឹត្តិការណ៏
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">
+                            សកម្មភាព
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donation.html">
+                            បរិច្ចាក
+                        </a>
+                    </li>
+                </ul>
+
 
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
@@ -483,7 +597,6 @@
                     </div>
                     <div class="section-link">
                         <a href="opportunities.html" class="btn btn-outline-primary">
-                        <a href="opportunities.html" class="btn btn-outline-primary">
                             មើលបន្ថែមទៀត
                         </a>
                     </div>
@@ -535,7 +648,6 @@
                                     </div>
                                 </div>
                                 <div class="card-link mt-3">
-                                    <a href="detailpage-card-education.html" class="btn btn-outline-primary w-100 me-1">
                                     <a href="detailpage-card-education.html" class="btn btn-outline-primary w-100 me-1">
                                         ព័ត៌មានលម្អិត
                                     </a>
@@ -591,8 +703,8 @@
                                     </div>
                                 </div>
                                 <div class="card-link mt-3">
-                                    <a href="detailpage-card-environment.html" class="btn btn-outline-primary w-100 me-1">
-                                    <a href="detailpage-card-environment.html" class="btn btn-outline-primary w-100 me-1">
+                                    <a href="detailpage-card-environment.html"
+                                        class="btn btn-outline-primary w-100 me-1">
                                         ព័ត៌មានលម្អិត
                                     </a>
                                 </div>
@@ -646,8 +758,8 @@
                                     </div>
                                 </div>
                                 <div class="card-link mt-3">
-                                    <a href="detailpage-card-environment.html" class="btn btn-outline-primary w-100 me-1">
-                                    <a href="detailpage-card-environment.html" class="btn btn-outline-primary w-100 me-1">
+                                    <a href="detailpage-card-environment.html"
+                                        class="btn btn-outline-primary w-100 me-1">
                                         ព័ត៌មានលម្អិត
                                     </a>
                                 </div>
@@ -805,7 +917,8 @@
                                     ការចូលរួមតូចៗរបស់ម្នាក់ៗអាចបង្កើតអនាគតដ៏ភ្លឺថ្លាសម្រាប់ប្រទេស។ ចូលរួមជាមួយយើងថ្ងៃនេះ
                                     ដើម្បីក្លាយជាផ្នែកមួយនៃការផ្លាស់ប្តូរដ៏អស្ចារ្យនេះ។
                                 </p>
-                                <a href="opportunities.html" class="btn btn-outline-primary text-white border-white mt-3">
+                                <a href="opportunities.html"
+                                    class="btn btn-outline-primary text-white border-white mt-3">
                                     ចុះឈ្មោះឥឡូវនេះ
                                 </a>
                             </div>
@@ -845,7 +958,6 @@
                                     ដើម្បីជួយសង្គម និងអ្នកកំព្រាក្រីក្រ”
                                 </p>
                                 <a href="Donation.html" class="donate-btn btn btn-outline-primary mt-2 px-4 rounded-5">
-                                <a href="Donation.html" class="donate-btn btn btn-outline-primary mt-2 px-4 rounded-5">
                                     <span class="m-0">
                                         បរិច្ចាគឥឡូវនេះ
                                     </span>
@@ -867,7 +979,6 @@
                                     “ការបរិច្ចាកឈាមមិនត្រឹមតែជួយអ្នកជំងឺទេ
                                     ប៉ុន្តែថែមទាំងមានអត្ថប្រយោជន៍ដល់សុខភាពអ្នកបរិច្ចាកផងដែរ”
                                 </p>
-                                <a href="Donation.html" class="donate-btn btn btn-outline-primary mt-2 px-4 rounded-5">
                                 <a href="Donation.html" class="donate-btn btn btn-outline-primary mt-2 px-4 rounded-5">
                                     <span class="m-0">
                                         បរិច្ចាគឥឡូវនេះ
@@ -1116,7 +1227,7 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-xl-5">
+                    <div class="col-12 col-xl-5 d-flex justify-content-center">
                         <div class="question-img position-relative z-2 h-100">
                             <img src="../image/homepage/cta-ipad.png" alt="" class="img-fluid rounded-3">
                         </div>
@@ -1219,8 +1330,8 @@
     <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 mb-4 mb-xl-0">
-                    <div class="footer-logo">
+                <div class=" col-xl-4 mb-4 mb-xl-0">
+                    <div class="footer-logo ">
                         <img src="../image/logo-removebg.png" alt="" class="mx-auto mx-xl-0">
                         <p class="footer-text mt-3">
                             ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
