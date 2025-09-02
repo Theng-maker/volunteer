@@ -84,59 +84,134 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 text-white" data-theme-toggle
-                        aria-label="Change to light theme">
+                    <button type="button" class="border-0 text-white" data-theme-toggle aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                 </div>
-
+    
             </div>
         </div>
-
         <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
-                <a class="navbar-brand " href="orghomepage.html">
+                <a class="navbar-brand " href="#">
                     <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
                 <!-- Offcanvas menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header d-flex align-items-center pb-0">
+                        <div class="d-flex align-items-center">
+                            <img src="../image/logo_no_bg.jpg" alt="">
+                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        </div>
+                        <button type="button" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body pt-1">
+                        <hr>
+                        <form class="position-relative">
+                            <span>
+                                <i class="bi bi-search position-absolute"></i>
+                            </span>
+                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
+                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
+                        </form>
+                        <hr>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="fs-5 mt-2">
+                                ទំព័រ ៖
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="homepage.html">
-                                    ទំព័រដើម
+                                <a class="nav-link active" aria-current="page" href="homepage.html">
+                                    <i class="bi bi-house"></i>
+                                    <span>
+                                        ទំព័រដើម
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="opportunities.html">
-                                    ការងារស្ម័គ្រចិត្ត
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>
+                                        ការងារស្ម័គ្រចិត្ត
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="eventpage.html">
-                                    ព្រឹត្តិការណ៏
+                                    <i class="bi bi-calendar4-event"></i>
+                                    <span>
+                                        ព្រឹត្តិការណ៏
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="activity.html">
-                                    សកម្មភាព
+                                    <i class="bi bi-activity"></i>
+                                    <span>
+                                        សកម្មភាព
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Donation.html">
-                                    បរិច្ចាក
+                                    <i class="bi bi-gift"></i>
+                                    <span>
+                                        បរិច្ចាក
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutpage.html">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        អំពីយើង
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="userprofile.html">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>
+                                        ទំនាក់ទំនង
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">
+                            ការងារស្ម័គ្រចិត្ត
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventpage.html">
+                            ព្រឹត្តិការណ៏
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">
+                            សកម្មភាព
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donation.html">
+                            បរិច្ចាក
+                        </a>
+                    </li>
+                </ul>   
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
                         <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -195,9 +270,9 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                                 <li class=" my-3 d-flex justify-content-center">
-                                    <a href="#" >
+                                    <a href="#">
                                         មើលការជូនដំណឹងទាំងអស់
                                     </a>
                                 </li>
@@ -206,13 +281,12 @@
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../image/ORG/Org-Logo.png" alt="">
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a class="dropdown-item" href="userprofile.html">
+                                    <a class="dropdown-item" href="../page/OrgDashboard.html">
                                         <i class="bi bi-person-circle"></i>
                                         <span class="ps-1">
                                             មើលគណនី
@@ -228,7 +302,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         <span class="ps-1">
                                             ចាកចេញ
@@ -240,21 +314,19 @@
                     </li>
                     <li>
                         <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </button>
                     </li>
                 </ul>
             </div>
         </nav>
-
-
     </header>
     <main class="flex-grow-1 org-dashboard mt-5">
         <div class="container py-4 mt-5">
-
+            
             <!-- Profile Header -->
             <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm mt-4" data-aos="fade-down">
                 <img src="../image/ORG/Org-Logo.png" class="rounded-circle me-3" width="60" height="60" alt="Profile">
@@ -263,98 +335,107 @@
                     <small>Cambodia Environment Organization • NGO</small>
                 </div>
                 <div class="ms-auto" data-aos="fade-left" data-aos-delay="200">
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
+                    <!-- Button trigger modal -->
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">
+                        បន្ថែមឱកាស
                     </a>
-                    <div class="modal fade" id="createOpportunityModal" tabindex="-1" aria-labelledby="createOpportunityLabel"
-                        aria-hidden="true" data-bs-backdrop="static">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="createOpportunityLabel">
-                                        <i class="bi bi-briefcase-fill me-2"></i> ឱកាសការងារថ្មី
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <form id="opportunityForm" class="needs-validation" novalidate>
-                                    <div class="modal-body">
-                                        <div class="mb-3">
-                                            <label for="opTitle" class="form-label">ចំណងជើងការងារ</label>
-                                            <input type="text" class="form-control" id="opTitle"
-                                                placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍" required>
-                                            <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="opDescription" class="form-label">ពិពណ៌នា</label>
-                                            <textarea class="form-control" id="opDescription" rows="4"
-                                                placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
-                                            <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <label for="opLocation" class="form-label">ទីតាំង</label>
-                                                <input type="text" class="form-control" id="opLocation" value="ភ្នំពេញ" required>
-                                                <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="opDate" class="form-label">កាលបរិច្ឆេទចាប់ផ្តើម</label>
-                                                <input type="date" class="form-control" id="opDate" required>
-                                                <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
-                                            </div>
-                                        </div>
-                                        <div class="row g-3 mt-0 mt-md-2">
-                                            <div class="col-md-6">
-                                                <label for="opCapacity" class="form-label">ចំនួនមុខតំណែង</label>
-                                                <input type="number" class="form-control" id="opCapacity" min="1" value="10"
-                                                    required>
-                                                <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="opStatus" class="form-label">ស្ថានភាព</label>
-                                                <select class="form-select" id="opStatus" required>
-                                                    <option value="" selected disabled>ជ្រើសរើសស្ថានភាព</option>
-                                                    <option>Available</option>
-                                                    <option>Pending</option>
-                                                    <option>Closed</option>
-                                                </select>
-                                                <div class="invalid-feedback">សូមជ្រើសរើសស្ថានភាព</div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <label class="form-label">រូបភាពគម្រូ / គម្រោង</label>
-                                            <div id="opImageDropzone" class="dropzone" role="button" tabindex="0">
-                                                <div class="small">
-                                                    <i class="bi bi-cloud-arrow-up-fill me-1"></i>
-                                                    ចុចដើម្បីជ្រើសរើស
-                                                </div>
-                                            </div>
-                                            <input type="file" id="opImageInput" class="d-none" accept="image/*" />
-                                            <div id="opImagePreview" class="mt-3 d-none">
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <img id="opImageThumb" class="img-thumb" alt="Preview" />
-                                                    <div class="flex-grow-1">
-                                                        <div class="small fw-semibold" id="opImageName"></div>
-                                                        <div class="small text-muted" id="opImageMeta"></div>
-                                                        <button type="button" class="btn btn-sm btn-outline-danger mt-2"
-                                                            id="opImageRemove">Remove</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="invalid-feedback d-block" id="opImageError" style="display:none"></div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                        <button type="submit" class="btn btn-primary">
-                                            <i class="bi bi-plus-lg me-1"></i> Post Opportunity
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+                </div>
+            </div>
+            <div class="modal fade" id="createOpportunityModal" tabindex="-1" aria-labelledby="createOpportunityLabel"
+                aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="createOpportunityLabel">
+                                <i class="bi bi-briefcase-fill me-2"></i> ឱកាសការងារថ្មី
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+            
+                        <!-- Form -->
+                        <form id="opportunityForm" class="needs-validation" novalidate>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="opTitle" class="form-label">ចំណងជើងការងារ</label>
+                                    <input type="text" class="form-control" id="opTitle" placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍"
+                                        required>
+                                    <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
+                                </div>
+            
+                                <div class="mb-3">
+                                    <label for="opDescription" class="form-label">ពិពណ៌នា</label>
+                                    <textarea class="form-control" id="opDescription" rows="4"
+                                        placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
+                                    <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
+                                </div>
+            
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="opLocation" class="form-label">ទីតាំង</label>
+                                        <input type="text" class="form-control" id="opLocation" value="ភ្នំពេញ" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="opDate" class="form-label">កាលបរិច្ឆេទចាប់ផ្តើម</label>
+                                        <input type="date" class="form-control" id="opDate" required>
+                                        <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
+                                    </div>
+                                </div>
+            
+                                <div class="row g-3 mt-0 mt-md-2">
+                                    <div class="col-md-6">
+                                        <label for="opCapacity" class="form-label">ចំនួនមុខតំណែង</label>
+                                        <input type="number" class="form-control" id="opCapacity" min="1" value="10" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="opStatus" class="form-label">ស្ថានភាព</label>
+                                        <select class="form-select" id="opStatus" required>
+                                            <option value="" selected disabled>ជ្រើសរើសស្ថានភាព</option>
+                                            <option>Available</option>
+                                            <option>Pending</option>
+                                            <option>Closed</option>
+                                        </select>
+                                        <div class="invalid-feedback">សូមជ្រើសរើសស្ថានភាព</div>
+                                    </div>
+                                </div>
+            
+                                <div class="mt-3">
+                                    <label class="form-label">រូបភាពគម្រូ / គម្រោង</label>
+                                    <div id="opImageDropzone" class="dropzone" role="button" tabindex="0">
+                                        <div class="small">
+                                            <i class="bi bi-cloud-arrow-up-fill me-1"></i>
+                                            ចុចដើម្បីជ្រើសរើស
+                                        </div>
+                                    </div>
+                                    <input type="file" id="opImageInput" class="d-none" accept="image/*" />
+                                    <div id="opImagePreview" class="mt-3 d-none">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img id="opImageThumb" class="img-thumb" alt="Preview" />
+                                            <div class="flex-grow-1">
+                                                <div class="small fw-semibold" id="opImageName"></div>
+                                                <div class="small text-muted" id="opImageMeta"></div>
+                                                <button type="button" class="btn btn-sm btn-outline-danger mt-2" id="opImageRemove">
+                                                    Remove
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invalid-feedback d-block" id="opImageError" style="display:none"></div>
+                                </div>
+                            </div>
+            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-plus-lg me-1"></i> Post Opportunity
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+
             <!-- Tab -->
             <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs" data-aos="fade-up" data-aos-delay="200">
                 <li class="nav-item">
@@ -508,7 +589,7 @@
                     </div>
                     <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right">
                         <div class="d-flex align-items-center">
-                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=10" alt="">
+                            <img class="vh-op-img me-3" src="../image/ORG/cleaning.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">សម្អាតសហគមន៍</div>
                                 <small class="text-muted">Community Cleanup</small>
@@ -530,7 +611,7 @@
                     </div>
                     <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right" data-aos-delay="100">
                         <div class="d-flex align-items-center">
-                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=11" alt="">
+                            <img class="vh-op-img me-3" src="../image/ORG/planting.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">ដាំដើមឈើ</div>
                                 <small class="text-muted">Tree Planting</small>
@@ -552,7 +633,7 @@
                     </div>              
                     <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right" data-aos-delay="200">
                         <div class="d-flex align-items-center">
-                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=12" alt="">
+                            <img class="vh-op-img me-3" src="../image/ORG/Tree-conservation.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">អភិរក្សព្រៃឈើ</div>
                                 <small class="text-muted">Forest Conservation</small>
