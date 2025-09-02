@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -242,7 +244,7 @@
     <main class="flex-grow-1 contact-main">
         <section class="contact-area">
             <div class="container">
-                <div class="contact-title text-center">
+                <div class="contact-title text-center" data-aos="fade-down" data-aos-duration="1000">
                     <h2 class="fs-1 pb-3">ទំនាក់ទំនងនៅទីនេះ!</h2>
                     <p class="fs-4">យើងនៅទីនេះដើម្បីជួយអ្នក។ ទាក់ទងមកយើងសម្រាប់សំណួរ ការជួយ
                         ឬព័ត៌មានបន្ថែម។សូមធ្វើការបំពេញព័ត៌មានរបស់លោកអ្នក ឬ ទំនាក់ទំនងតាមលេខទូរស័ព្ទខាងក្រោម
@@ -251,8 +253,7 @@
                 </div>
                 <div class="row gy-3 mt-5 ">
                     <div class="col-12 col-xl-5 ">
-                        <div class="contact-info" data-aos="fade-right" data-aos-offset="200"
-                            data-aos-easing="ease-in-sine">
+                        <div class="contact-info" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                             <ul class="list-unstyled">
                                 <li class="py-2">
                                     <a href="https://www.google.com/maps/place/Russey+Keo-Phnom+Penh,+Phnom+Penh/@11.5828198,104.9067671,17z/data=!4m15!1m8!3m7!1s0x31095168b0ff688f:0x7d67590c5b4575ca!2sRussey+Keo-Phnom+Penh,+Phnom+Penh!3b1!8m2!3d11.5823617!4d104.9071549!16s%2Fg%2F11b6_fkj0w!3m5!1s0x31095168b0ff688f:0x7d67590c5b4575ca!8m2!3d11.5823617!4d104.9071549!16s%2Fg%2F11b6_fkj0w?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D"
@@ -286,8 +287,7 @@
                                     </a>
                                 </li>
                                 <li class="py-2">
-                                    <a href="mailto:sengmenghorn82@gmail.com"
-                                        class="contact-link text-decoration-none ">
+                                    <a href="mailto:sengmenghorn82@gmail.com" class="contact-link text-decoration-none ">
                                         <div class="contact-icon">
                                             <i class="bi bi-envelope"></i>
                                         </div>
@@ -312,13 +312,12 @@
                                             </h3>
                                             <p class="p-0 ">
                                                 ថ្ងៃចន្ន​ ដល់​ សុក្រ​ ម៉ោងធ្វើការ​ ៧:00 ដល់ ៥:00នាទី
-
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="map">
+                            <div class="map" data-aos="zoom-in" data-aos-delay="400">
                                 <iframe class="rounded-3"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.936540792771!2d104.88762230088359!3d11.572219359079677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e706d9cdf%3A0xb0bf13884e6cd05f!2sANT%20Technology%20Training%20Center!5e0!3m2!1sen!2skh!4v1754406107495!5m2!1sen!2skh"
                                     width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
@@ -326,18 +325,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-7 ">
+                    <div class="col-12 col-xl-7 " data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
                         <form>
                             <div class="row">
                                 <div class="col-12 col-xl-6">
                                     <div class="mb-4 form-floating">
-                                        <input type="text"  placeholder="នាមត្រកូល" class="form-control">
+                                        <input type="text" placeholder="នាមត្រកូល" class="form-control">
                                         <label for="">នាមត្រកូល</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-xl-6">
                                     <div class="mb-4 form-floating">
-                                        <input type="email"  placeholder="នាមខ្លួន" class="form-control">
+                                        <input type="email" placeholder="នាមខ្លួន" class="form-control">
                                         <label for="">នាមខ្លួន</label>
                                     </div>
                                 </div>
@@ -349,13 +348,13 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-4 form-floating">
-                                        <input type="tel"  placeholder="លេខទូរសព្ទ" class="form-control">
+                                        <input type="tel" placeholder="លេខទូរសព្ទ" class="form-control">
                                         <label for="">លេខទូរសព្ទ</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" name="" id=""  placeholder="ផ្ញើសារ..."></textarea>  
+                                        <textarea class="form-control" name="" id="" placeholder="ផ្ញើសារ..."></textarea>
                                         <label for="">ផ្ញើសារ...</label>
                                     </div>
                                 </div>
@@ -365,13 +364,11 @@
                         </form>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
 
-
-    <footer class="pt-5 pb-3">
+    <footer class="footer mt-auto pt-5 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 mb-4 mb-xl-0">
@@ -454,8 +451,6 @@
             </p>
         </div>
     </footer>
-
-
 
     <!-- Modal Search -->
     <div class="modal fade searchModal fs-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -576,5 +571,9 @@
     <!-- JS Script -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

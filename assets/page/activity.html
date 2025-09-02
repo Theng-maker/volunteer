@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -247,35 +249,32 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div id="feed" class="col-12 col-lg-10 col-xl-8">
-                        <!-- Create Post Card -->
-                        <div class="card mb-4 shadow-sm">
+                        <div class="card mb-4 shadow-sm" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="../image/profile.png" class="rounded-circle me-2" width="40" height="40"
-                                        alt="Me">
+                                    <img src="../image/profile.png" class="rounded-circle me-2" width="40" height="40" alt="Me">
                                     <input type="text" class="form-control rounded-pill bg-light border-0 px-3"
                                         placeholder="តើអ្នកកំពុងគិតអ្វី?" readonly data-bs-toggle="modal"
                                         data-bs-target="#createPostModal">
                                 </div>
                                 <hr class="my-2">
                                 <div class="d-flex justify-content-around">
-                                    <button class="btn btn-light d-flex align-items-center" readonly
-                                        data-bs-toggle="modal" data-bs-target="#createPostModal">
+                                    <button class="btn btn-light d-flex align-items-center" readonly data-bs-toggle="modal"
+                                        data-bs-target="#createPostModal">
                                         <i class="bi bi-camera-video-fill text-danger me-2"></i> Live video
                                     </button>
-                                    <button class="btn btn-light d-flex align-items-center" readonly
-                                        data-bs-toggle="modal" data-bs-target="#createPostModal">
+                                    <button class="btn btn-light d-flex align-items-center" readonly data-bs-toggle="modal"
+                                        data-bs-target="#createPostModal">
                                         <i class="bi bi-image-fill text-success me-2"></i> Photo/video
                                     </button>
-                                    <button class="btn btn-light d-flex align-items-center" readonly
-                                        data-bs-toggle="modal" data-bs-target="#createPostModal">
+                                    <button class="btn btn-light d-flex align-items-center" readonly data-bs-toggle="modal"
+                                        data-bs-target="#createPostModal">
                                         <i class="bi bi-film text-pink me-2"></i> Reel
                                     </button>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Create Post Modal -->
+        
                         <div class="modal fade" id="createPostModal" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -285,8 +284,8 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="d-flex mb-3">
-                                            <img src="../image/profile.png" class="rounded-circle me-2" width="40"
-                                                height="40" alt="Me">
+                                            <img src="../image/profile.png" class="rounded-circle me-2" width="40" height="40"
+                                                alt="Me">
                                             <div>
                                                 <h6 class="mb-0">អ្នកប្រើប្រាស់</h6>
                                                 <small class="text-secondary">Public</small>
@@ -306,22 +305,20 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Post 1 -->
-                        <div id="post-1" class="card mb-4">
+        
+                        <div id="post-1" class="card mb-4" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="d-flex">
-                                    <img src="../image/account/luffy.jpg" class="rounded-circle me-2" width="48"
-                                        height="48" alt="Luffy">
+                                    <img src="../image/account/luffy.jpg" class="rounded-circle me-2" width="48" height="48"
+                                        alt="Luffy">
                                     <div>
                                         <h6 class="mb-0">Monkey D. Luffy</h6>
                                         <small class="">មួយម៉ោងមុន</small>
                                     </div>
                                 </div>
                                 <p class="mt-3 mb-2">បរិច្ចាគសម្ភារៈសិក្សាដល់កុមារកំព្រា នៅសាលាបាណន់។</p>
-                                <img src="../image/even-soon/1.jpg" class="img-fluid rounded" width="100%"
-                                    alt="activity image">
-
+                                <img src="../image/even-soon/1.jpg" class="img-fluid rounded" width="100%" alt="activity image">
+        
                                 <div class="mt-3 d-flex justify-content-around post-actions">
                                     <button type="button" class="btn btn-light btn-like">
                                         <i class="bi bi-hand-thumbs-up"></i> ចូលចិត្ត <span class="like-count">0</span>
@@ -333,14 +330,13 @@
                                         <i class="bi bi-share"></i> ចែករំលែក
                                     </button>
                                 </div>
-
-                                <!-- Comments: always open -->
+        
                                 <div id="comments-1" class="mt-3 comments-wrap show">
                                     <div class="comments-panel">
                                         <div class="comments-header">
                                             <div class="count"><span class="comments-total">2</span> បញ្ចេញមតិ</div>
                                         </div>
-
+        
                                         <ul class="list-unstyled m-0 comments-list">
                                             <li class="comment-item">
                                                 <img src="../image/account/nami.jpg" class="comment-avatar" alt="">
@@ -371,46 +367,41 @@
                                                     </div>
                                                 </div>
                                             </li>
-
+        
                                         </ul>
-
+        
                                         <div class="input-group mt-3">
                                             <input type="text" class="form-control comment-input"
                                                 placeholder="សរសេរ​មតិយោបល់...">
-                                            <button class="btn btn-primary btn-add-comment"
-                                                type="button">បញ្ចូន</button>
+                                            <button class="btn btn-primary btn-add-comment" type="button">បញ្ចូន</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Post 2 -->
-                        <div id="post-2" class="card mb-4">
+        
+                        <div id="post-2" class="card mb-4" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="d-flex">
-                                    <img src="../image/account/zoro.jpg" class="rounded-circle me-2" width="48"
-                                        height="48" alt="Zoro">
+                                    <img src="../image/account/zoro.jpg" class="rounded-circle me-2" width="48" height="48"
+                                        alt="Zoro">
                                     <div>
                                         <h6 class="mb-0">Roronoa Zoro</h6>
                                         <small class="">ម្សិលមិញ</small>
                                     </div>
                                 </div>
                                 <p class="mt-3 mb-2">សកម្មភាពសម្អាតឆ្នេរដ៏រីករាយជាមួយក្រុមអ្នកស្ម័គ្រចិត្ត។</p>
-                                <img src="../image/even-soon/3.jpg" class="img-fluid rounded" width="100%"
-                                    alt="beach cleanup">
-
+                                <img src="../image/even-soon/3.jpg" class="img-fluid rounded" width="100%" alt="beach cleanup">
+        
                                 <div class="mt-3 d-flex justify-content-around post-actions">
-                                    <button type="button" class="btn btn-light btn-like"><i
-                                            class="bi bi-hand-thumbs-up"></i> ចូលចិត្ត <span
-                                            class="like-count">0</span></button>
-                                    <button type="button" class="btn btn-light btn-comment"><i
-                                            class="bi bi-chat-dots"></i> មតិយោបល់ <span
-                                            class="comment-count">0</span></button>
+                                    <button type="button" class="btn btn-light btn-like"><i class="bi bi-hand-thumbs-up"></i>
+                                        ចូលចិត្ត <span class="like-count">0</span></button>
+                                    <button type="button" class="btn btn-light btn-comment"><i class="bi bi-chat-dots"></i>
+                                        មតិយោបល់ <span class="comment-count">0</span></button>
                                     <button type="button" class="btn btn-light btn-share"><i class="bi bi-share"></i>
                                         ចែករំលែក</button>
                                 </div>
-
+        
                                 <div id="comments-2" class="mt-3 comments-wrap show">
                                     <div class="comments-panel">
                                         <div class="comments-header">
@@ -420,20 +411,18 @@
                                         <div class="input-group mt-3">
                                             <input type="text" class="form-control comment-input"
                                                 placeholder="សរសេរ​មតិយោបល់...">
-                                            <button class="btn btn-primary btn-add-comment"
-                                                type="button">បញ្ចូន</button>
+                                            <button class="btn btn-primary btn-add-comment" type="button">បញ្ចូន</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Post 3 -->
-                        <div id="post-3" class="card mb-4">
+        
+                        <div id="post-3" class="card mb-4" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="d-flex">
-                                    <img src="../image/account/nami.jpg" class="rounded-circle me-2" width="48"
-                                        height="48" alt="Nami">
+                                    <img src="../image/account/nami.jpg" class="rounded-circle me-2" width="48" height="48"
+                                        alt="Nami">
                                     <div>
                                         <h6 class="mb-0">Nami</h6>
                                         <small class="">2 ថ្ងៃមុន</small>
@@ -442,18 +431,16 @@
                                 <p class="mt-3 mb-2">ចែកចាយអាហារដល់គ្រួសារដែលត្រូវការជំនួយ នៅក្នុងភូមិ។</p>
                                 <img src="../image/even-soon/2.jpg" class="img-fluid rounded" width="100%"
                                     alt="food distribution">
-
+        
                                 <div class="mt-3 d-flex justify-content-around post-actions">
-                                    <button type="button" class="btn btn-light btn-like"><i
-                                            class="bi bi-hand-thumbs-up"></i> ចូលចិត្ត <span
-                                            class="like-count">0</span></button>
-                                    <button type="button" class="btn btn-light btn-comment"><i
-                                            class="bi bi-chat-dots"></i> មតិយោបល់ <span
-                                            class="comment-count">0</span></button>
+                                    <button type="button" class="btn btn-light btn-like"><i class="bi bi-hand-thumbs-up"></i>
+                                        ចូលចិត្ត <span class="like-count">0</span></button>
+                                    <button type="button" class="btn btn-light btn-comment"><i class="bi bi-chat-dots"></i>
+                                        មតិយោបល់ <span class="comment-count">0</span></button>
                                     <button type="button" class="btn btn-light btn-share"><i class="bi bi-share"></i>
                                         ចែករំលែក</button>
                                 </div>
-
+        
                                 <div id="comments-3" class="mt-3 comments-wrap show">
                                     <div class="comments-panel">
                                         <div class="comments-header">
@@ -463,20 +450,18 @@
                                         <div class="input-group mt-3">
                                             <input type="text" class="form-control comment-input"
                                                 placeholder="សរសេរ​មតិយោបល់...">
-                                            <button class="btn btn-primary btn-add-comment"
-                                                type="button">បញ្ចូន</button>
+                                            <button class="btn btn-primary btn-add-comment" type="button">បញ្ចូន</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Post 4 -->
-                        <div id="post-4" class="card mb-4">
+        
+                        <div id="post-4" class="card mb-4" data-aos="fade-up">
                             <div class="card-body">
                                 <div class="d-flex">
-                                    <img src="../image/account/sanji.jpg" class="rounded-circle me-2" width="48"
-                                        height="48" alt="Sanji">
+                                    <img src="../image/account/sanji.jpg" class="rounded-circle me-2" width="48" height="48"
+                                        alt="Sanji">
                                     <div>
                                         <h6 class="mb-0">Sanji</h6>
                                         <small class="">3 ថ្ងៃមុន</small>
@@ -485,18 +470,16 @@
                                 <p class="mt-3 mb-2">បានចម្អិនម្ហូបឲ្យកុមារកំព្រា ក្នុងកម្មវិធីសប្បុរសធម៌។</p>
                                 <img src="../image/even-soon/4.jpg" class="img-fluid rounded" width="100%"
                                     alt="cooking charity">
-
+        
                                 <div class="mt-3 d-flex justify-content-around post-actions">
-                                    <button type="button" class="btn btn-light btn-like"><i
-                                            class="bi bi-hand-thumbs-up"></i> ចូលចិត្ត <span
-                                            class="like-count">0</span></button>
-                                    <button type="button" class="btn btn-light btn-comment"><i
-                                            class="bi bi-chat-dots"></i> មតិយោបល់ <span
-                                            class="comment-count">0</span></button>
+                                    <button type="button" class="btn btn-light btn-like"><i class="bi bi-hand-thumbs-up"></i>
+                                        ចូលចិត្ត <span class="like-count">0</span></button>
+                                    <button type="button" class="btn btn-light btn-comment"><i class="bi bi-chat-dots"></i>
+                                        មតិយោបល់ <span class="comment-count">0</span></button>
                                     <button type="button" class="btn btn-light btn-share"><i class="bi bi-share"></i>
                                         ចែករំលែក</button>
                                 </div>
-
+        
                                 <div id="comments-4" class="mt-3 comments-wrap show">
                                     <div class="comments-panel">
                                         <div class="comments-header">
@@ -506,29 +489,25 @@
                                         <div class="input-group mt-3">
                                             <input type="text" class="form-control comment-input"
                                                 placeholder="សរសេរ​មតិយោបល់...">
-                                            <button class="btn btn-primary btn-add-comment"
-                                                type="button">បញ្ចូន</button>
+                                            <button class="btn btn-primary btn-add-comment" type="button">បញ្ចូន</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+        
                         <div class="d-grid">
                             <button class="btn btn-outline-secondary" id="btnLoadMore" type="button">
                                 <i class="bi bi-arrow-clockwise"></i> ផ្ទុកបន្ថែម
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
-
-   <footer class="pt-5 pb-3">
+    <footer class="footer mt-auto pt-5 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 mb-4 mb-xl-0">
@@ -733,7 +712,10 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/activity.js"></script>
+    <script src="../js/activity.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         (function () {
             const root = document.documentElement; // <html>
