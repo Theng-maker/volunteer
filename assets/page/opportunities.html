@@ -424,122 +424,125 @@
                         </div>
                         <div class="ms-auto me-5 align-content-center filter-btn" data-aos="fade-up" data-aos-duration="1000"
                             data-aos-delay="900">
-                            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#filter">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#filter">
                                 <i class="bi bi-sliders"></i>
                                 Filter
                             </button>
-                            <div class="modal fade" id="filter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                <div class="modal-dialog ">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="filterModalLabel">Filters</h5>
-                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>                        
+                        <div class="modal fade" id="filter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="filterModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                        
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="filterModalLabel">Filters</h5>
+                                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                        
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="duration" class="form-label fw-medium">រយៈពេល</label>
+                                            <select class="form-select" id="duration">
+                                                <option>គ្រប់ពេល</option>
+                                                <option>រយៈពេលខ្លី / Short-term (≤ 1 សប្តាហ៍)</option>
+                                                <option>រយៈពេលមធ្យម / Medium-term (1 សប្តាហ៍ - 3 ខែ)</option>
+                                                <option>រយៈពេលវែង​​ / Long-term (3 ខែ +)</option>
+                                            </select>
                                         </div>
-                                        <div class="modal-body">
-                                            <div class="mb-3">
-                                                <label for="duration" class="form-label fw-medium">រយៈពេល</label>
-                                                <select class="form-select" id="duration">
-                                                    <option>គ្រប់ពេល</option>
-                                                    <option>រយៈពេលខ្លី / Short-term (≤ 1 សប្តាហ៍)</option>
-                                                    <option>រយៈពេលមធ្យម / Medium-term (1 សប្តាហ៍ - 3 ខែ)</option>
-                                                    <option>រយៈពេលវែង​​ / Long-term (3 ខែ +)</option>
-                                                </select>
+                        
+                                        <div class="mb-3">
+                                            <label class="form-label fw-medium">ប្រភេទការប្តេជ្ញាចិត្ត</label><br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="partTime" value="part-time">
+                                                <label class="form-check-label" for="partTime">ក្រៅម៉ោង</label>
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label fw-medium">ប្រភេទការប្តេជ្ញាចិត្ត</label><br>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="partTime" value="part-time">
-                                                    <label class="form-check-label" for="partTime">ក្រៅម៉ោង</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="fullTime" value="full-time">
-                                                    <label class="form-check-label" for="fullTime">ពេញម៉ោង</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="weekends" value="weekends">
-                                                    <label class="form-check-label" for="weekends">ចុងសប្តាហ៍</label>
-                                                </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="fullTime" value="full-time">
+                                                <label class="form-check-label" for="fullTime">ពេញម៉ោង</label>
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label fw-medium">តម្រូវការជំនាញ</label><br>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="teaching" value="teaching">
-                                                    <label class="form-check-label" for="teaching">ការបង្រៀន</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="agriculture" value="agriculture">
-                                                    <label class="form-check-label" for="agriculture">កសិកម្ម</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="it" value="it">
-                                                    <label class="form-check-label" for="it">IT &
-                                                        បច្ចេកវិទ្យា</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="medical" value="medical">
-                                                    <label class="form-check-label" for="medical">វេជ្ជសាស្ត្រ /
-                                                        ថែទាំសុខភាព</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="translation" value="translation">
-                                                    <label class="form-check-label" for="translation">បកប្រែភាសា</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="event" value="event">
-                                                    <label class="form-check-label" for="event">រៀបចំព្រឹត្តការណ៍</label>
-                                                </div>
-                                            </div>
-                    
-                                            <div class="mb-3">
-                                                <label for="organization" class="form-label fw-medium">ក្រុមការងារស្ម័គ្រចិត្ត</label>
-                                                <select class="form-select" id="organization">
-                                                    <option>ទាំងអស់</option>
-                                                    <option>Organization A</option>
-                                                    <option>Organization B</option>
-                                                    <option>Organization C</option>
-                                                </select>
-                                            </div>
-                    
-                                            <div class="mb-3">
-                                                <label for="deadline" class="form-label fw-medium">ថ្ងៃផុតកំណត់</label>
-                                                <input type="date" id="myDatePicker" class="form-control"
-                                                    placeholder="ជ្រើសរើស ថ្ងៃ / ខែ / ឆ្នាំ">
-                                            </div>
-                    
-                                            <div class="mb-3">
-                                                <label class="form-label fw-medium">អត្ថប្រយោជន៍</label><br>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="housing" value="housing">
-                                                    <label class="form-check-label" for="housing">កន្លែងស្នាក់នៅ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="meals" value="meals">
-                                                    <label class="form-check-label" for="meals">អាហារបរិភោគ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="transport" value="transport">
-                                                    <label class="form-check-label" for="transport">មធ្យោបាយធ្វើដំណើរ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="certificate" value="certificate">
-                                                    <label class="form-check-label" for="certificate">វិញ្ញាបនបត្រ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="insurance" value="insurance">
-                                                    <label class="form-check-label" for="insurance">ធានារ៉ាប់រង</label>
-                                                </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="weekends" value="weekends">
+                                                <label class="form-check-label" for="weekends">ចុងសប្តាហ៍</label>
                                             </div>
                                         </div>
-                                        <div class="modal-footer">
-                                            <a href="#" type="button" class="me-auto">កំណត់ឡើងវិញ</a>
-                                            <button type="button" class="btn " data-bs-dismiss="modal">បិទ</button>
-                                            <button type="button" class="btn ">អនុវត្តតម្រង</button>
+                        
+                                        <div class="mb-3">
+                                            <label class="form-label fw-medium">តម្រូវការជំនាញ</label><br>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="teaching" value="teaching">
+                                                <label class="form-check-label" for="teaching">ការបង្រៀន</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="agriculture" value="agriculture">
+                                                <label class="form-check-label" for="agriculture">កសិកម្ម</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="it" value="it">
+                                                <label class="form-check-label" for="it">IT & បច្ចេកវិទ្យា</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="medical" value="medical">
+                                                <label class="form-check-label" for="medical">វេជ្ជសាស្ត្រ / ថែទាំសុខភាព</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="translation" value="translation">
+                                                <label class="form-check-label" for="translation">បកប្រែភាសា</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="event" value="event">
+                                                <label class="form-check-label" for="event">រៀបចំព្រឹត្តការណ៍</label>
+                                            </div>
                                         </div>
+                        
+                                        <div class="mb-3">
+                                            <label for="organization" class="form-label fw-medium">ក្រុមការងារស្ម័គ្រចិត្ត</label>
+                                            <select class="form-select" id="organization">
+                                                <option>ទាំងអស់</option>
+                                                <option>Organization A</option>
+                                                <option>Organization B</option>
+                                                <option>Organization C</option>
+                                            </select>
+                                        </div>
+                        
+                                        <div class="mb-3">
+                                            <label for="deadline" class="form-label fw-medium">ថ្ងៃផុតកំណត់</label>
+                                            <input type="date" id="myDatePicker" class="form-control" placeholder="ជ្រើសរើស ថ្ងៃ / ខែ / ឆ្នាំ">
+                                        </div>
+                        
+                                        <div class="mb-3">
+                                            <label class="form-label fw-medium">អត្ថប្រយោជន៍</label><br>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="housing" value="housing">
+                                                <label class="form-check-label" for="housing">កន្លែងស្នាក់នៅ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="meals" value="meals">
+                                                <label class="form-check-label" for="meals">អាហារបរិភោគ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="transport" value="transport">
+                                                <label class="form-check-label" for="transport">មធ្យោបាយធ្វើដំណើរ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="certificate" value="certificate">
+                                                <label class="form-check-label" for="certificate">វិញ្ញាបនបត្រ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="insurance" value="insurance">
+                                                <label class="form-check-label" for="insurance">ធានារ៉ាប់រង</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                                        <a href="#" type="button" class="me-auto">កំណត់ឡើងវិញ</a>
+                                        <button type="button" class="btn" data-bs-dismiss="modal">បិទ</button>
+                                        <button type="button" class="btn">អនុវត្តតម្រង</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <!-- card-list -->
                     <div class="opportunities-card-list">
