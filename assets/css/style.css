@@ -399,7 +399,15 @@ a {
   display: inline-block;
   margin-left: -2px !important;
 }
-
+.navbar .nav-action i{
+  color: black !important;
+}
+.navbar .nav-action i.bi-box-arrow-left{
+  color: rgb(225, 28, 28) !important;
+}
+.navbar .nav-action a:hover i.bi-box-arrow-left{
+  color: rgb(255, 255, 255) !important;
+} 
 .navbar [data-bs-toggle="offcanvas"] span {
   display: inline-block;
   margin-left: -5px !important;
@@ -2626,7 +2634,7 @@ footer p.text-center {
   color: #fff;
   text-shadow: 1px 2px 8px rgba(29, 18, 187, 0.987);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   object-fit: cover;
 }
 
