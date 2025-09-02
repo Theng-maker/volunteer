@@ -2490,6 +2490,7 @@ footer p.text-center {
 
 /* ========== Contact area ========== */
 .contact-area {
+  padding-top: 200px;
   width: 100%;
   background: var(--white-bg);
   color: var(--text-black);
@@ -2500,6 +2501,7 @@ footer p.text-center {
 }
 
 .contact-area .contact-info {
+  margin-bottom: 80px;
   padding: 30px;
   border-radius: 20px;
   background: var(--bg-card);
