@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -17,6 +19,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
+    <!-- header -->
     <header class="fixed-top shadow-sm">
         <div class="top-header">
             <div class="container d-flex justify-content-between align-items-center">
@@ -43,97 +46,167 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/england.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/arabic.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
-                        aria-label="Change to light theme">
+                    <button type="button" class="border-0 text-white" data-theme-toggle aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
                 </div>
-
+    
             </div>
         </div>
-
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
-                <a class="navbar-brand " href="#">
+                <a class="navbar-brand " href="homepage.html">
                     <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header d-flex align-items-center pb-0">
+                        <div class="d-flex align-items-center">
+                            <img src="../image/logo_no_bg.jpg" alt="">
+                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        </div>
+                        <button type="button" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body pt-1">
+                        <hr>
+                        <form class="position-relative">
+                            <span>
+                                <i class="bi bi-search position-absolute"></i>
+                            </span>
+                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
+                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
+                        </form>
+                        <hr>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="fs-5 mt-2">
+                                ទំព័រ ៖
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="homepage.html">
-                                    ទំព័រដើម
+                                <a class="nav-link" aria-current="page" href="homepage.html">
+                                    <i class="bi bi-house"></i>
+                                    <span>
+                                        ទំព័រដើម
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Browse Opportunities/opportunities.html">
-                                    ការងារស្ម័គ្រចិត្ត
+                                <a class="nav-link" href="opportunities.html">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>
+                                        ការងារស្ម័គ្រចិត្ត
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="eventpage.html">
-                                    ព្រឹត្តិការណ៏
+                                    <i class="bi bi-calendar4-event"></i>
+                                    <span>
+                                        ព្រឹត្តិការណ៏
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="activity.html">
-                                    សកម្មភាព
+                                    <i class="bi bi-activity"></i>
+                                    <span>
+                                        សកម្មភាព
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Donation.html">
-                                    បរិច្ចាក
+                                    <i class="bi bi-gift"></i>
+                                    <span>
+                                        បរិច្ចាក
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutpage.html">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        អំពីយើង
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="userprofile.html">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>
+                                        ទំនាក់ទំនង
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="homepage.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">
+                            ការងារស្ម័គ្រចិត្ត
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventpage.html">
+                            ព្រឹត្តិការណ៏
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">
+                            សកម្មភាព
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donation.html">
+                            បរិច្ចាក
+                        </a>
+                    </li>
+                </ul>
+    
+    
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -146,7 +219,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -186,9 +259,9 @@
                                         </span>
                                     </a>
                                 </li>
-
+    
                                 <li class=" my-3 d-flex justify-content-center">
-                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                    <a href="#" role="button">
                                         មើលការជូនដំណឹងទាំងអស់
                                     </a>
                                 </li>
@@ -197,13 +270,12 @@
                     </li>
                     <li>
                         <div class="dropdown">
-                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="../image/profile.png" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-person-circle"></i>
                                         <span class="ps-1">
                                             មើលគណនី
@@ -211,7 +283,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-gear"></i>
                                         <span class="ps-1">
                                             ការកំណត់
@@ -219,7 +291,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         <span class="ps-1">
                                             ចាកចេញ
@@ -229,6 +301,14 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -236,7 +316,7 @@
     <main class="flex-grow-1 mt-5">
         <section class="mission-area py-5 mt-5">
             <div class="container mt-5">
-                <div class="text-center mb-5">
+                <div class="text-center mb-5" data-aos="fade-up">
                     <h2 class="fw-bold text-primary">អំពីយើង</h2>
                     <div class="line-style mx-auto mb-3"></div>
                     <p class="fs-4 ">
@@ -245,9 +325,8 @@
                     </p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="mission-card card text-center p-4  shadow-lg h-100  hover-card"
-                            data-bgtext="ចក្ខុវិស័យ"> 
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+                        <div class="mission-card card text-center p-4 shadow-lg h-100 hover-card" data-bgtext="ចក្ខុវិស័យ">
                             <img src="../image/about-photo/miss1.png" class="mb-3 mx-auto" alt="Vision Icon">
                             <div class="card-body">
                                 <h4 class="mb-3 fw-bold text-primary">ចក្ខុវិស័យ</h4>
@@ -258,9 +337,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="mission-card card text-center p-4  shadow-lg h-100  hover-card"
-                            data-bgtext="បេសកកម្ម">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="mission-card card text-center p-4 shadow-lg h-100 hover-card" data-bgtext="បេសកកម្ម">
                             <img src="../image/about-photo/miss2.png" class="mb-3 mx-auto" alt="Mission Icon">
                             <div class="card-body">
                                 <h4 class="mb-3 fw-bold text-success">បេសកកម្ម</h4>
@@ -272,8 +350,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="mission-card card text-center p-4  shadow-lg h-100  hover-card" data-bgtext="គោលដៅ">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="mission-card card text-center p-4 shadow-lg h-100 hover-card" data-bgtext="គោលដៅ">
                             <img src="../image/about-photo/miss3.png" class="mb-3 mx-auto" alt="Goals Icon">
                             <div class="card-body">
                                 <h4 class="mb-3 fw-bold text-danger">គោលដៅ</h4>
@@ -290,7 +368,7 @@
         <section class="our-story">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-up">
                         <div class="card right-dec mb-3 bg-transparent border-0 h-100 ">
                             <div class="card-body p-4 align-content-center ">
                                 <h2 class="fw-bold text-center fs-3">របៀបដែលយើងចាប់ផ្តើម</h2>
@@ -308,19 +386,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="card bg-transparent left-img border-0 ">
                             <img src="../image/about-photo/2.png" alt="">
                         </div>
                     </div>
+        
                     <div class="col-12">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
+<<<<<<< HEAD
                                 <div class="section-header text-center">
+=======
+                                <div class="section-header text-center" data-aos="fade-up">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                                     <h2 class=" fw-bold fs-3 text-center mt-4">ប្រវត្តិដំណើរការនៃការចាប់ផ្តើមក្រុម</h2>
                                 </div>
                                 <div class="steps">
-                                    <div class="steps-container">
+                                    <div class="steps-container" data-aos="fade-left">
                                         <div class="content w-100">
                                             <h2 class="fs-4">ឆ្នាំបង្កើត(Foundation Year)</h2>
                                             <ul class="fs-5 ps-0">
@@ -341,7 +424,7 @@
                                         <div class="step-line"></div>
                                         <div class="date">2020</div>
                                     </div>
-                                    <div class="steps-container">
+                                    <div class="steps-container" data-aos="fade-left" data-aos-delay="200">
                                         <div class="content w-100">
                                             <h2 class="fs-4">ការចាប់ផ្តើមសកម្មភាព</h2>
                                             <ul class="fs-5 ps-0">
@@ -362,7 +445,7 @@
                                         <div class="step-line"></div>
                                         <div class="date">2021</div>
                                     </div>
-                                    <div class="steps-container">
+                                    <div class="steps-container" data-aos="fade-left" data-aos-delay="400">
                                         <div class="content w-100">
                                             <h2 class="fs-4">ការពង្រីកបណ្តាញ</h2>
                                             <ul class="fs-5 ps-0">
@@ -383,7 +466,7 @@
                                         <div class="step-line"></div>
                                         <div class="date">2022</div>
                                     </div>
-                                    <div class="steps-container">
+                                    <div class="steps-container" data-aos="fade-left" data-aos-delay="600">
                                         <div class="content w-100">
                                             <h2 class="fs-4">ការសម្រេចលទ្ធផលដំបូង</h2>
                                             <ul class="fs-5 ps-0">
@@ -404,7 +487,7 @@
                                         <div class="step-line"></div>
                                         <div class="date">2023</div>
                                     </div>
-                                    <div class="steps-container">
+                                    <div class="steps-container" data-aos="fade-left" data-aos-delay="800">
                                         <div class="content w-100">
                                             <h2 class="fs-4">ការទទួលស្គាល់</h2>
                                             <ul class="fs-5 ps-0">
@@ -425,7 +508,7 @@
                                         <div class="step-line"></div>
                                         <div class="date">2024</div>
                                     </div>
-                                    <div class="steps-container">
+                                    <div class="steps-container" data-aos="fade-left" data-aos-delay="1000">
                                         <div class="content w-100">
                                             <h2 class="fs-4">ការសម្រេចជោគជ័យធំ</h2>
                                             <ul class="fs-5 ps-0">
@@ -449,15 +532,19 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
+        
                     <div class="col-12">
+<<<<<<< HEAD
                         <div class="text-center pt-3">
+=======
+                        <div class="text-center pt-3" data-aos="fade-up">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                             <h2 class="fw-bold">សម្រេចលទ្ធផល និងសមិទ្ធិផល</h2>
                             <p class="fs-5">មើលសង្ខេបអំពីអ្វីដែលយើងបានសម្រេច និងសមិទ្ធិផលសំខាន់ៗក្នុងដំណើររបស់យើង។</p>
                         </div>
                         <div class="row py-4 g-4">
-                            <div class="col-12 col-md-6  col-lg-3">
+                            <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="card card-counter text-center h-100">
                                     <div class="card-img mx-auto mt-3 ">
                                         <i class="fa-solid fa-check"></i>
@@ -468,8 +555,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card card-counter text-center  h-100">
+                            <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="card card-counter text-center h-100">
                                     <div class="card-img mx-auto mt-3">
                                         <i class="fa-solid fa-check"></i>
                                     </div>
@@ -479,8 +566,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6  col-lg-3">
-                                <div class="card card-counter text-center  h-100">
+                            <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="600">
+                                <div class="card card-counter text-center h-100">
                                     <div class="card-img mx-auto mt-3">
                                         <i class="fa-solid fa-check"></i>
                                     </div>
@@ -490,8 +577,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card card-counter text-center  h-100">
+                            <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="800">
+                                <div class="card card-counter text-center h-100">
                                     <div class="card-img mx-auto mt-3">
                                         <i class="fa-solid fa-check"></i>
                                     </div>
@@ -501,10 +588,10 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="team">
             <div class="container">
@@ -522,9 +609,16 @@
                                     Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
                                 </p>
                                 <div class="contact-social d-flex justify-content-center align-items-center">
+<<<<<<< HEAD
                                     <a class="icon" href="@Lim_Buntheng"><i class="bi bi-facebook"></i></a>
                                     <a class="icon mx-3" href="https://t.me/Lim_Buntheng"><i class="bi bi-telegram"></i></a>
                                     <a class="icon" href=""><i class="bi bi-envelope-fill"></i></a>
+=======
+                                    <a class="icon" href="https://www.facebook.com/share/19fuRHFAb7/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+                                    <a class="icon mx-3" href="https://t.me/Lim_Buntheng"><i
+                                            class="bi bi-telegram"></i></a>
+                                    <a class="icon" href="mailto:limbuntheng1710@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                                 </div>
                             </div>
                         </div>
@@ -532,6 +626,7 @@
                             <img src="../image/member/horn.jpg" alt="Team Member 2">
                             <div class="overlay">
                                 <h4 class="card-title name">ហ៊ាន​ សេងហ៊ាន់</h4>
+<<<<<<< HEAD
                                     <p class="card-text">
                                         ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
                                         ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
@@ -542,12 +637,28 @@
                                         <a class="icon mx-3" target="_blank" href="https://t.me/Heanseng "><i class="bi bi-telegram"></i></a>
                                         <a class="icon" href="mailto:sengmenghorn82@example.com"><i class="bi bi-envelope-fill"></i></a>
                                     </div>
+=======
+                                <p class="card-text">
+                                    ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
+                                    ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                    Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                </p>
+                                <div class="contact-social d-flex justify-content-center align-items-center">
+                                    <a class="icon" target="_blank" href="https://www.facebook.com/share/1AJsAcTM5L/"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a class="icon mx-3" target="_blank" href="https://t.me/Heanseng "><i
+                                            class="bi bi-telegram"></i></a>
+                                    <a class="icon" href="mailto:sengmenghorn82@example.com"><i
+                                            class="bi bi-envelope-fill"></i></a>
+                                </div>
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                             </div>
                         </div>
                         <div class="card" data-index="2">
                             <img src="../image/member/sun.jpg" alt="Team Member 3">
                             <div class="overlay">
                                 <h4 class="card-title name">លី គីមស៊ុន</h4>
+<<<<<<< HEAD
                                     <p class="card-text">
                                         ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
                                         ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
@@ -558,12 +669,28 @@
                                         <a class="icon mx-3" href="https://t.me/Kimsun_Ly" target="_blank"><i class="bi bi-telegram"></i></a>
                                         <a class="icon" href="mailto:kimsunly49@gmail.com"><i class="bi bi-envelope-fill"></i></a>
                                     </div>
+=======
+                                <p class="card-text">
+                                    ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
+                                    ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                    Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                </p>
+                                <div class="contact-social d-flex justify-content-center align-items-center">
+                                    <a class="icon" href="https://www.facebook.com/kimsun.ly.2025" target="_blank"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a class="icon mx-3" href="https://t.me/Kimsun_Ly" target="_blank"><i
+                                            class="bi bi-telegram"></i></a>
+                                    <a class="icon" href="mailto:kimsunly49@gmail.com"><i
+                                            class="bi bi-envelope-fill"></i></a>
+                                </div>
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                             </div>
                         </div>
                         <div class="card" data-index="3">
                             <img src="../image/member/kry.jpg" alt="Team Member 4">
                             <div class="overlay">
                                 <h4 class="card-title name">ប៉េស សុគ្រី</h4>
+<<<<<<< HEAD
                                     <p class="card-text">
                                         ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
                                         ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
@@ -574,6 +701,20 @@
                                         <a class="icon mx-3" href="https://t.me/SokryPes"><i class="bi bi-telegram"></i></a>
                                         <a class="icon" href="mailto:mrrkry2006@gmail.com"><i class="bi bi-envelope-fill"></i></a>
                                     </div>
+=======
+                                <p class="card-text">
+                                    ខ្ញុំបាទជាសិស្សមកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)ឆ្នាំទី២
+                                    ផ្នែកពត៌មានវិទ្យាហើយនិងកំពុងសិក្សាថ្នាក់អាហារូបករណ៍ជំនាញ Web
+                                    Developmentនៅសាលា <b class="text-danger">ANT Technology Training</b> ផងដែរ។
+                                </p>
+                                <div class="contact-social d-flex justify-content-center align-items-center">
+                                    <a class="icon" target="_blank" href="https://www.facebook.com/Shakiryy8"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a class="icon mx-3" href="https://t.me/SokryPes"><i class="bi bi-telegram"></i></a>
+                                    <a class="icon" href="mailto:mrrkry2006@gmail.com"><i
+                                            class="bi bi-envelope-fill"></i></a>
+                                </div>
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                             </div>
                         </div>
                     </div>
@@ -595,8 +736,13 @@
         </section>
         <section class="statement">
             <div class="container">
+<<<<<<< HEAD
                 <div class="row  statement-bg rounded-3 pb-5 g-4 ">
                     <div class="col-12">
+=======
+                <div class="row statement-bg rounded-3 pb-5 g-4 ">
+                    <div class="col-12" data-aos="fade-down">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                         <h2 class="section-tile text-center mt-5 fw-bold">សេចក្តីថ្លែងអំណរគុណ</h2>
                         <p class="text-center fs-4">សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅជូនចំពោះ</p>
                         <p class="text-center fs-5 mb-4">
@@ -610,18 +756,18 @@
                             គឺដើម្បីកសាងសមត្តភាពក៏អាចចូលរួចចំណែកសង្គមនាពេលថ្ងៃអនាគត ។
                         </p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="statement-img ">
                             <img src="../image/statement-logo/ant-logo-removebg-preview.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
                         <div class="statement-img p-1">
                             <img src="../image/statement-logo/cbrd-logo.png" alt="">
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statement-img  ">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="statement-img  ">
                             <img src="../image/statement-logo/mptc-Logo-label-removebg-preview.png" alt="">
                         </div>
                     </div>
@@ -631,22 +777,32 @@
         <section class="collaboration py-5 ">
             <div class="container">
                 <div class="row align-items-center g-4 mb-4">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" data-aos="fade-right">
                         <h2 class="section-title mb-2">ព័ត៌មានអំពីកិច្ចសហប្រតិបត្តិការ</h2>
                         <p class=" mb-0 fs-5">ការសហការជាមួយដៃគូររបស់យើង មានទម្រង់ផ្សេងៗ៖
                             កិច្ចព្រមព្រៀង
                             (MOU/Agreement), សកម្មភាពរួម, ការចូលរួមសហគមន៍ និងឧបត្ថម្ភ។ ខាងក្រោមជាព័ត៌មានសង្ខេប។</p>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-left">
                         <div class="row g-3">
+<<<<<<< HEAD
                             <div class="col-6">
                                 <div class="p-4 stat-card  rounded-4 text-center h-100">
+=======
+                            <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="p-4 stat-card rounded-4 text-center h-100">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                                     <h4 class="fs-3 fw-bold">24+</h4>
                                     <p class="fs-5">កិច្ចព្រមព្រៀង MOU</p>
                                 </div>
                             </div>
+<<<<<<< HEAD
                             <div class="col-6">
                                 <div class="p-4 stat-card  rounded-4 text-center">
+=======
+                            <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="p-4 stat-card rounded-4 text-center">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                                     <h4 class="fs-3 fw-bold ">58+</h4>
                                     <p class="fs-5">សកម្មភាពរួម/ឆ្នាំ</p>
                                 </div>
@@ -655,7 +811,11 @@
                     </div>
                 </div>
                 <div class="row g-4">
+<<<<<<< HEAD
                     <div class="col-12 col-lg-7">
+=======
+                    <div class="col-12 col-lg-7" data-aos="fade-right" data-aos-delay="200">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                         <div class="rounded-4 p-3 shadow p-md-4 position-relative timeline h-100">
                             <div class="timeline-item mb-4">
                                 <span class="dot"></span>
@@ -683,8 +843,12 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
 
                     <div class="col-12 col-lg-5">
+=======
+                    <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-delay="200">
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                         <div class="rounded-4 p-4 p-md-3 h-100 collaboration-mode shadow">
                             <h4 class="mb-3 fw-semibold">ប្រភេទសហការ</h4>
                             <div class="d-flex flex-column gap-3">
@@ -714,7 +878,11 @@
                                 <div class="d-flex ">
                                     <div class="icons me-3"><i class=" bi-gift "></i></div>
                                     <div>
+<<<<<<< HEAD
                                         <h5 class="fw-semibold">ការឧបត្ថម្ភ</h5 >
+=======
+                                        <h5 class="fw-semibold">ការឧបត្ថម្ភ</h5>
+>>>>>>> 7aa64f3c766deb0d3d4c8a3ec12519a5edac3d66
                                         <p class="mb-0 ">
                                             ផ្តល់ជំនួយសំរាប់គម្រោងនិងសកម្មភាពផ្សេងៗរបស់ដៃគូរ។</p>
                                     </div>
@@ -726,12 +894,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer mt-auto pt-5 pb-3">
+    <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 mb-4 mb-xl-0">
                     <div class="footer-logo">
-                        <img src="../image/logo-removebg.png" alt="">
+                        <img src="../image/logo-removebg.png" alt="" class="mx-auto mx-xl-0">
                         <p class="footer-text mt-3">
                             ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
                             ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
@@ -739,53 +907,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
-                        <h4>
-                            ទំព័រ
-                        </h4>
-                        <ul class="footer-ul list-unstyled">
-                            <li>
-                                <a href="#" class="footer-link">
-                                    ទំព័រដើម
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    ការងារស្ម័គ្រចិត្ត
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    ព្រឹត្តិការណ៏
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    សកម្មភាព
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    បរិច្ចាក
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    អំពីយើង
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
+                <div class="col-6 col-xl-4 d-flex justify-content-end">
                     <div class="footer-page">
                         <h4>
                             ទំនាក់ទំនង
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link d-flex">
                                     <i class="bi bi-envelope-at"></i>
                                     <span class="ps-2">
                                         volunteerCambo@gmail.com
@@ -793,7 +922,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="https://maps.app.goo.gl/RvrdJxcbTaJ4mDcg9" class="footer-link d-flex">
                                     <i class="bi bi-geo-alt"></i>
                                     <span class="ps-2">
                                         Tul kok , Phmom Penh , Cambodia
@@ -801,7 +930,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="tel:+85568382800" class="footer-link d-flex">
                                     <i class="bi bi-telephone"></i>
                                     <span class="ps-2">
                                         +85568382800
@@ -811,29 +940,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-xl-4 d-flex justify-content-center">
                     <div class="footer-social">
                         <h4>
                             តាមដានយើង
                         </h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/facebook.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://t.me/SokryPes">
                                     <img src="../image/Icon/telegram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://t.me/SokryPes">
                                     <img src="../image/Icon/instagram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://t.me/SokryPes">
                                     <img src="../image/Icon/twitter.png" alt="">
                                 </a>
                             </li>
@@ -849,37 +978,129 @@
     </footer>
 
     <!-- Modal Search -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade searchModal fs-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content px-4 rounded-4">
+                <div class="modal-header pb-0 justify-content-between">
+                    <h1 class="modal-title fs-" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-circle fs-3"></i>
+                    </button>
                 </div>
-                <div class="modal-body">
-
-
-
-                    <form class="d-flex">
-                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                        <button type="submit" class="btn btn-primary rounded ms-2">
-                            <i class="bi bi-search"></i>
-                        </button>
+                <div class="modal-body pb-0">
+                    <form class="position-relative">
+                        <span>
+                            <i class="bi bi-search position-absolute"></i>
+                        </span>
+                        <input type="text" class="w-100 rounded" placeholder="ស្វែងរកទីនេះ..."
+                            value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
                     </form>
+                    <p class="mt-3 mb-1 fw-semibold">
+                        <i class="bi bi-clock-history"></i>
+                        <span>
+                            ធ្លាប់បានស្វែងរក
+                        </span>
+                    </p>
+                    <ul class="search-list list-unstyled ">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block ">
+                                    ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/detailpage-card-childcare.html" class="w-100 d-inline-block ">
+                                    ស្ម័គ្រចិត្តថែទាំកុមារ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/Donation.html" class="w-100 d-inline-block  ">
+                                    បរិច្ចាគ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/contactpage.html" class="w-100 d-inline-block  ">
+                                    ទាក់ទងតាមណា?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block  ">
+                                    តើមានស្ម័គ្រចិត្តអ្វីខ្លះ?
 
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <div class="mt-2 w-100 text-center text-primary">
+                            <button type="button">
+                                លុបទាំងអស់
+                            </button>
+                        </div>
+                    </ul>
 
-
+                    <ul class="search-action list-unstyled mt-4 d-flex justify-content-center">
+                        <li class="pe-4">
+                            <a href="../page/contactpage.html">
+                                ទំនាក់ទំនង
+                            </a>
+                        </li>
+                        <li class="px-4">
+                            <a href="../page/aboutpage.html">
+                                អំពីយើង
+                            </a>
+                        </li>
+                        <li class="ps-4">
+                            <a href="../page/userprofile.html">
+                                មើលគណនី
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <!-- JS Script -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         const track = document.querySelector('.carousel-track');
         const cards = Array.from(track.children);

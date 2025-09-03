@@ -44,7 +44,7 @@
       <img src="../image/profile.png" class="comment-avatar" alt="">
       <div class="flex-grow-1">
         <div class="d-flex justify-content-between">
-          <div><span class="comment-author">អ្នកប្រើប្រាស់</span><span class="comment-time ms-2">ឥឡូវនេះ</span></div>
+          <div><span class="comment-author">ដារា លី</span><span class="comment-time ms-2">ឥឡូវនេះ</span></div>
         </div>
         <p class="comment-text">${escapeHtml(text)}</p>
         <div class="comment-actions">
