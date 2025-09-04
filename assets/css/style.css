@@ -3517,7 +3517,9 @@ footer p.text-center {
   background-color: var(--btn-secondary);
   color: #fff;
 }
-
+#noResults i , #noResults p{
+  color: var(--text-black);
+}
 @media (min-width:1200px) and (max-width:1399px) {
   .opportunity {
     padding-top: 170px !important;
@@ -3635,7 +3637,11 @@ footer p.text-center {
   color: black;
   box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .15);
 }
-
+.btn-check+.btn:hover{
+  color: var(--text-muted);
+  background-color: var(--bs-btn-bg);
+  border-color: gray;
+}
 .vh-amount {
   border: 1px solid var(--border);
   background: var(--bg-card);
