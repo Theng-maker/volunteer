@@ -690,18 +690,22 @@ footer p.text-center {
 
 @media (max-width: 768px) {
   footer .footer-logo img {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
   }
+
   footer .footer-link {
-  font-size: 14px;
+    font-size: 14px;
   }
+
   footer p,
-footer .footer-text {
-  font-size: 14px;}
+  footer .footer-text {
+    font-size: 14px;
+  }
+
   footer .footer-social ul li a img {
-  width: 32px;
-  height: 32px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -716,6 +720,18 @@ footer .footer-text {
   width: 50%;
   bottom: 25%;
   color: var(--text-white-fixed);
+}
+
+@media (min-width:1024px) and (max-width: 1440px) {
+  .hero-banner.hero-home .hero-content {
+    width: 80% !important;
+    bottom: 15%;
+  }
+
+  .hero-banner .hero-content {
+    width: 80% !important;
+  }
+
 }
 
 .hero-banner .hero-content .hero-title {
@@ -1369,9 +1385,13 @@ footer .footer-text {
   color: goldenrod;
 }
 
-
+@media (max-width: 1999px){
+  .landing-nav .nav-item .nav-link {
+    font-size: 18px !important;
+  }
+}
 @media (max-width: 992px) {
-  .navbar-nav01{
+  .navbar-nav01 {
     display: flex;
   }
   .hero-banner .hero-content {
@@ -1426,14 +1446,16 @@ footer .footer-text {
     width: 90% !important;
   }
 }
-@media (max-width:991px) {
+
+@media (max-width:992px) {
   .navbar-nav01 {
-      display: none;
-    }
-  
-    .navbar-offcanvas{
-      display: block !important;
-    }
+    display: none;
+  }
+
+  .navbar-offcanvas {
+    display: block !important;
+  }
+ 
 }
 
 @media (max-width:768px) {
@@ -1475,6 +1497,18 @@ footer .footer-text {
     transform: translateX(60px);
   }
 
+  .hero-banner .carousel-control-prev-icon,
+  .hero-banner .carousel-control-next-icon {
+    background-color: #565656;
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-banner .carousel-control-prev,
+  .hero-banner .carousel-control-next {
+    width: 12% !important;
+  }
+
   .about-us .about-us-img {
     height: 400px !important;
   }
@@ -1505,6 +1539,98 @@ footer .footer-text {
     height: 100px;
     border-radius: 50%;
     border: 5px solid #007ACC;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-header .nav-list .nav-link {
+    font-size: 14px;
+  }
+
+  .top-header .dropdown .btn {
+    font-size: 14px;
+  }
+
+  .top-header button[data-theme-toggle] {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 20px;
+  }
+
+  .hero-banner .hero-content .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-banner .hero-content .hero-decript {
+    font-size: 20px;
+  }
+
+  .hero-action .btn {
+    margin-bottom: 10px;
+  }
+
+  .navbar .nav-action li .btn,
+  .navbar .btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar .nav-action i.bi-search {
+    position: relative;
+    top: -8px;
+    left: -2px;
+  }
+
+  .navbar .nav-action i.fa-bars {
+    position: relative;
+    left: -2px;
+  }
+
+  .navbar .nav-action i {
+    font-size: 16px;
+  }
+
+  .section-title h2 {
+    font-size: 20px !important;
+  }
+
+  .donation-area .card {
+    height: auto;
+    flex-direction: column !important;
+  }
+
+  .donation-area .card .card-img {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .donation-area .card .card-body {
+    width: 100% !important;
+  }
+
+  .benefit-area .card .card-img {
+    width: 0%;
+  }
+
+  .donation-area .card .card-body {
+    width: 100%;
+  }
+
+  .opportunities-area .section-title {
+    width: 70% !important;
+  }
+
+  .opportunities-area a.see-more {
+    font-size: 14px !important;
+    padding: 8px 6px !important;
   }
 }
 
