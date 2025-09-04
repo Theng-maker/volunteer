@@ -8,26 +8,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to filter cards based on both dropdowns and active tab
     function filterOpportunities() {
-        const selectedCategory = categoryFilter.value;
-        const selectedLocation = locationFilter.value;
-        const activeTab = document.querySelector('.tablinks.active');
-        const activeTabCategory = activeTab ? activeTab.getAttribute('onclick').match(/'([^']*)'/)[1] : 'all';
+    const selectedCategory = categoryFilter.value;
+    const selectedLocation = locationFilter.value;
+    const activeTab = document.querySelector('.tablinks.active');
+    const activeTabCategory = activeTab ? activeTab.getAttribute('onclick').match(/'([^']*)'/)[1] : 'all';
 
-        cards.forEach(card => {
-            const cardCategory = card.dataset.category;
-            const cardLocation = card.dataset.location;
+    let visibleCount = 0; // track how many cards are shown
 
-            const matchesCategory = (selectedCategory === "all" || cardCategory === selectedCategory);
-            const matchesLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
-            const matchesTab = (activeTabCategory === 'all' || cardCategory === activeTabCategory);
+    cards.forEach(card => {
+        const cardCategory = card.dataset.category;
+        const cardLocation = card.dataset.location;
 
-            if (matchesCategory && matchesLocation && matchesTab) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-        });
+        const matchesCategory = (selectedCategory === "all" || cardCategory === selectedCategory);
+        const matchesLocation = (selectedLocation === "all" || cardLocation === selectedLocation);
+        const matchesTab = (activeTabCategory === 'all' || cardCategory === activeTabCategory);
+
+        if (matchesCategory && matchesLocation && matchesTab) {
+            card.style.display = "block";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    const noResults = document.getElementById("noResults");
+    if (visibleCount === 0) {
+        noResults.style.display = "block";
+    } else {
+        noResults.style.display = "none";
     }
+}
 
     // This function handles the tab click logic and then calls the main filter function
     window.openOpportunity = function (evt, categoryName) {
