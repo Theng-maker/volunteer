@@ -129,117 +129,51 @@
                 </div>
 
                 <!-- Offcanvas menu -->
-                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header d-flex align-items-center pb-0">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/image/logo_no_bg.jpg" alt="">
-                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        </div>
-                        <button type="button" class="ms-auto border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="bi bi-x-circle"></i>
-                        </button>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body pt-1">
-                        <hr>
-                        <form class="position-relative">
-                            <span>
-                                <i class="bi bi-search position-absolute"></i>
-                            </span>
-                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
-                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
-                        </form>
-                        <hr>
+                    <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                            <li class="fs-5 mt-2">
-                                ទំព័រ ៖
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="assets/page/homepage.html">
-                                    <i class="bi bi-house"></i>
-                                    <span>
-                                        ទំព័រដើម
-                                    </span>
+                                    ទំព័រដើម
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="assets/page/opportunities.html">
-                                    <i class="bi bi-briefcase"></i>
-                                    <span>
-                                        ការងារស្ម័គ្រចិត្ត
-                                    </span>
+                                    ការងារស្ម័គ្រចិត្ត
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="assets/page/eventpage.html">
-                                    <i class="bi bi-calendar4-event"></i>
-                                    <span>
-                                        ព្រឹត្តិការណ៏
-                                    </span>
+                                    ព្រឹត្តិការណ៏
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="assets/page/activity.html">
-                                    <i class="bi bi-activity"></i>
-                                    <span>
-                                        សកម្មភាព
-                                    </span>
+                                    សកម្មភាព
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="assets/page/Donation.html">
-                                    <i class="bi bi-gift"></i>
-                                    <span>
-                                        បរិច្ចាក
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <hr>
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="assets/page/aboutpage.html">
-                                    <i class="bi bi-people"></i>
-                                    <span>
-                                        អំពីយើង
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="assets/page/contactpage.html">
-                                    <i class="bi bi-chat-dots"></i>
-                                    <span>
-                                        ទំនាក់ទំនង
-                                    </span>
+                                    បរិច្ចាក
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">
-                            ទំព័រដើម
+                <ul class="nav-authentication d-xl-flex m-0 list-unstyled d-none">
+                    <li>
+                        <a href="assets/page/Authentication/login.html" class="login">
+                            ចូលគណនី
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/page/opportunities.html">
-                            ការងារស្ម័គ្រចិត្ត
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/page/eventpage.html">
-                            ព្រឹត្តិការណ៏
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/page/activity.html">
-                            សកម្មភាព
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/page/Donation.html">
-                            បរិច្ចាក
+                    <li class="ms-3">
+                        <a href="assets/page/Authentication/register.html" class="sign-up">
+                            បង្កើតគណនី
                         </a>
                     </li>
                 </ul>
@@ -254,7 +188,7 @@
                     <h2 class="hero-title lead fw-medium">
                         តោះ! ចូលរួមស្ម័គ្រចិត្តទាំងអស់គ្នា
                     </h2>
-                    <p class="hero-decript lead mt-3">
+                    <p class="hero-decript lead mt-3 line-3">
                         ការស្ម័គ្រចិត្តធ្វើឱ្យសង្គមប្រមូលផ្តុំជាធ្លុងមួយ ដើម្បីរួមគ្នាអភិវឌ្ឍសហគមន៍
                         និងថែមទាំងផ្តល់ជាមធ្យោបាយសម្រាប់ឱ្យប្រជាជន បង្ហាញពីតម្លៃរបស់ពួកគាត់
                         និងបញ្ជាក់សាជាថ្មីថាពួកគាត់មានចំណែកដ៏មានសារៈសំខាន់សម្រាប់សង្គម។
@@ -308,7 +242,7 @@
             </div>
         </section>
         <section class="about-us position-relative">
-            <div class="pattern" data-aos="fade-up" data-aos-delay="100">
+            <div class="pattern">
                 <img src="assets/image/homepage/pattern-9.png" alt="" class="about-pattern">
                 <img src="assets/image/homepage/pattern-9.png" alt="" class="about-pattern2">
                 <img src="assets/image/homepage/pattern-4.png" alt="" class="pattern_01">
@@ -319,13 +253,13 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6" data-aos="fade-right" data-aos-delay="200">
-                        <div class="about-us-img h-100 d-flex justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="about-us-img h-100 d-flex justify-content-center" data-aos="fade-right">
                             <img src="assets/image/homepage/about_02" alt="" class="img-fluid ">
                         </div>
                     </div>
-                    <div class="col-xl-6" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
-                        <div class="about-us-content position-relative">
+                    <div class="col-xl-6">
+                        <div class="about-us-content position-relative" data-aos="fade-left">
                             <span>អំពីយើង</span>
                             <h2 class="section-title mt-3 lh-sm">
                                 គោលបំណង និងបេសកកម្មរបស់ពួកយើង
@@ -336,7 +270,8 @@
                                 ដោយផ្តោតលើវិស័យអប់រំ ការពារបរិស្ថាន និងការអភិវឌ្ឍសហគមន៍។
                             </p>
                             <ul class="mission-list list-unstyled">
-                                <li class="mt-4">
+                                <li class="mt-4" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="600">
                                     <a href="assets/page/Authentication/login.html" class="stretched-link"></a>
                                     <div class="list-img">
                                         <img src="assets/image/Icon/presentation.png" alt="" class="img-fluid">
@@ -350,7 +285,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                                    data-aos-duration="800">
                                     <a href="assets/page/Authentication/login.html" class="stretched-link"></a>
                                     <div class="list-img">
                                         <img src="assets/image/Icon/community.png" alt="" class="img-fluid">
@@ -364,7 +300,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                                    data-aos-duration="1000">
                                     <a href="assets/page/Authentication/login.html" class="stretched-link"></a>
                                     <div class="list-img">
                                         <img src="assets/image/Icon/event-list.png" alt="" class="img-fluid">
@@ -378,7 +315,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                                    data-aos-duration="1200">
                                     <a href="assets/page/Authentication/login.html" class="stretched-link"></a>
                                     <div class="list-img">
                                         <img src="assets/image/Icon/green-earth.png" alt="" class="img-fluid">
@@ -392,7 +330,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                                    data-aos-duration="1400">
                                     <a href="assets/page/Authentication/login.html" class="stretched-link"></a>
                                     <div class="list-img">
                                         <img src="assets/image/Icon/donation.png" alt="" class="img-fluid">
@@ -407,7 +346,6 @@
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
@@ -996,10 +934,10 @@
         
                 <div class="row align-items-center">
                     <!-- Left Image -->
-                    <div class="col-12 col-xl-5 mb-4 mb-xl-0" data-aos="fade-right" data-aos-duration="600"
-                        data-aos-delay="100">
+                    <div class="col-12 col-xl-5 mb-4 mb-xl-0" >
                         <div class="question-img position-relative z-2 h-100">
-                            <img src="assets/image/homepage/cta-ipad.png" alt="" class="img-fluid rounded-3">
+                            <img src="assets/image/homepage/cta-ipad.png" alt="" class="img-fluid rounded-3" data-aos="fade-right" data-aos-duration="600"
+                        data-aos-delay="100">
                         </div>
                     </div>
         
@@ -1275,18 +1213,52 @@
     <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 mb-4 mb-xl-0">
-                    <div class="footer-logo">
-                        <img src="../image/logo-removebg.png" alt="" class="mx-auto mx-xl-0">
+                <div class="col-7 col-xl-3 mb-4 mb-xl-0">
+                    <div class="footer-logo ps-5 ps-xl-0">
+                        <img src="assets/image/logo-removebg.png" alt="" >
                         <p class="footer-text mt-3">
-                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
-                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
-                            និងទំនុកចិត្តលើខ្លួនឯង។
+                            ចូលរួមជាមួយយើង ដើម្បីបង្កើតការផ្លាស់ប្តូរ! <br>
+                            អនាគតប្រសើរឡើង ចាប់ផ្តើមពីអ្នក! <br>
+                            ជួយសង្គម ជួយខ្លួនឯង ចូលរួមស្ម័គ្រចិត្តឥឡូវនេះ!
                         </p>
                     </div>
                 </div>
-                <div class="col-6 col-xl-4 d-flex justify-content-end">
-                    <div class="footer-page">
+                <div class="col-5 col-xl-3 d-flex justify-content-xl-center">
+                    <div class="footer-type">
+                        <h4>
+                            ស្ម័គ្រចិត្ត
+                        </h4>
+                        <ul class="footer-ul list-unstyled">
+                            <li>
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link">
+                                    ស្ម័គ្រចិត្តការអប់រំ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link">
+                                    ស្ម័គ្រចិត្តតាមសហគមន៍
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link">
+                                    ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link">
+                                    ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link">
+                                    ការបរិច្ចាក
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-7 col-xl-3">
+                    <div class="footer-page ps-5 ps-xl-0">
                         <h4>
                             ទំនាក់ទំនង
                         </h4>
@@ -1318,7 +1290,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-6 col-xl-4 d-flex justify-content-center">
+                <div class="col-5 col-xl-3">
                     <div class="footer-social">
                         <h4>
                             តាមដានយើង

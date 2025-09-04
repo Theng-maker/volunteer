@@ -75,8 +75,10 @@
   --border: var(--border-color);
 }
 
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -687,13 +689,19 @@ footer p.text-center {
 
 
 @media (max-width: 768px) {
-  footer .row>div {
-    margin-bottom: 24px;
-    text-align: center;
+  footer .footer-logo img {
+  width: 60px;
+  height: 60px;
   }
-
-  footer .footer-social ul {
-    justify-content: center;
+  footer .footer-link {
+  font-size: 14px;
+  }
+  footer p,
+footer .footer-text {
+  font-size: 14px;}
+  footer .footer-social ul li a img {
+  width: 32px;
+  height: 32px;
   }
 }
 
@@ -1361,15 +1369,11 @@ footer p.text-center {
   color: goldenrod;
 }
 
+
 @media (max-width: 992px) {
-  .navbar-nav01 {
-    display: none;
+  .navbar-nav01{
+    display: flex;
   }
-
-  .navbar-offcanvas {
-    display: block !important;
-  }
-
   .hero-banner .hero-content {
     width: 80%;
     bottom: 20%;
@@ -1421,6 +1425,15 @@ footer p.text-center {
   .donation-area .section-title p {
     width: 90% !important;
   }
+}
+@media (max-width:991px) {
+  .navbar-nav01 {
+      display: none;
+    }
+  
+    .navbar-offcanvas{
+      display: block !important;
+    }
 }
 
 @media (max-width:768px) {
