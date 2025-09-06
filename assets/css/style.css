@@ -102,7 +102,8 @@ a {
 .authentication-body {
   height: 100vh;
   align-content: center;
-  background-image: url('https://i.pinimg.com/736x/ef/a4/9e/efa49ecd3ecbb4d2e533220bc5adafe5.jpg');
+  background: url('https://png.pngtree.com/background/20210710/original/pngtree-world-environment-day-exhibition-board-background-fresh-picture-image_979348.jpg') no-repeat center center/cover;
+  background: url('../image/homepage/login-bg.png') no-repeat center center/cover;
 }
 
 .authentication-form {
@@ -110,18 +111,18 @@ a {
   border: 1px solid #cacaca;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(100px);
   padding-left: 0;
   overflow: hidden;
 }
 
 .authentication-body .login-img {
-  width: 45%;
+  width: 50%;
 }
 
 .authentication-body .login-area {
-  width: 55%;
-  padding: 30px;
+  width: 50%;
+  padding: 20px 30px;
 }
 
 .section-title img {
