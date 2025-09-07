@@ -16,25 +16,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/OrgDashboard.css"> -->
 </head>
 <style>
-    .card {
-        background-color: var(--bg-page);
-    }
-
-    .nav {
-        background-color: var(--bg-card) !important;
-    }
-
-    h6,
-    p {
-        color: var(--text-muted);
-    }
-
-    label {
-        color: var(--text-muted);
-    }
+.card,
+.nav,
+table tr td {
+    background-color: var(--bg-card) !important;
+}
+h6, h3, strong, small, p, .fw-bold, canvas,
+.text-body,
+label {
+    color: var(--text-black) !important;
+}
 </style>
 
 <body class="d-flex flex-column h-100">
@@ -352,55 +345,64 @@
             <div class="modal fade" id="createOpportunityModal" tabindex="-1" aria-labelledby="createOpportunityLabel"
                 aria-hidden="true" data-bs-backdrop="static">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="createOpportunityLabel">
-                                <i class="bi bi-briefcase-fill me-2"></i> ឱកាសការងារថ្មី
+                    <div class="modal-content border-0 shadow-lg rounded-4">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header p-4 text-white"
+                            style="background: linear-gradient(90deg, #ff416c, #ff4b2b); border-bottom: none;">
+                            <h5 class="modal-title d-flex align-items-center gap-2" id="createOpportunityLabel">
+                                <i class="bi bi-briefcase-fill"></i> ឱកាសការងារថ្មី
                             </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
 
-                        <!-- Form -->
+                        <!-- Modal Body -->
                         <form id="opportunityForm" class="needs-validation" novalidate>
-                            <div class="modal-body">
+                            <div class="modal-body p-4">
+
+                                <!-- Job Title -->
                                 <div class="mb-3">
-                                    <label for="opTitle" class="form-label">ចំណងជើងការងារ</label>
-                                    <input type="text" class="form-control" id="opTitle"
+                                    <label for="opTitle" class="form-label fw-medium">ចំណងជើងការងារ</label>
+                                    <input type="text" class="form-control form-control-lg" id="opTitle"
                                         placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍" required>
                                     <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
                                 </div>
 
+                                <!-- Job Description -->
                                 <div class="mb-3">
-                                    <label for="opDescription" class="form-label">ពិពណ៌នា</label>
-                                    <textarea class="form-control" id="opDescription" rows="4"
+                                    <label for="opDescription" class="form-label fw-medium">ពិពណ៌នា</label>
+                                    <textarea class="form-control form-control-lg" id="opDescription" rows="4"
                                         placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
                                     <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
                                 </div>
 
-                                <div class="row g-3">
+                                <!-- Location & Start Date -->
+                                <div class="row g-3 mb-3">
                                     <div class="col-md-6">
-                                        <label for="opLocation" class="form-label">ទីតាំង</label>
-                                        <input type="text" class="form-control" id="opLocation" value="ភ្នំពេញ"
-                                            required>
+                                        <label for="opLocation" class="form-label fw-medium">ទីតាំង</label>
+                                        <input type="text" class="form-control form-control-lg" id="opLocation"
+                                            value="ភ្នំពេញ" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="opDate" class="form-label">កាលបរិច្ឆេទចាប់ផ្តើម</label>
-                                        <input type="date" class="form-control" id="opDate" required>
+                                        <label for="opDate" class="form-label fw-medium">កាលបរិច្ឆេទចាប់ផ្តើម</label>
+                                        <input type="date" class="form-control form-control-lg" id="opDate" required>
                                         <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
                                     </div>
                                 </div>
 
-                                <div class="row g-3 mt-0 mt-md-2">
+                                <!-- Capacity & Status -->
+                                <div class="row g-3 mb-3">
                                     <div class="col-md-6">
-                                        <label for="opCapacity" class="form-label">ចំនួនមុខតំណែង</label>
-                                        <input type="number" class="form-control" id="opCapacity" min="1" value="10"
-                                            required>
+                                        <label for="opCapacity" class="form-label fw-medium">ចំនួនមុខតំណែង</label>
+                                        <input type="number" class="form-control form-control-lg" id="opCapacity"
+                                            min="1" value="10" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ</div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="opStatus" class="form-label">ស្ថានភាព</label>
-                                        <select class="form-select" id="opStatus" required>
+                                        <label for="opStatus" class="form-label fw-medium">ស្ថានភាព</label>
+                                        <select class="form-select form-select-lg" id="opStatus" required>
                                             <option value="" selected disabled>ជ្រើសរើសស្ថានភាព</option>
                                             <option>Available</option>
                                             <option>Pending</option>
@@ -410,42 +412,47 @@
                                     </div>
                                 </div>
 
-                                <div class="mt-3">
-                                    <label class="form-label">រូបភាពគម្រូ / គម្រោង</label>
-                                    <div id="opImageDropzone" class="dropzone" role="button" tabindex="0">
-                                        <div class="small">
-                                            <i class="bi bi-cloud-arrow-up-fill me-1"></i>
-                                            ចុចដើម្បីជ្រើសរើស
-                                        </div>
+                                <!-- Image Upload -->
+                                <div class="mb-3">
+                                    <label class="form-label fw-medium">រូបភាពគម្រូ / គម្រោង</label>
+                                    <div id="opImageDropzone"
+                                        class="dropzone p-4 border border-dashed rounded-3 text-center" role="button"
+                                        tabindex="0" style="cursor: pointer;">
+                                        <i class="bi bi-cloud-arrow-up-fill fs-3 mb-2 text-muted"></i>
+                                        <div class="small text-muted">ចុចដើម្បីជ្រើសរើស ឬទាញរូបភាពទីនេះ</div>
                                     </div>
                                     <input type="file" id="opImageInput" class="d-none" accept="image/*" />
                                     <div id="opImagePreview" class="mt-3 d-none">
                                         <div class="d-flex align-items-center gap-3">
-                                            <img id="opImageThumb" class="img-thumb" alt="Preview" />
+                                            <img id="opImageThumb" class="img-thumbnail rounded" alt="Preview"
+                                                style="width: 80px; height: 80px; object-fit: cover;">
                                             <div class="flex-grow-1">
                                                 <div class="small fw-semibold" id="opImageName"></div>
                                                 <div class="small text-muted" id="opImageMeta"></div>
                                                 <button type="button" class="btn btn-sm btn-outline-danger mt-2"
-                                                    id="opImageRemove">
-                                                    Remove
-                                                </button>
+                                                    id="opImageRemove">Remove</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="invalid-feedback d-block" id="opImageError" style="display:none"></div>
                                 </div>
+
                             </div>
 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary">
+                            <!-- Modal Footer -->
+                            <div class="modal-footer border-0 justify-content-end p-4">
+                                <button type="button" class="btn btn-light btn-lg rounded-pill"
+                                    data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill">
                                     <i class="bi bi-plus-lg me-1"></i> Post Opportunity
                                 </button>
                             </div>
+
                         </form>
                     </div>
                 </div>
             </div>
+
 
             <!-- Tab -->
             <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs" data-aos="fade-up"
@@ -479,7 +486,7 @@
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">ការងារសកម្ម</h6>
+                                            <h6>ការងារសកម្ម</h6>
                                             <h3>12</h3>
                                             <small class="text-success">+3 ថ្មីៗ</small>
                                         </div>
@@ -493,7 +500,7 @@
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">អ្នកស្ម័គ្រចិត្តសរុប</h6>
+                                            <h6>អ្នកស្ម័គ្រចិត្តសរុប</h6>
                                             <h3>156</h3>
                                             <small class="text-success">+24 ថ្មីៗ</small>
                                         </div>
@@ -507,7 +514,7 @@
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">ព្រឹត្តិការណ៍ខែនេះ</h6>
+                                            <h6>ព្រឹត្តិការណ៍ខែនេះ</h6>
                                             <h3>8</h3>
                                             <small class="text-success">+2 ថ្មីៗ</small>
                                         </div>
@@ -521,7 +528,7 @@
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">ការវាយតម្លៃ</h6>
+                                            <h6>ការវាយតម្លៃ</h6>
                                             <h3>4.8</h3>
                                             <small class="text-success">+0.2 ថ្មីៗ</small>
                                         </div>
@@ -541,7 +548,7 @@
                                         <img src="../image/ORG/Woman-profile.png" class="rounded-circle me-2">
                                         <div>
                                             <strong>សុភា ចាន់</strong><br>
-                                            <small class="text-muted">24 មករា 2025</small>
+                                            <small>24 មករា 2025</small>
                                         </div>
                                         <span class="badge bg-warning text-dark ms-auto">កំពុងរង់ចាំ</span>
                                     </div>
@@ -549,7 +556,7 @@
                                         <img src="../image/ORG/Man-profile1.png" class="rounded-circle me-2">
                                         <div>
                                             <strong>ដារា លី</strong><br>
-                                            <small class="text-muted">24 មករា 2025</small>
+                                            <small>24 មករា 2025</small>
                                         </div>
                                         <span class="badge bg-success ms-auto">អនុម័ត</span>
                                     </div>
@@ -557,7 +564,7 @@
                                         <img src="../image/ORG/Man-profile2.png" class="rounded-circle me-2">
                                         <div>
                                             <strong>ពិសាក់ ស៊ុន</strong><br>
-                                            <small class="text-muted">23 មករា 2025</small>
+                                            <small>23 មករា 2025</small>
                                         </div>
                                         <span class="badge bg-danger ms-auto">បានបដិសេធ</span>
                                     </div>
@@ -608,13 +615,13 @@
                             <img class="vh-op-img me-3" src="../image/ORG/cleaning.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">សម្អាតសហគមន៍</div>
-                                <small class="text-muted">Community Cleanup</small>
+                                <small>Community Cleanup</small>
                                 <div class="vh-op-line mt-1">
                                     <i class="fa-regular fa-calendar"></i> ២៤ មករា ២០២៥ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-location-dot"></i> ភ្នំពេញ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-user-group"></i> 15/20
                                 </div>
-                                <small class="text-muted">ការចុះឈ្មោះ: 8</small>
+                                <small>ការចុះឈ្មោះ: 8</small>
                             </div>
                             <span class="vh-badge vh-badge--success">សកម្ម</span>
                         </div>
@@ -630,13 +637,13 @@
                             <img class="vh-op-img me-3" src="../image/ORG/planting.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">ដាំដើមឈើ</div>
-                                <small class="text-muted">Tree Planting</small>
+                                <small>Tree Planting</small>
                                 <div class="vh-op-line mt-1">
                                     <i class="fa-regular fa-calendar"></i> ៥ កុម្ភៈ ២០២៥ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-location-dot"></i> តាកែវ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-user-group"></i> 25/30
                                 </div>
-                                <small class="text-muted">ការចុះឈ្មោះ: 12</small>
+                                <small>ការចុះឈ្មោះ: 12</small>
                             </div>
                             <span class="vh-badge vh-badge--success">សកម្ម</span>
                         </div>
@@ -652,13 +659,13 @@
                             <img class="vh-op-img me-3" src="../image/ORG/Tree-conservation.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">អភិរក្សព្រៃឈើ</div>
-                                <small class="text-muted">Forest Conservation</small>
+                                <small>Forest Conservation</small>
                                 <div class="vh-op-line mt-1">
                                     <i class="fa-regular fa-calendar"></i> ១២ កុម្ភៈ ២០២៥ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-location-dot"></i> កំពង់ចាម &nbsp;•&nbsp;
                                     <i class="fa-solid fa-user-group"></i> 8/15
                                 </div>
-                                <small class="text-muted">ការចុះឈ្មោះ: 3</small>
+                                <small>ការចុះឈ្មោះ: 3</small>
                             </div>
                             <span class="vh-badge vh-badge--warning">កំពុង</span>
                         </div>
@@ -713,13 +720,13 @@
                                                 alt="Sophea Chan avatar">
                                             <div>
                                                 <div class="fw-semibold">សុភា ចាន់</div>
-                                                <small class="text-muted">Sophea Chan</small>
+                                                <small >Sophea Chan</small>
                                             </div>
                                         </div>
                                     </td>
                                     <td data-label="ការងារ">
                                         <div class="fw-medium">សម្អាតសហគមន៍</div>
-                                        <small class="text-muted">​ចូលរួម៖ ២ ថ្ងៃ</small>
+                                        <small >​ចូលរួម៖ ២ ថ្ងៃ</small>
                                     </td>
                                     <td data-label="កាលបរិច្ឆេទ"><span>២៤ មករា ២០២៥</span></td>
                                     <td data-label="ស្ថានភាព">
@@ -750,13 +757,13 @@
                                                 alt="Dara Lee avatar">
                                             <div>
                                                 <div class="fw-semibold">ដារា លី</div>
-                                                <small class="text-muted">Dara Lee</small>
+                                                <small >Dara Lee</small>
                                             </div>
                                         </div>
                                     </td>
                                     <td data-label="ការងារ">
                                         <div class="fw-medium">ដាំដើមឈើ</div>
-                                        <small class="text-muted">ចំនួនម៉ោង៖ ៩</small>
+                                        <small >ចំនួនម៉ោង៖ ៩</small>
                                     </td>
                                     <td data-label="កាលបរិច្ឆេទ"><span>២៤ មករា ២០២៥</span></td>
                                     <td data-label="ស្ថានភាព">
@@ -784,13 +791,13 @@
                                                 alt="Pisach Sun avatar">
                                             <div>
                                                 <div class="fw-semibold">ពិសាក់ ស៊ុន</div>
-                                                <small class="text-muted">Pisach Sun</small>
+                                                <small >Pisach Sun</small>
                                             </div>
                                         </div>
                                     </td>
                                     <td data-label="ការងារ">
                                         <div class="fw-medium">អភិរក្សព្រៃឈើ</div>
-                                        <small class="text-muted">ចំនួនថ្ងៃ៖ ៣</small>
+                                        <small >ចំនួនថ្ងៃ៖ ៣</small>
                                     </td>
                                     <td data-label="កាលបរិច្ឆេទ"><span>២៣ មករា ២០២៥</span></td>
                                     <td data-label="ស្ថានភាព">
@@ -887,7 +894,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-baseline mb-2">
                                             <h6 class="mb-0">Volunteers by Month</h6>
-                                            <small class="text-body-secondary">ជាមួយចន្លោះពេលខាងលើ</small>
+                                            <small >ជាមួយចន្លោះពេលខាងលើ</small>
                                         </div>
                                         <canvas id="volunteersLine" height="120"></canvas>
                                     </div>
@@ -899,7 +906,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-baseline mb-2">
                                             <h6 class="mb-0">Application Status</h6>
-                                            <small class="text-body-secondary">Pending / Approved / Rejected</small>
+                                            <small >Pending / Approved / Rejected</small>
                                         </div>
                                         <canvas id="statusDonut" height="120"></canvas>
                                     </div>
@@ -911,7 +918,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-baseline mb-2">
                                             <h6 class="mb-0">Applications by Opportunity</h6>
-                                            <small class="text-body-secondary">Top 6</small>
+                                            <small >Top 6</small>
                                         </div>
                                         <canvas id="oppsBar" height="210"></canvas>
                                     </div>
@@ -936,7 +943,7 @@
                                         <span class="vh-avatar ring">
                                             <img id="avatarPreview" src="../image/ORG/company-icon.png" alt="រូបភាព">
                                         </span>
-                                        <span class="small text-body-secondary d-block mt-1">ជ្រើសរើសរូបភាព</span>
+                                        <span class="small  d-block mt-1">ជ្រើសរើសរូបភាព</span>
                                     </label>
                                 </div>
                                 <div class="row g-3" data-aos="fade-up" data-aos-delay="200">
