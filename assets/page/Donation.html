@@ -328,7 +328,7 @@
                         <div class="card-body">
                             <h6 class="mb-1">Koma Angkor Children’s Hospital</h6>
                             <small class="fs-5">សម្រាមកុមារអង្គរវត្ត • Siem Reap</small>
-                            <span class="badge text-bg-primary float-end">Healthcare</span>                
+                            <span class="badge text-bg-primary float-end">សុខភាព</span>                
                             <p class="small fs-5 mt-3">
                                 ជួយគាំទ្រការថែទាំសុខភាពកុមារ ដោយផ្តល់ថ្នាំ វិភាគ និងការថែទាំបន្ទាន់ឥតគិតថ្លៃ។
                             </p>                
@@ -384,7 +384,7 @@
                         <div class="card-body">
                             <h6 class="mb-1">Jayavarman VII – Kantha Bopha</h6>
                             <small class="fs-5">មន្ទីរពេទ្យកុមារ • Phnom Penh & Siem Reap</small>
-                            <span class="badge text-bg-success float-end">Children</span>
+                            <span class="badge text-bg-success float-end">កុមារ</span>
                             <p class="small fs-5 mt-3">
                                 ជួយថែទាំកុមារក្រីក្រ ជាមួយនឹងសេវាពេទ្យឥតគិតថ្លៃ និងការព្យាបាលជំងឺធ្ងន់ធ្ងរ។
                             </p>
@@ -437,7 +437,7 @@
                             alt="Donate Blood">
                         <div class="card-body">
                             <h6 class="mb-1">បរិច្ចាកឈាម • ខែនេះ</h6>
-                            <span class="badge text-bg-danger float-end">Urgent</span>
+                            <span class="badge text-bg-danger float-end">បន្ទាន់</span>
                             <p class="small fs-5 mt-3">
                                 ដូរឈាមម្តង អាចជួយសង្គ្រោះជីវិតបានច្រើន។ ចុះបញ្ជីកាលបរិច្ឆេទ និងទីតាំងដែលសមស្រប។
                             </p>
@@ -475,41 +475,48 @@
                 <!-- Modal -->
                 <div class="modal fade" id="donateBloodModal" tabindex="-1" aria-labelledby="donateBloodModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title kh" id="donateBloodModalLabel">🩸
-                                    បែបបទចុះឈ្មោះបរិច្ចាគឈាម</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content border-0 shadow-lg">
+                
+                            <!-- Modal Header -->
+                            <div class="modal-header p-4 text-white"
+                                style="background: linear-gradient(90deg, #ff4b5c, #ff6f61); border-bottom: none;">
+                                <h5 class="modal-title d-flex align-items-center gap-2" id="donateBloodModalLabel">
+                                    <span style="font-size: 1.5rem;">🩸</span> បែបបទចុះឈ្មោះបរិច្ចាគឈាម
+                                </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">                
-                                <!-- ====== INSERT FORM HERE ====== -->
+                
+                            <!-- Modal Body -->
+                            <div class="modal-body p-5">
                                 <form id="donationForm" class="needs-validation" novalidate>
-                                    <div class="row g-3">
+                                    <div class="row g-4">
+                
                                         <div class="col-md-6">
-                                            <label for="fullName" class="form-label required">ឈ្មោះពេញ</label>
-                                            <input type="text" class="form-control" id="fullName" required>
+                                            <label for="fullName" class="form-label fw-bold required">ឈ្មោះពេញ</label>
+                                            <input type="text" class="form-control form-control-lg" id="fullName" required>
                                             <div class="invalid-feedback">សូមបញ្ចូលឈ្មោះ</div>
                                         </div>
+                
                                         <div class="col-md-6">
-                                            <label for="dob" class="form-label required">ថ្ងៃខែឆ្នាំកំណើត</label>
-                                            <input type="date" class="form-control" id="dob" required>
+                                            <label for="dob" class="form-label fw-bold required">ថ្ងៃខែឆ្នាំកំណើត</label>
+                                            <input type="date" class="form-control form-control-lg" id="dob" required>
                                             <div class="invalid-feedback">
-                                                សូមបញ្ចូលថ្ងៃកំណើតត្រឹមត្រូវ
-                                                (អាយុ 18–60)។</div>
+                                                សូមបញ្ចូលថ្ងៃកំណើតត្រឹមត្រូវ (អាយុ 18–60)។
+                                            </div>
                                         </div>
+                
                                         <div class="col-md-6">
-                                            <label for="phone" class="form-label required">ទូរស័ព្ទ
-                                                /
-                                                Phone</label>
-                                            <input type="tel" class="form-control" id="phone" pattern="^[0-9+\s-]{8,20}$" required>
-                                            <div class="invalid-feedback">
-                                                សូមបញ្ចូលលេខទូរស័ព្ទត្រឹមត្រូវ។</div>
+                                            <label for="phone" class="form-label fw-bold required">ទូរស័ព្ទ / Phone</label>
+                                            <input type="tel" class="form-control form-control-lg" id="phone"
+                                                pattern="^[0-9+\s-]{8,20}$" required>
+                                            <div class="invalid-feedback">សូមបញ្ចូលលេខទូរស័ព្ទត្រឹមត្រូវ។</div>
                                         </div>
+                
                                         <div class="col-md-6">
-                                            <label for="bloodGroup" class="form-label required">ក្រុមឈាម</label>
-                                            <select class="form-select" id="bloodGroup" required>
-                                                <option value="" disabled selected>ជ្រើសរើស…
-                                                </option>
+                                            <label for="bloodGroup" class="form-label fw-bold required">ក្រុមឈាម</label>
+                                            <select class="form-select form-select-lg" id="bloodGroup" required>
+                                                <option value="" disabled selected>ជ្រើសរើស…</option>
                                                 <option>A</option>
                                                 <option>B</option>
                                                 <option>AB</option>
@@ -518,27 +525,36 @@
                                             </select>
                                             <div class="invalid-feedback">សូមជ្រើសរើសក្រុមឈាម។</div>
                                         </div>
+                
                                         <div class="col-12">
-                                            <label for="address" class="form-label">អាសយដ្ឋាន</label>
-                                            <textarea class="form-control" id="address" rows="2"></textarea>
+                                            <label for="address" class="form-label fw-bold">អាសយដ្ឋាន</label>
+                                            <textarea class="form-control form-control-lg" id="address" rows="2"></textarea>
                                         </div>
-                                        <div class="col-12 form-check">
+                
+                                        <div class="col-12 form-check mt-3">
                                             <input class="form-check-input" type="checkbox" id="consent" required>
-                                            <label class="form-check-label" for="consent">
+                                            <label class="form-check-label fw-bold" for="consent">
                                                 ខ្ញុំយល់ព្រមបរិច្ចាគឈាមដោយស្ម័គ្រចិត្ត
                                             </label>
                                             <div class="invalid-feedback">សូមយល់ព្រមលក្ខខណ្ឌ។</div>
                                         </div>
+                
                                     </div>
                                 </form>
-                                <!-- ====== END FORM ====== -->              
                             </div>
-                            <div class="modal-footer">
-                                <button type="submit" form="donationForm" class="btn btn-primary">ដាក់ស្នើ</button>
+                
+                            <!-- Modal Footer -->
+                            <div class="modal-footer border-0 justify-content-center p-4">
+                                <button type="submit" form="donationForm" class="btn btn-danger btn-lg px-5"
+                                    style="border-radius: 50px;">
+                                    ដាក់ស្នើ
+                                </button>
                             </div>
+                
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <section class="container" style="margin-top: 80px;">
@@ -558,7 +574,7 @@
                                             <div class="col-sm-6">
                                                 <input class="btn-check" type="radio" name="donationType" id="typeOnce"
                                                     value="once" checked>
-                                                <label class="btn vh-pill w-100 text-dark" for="typeOnce">
+                                                <label class="btn vh-pill w-100 " for="typeOnce">
                                                     <i class="bi bi-gift"></i> ១ ដង
                                                 </label>
                                             </div>
@@ -802,12 +818,12 @@
                                 <div class="card-body">
                                     <h6 class="mb-3">ត្រូវការជំនួយ?</h6>
                                     <ul class="list-unstyled m-0 small">
-                                        <li class="mb-1" data-aos="fade-left" data-aos-delay="250"><i
-                                                class="bi bi-telephone me-2"></i>+855 23 123 456</li>
-                                        <li class="mb-1" data-aos="fade-left" data-aos-delay="300"><i
-                                                class="bi bi-envelope me-2"></i>donate@volunteerhub.kh</li>
-                                        <li data-aos="fade-left" data-aos-delay="350"><i
-                                                class="bi bi-globe me-2"></i>www.volunteerhub.kh</li>
+                                        <li class="mb-1" data-aos="fade-left" data-aos-delay="250">
+                                            <a href="#"><i class="bi bi-telephone me-2"></i>+855 23 123 456</li></a>                                           
+                                        <li class="mb-1" data-aos="fade-left" data-aos-delay="300">
+                                            <a href="#"><i class="bi bi-envelope me-2"></i>donate@volunteerhub.kh</li></a>                                            
+                                        <li data-aos="fade-left" data-aos-delay="350">
+                                            <a href="#"><i class="bi bi-globe me-2"></i>www.volunteerhub.kh</li></a>                                         
                                     </ul>
                                 </div>
                             </div>

@@ -225,7 +225,7 @@
                                         <span class="ps-2">
                                             Facebook <br>
                                             អ្នកបានភ្ជាប់គណនីជាមួយ Facebook <br>
-                                            <span class="text-secondary">
+                                            <span class="">
                                                 ឥឡូវនេះ
                                             </span>
                                         </span>
@@ -237,7 +237,7 @@
                                         <span class="ps-2">
                                             ការកំណត់ <br>
                                             អ្នកបានផ្លាស់ប្តូរពាក្យសម្ងាត់បានជោកជ័យ <br>
-                                            <span class="text-secondary">
+                                            <span class="">
                                                 ៣០នាទីមុន
                                             </span>
                                         </span>
@@ -249,7 +249,7 @@
                                         <span class="ps-2">
                                             ការដាក់ពាក្យ <br>
                                             ការដាក់ពាក្យរបស់អ្នកបានជោគជ័យ <br>
-                                            <span class="text-secondary">
+                                            <span class="">
                                                 ២ម៉ោងមុន
                                             </span>
                                         </span>
@@ -327,185 +327,184 @@
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                         </span>
-                        <span class="text-secondary">4.8</span>
+                        <span class="">4.8</span>
                     </div>
                 </div>
                 <div class="ms-auto d-flex align-items-center gap-3">
-                    <a class="position-relative text-decoration-none text-body" href="#">
+                    <a class="position-relative text-decoration-none " href="#">
                         <i class="bi bi-bell fs-5"></i>
                         <span
                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
                     </a>
                     <!-- Gear icon button -->
-                    <a class="text-body" href="#" data-bs-toggle="modal" data-bs-target="#accountSettingsModal">
+                    <a class="" href="#" data-bs-toggle="modal" data-bs-target="#accountSettingsModal">
                         <i class="bi bi-gear fs-5"></i>
                     </a>
-                    <!-- Account Settings Modal -->
-                    <div class="modal fade" id="accountSettingsModal" tabindex="-1" aria-labelledby="accSetTitle"
-                        aria-hidden="true">
+                    <!-- Account Settings Modal -->                   
+                    <div class="modal fade" id="accountSettingsModal" tabindex="-1" aria-labelledby="accSetTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
-                            <div class="modal-content vh-modal">
-                                <!-- Header -->
-                                <div class="modal-header border-0 pb-0">
-                                    <div>
-                                        <h6 class="modal-title mb-0" id="accSetTitle">ការកំណត់គណនី / <span
-                                                class="fw-normal">Account Settings</span></h6>
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            <div class="modal-content border-0 shadow-lg rounded-4">
+                    
+                                <!-- Modal Header -->
+                                <div class="modal-header p-4 text-white"
+                                    style="background: linear-gradient(90deg, #4e54c8, #8f94fb); border-bottom: none;">
+                                    <h6 class="modal-title fw-bold mb-0" id="accSetTitle">
+                                        ការកំណត់គណនី / <span class="fw-normal">Account Settings</span>
+                                    </h6>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <!-- Body -->
-                                <div class="modal-body pt-2">
-                                    <!-- Profile row -->
-                                    <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
-                                        <label class="vh-avatar-uploader mb-0">
+                    
+                                <!-- Modal Body -->
+                                <div class="modal-body p-4">
+                    
+                                    <!-- Avatar Upload -->
+                                    <div class="d-flex align-items-center justify-content-center mb-4">
+                                        <label class="vh-avatar-uploader mb-0 position-relative">
                                             <input type="file" class="d-none" id="avatarInput" accept="image/*">
-                                            <span class="vh-avatar ring">
-                                                <img id="avatarPreview"
-                                                    src="../image/ORG/computer-icons-user-profile-circle-abstract.jpg"
-                                                    alt="រូបភាព">
+                                            <span class="vh-avatar ring rounded-circle overflow-hidden d-block">
+                                                <img id="avatarPreview" src="../image/ORG/computer-icons-user-profile-circle-abstract.jpg"
+                                                    alt="រូបភាព" class="w-100 h-100 object-fit-cover">
                                             </span>
-                                            <span class="small text-secondary d-block mt-1">ជ្រើសរើសរូបភាព</span>
+                                            <span class="small d-block mt-2 text-center text-muted">ជ្រើសរើសរូបភាព</span>
                                         </label>
                                     </div>
-                                    <!-- Personal information -->
-                                    <div class="vh-section-hr mb-3">
-                                        <div class="vh-section-title">ព័ត៌មានផ្ទាល់ខ្លួន</div>
+                    
+                                    <!-- Personal Info Section -->
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-secondary mb-3">ព័ត៌មានផ្ទាល់ខ្លួន / Personal Info</h6>
+                                        <form>
+                                            <div class="row g-3">
+                    
+                                                <div class="col-sm-6">
+                                                    <label class="form-label fw-medium">នាមខ្លួន</label>
+                                                    <input type="text" class="form-control form-control-lg" placeholder="ឧ. សុភា">
+                                                </div>
+                    
+                                                <div class="col-sm-6">
+                                                    <label class="form-label fw-medium">នាមត្រកូល</label>
+                                                    <input type="text" class="form-control form-control-lg" placeholder="ឧ. ចាន់">
+                                                </div>
+                    
+                                                <div class="col-sm-6">
+                                                    <label class="form-label fw-medium">អ៊ីមែល</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                                        <input type="email" class="form-control form-control-lg"
+                                                            placeholder="sophea.chan@email.com">
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="col-sm-6">
+                                                    <label class="form-label fw-medium">ទូរស័ព្ទ</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                                        <input type="tel" class="form-control form-control-lg"
+                                                            placeholder="+855 23 123 456">
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="col-sm-6">
+                                                    <label class="form-label fw-medium">ទីតាំង</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                                                        <input type="text" class="form-control form-control-lg" placeholder="Phnom Penh">
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="col-sm-6">
+                                                    <label class="form-label fw-medium">ថ្ងៃខែឆ្នាំកំណើត</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="bi bi-calendar-event-fill"></i></span>
+                                                        <input type="date" class="form-control form-control-lg">
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="col-12">
+                                                    <label class="form-label fw-medium">ពីអំពីខ្ញុំ</label>
+                                                    <textarea class="form-control form-control-lg" rows="3" maxlength="400" id="aboutMe"
+                                                        placeholder="សូមពិពណ៌នាខ្លីៗអំពីបទពិសោធន៍ និងចំណាប់អារម្មណ៍…"></textarea>
+                                                    <div class="d-flex justify-content-end mt-1">
+                                                        <small id="aboutCount">0/400</small>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="col-12">
+                                                    <label class="form-label fw-medium">ជំនាញ</label>
+                                                    <input type="text" class="form-control form-control-lg"
+                                                        placeholder="ឧ. ការទំនាក់ទំនង, ការបណ្តុះបណ្តា, ការរៀបចំព្រឹត្តិការណ៍">
+                                                </div>
+                    
+                                            </div>
+                                        </form>
                                     </div>
-                                    <form>
-                                        <div class="row g-2">
+                    
+                                    <!-- Availability Section -->
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-secondary mb-3">ការស្រេចចិត្ត/អាចចូលរួម / Availability</h6>
+                                        <div class="row g-3">
                                             <div class="col-sm-6">
-                                                <label class="form-label small text-dark">នាមខ្លួន</label>
-                                                <input type="text" class="form-control" placeholder="ឧ. សុភា">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label class="form-label small text-dark">នាមត្រកូល</label>
-                                                <input type="text" class="form-control" placeholder="ឧ. ចាន់">
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <label class="form-label small text-dark">អ៊ីមែល</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="sophea.chan@email.com">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label class="form-label small text-dark">ទូរស័ព្ទ</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i
-                                                            class="bi bi-telephone"></i></span>
-                                                    <input type="tel" class="form-control"
-                                                        placeholder="+855 23 123 456">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <label class="form-label small text-dark">ទីតាំង</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-                                                    <input type="text" class="form-control" placeholder="Phnom Penh">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label class="form-label small text-dark">ថ្ងៃខែឆ្នាំកំណើត</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text"><i
-                                                            class="bi bi-calendar-event"></i></span>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label class="form-label small text-dark">ពីអំពីខ្ញុំ</label>
-                                                <textarea class="form-control" rows="3" maxlength="400" id="aboutMe"
-                                                    placeholder="សូមពិពណ៌នាខ្លីៗអំពីបទពិសោធន៍ និងចំណាប់អារម្មណ៍ស្ម័គ្រចិត្ត…"></textarea>
-                                                <div class="d-flex justify-content-end mt-1">
-                                                    <small class="text-secondary" id="aboutCount">0/400</small>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label class="form-label small text-dark">ជំនាញ</label>
-                                                <input type="text" class="form-control"
-                                                    placeholder="ឧ. ការទំនាក់ទំនង, ការបណ្តុះបណ្តា, ការរៀបចំព្រឹត្តិការណ៍">
-                                            </div>
-                                        </div>
-
-                                        <!-- Availability -->
-                                        <div class="vh-section-hr mt-4 mb-2">
-                                            <div class="vh-section-title">ការស្រេចចិត្ត/អាចចូលរួម</div>
-                                        </div>
-                                        <div class="row g-2">
-                                            <div class="col-sm-6">
-                                                <label class="form-label small text-dark">ថ្ងៃដែលមានស្រេចចិត្ត</label>
-                                                <select class="form-select">
+                                                <select class="form-select form-select-lg">
                                                     <option>អាទិត្យ / Weekend</option>
                                                     <option>ថ្ងៃធ្វើការ / Weekdays</option>
                                                     <option>បត់បែនពេល / Flexible</option>
                                                 </select>
                                             </div>
                                             <div class="col-sm-6">
-                                                <label class="form-label small text-dark">ម៉ោង</label>
-                                                <select class="form-select">
+                                                <select class="form-select form-select-lg">
                                                     <option>ព្រឹក</option>
                                                     <option>រសៀល</option>
                                                     <option>ល្ងាច</option>
                                                 </select>
                                             </div>
                                         </div>
-
-                                        <!-- Emergency contact -->
-                                        <div class="vh-section-hr mt-4 mb-2">
-                                            <div class="vh-section-title">ទំនាក់ទំនងបន្ទាន់</div>
-                                        </div>
-                                        <div class="row g-2">
+                                    </div>
+                    
+                                    <!-- Emergency Contact Section -->
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-secondary mb-3">ទំនាក់ទំនងបន្ទាន់ / Emergency Contact</h6>
+                                        <div class="row g-3">
                                             <div class="col-sm-6">
-                                                <label class="form-label small text-dark">ឈ្មោះ</label>
-                                                <input type="text" class="form-control" placeholder="ឧ. សីហា សុខ">
+                                                <input type="text" class="form-control form-control-lg" placeholder="ឈ្មោះ">
                                             </div>
                                             <div class="col-sm-6">
-                                                <label class="form-label small text-dark">លេខទូរស័ព្ទ</label>
-                                                <input type="tel" class="form-control" placeholder="+855 92 123 456">
+                                                <input type="tel" class="form-control form-control-lg" placeholder="+855 92 123 456">
                                             </div>
                                         </div>
-
-                                        <!-- Address -->
-                                        <div class="vh-section-hr mt-4 mb-2">
-                                            <div class="vh-section-title">អាសយដ្ឋាន</div>
-                                        </div>
-                                        <div class="row g-2">
+                                    </div>
+                    
+                                    <!-- Address Section -->
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold text-secondary mb-3">អាសយដ្ឋាន / Address</h6>
+                                        <div class="row g-3">
                                             <div class="col-md-6">
-                                                <label class="form-label small text-dark">ផ្លូវ</label>
-                                                <input type="text" class="form-control"
-                                                    placeholder="ផ្លូវ 271, ភ្នំពេញ">
+                                                <input type="text" class="form-control form-control-lg" placeholder="ផ្លូវ 271, ភ្នំពេញ">
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="form-label small text-dark">ទីក្រុង/ខេត្ត</label>
-                                                <input type="text" class="form-control" placeholder="Phnom Penh">
+                                                <input type="text" class="form-control form-control-lg" placeholder="Phnom Penh">
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="form-label small text-dark">សង្កាត់/ឃុំ</label>
-                                                <input type="text" class="form-control" placeholder="បឹងកេងកង">
+                                                <input type="text" class="form-control form-control-lg" placeholder="សង្កាត់/ឃុំ">
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="form-label small text-dark">ខណ្ឌ/ស្រុក</label>
-                                                <input type="text" class="form-control" placeholder="ចំការមន">
+                                                <input type="text" class="form-control form-control-lg" placeholder="ខណ្ឌ/ស្រុក">
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                    
                                 </div>
-
-                                <!-- Footer -->
-                                <div class="modal-footer border-0 pt-0">
-                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">បិទ /
+                    
+                                <!-- Modal Footer -->
+                                <div class="modal-footer border-0 justify-content-end p-4">
+                                    <button type="button" class="btn btn-light btn-lg rounded-pill" data-bs-dismiss="modal">បិទ /
                                         Close</button>
-                                    <button type="button" class="btn btn-primary">រក្សាទុក / Save Changes</button>
+                                    <button type="button" class="btn btn-primary btn-lg rounded-pill">រក្សាទុក / Save Changes</button>
                                 </div>
+                    
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -533,11 +532,11 @@
                                 <div class="vh-kpi-icon bg-primary-subtle text-primary"><i
                                         class="bi bi-clock-history"></i></div>
                                 <div class="flex-grow-1">
-                                    <div class="text-secondary small">ម៉ោងសរុប</div>
+                                    <div class=" small">ម៉ោងសរុប</div>
                                     <div class="fs-3 fw-bold">156</div>
                                     <div class="progress vh-progress mt-1">
                                         <div class="progress-bar bg-primary" style="width:78%"></div>
-                                    </div><small class="text-secondary d-block">156 / 200</small>
+                                    </div><small class=" d-block">156 / 200</small>
                                 </div>
                             </div>
                         </div>
@@ -546,7 +545,7 @@
                                 <div class="vh-kpi-icon bg-success-subtle text-success"><i
                                         class="bi bi-check2-circle"></i></div>
                                 <div class="flex-grow-1">
-                                    <div class="text-secondary small">គម្រោងបញ្ចប់</div>
+                                    <div class=" small">គម្រោងបញ្ចប់</div>
                                     <div class="fs-3 fw-bold">12</div>
                                 </div>
                             </div>
@@ -556,7 +555,7 @@
                                 <div class="vh-kpi-icon bg-purple-subtle text-purple"><i
                                         class="bi bi-calendar-event"></i></div>
                                 <div class="flex-grow-1">
-                                    <div class="text-secondary small">ព្រឹត្តិការណ៍ខាងមុខ</div>
+                                    <div class=" small">ព្រឹត្តិការណ៍ខាងមុខ</div>
                                     <div class="fs-3 fw-bold">3</div>
                                 </div>
                             </div>
@@ -566,7 +565,7 @@
                                 <div class="vh-kpi-icon bg-warning-subtle text-warning"><i class="bi bi-stars"></i>
                                 </div>
                                 <div class="flex-grow-1">
-                                    <div class="text-secondary small">ពិន្ទុវាយតម្លៃ</div>
+                                    <div class=" small">ពិន្ទុវាយតម្លៃ</div>
                                     <div class="fs-3 fw-bold">1250</div>
                                 </div>
                             </div>
@@ -581,7 +580,7 @@
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <div>
                                             <h6 class="mb-0">សកម្មភាពថ្មីៗ</h6>
-                                            <small class="text-secondary">Recent Activities</small>
+                                            <small class="">Recent Activities</small>
                                         </div>
                                     </div>
 
@@ -593,7 +592,7 @@
                                             </div>
                                             <div class="flex-grow-1">
                                                 <div class="fw-semibold">សម្អាតសហគមន៍</div>
-                                                <div class="small text-secondary">
+                                                <div class="small ">
                                                     Community Cleanup • ២៣ មករា ២០២៥ • ឧត្តរមានជ័យ • 4h
                                                 </div>
                                             </div>
@@ -607,7 +606,7 @@
                                             </div>
                                             <div class="flex-grow-1">
                                                 <div class="fw-semibold">បង្រៀនកុមារ</div>
-                                                <div class="small text-secondary">
+                                                <div class="small ">
                                                     Teaching Children • ២០ មករា ២០២៥ • កំពង់ស្ពឺ • 3h
                                                 </div>
                                             </div>
@@ -621,7 +620,7 @@
                                             </div>
                                             <div class="flex-grow-1">
                                                 <div class="fw-semibold">កីឡាការណ៍</div>
-                                                <div class="small text-secondary">
+                                                <div class="small ">
                                                     Sports Event • ៥ កុម្ភៈ ២០២៥ • តាកែវ • 8h
                                                 </div>
                                             </div>
@@ -639,7 +638,7 @@
                                 <div class="vh-section-card">
                                     <div class="mb-2">
                                         <h6 class="mb-0">ការណែនាំសម្រាប់អ្នក</h6>
-                                        <small class="text-secondary">Recommended for You</small>
+                                        <small class="">Recommended for You</small>
                                     </div>
 
                                     <!-- card 1 -->
@@ -647,8 +646,8 @@
                                         <div class="d-flex justify-content-between align-items-start">
                                             <div>
                                                 <div class="fw-semibold">ដាំដើមឈើ</div>
-                                                <div class="text-secondary">Tree Planting</div>
-                                                <div class="small text-secondary mt-1 d-flex flex-wrap gap-3">
+                                                <div class="">Tree Planting</div>
+                                                <div class="small  mt-1 d-flex flex-wrap gap-3">
                                                     <span><i class="bi bi-calendar2 me-1"></i>១០ កុម្ភៈ ២០២៥</span>
                                                     <span><i class="bi bi-geo-alt me-1"></i> កណ្ដាល</span>
                                                     <span><i class="bi bi-people me-1"></i> អ្នកស្ម័គ្រចិត្តថ្មី</span>
@@ -668,8 +667,8 @@
                                         <div class="d-flex justify-content-between align-items-start">
                                             <div>
                                                 <div class="fw-semibold">បណ្ណាល័យសហគមន៍</div>
-                                                <div class="text-secondary">Community Library</div>
-                                                <div class="small text-secondary mt-1 d-flex flex-wrap gap-3">
+                                                <div class="">Community Library</div>
+                                                <div class="small  mt-1 d-flex flex-wrap gap-3">
                                                     <span><i class="bi bi-calendar2 me-1"></i>១៥ កុម្ភៈ ២០២៥</span>
                                                     <span><i class="bi bi-geo-alt me-1"></i> ស្ទឹងមានជ័យ</span>
                                                     <span><i class="bi bi-people me-1"></i> មធ្យម</span>
@@ -713,8 +712,8 @@
                                     <tr>
                                         <td>
                                             <div class="fw-semibold">សម្អាតសហគមន៍</div>
-                                            <small class="text-secondary d-block">Community Cleanup</small>
-                                            <small class="text-secondary">ស្វាយរៀង</small>
+                                            <small class=" d-block">Community Cleanup</small>
+                                            <small class="">ស្វាយរៀង</small>
                                         </td>
                                         <td>២៣ មករា ២០២៥</td>
                                         <td>4h</td>
@@ -732,8 +731,8 @@
                                     <tr>
                                         <td>
                                             <div class="fw-semibold">បង្រៀនកុមារ</div>
-                                            <small class="text-secondary d-block">Teaching Children</small>
-                                            <small class="text-secondary">កំពង់ស្ពឺ</small>
+                                            <small class=" d-block">Teaching Children</small>
+                                            <small class="">កំពង់ស្ពឺ</small>
                                         </td>
                                         <td>២០ មករា ២០២៥</td>
                                         <td>3h</td>
@@ -751,8 +750,8 @@
                                     <tr>
                                         <td>
                                             <div class="fw-semibold">កីឡាការណ៍</div>
-                                            <small class="text-secondary d-block">Sports Event</small>
-                                            <small class="text-secondary">តាកែវ</small>
+                                            <small class=" d-block">Sports Event</small>
+                                            <small class="">តាកែវ</small>
                                         </td>
                                         <td>៥ កុម្ភៈ ២០២៥</td>
                                         <td>8h</td>
@@ -782,8 +781,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">អ្នកស្ម័គ្រចិត្តឆ្នើម</h6>
-                                            <div class="text-secondary small">Outstanding Volunteer</div>
-                                            <p class="text-secondary small mb-2 mt-2">
+                                            <div class=" small">Outstanding Volunteer</div>
+                                            <p class=" small mb-2 mt-2">
                                                 ចូលរួមក្នុងសកម្មភាពស្ម័គ្រចិត្តលើស ១០០ ម៉ោង
                                             </p>
                                             <div class="text-success small">
@@ -803,8 +802,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">អ្នកជួយសហគមន៍</h6>
-                                            <div class="text-secondary small">Community Helper</div>
-                                            <p class="text-secondary small mb-2 mt-2">
+                                            <div class=" small">Community Helper</div>
+                                            <p class=" small mb-2 mt-2">
                                                 ចូលរួមសកម្មភាពសហគមន៍យ៉ាងហោចណាស់ ១០ ការងារ
                                             </p>
                                             <div class="text-success small">
@@ -824,8 +823,8 @@
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">អ្នកការពារបរិស្ថាន</h6>
-                                            <div class="text-secondary small">Environmental Guardian</div>
-                                            <p class="text-secondary small mb-2 mt-2">
+                                            <div class=" small">Environmental Guardian</div>
+                                            <p class=" small mb-2 mt-2">
                                                 ចូលរួមសកម្មភាពបរិស្ថានជាយូរអង្វែង
                                             </p>
                                             <div class="d-flex justify-content-between small mb-1">
@@ -835,7 +834,7 @@
                                             <div class="progress vh-progress mb-1">
                                                 <div class="progress-bar" role="progressbar" style="width:75%"></div>
                                             </div>
-                                            <div class="d-flex justify-content-between small text-secondary">
+                                            <div class="d-flex justify-content-between small ">
                                                 <span>75</span><span>100</span>
                                             </div>
                                         </div>
@@ -852,7 +851,7 @@
                 <div class="tab-pane fade" id="tabRecs">
                     <div class="vh-section-card">
                         <h6 class="mb-0">ការណែនាំដែលសមនឹងចំណង់ចំណូលចិត្តរបស់អ្នក</h6>
-                        <small class="text-secondary">Opportunities Matched to Your Interests</small>
+                        <small class="">Opportunities Matched to Your Interests</small>
 
                         <div class="row g-3 mt-3">
 
@@ -867,7 +866,7 @@
                                                     <h6 class="mb-0">ដាំដើមឈើ</h6>
                                                     <span class="badge rounded-pill vh-match">95% match</span>
                                                 </div>
-                                                <div class="text-secondary">Tree Planting</div>
+                                                <div class="">Tree Planting</div>
                                             </div>
                                         </div>
 
@@ -890,7 +889,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="small text-secondary d-flex flex-wrap gap-3 mt-2">
+                                    <div class="small  d-flex flex-wrap gap-3 mt-2">
                                         <span><i class="bi bi-calendar2 me-1"></i> ១០ កុម្ភៈ ២០២៥</span>
                                         <span><i class="bi bi-geo-alt me-1"></i> កណ្ដាល</span>
                                         <span><i class="bi bi-clock-history me-1"></i> 8h</span>
@@ -906,7 +905,7 @@
                                     <!-- Match bar -->
                                     <div class="mt-3">
                                         <div class="d-flex justify-content-between small mb-1">
-                                            <span class="text-secondary">Match score</span>
+                                            <span class="">Match score</span>
                                             <span class="fw-semibold">95%</span>
                                         </div>
                                         <div class="progress vh-progress">
@@ -931,7 +930,7 @@
                                                     <h6 class="mb-0">បណ្ណាល័យសហគមន៍</h6>
                                                     <span class="badge rounded-pill vh-match">88% match</span>
                                                 </div>
-                                                <div class="text-secondary">Community Library</div>
+                                                <div class="">Community Library</div>
                                             </div>
                                         </div>
 
@@ -951,7 +950,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="small text-secondary d-flex flex-wrap gap-3 mt-2">
+                                    <div class="small  d-flex flex-wrap gap-3 mt-2">
                                         <span><i class="bi bi-calendar2 me-1"></i> ១៥ កុម្ភៈ ២០២៥</span>
                                         <span><i class="bi bi-geo-alt me-1"></i> ស្ទឹងមានជ័យ</span>
                                         <span><i class="bi bi-clock-history me-1"></i> 6h</span>
@@ -965,7 +964,7 @@
 
                                     <div class="mt-3">
                                         <div class="d-flex justify-content-between small mb-1">
-                                            <span class="text-secondary">Match score</span>
+                                            <span class="">Match score</span>
                                             <span class="fw-semibold">88%</span>
                                         </div>
                                         <div class="progress vh-progress">
