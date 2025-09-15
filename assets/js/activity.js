@@ -11,7 +11,6 @@
     countEl.textContent = count;
     btn.classList.toggle('btn-primary', liked);
   });
-
   // Add comment
   document.addEventListener('click', (e) => {
     const add = e.target.closest('.btn-add-comment');
@@ -19,7 +18,6 @@
     const wrap = add.closest('.comments-wrap');
     appendComment(wrap);
   });
-
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       const input = e.target.closest('.comment-input');
@@ -29,7 +27,6 @@
       appendComment(wrap);
     }
   });
-
   function appendComment(wrap){
     const input = wrap.querySelector('.comment-input');
     const list  = wrap.querySelector('.comments-list');
@@ -65,7 +62,6 @@
   function escapeHtml(s){
     return s.replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   }
-
   // SHARE (copy deep link)
   document.addEventListener('click', async (e) => {
     const btn = e.target.closest('.btn-share');

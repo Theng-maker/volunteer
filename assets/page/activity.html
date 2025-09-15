@@ -27,6 +27,13 @@
     p {
         color: var(--text-black);
     }
+    .form-control::placeholder {
+        color: var(--text-black) !important;
+    }
+    .form-control:focus::placeholder {
+        color: black !important;
+    }
+    
 </style>
 
 <body class="d-flex flex-column h-100 ">
@@ -361,7 +368,9 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">បង្កើតបង្ហោះថ្មី</h5>
+                                        <h5 class="modal-title">
+                                            បង្កើតបង្ហោះថ្មី
+                                        </h5>
                                         <button type="button" class="ms-auto" data-bs-dismiss="modal">
                                             <i class="bi bi-x-lg"></i>
                                         </button>
@@ -847,33 +856,6 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        (function () {
-            const root = document.documentElement; // <html>
-            const btn = document.querySelector('[data-theme-toggle]');
-            const icon = btn?.querySelector('i');
-
-            // Load saved theme or default to light
-            const saved = localStorage.getItem('bs-theme') || 'light';
-            root.setAttribute('data-bs-theme', saved);
-            updateIcon(saved);
-
-            btn?.addEventListener('click', () => {
-                const next = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-                root.setAttribute('data-bs-theme', next);
-                localStorage.setItem('bs-theme', next);
-                updateIcon(next);
-                btn.setAttribute('aria-label', `Change to ${next === 'dark' ? 'light' : 'dark'} theme`);
-            });
-
-            function updateIcon(theme) {
-                if (!icon) return;
-                icon.classList.toggle('bi-moon-fill', theme === 'light'); // show moon when light (click to go dark)
-                icon.classList.toggle('bi-sun-fill', theme === 'dark');   // show sun when dark (click to go light)
-            }
-        })();
-    </script>
-
 </body>
 
 </html>

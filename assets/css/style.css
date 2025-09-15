@@ -45,7 +45,7 @@
   --text-muted: #6c757d;
 }
 
-/* ======================= DARK MODE VARIABLES ======================= */
+/* ========= DARK MODE VARIABLES ============ */
 [data-theme="dark"] {
   --top-header: #000000;
   --navabr: #21293B;
@@ -74,7 +74,6 @@
   --text-main: var(--text-color);
   --border: var(--border-color);
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -248,7 +247,7 @@ a {
   box-shadow: none !important;
 }
 
-/* ========================================= */
+/* =========================== */
 .offcanvas {
   top: var(--header-total);
   height: calc(100vh - var(--header-total));
@@ -321,7 +320,7 @@ a {
   background-color: var(--primary-color);
 }
 
-/* ======================= NAVBAR ==========================*/
+/* ============== NAVBAR ==================*/
 .navbar {
   background-color: var(--navabr) !important;
   padding: 4px 0 !important;
@@ -493,7 +492,6 @@ a {
 .navbar-offcanvas .offcanvas-body li {
   color: var(--text-black);
 }
-
 
 /* Search modal */
 .searchModal .modal-content {
@@ -687,7 +685,6 @@ footer p.text-center {
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0 !important;
 }
-
 
 @media (max-width: 768px) {
   footer .footer-logo img {
@@ -1105,7 +1102,6 @@ footer p.text-center {
   height: 200px;
   background-color: var(--gray-bg);
   border-radius: 50%;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   top: 50%;
   left: 4%;
   z-index: -1;
@@ -1170,8 +1166,6 @@ footer p.text-center {
   background: url('../image/homepage/pattern-9.png') no-repeat right bottom;
   transform: rotate(180deg);
 }
-
-
 /* ----- Donatiom-Area ---- */
 .donation-area {
   padding: 60px 0;
@@ -1229,11 +1223,7 @@ footer p.text-center {
   border-radius: 50%;
 }
 
-
-
-
 /* ---- Call-to-Action --- */
-
 .cta-area {
   padding: 60px 0;
   margin-top: 40px;
@@ -1259,7 +1249,6 @@ footer p.text-center {
   transform: rotate(15deg);
   top: -150px;
 }
-
 
 /* ---------- FAQ ----- */
 .question-area {
@@ -1325,7 +1314,6 @@ footer p.text-center {
   padding: 60px 0;
   position: relative;
   background: url('../image/homepage/shape-nine.png') no-repeat -10%;
-  /* height: 100vh; */
   overflow-x: hidden;
 }
 
@@ -1685,7 +1673,6 @@ footer p.text-center {
 
 .org-dashboard .tab-content {
   width: 1200px;
-  /* background: var(--bg-card); */
   border: 1px solid var(--border-color);
   padding: 20px;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -1752,7 +1739,7 @@ footer p.text-center {
   height: 60px;
 }
 
-/* ========================= Opportunities (cards list)======================== */
+/* ------------ Opportunities (cards list)------ */
 #opportunities {
   margin-top: 20px;
 }
@@ -1826,7 +1813,7 @@ footer p.text-center {
   color: var(--accent-primary);
 }
 
-/* ========================Volunteer Applications (table + responsive) ========================== */
+/* ------ Volunteer Applications (table + responsive) -------- */
 .vh-applications {
   background: var(--bg-color);
   border: 1px solid var(--border-color);
@@ -1937,7 +1924,7 @@ footer p.text-center {
   }
 }
 
-/* ====================== Analytics Dashboard ======================= */
+/* ========== Analytics Dashboard ================= */
 .vh-analytics {
   border-radius: .75rem;
 }
@@ -2848,7 +2835,7 @@ footer p.text-center {
 
 .event-banner .card .card-body .event-btn:hover {
   color: #fff;
-  
+
 }
 
 .event-banner .image-stack {
@@ -3793,9 +3780,11 @@ footer p.text-center {
   border-color: var(--accent-primary);
   background: var(--bg-subtle);
 }
-.btn-check:checked+.vh-pay:hover{
+
+.btn-check:checked+.vh-pay:hover {
   color: black;
 }
+
 /* Donate CTA */
 .vh-donate-cta {
   background: linear-gradient(90deg, #6b7bff, #9b6bff);
@@ -4534,20 +4523,25 @@ a:hover,
   font-size: 16px;
 }
 
-.activity-feed .card .thinking::placeholder{
+.activity-feed .card .thinking::placeholder {
   color: #000000 !important;
 }
-.activity .modal-content{
+
+.activity .modal-content {
   background-color: var(--bg-card) !important;
 }
-.activity .modal-content .modal-title , .activity .modal-content h6 ,
-.activity .modal-content .form-control::placeholder{
+
+.activity .modal-content .modal-title,
+.activity .modal-content h6,
+.activity .modal-content .form-control::placeholder {
   color: var(--text-black) !important;
 }
-.activity .modal-content .form-control:focus::placeholder{
+
+.activity .modal-content .form-control:focus::placeholder {
   color: var(--white-bg) !important;
 }
-.activity .modal-header i{
+
+.activity .modal-header i {
   color: var(--text-black) !important;
 }
 
@@ -4680,7 +4674,7 @@ a:hover,
 .table.vh-table tbody tr td:last-child {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  
+
 }
 
 .table.vh-table tbody tr:hover {
