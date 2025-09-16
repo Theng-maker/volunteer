@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/OrgDashboard.css"> -->
 </head>
+<style>
+    .card,
+    .nav,
+    table tr td {
+        background-color: var(--bg-card) !important;
+    }
+
+    h6,
+    h3,
+    strong,
+    small,
+    p,
+    .fw-bold,
+    canvas,
+    .text-body,
+    label {
+        color: var(--text-black) !important;
+    }
+
+    footer .footer-text,
+    footer .text-center {
+        color: #ffffffcc !important;
+    }
+</style>
 
 <body class="d-flex flex-column h-100">
     <header class="fixed-top shadow-sm">
@@ -23,12 +48,12 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <ul class="nav-list list-unstyled d-flex m-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link ps-0">
+                        <a href="aboutpage.html" class="nav-link ps-0">
                             អំពីយើង
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="contactpage.html" class="nav-link">
                             ទំនាក់ទំនង
                         </a>
                     </li>
@@ -44,32 +69,32 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/england.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/arabic.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
@@ -77,69 +102,133 @@
 
             </div>
         </div>
-
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
-                <a class="navbar-brand " href="#">
-                    <img src="../image/Logo.jpg" alt="">
+                <a class="navbar-brand " href="orghomepage.html">
+                    <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header d-flex align-items-center pb-0">
+                        <div class="d-flex align-items-center">
+                            <img src="../image/logo_no_bg.jpg" alt="">
+                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        </div>
+                        <button type="button" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body pt-1">
+                        <hr>
+                        <form class="position-relative">
+                            <span>
+                                <i class="bi bi-search position-absolute"></i>
+                            </span>
+                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
+                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
+                        </form>
+                        <hr>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="fs-5 mt-2">
+                                ទំព័រ ៖
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    ទំព័រដើម
+                                <a class="nav-link active" aria-current="page" href="homepage.html">
+                                    <i class="bi bi-house"></i>
+                                    <span>
+                                        ទំព័រដើម
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    ការងារស្ម័គ្រចិត្ត
+                                <a class="nav-link" href="opportunities.html">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>
+                                        ការងារស្ម័គ្រចិត្ត
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    ព្រឹត្តិការណ៏
+                                <a class="nav-link" href="eventpage.html">
+                                    <i class="bi bi-calendar4-event"></i>
+                                    <span>
+                                        ព្រឹត្តិការណ៏
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    សកម្មភាព
+                                <a class="nav-link" href="activity.html">
+                                    <i class="bi bi-activity"></i>
+                                    <span>
+                                        សកម្មភាព
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    បរិច្ចាក
+                                <a class="nav-link" href="Donation.html">
+                                    <i class="bi bi-gift"></i>
+                                    <span>
+                                        បរិច្ចាក
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutpage.html">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        អំពីយើង
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
-                                    ផ្ទាំងគ្រប់គ្រង
+                                <a class="nav-link" href="contactpage.html">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>
+                                        ទំនាក់ទំនង
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">
+                            ការងារស្ម័គ្រចិត្ត
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventpage.html">
+                            ព្រឹត្តិការណ៏
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">
+                            សកម្មភាព
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donation.html">
+                            បរិច្ចាក
+                        </a>
+                    </li>
+                </ul>
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -152,7 +241,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -194,142 +283,192 @@
                                 </li>
 
                                 <li class=" my-3 d-flex justify-content-center">
-                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                    <a href="#">
                                         មើលការជូនដំណឹងទាំងអស់
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn border-0 p-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../image/ORG/Org-Logo.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="../page/OrgDashboard.html">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="ps-1">
+                                            មើលគណនី
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="userprofile.html">
+                                        <i class="bi bi-gear"></i>
+                                        <span class="ps-1">
+                                            ការកំណត់
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="ps-1">
+                                            ចាកចេញ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
-
-
     </header>
     <main class="flex-grow-1 org-dashboard mt-5">
         <div class="container py-4 mt-5">
 
             <!-- Profile Header -->
-            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm mt-4">
+            <div class="Org-brand d-flex align-items-center mb-4 bg-white p-3 rounded shadow-sm mt-4"
+                data-aos="fade-down">
                 <img src="../image/ORG/Org-Logo.png" class="rounded-circle me-3" width="60" height="60" alt="Profile">
                 <div>
                     <h5 class="mb-0">អង្គការបរិស្ថានកម្ពុជា</h5>
-                    <small class="text-muted">Cambodia Environment Organization • NGO</small>
+                    <small>Cambodia Environment Organization • NGO</small>
                 </div>
-                <div class="ms-auto">
-                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
+                <div class="ms-auto" data-aos="fade-left" data-aos-delay="200">
+                    <!-- Button trigger modal -->
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">
+                        បន្ថែមឱកាស
                     </a>
+                </div>
+            </div>
+            <div class="modal fade" id="createOpportunityModal" tabindex="-1" aria-labelledby="createOpportunityLabel"
+                aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content border-0 shadow-lg rounded-4">
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="createOpportunityModal" tabindex="-1"
-                        aria-labelledby="createOpportunityLabel" aria-hidden="true" data-bs-backdrop="static">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="createOpportunityLabel">
-                                        <i class="bi bi-briefcase-fill me-2"></i> ឱកាសការងារថ្មី
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                        <!-- Modal Header -->
+                        <div class="modal-header p-4 text-white"
+                            style="background: linear-gradient(90deg, #ff416c, #ff4b2b); border-bottom: none;">
+                            <h5 class="modal-title d-flex align-items-center gap-2" id="createOpportunityLabel">
+                                <i class="bi bi-briefcase-fill"></i> ឱកាសការងារថ្មី
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <form id="opportunityForm" class="needs-validation" novalidate>
+                            <div class="modal-body p-4">
+
+                                <!-- Job Title -->
+                                <div class="mb-3">
+                                    <label for="opTitle" class="form-label fw-medium">ចំណងជើងការងារ</label>
+                                    <input type="text" class="form-control form-control-lg" id="opTitle"
+                                        placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍" required>
+                                    <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
                                 </div>
 
-                                <form id="opportunityForm" class="needs-validation" novalidate>
-                                    <div class="modal-body">
-                                        <!-- Title -->
-                                        <div class="mb-3">
-                                            <label for="opTitle" class="form-label">ចំណងជើងការងារ</label>
-                                            <input type="text" class="form-control" id="opTitle"
-                                                placeholder="ឧ. មន្ត្រីផ្សព្វផ្សាយសហគមន៍" required>
-                                            <div class="invalid-feedback">សូមបញ្ចូលចំណងជើងការងារ</div>
-                                        </div>
+                                <!-- Job Description -->
+                                <div class="mb-3">
+                                    <label for="opDescription" class="form-label fw-medium">ពិពណ៌នា</label>
+                                    <textarea class="form-control form-control-lg" id="opDescription" rows="4"
+                                        placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
+                                    <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
+                                </div>
 
-                                        <!-- Description -->
-                                        <div class="mb-3">
-                                            <label for="opDescription" class="form-label">ពិពណ៌នា</label>
-                                            <textarea class="form-control" id="opDescription" rows="4"
-                                                placeholder="ពិពណ៌នាខ្លីអំពីតួនាទី..." required></textarea>
-                                            <div class="invalid-feedback">សូមបញ្ចូលពិពណ៌នាការងារ</div>
-                                        </div>
+                                <!-- Location & Start Date -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="opLocation" class="form-label fw-medium">ទីតាំង</label>
+                                        <input type="text" class="form-control form-control-lg" id="opLocation"
+                                            value="ភ្នំពេញ" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="opDate" class="form-label fw-medium">កាលបរិច្ឆេទចាប់ផ្តើម</label>
+                                        <input type="date" class="form-control form-control-lg" id="opDate" required>
+                                        <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
+                                    </div>
+                                </div>
 
-                                        <!-- Row: Location + Start Date -->
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <label for="opLocation" class="form-label">ទីតាំង</label>
-                                                <input type="text" class="form-control" id="opLocation"
-                                                    value="ភ្នំពេញ" required>
-                                                <div class="invalid-feedback">សូមបញ្ចូលទីតាំង</div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="opDate" class="form-label">កាលបរិច្ឆេទចាប់ផ្តើម</label>
-                                                <input type="date" class="form-control" id="opDate" required>
-                                                <div class="invalid-feedback">សូមជ្រើសរើសកាលបរិច្ឆេទចាប់ផ្តើម</div>
-                                            </div>
-                                        </div>
+                                <!-- Capacity & Status -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="opCapacity" class="form-label fw-medium">ចំនួនមុខតំណែង</label>
+                                        <input type="number" class="form-control form-control-lg" id="opCapacity"
+                                            min="1" value="10" required>
+                                        <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="opStatus" class="form-label fw-medium">ស្ថានភាព</label>
+                                        <select class="form-select form-select-lg" id="opStatus" required>
+                                            <option value="" selected disabled>ជ្រើសរើសស្ថានភាព</option>
+                                            <option>Available</option>
+                                            <option>Pending</option>
+                                            <option>Closed</option>
+                                        </select>
+                                        <div class="invalid-feedback">សូមជ្រើសរើសស្ថានភាព</div>
+                                    </div>
+                                </div>
 
-                                        <!-- Row: Capacity + Status -->
-                                        <div class="row g-3 mt-0 mt-md-2">
-                                            <div class="col-md-6">
-                                                <label for="opCapacity" class="form-label">ចំនួនមុខតំណែង</label>
-                                                <input type="number" class="form-control" id="opCapacity" min="1"
-                                                    value="10" required>
-                                                <div class="invalid-feedback">សូមបញ្ចូលចំនួនមុខតំណែងត្រឹមត្រូវ
-                                                </div>
+                                <!-- Image Upload -->
+                                <div class="mb-3">
+                                    <label class="form-label fw-medium">រូបភាពគម្រូ / គម្រោង</label>
+                                    <div id="opImageDropzone"
+                                        class="dropzone p-4 border border-dashed rounded-3 text-center" role="button"
+                                        tabindex="0" style="cursor: pointer;">
+                                        <i class="bi bi-cloud-arrow-up-fill fs-3 mb-2 text-muted"></i>
+                                        <div class="small text-muted">ចុចដើម្បីជ្រើសរើស ឬទាញរូបភាពទីនេះ</div>
+                                    </div>
+                                    <input type="file" id="opImageInput" class="d-none" accept="image/*" />
+                                    <div id="opImagePreview" class="mt-3 d-none">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <img id="opImageThumb" class="img-thumbnail rounded" alt="Preview"
+                                                style="width: 80px; height: 80px; object-fit: cover;">
+                                            <div class="flex-grow-1">
+                                                <div class="small fw-semibold" id="opImageName"></div>
+                                                <div class="small text-muted" id="opImageMeta"></div>
+                                                <button type="button" class="btn btn-sm btn-outline-danger mt-2"
+                                                    id="opImageRemove">Remove</button>
                                             </div>
-                                            <div class="col-md-6">
-                                                <label for="opStatus" class="form-label">ស្ថានភាព</label>
-                                                <select class="form-select" id="opStatus" required>
-                                                    <option value="" selected disabled>ជ្រើសរើសស្ថានភាព</option>
-                                                    <option>Available</option>
-                                                    <option>Pending</option>
-                                                    <option>Closed</option>
-                                                </select>
-                                                <div class="invalid-feedback">សូមជ្រើសរើសស្ថានភាព</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Cover Image (drag & drop + click) -->
-                                        <div class="mt-3">
-                                            <label class="form-label">រូបភាពគម្រូ / គម្រោង</label>
-                                            <div id="opImageDropzone" class="dropzone" role="button" tabindex="0">
-                                                <div class="small">
-                                                    <i class="bi bi-cloud-arrow-up-fill me-1"></i>
-                                                    ចុចដើម្បីជ្រើសរើស
-                                                </div>
-                                            </div>
-                                            <input type="file" id="opImageInput" class="d-none" accept="image/*" />
-                                            <div id="opImagePreview" class="mt-3 d-none">
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <img id="opImageThumb" class="img-thumb" alt="Preview" />
-                                                    <div class="flex-grow-1">
-                                                        <div class="small fw-semibold" id="opImageName"></div>
-                                                        <div class="small text-muted" id="opImageMeta"></div>
-                                                        <button type="button" class="btn btn-sm btn-outline-danger mt-2"
-                                                            id="opImageRemove">Remove</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="invalid-feedback d-block" id="opImageError"
-                                                style="display:none"></div>
                                         </div>
                                     </div>
+                                    <div class="invalid-feedback d-block" id="opImageError" style="display:none"></div>
+                                </div>
 
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cancel</button>
-                                        <button type="submit" class="btn btn-primary">
-                                            <i class="bi bi-plus-lg me-1"></i> Post Opportunity
-                                        </button>
-                                    </div>
-                                </form>
                             </div>
-                        </div>
+
+                            <!-- Modal Footer -->
+                            <div class="modal-footer border-0 justify-content-end p-4">
+                                <button type="button" class="btn btn-light btn-lg rounded-pill"
+                                    data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                                    <i class="bi bi-plus-lg me-1"></i> Post Opportunity
+                                </button>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <!-- Tabs -->
-            <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs">
+
+            <!-- Tab -->
+            <ul class="nav nav-tabs bg-white p-2 rounded shadow-sm" id="dashboardTabs" data-aos="fade-up"
+                data-aos-delay="200">
                 <li class="nav-item">
                     <a class="nav-link active" data-bs-toggle="tab" href="#overview">ទិដ្ឋភាពទូទៅ</a>
                 </li>
@@ -354,13 +493,12 @@
                 <div class="tab-pane fade show active" id="overview">
                     <div class="container">
 
-                        <!-- Stats Row -->
                         <div class="row g-3">
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">ការងារសកម្ម</h6>
+                                            <h6>ការងារសកម្ម</h6>
                                             <h3>12</h3>
                                             <small class="text-success">+3 ថ្មីៗ</small>
                                         </div>
@@ -370,11 +508,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">អ្នកស្ម័គ្រចិត្តសរុប</h6>
+                                            <h6>អ្នកស្ម័គ្រចិត្តសរុប</h6>
                                             <h3>156</h3>
                                             <small class="text-success">+24 ថ្មីៗ</small>
                                         </div>
@@ -384,11 +522,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">ព្រឹត្តិការណ៍ខែនេះ</h6>
+                                            <h6>ព្រឹត្តិការណ៍ខែនេះ</h6>
                                             <h3>8</h3>
                                             <small class="text-success">+2 ថ្មីៗ</small>
                                         </div>
@@ -398,11 +536,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                                 <div class="card card-custom p-3">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h6 class="text-muted">ការវាយតម្លៃ</h6>
+                                            <h6>ការវាយតម្លៃ</h6>
                                             <h3>4.8</h3>
                                             <small class="text-success">+0.2 ថ្មីៗ</small>
                                         </div>
@@ -414,17 +552,15 @@
                             </div>
                         </div>
 
-                        <!-- Applications & Quick Actions -->
                         <div class="row g-3 mt-3">
-                            <!-- Recent Applications -->
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-right">
                                 <div class="card card-custom p-3">
                                     <h6 class="fw-bold mb-3">ពាក្យសុំថ្មីៗ</h6>
                                     <div class="d-flex align-items-center mb-3">
                                         <img src="../image/ORG/Woman-profile.png" class="rounded-circle me-2">
                                         <div>
                                             <strong>សុភា ចាន់</strong><br>
-                                            <small class="text-muted">24 មករា 2025</small>
+                                            <small>24 មករា 2025</small>
                                         </div>
                                         <span class="badge bg-warning text-dark ms-auto">កំពុងរង់ចាំ</span>
                                     </div>
@@ -432,7 +568,7 @@
                                         <img src="../image/ORG/Man-profile1.png" class="rounded-circle me-2">
                                         <div>
                                             <strong>ដារា លី</strong><br>
-                                            <small class="text-muted">24 មករា 2025</small>
+                                            <small>24 មករា 2025</small>
                                         </div>
                                         <span class="badge bg-success ms-auto">អនុម័ត</span>
                                     </div>
@@ -440,7 +576,7 @@
                                         <img src="../image/ORG/Man-profile2.png" class="rounded-circle me-2">
                                         <div>
                                             <strong>ពិសាក់ ស៊ុន</strong><br>
-                                            <small class="text-muted">23 មករា 2025</small>
+                                            <small>23 មករា 2025</small>
                                         </div>
                                         <span class="badge bg-danger ms-auto">បានបដិសេធ</span>
                                     </div>
@@ -448,30 +584,30 @@
                                 </div>
                             </div>
 
-                            <!-- Quick Actions -->
-                            <div class="col-md-6">
+                            <div class="col-md-6" data-aos="fade-left">
                                 <div class="card card-custom p-3">
                                     <h6 class="fw-bold mb-3">Quick Actions</h6>
-                                    <a href="#" class="quick-action bg-light-blue" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">
+                                    <a href="#" class="quick-action bg-light-blue" data-bs-toggle="modal"
+                                        data-bs-target="#createOpportunityModal">
                                         Create New Opportunity</a>
                                     <a href="#" class="quick-action bg-light-green"><i
-                                            class="fa-solid fa-user-group"></i> Manage Volunteers</a>
+                                            class="fa-solid fa-user-group"></i> Manage
+                                        Volunteers</a>
                                     <a href="#" class="quick-action bg-light-purple"><i
-                                            class="fa-solid fa-chart-line"></i> View Reports</a>
+                                            class="fa-solid fa-chart-line"></i> View
+                                        Reports</a>
                                     <a href="#" class="quick-action bg-light-orange"><i
-                                            class="fa-solid fa-envelope"></i> Send Messages</a>
+                                            class="fa-solid fa-envelope"></i> Send
+                                        Messages</a>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
                 <!-- Opportunities -->
                 <div class="tab-pane fade" id="opportunities">
-
-                    <!-- Search / Filters / Add -->
-                    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-3" data-aos="fade-up">
                         <div class="vh-search-wrap flex-grow-1">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input class="form-control vh-search" placeholder="ស្វែងរកឱកាស…">
@@ -482,23 +618,22 @@
                             <option>Closed</option>
                             <option>Pending</option>
                         </select>
-                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
-                    </a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#createOpportunityModal">បន្ថែមឱកាស
+                        </a>
                     </div>
-
-                    <!-- Item 1 -->
-                    <div class="vh-card p-3 mb-3 vh-hover">
+                    <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right">
                         <div class="d-flex align-items-center">
-                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=10" alt="">
+                            <img class="vh-op-img me-3" src="../image/ORG/cleaning.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">សម្អាតសហគមន៍</div>
-                                <small class="text-muted">Community Cleanup</small>
+                                <small>Community Cleanup</small>
                                 <div class="vh-op-line mt-1">
                                     <i class="fa-regular fa-calendar"></i> ២៤ មករា ២០២៥ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-location-dot"></i> ភ្នំពេញ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-user-group"></i> 15/20
                                 </div>
-                                <small class="text-muted">ការចុះឈ្មោះ: 8</small>
+                                <small>ការចុះឈ្មោះ: 8</small>
                             </div>
                             <span class="vh-badge vh-badge--success">សកម្ម</span>
                         </div>
@@ -509,20 +644,18 @@
                             <i class="fa-solid fa-download"></i>
                         </div>
                     </div>
-
-                    <!-- Item 2 -->
-                    <div class="vh-card p-3 mb-3 vh-hover">
+                    <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right" data-aos-delay="100">
                         <div class="d-flex align-items-center">
-                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=11" alt="">
+                            <img class="vh-op-img me-3" src="../image/ORG/planting.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">ដាំដើមឈើ</div>
-                                <small class="text-muted">Tree Planting</small>
+                                <small>Tree Planting</small>
                                 <div class="vh-op-line mt-1">
                                     <i class="fa-regular fa-calendar"></i> ៥ កុម្ភៈ ២០២៥ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-location-dot"></i> តាកែវ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-user-group"></i> 25/30
                                 </div>
-                                <small class="text-muted">ការចុះឈ្មោះ: 12</small>
+                                <small>ការចុះឈ្មោះ: 12</small>
                             </div>
                             <span class="vh-badge vh-badge--success">សកម្ម</span>
                         </div>
@@ -533,20 +666,18 @@
                             <i class="fa-solid fa-download"></i>
                         </div>
                     </div>
-
-                    <!-- Item 3 -->
-                    <div class="vh-card p-3 mb-3 vh-hover">
+                    <div class="vh-card p-3 mb-3 vh-hover" data-aos="fade-right" data-aos-delay="200">
                         <div class="d-flex align-items-center">
-                            <img class="vh-op-img me-3" src="https://picsum.photos/120/120?random=12" alt="">
+                            <img class="vh-op-img me-3" src="../image/ORG/Tree-conservation.png" alt="">
                             <div class="flex-grow-1">
                                 <div class="fw-bold">អភិរក្សព្រៃឈើ</div>
-                                <small class="text-muted">Forest Conservation</small>
+                                <small>Forest Conservation</small>
                                 <div class="vh-op-line mt-1">
                                     <i class="fa-regular fa-calendar"></i> ១២ កុម្ភៈ ២០២៥ &nbsp;•&nbsp;
                                     <i class="fa-solid fa-location-dot"></i> កំពង់ចាម &nbsp;•&nbsp;
                                     <i class="fa-solid fa-user-group"></i> 8/15
                                 </div>
-                                <small class="text-muted">ការចុះឈ្មោះ: 3</small>
+                                <small>ការចុះឈ្មោះ: 3</small>
                             </div>
                             <span class="vh-badge vh-badge--warning">កំពុង</span>
                         </div>
@@ -561,12 +692,12 @@
 
                 <!-- Applications -->
                 <div class="tab-pane fade" id="applications">
-                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2"
+                        data-aos="fade-up">
                         <div>
                             <h5 class="mb-0">បញ្ជីការដាក់ពាក្យ</h5>
                         </div>
 
-                        <!-- optional filters / search -->
                         <div class="d-flex align-items-center gap-2">
                             <div class="vh-search-wrap" style="min-width:180px;">
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -581,7 +712,7 @@
                         </div>
                     </div>
 
-                    <div class="table-responsive">
+                    <div class="table-responsive" data-aos="fade-up" data-aos-delay="100">
                         <table class="table align-middle mb-0 vh-table">
                             <thead>
                                 <tr>
@@ -593,8 +724,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Row 1 -->
-                                <tr>
+                                <tr data-aos="fade-up" data-aos-delay="200">
                                     <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
                                             <img class="rounded-circle object-fit-cover"
@@ -602,13 +732,13 @@
                                                 alt="Sophea Chan avatar">
                                             <div>
                                                 <div class="fw-semibold">សុភា ចាន់</div>
-                                                <small class="text-muted">Sophea Chan</small>
+                                                <small>Sophea Chan</small>
                                             </div>
                                         </div>
                                     </td>
                                     <td data-label="ការងារ">
                                         <div class="fw-medium">សម្អាតសហគមន៍</div>
-                                        <small class="text-muted">​ចូលរួម៖ ២ ថ្ងៃ</small>
+                                        <small>​ចូលរួម៖ ២ ថ្ងៃ</small>
                                     </td>
                                     <td data-label="កាលបរិច្ឆេទ"><span>២៤ មករា ២០២៥</span></td>
                                     <td data-label="ស្ថានភាព">
@@ -631,8 +761,7 @@
                                     </td>
                                 </tr>
 
-                                <!-- Row 2 -->
-                                <tr>
+                                <tr data-aos="fade-up" data-aos-delay="300">
                                     <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
                                             <img class="rounded-circle object-fit-cover"
@@ -640,13 +769,13 @@
                                                 alt="Dara Lee avatar">
                                             <div>
                                                 <div class="fw-semibold">ដារា លី</div>
-                                                <small class="text-muted">Dara Lee</small>
+                                                <small>Dara Lee</small>
                                             </div>
                                         </div>
                                     </td>
                                     <td data-label="ការងារ">
                                         <div class="fw-medium">ដាំដើមឈើ</div>
-                                        <small class="text-muted">ចំនួនម៉ោង៖ ៩</small>
+                                        <small>ចំនួនម៉ោង៖ ៩</small>
                                     </td>
                                     <td data-label="កាលបរិច្ឆេទ"><span>២៤ មករា ២០២៥</span></td>
                                     <td data-label="ស្ថានភាព">
@@ -666,8 +795,7 @@
                                     </td>
                                 </tr>
 
-                                <!-- Row 3 -->
-                                <tr>
+                                <tr data-aos="fade-up" data-aos-delay="400">
                                     <td data-label="អ្នកស្ម័គ្រចិត្ត">
                                         <div class="d-flex align-items-center gap-2">
                                             <img class="rounded-circle object-fit-cover"
@@ -675,13 +803,13 @@
                                                 alt="Pisach Sun avatar">
                                             <div>
                                                 <div class="fw-semibold">ពិសាក់ ស៊ុន</div>
-                                                <small class="text-muted">Pisach Sun</small>
+                                                <small>Pisach Sun</small>
                                             </div>
                                         </div>
                                     </td>
                                     <td data-label="ការងារ">
                                         <div class="fw-medium">អភិរក្សព្រៃឈើ</div>
-                                        <small class="text-muted">ចំនួនថ្ងៃ៖ ៣</small>
+                                        <small>ចំនួនថ្ងៃ៖ ៣</small>
                                     </td>
                                     <td data-label="កាលបរិច្ឆេទ"><span>២៣ មករា ២០២៥</span></td>
                                     <td data-label="ស្ថានភាព">
@@ -705,17 +833,16 @@
                         </table>
                     </div>
                 </div>
-
                 <!-- Analytics -->
                 <div class="tab-pane fade" id="analytics">
                     <div class="card shadow-sm border-0 p-3 vh-analytics">
 
-                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3"
+                            data-aos="fade-up">
                             <div>
                                 <h5 class="mb-0">ការវិភាគទិន្នន័យ</h5>
                             </div>
 
-                            <!-- Filters -->
                             <div class="d-flex align-items-center gap-2">
                                 <select class="form-select form-select-sm" id="ana-range" style="min-width:150px;">
                                     <option value="30">30 ថ្ងៃ</option>
@@ -730,8 +857,7 @@
                             </div>
                         </div>
 
-                        <!-- KPI cards -->
-                        <div class="row g-3 mb-2">
+                        <div class="row g-3 mb-2" data-aos="fade-up" data-aos-delay="100">
                             <div class="col-sm-6 col-xl-3">
                                 <div class="card h-100 border-0 bg-body-tertiary">
                                     <div class="card-body">
@@ -774,14 +900,13 @@
                             </div>
                         </div>
 
-                        <!-- Charts -->
-                        <div class="row g-3">
+                        <div class="row g-3" data-aos="fade-up" data-aos-delay="200">
                             <div class="col-lg-8">
                                 <div class="card border-0 bg-body-tertiary">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-baseline mb-2">
                                             <h6 class="mb-0">Volunteers by Month</h6>
-                                            <small class="text-body-secondary">ជាមួយចន្លោះពេលខាងលើ</small>
+                                            <small>ជាមួយចន្លោះពេលខាងលើ</small>
                                         </div>
                                         <canvas id="volunteersLine" height="120"></canvas>
                                     </div>
@@ -793,7 +918,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-baseline mb-2">
                                             <h6 class="mb-0">Application Status</h6>
-                                            <small class="text-body-secondary">Pending / Approved / Rejected</small>
+                                            <small>Pending / Approved / Rejected</small>
                                         </div>
                                         <canvas id="statusDonut" height="120"></canvas>
                                     </div>
@@ -805,7 +930,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-baseline mb-2">
                                             <h6 class="mb-0">Applications by Opportunity</h6>
-                                            <small class="text-body-secondary">Top 6</small>
+                                            <small>Top 6</small>
                                         </div>
                                         <canvas id="oppsBar" height="210"></canvas>
                                     </div>
@@ -818,21 +943,22 @@
 
                 <!-- Settings -->
                 <div class="tab-pane fade" id="settings">
-                    <div class="card shadow-sm mb-4">
+                    <div class="card shadow-sm mb-4" data-aos="fade-up">
                         <div class="card-body">
                             <h5 class="card-title mb-1">ការកំណត់អង្គការ</h5>
 
                             <form>
-                                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                                <div class="d-flex align-items-center justify-content-center gap-3 mb-3"
+                                    data-aos="zoom-in" data-aos-delay="100">
                                     <label class="vh-avatar-uploader mb-0">
                                         <input type="file" class="d-none" id="avatarInput" accept="image/*">
                                         <span class="vh-avatar ring">
                                             <img id="avatarPreview" src="../image/ORG/company-icon.png" alt="រូបភាព">
                                         </span>
-                                        <span class="small text-body-secondary d-block mt-1">ជ្រើសរើសរូបភាព</span>
+                                        <span class="small  d-block mt-1">ជ្រើសរើសរូបភាព</span>
                                     </label>
                                 </div>
-                                <div class="row g-3">
+                                <div class="row g-3" data-aos="fade-up" data-aos-delay="200">
                                     <div class="col-md-6">
                                         <label for="orgName" class="form-label">ឈ្មោះអង្គការ</label>
                                         <input type="text" class="form-control" id="orgName"
@@ -860,10 +986,10 @@
                                     </div>
                                 </div>
 
-                                <hr class="my-4">
+                                <hr class="my-4" data-aos="fade-up" data-aos-delay="300">
 
-                                <h6 class="mb-2">បណ្តាញសង្គម</h6>
-                                <div class="row g-3">
+                                <h6 class="mb-2" data-aos="fade-up" data-aos-delay="400">បណ្តាញសង្គម</h6>
+                                <div class="row g-3" data-aos="fade-up" data-aos-delay="500">
                                     <div class="col-md-6 col-lg-3">
                                         <label class="form-label">Facebook</label>
                                         <input type="url" class="form-control"
@@ -885,12 +1011,10 @@
                                     </div>
                                 </div>
 
+                                <hr class="my-4" data-aos="fade-up" data-aos-delay="600">
 
-
-                                <hr class="my-4">
-
-                                <h6 class="mb-2">សុវត្ថិភាព / Security</h6>
-                                <div class="row g-3">
+                                <h6 class="mb-2" data-aos="fade-up" data-aos-delay="700">សុវត្ថិភាព / Security</h6>
+                                <div class="row g-3" data-aos="fade-up" data-aos-delay="800">
                                     <div class="col-md-4">
                                         <label class="form-label">ពាក្យសម្ងាត់បច្ចុប្បន្ន</label>
                                         <input type="password" class="form-control" placeholder="********">
@@ -905,81 +1029,73 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex justify-content-end mt-4">
+                                <div class="d-flex justify-content-end mt-4" data-aos="fade-up" data-aos-delay="900">
                                     <button type="reset" class="btn btn-outline-secondary me-2">កំណត់ឡើងវិញ</button>
                                     <button type="submit" class="btn btn-primary">រក្សាទុកការផ្លាស់ប្តូរ</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-
                 </div>
 
             </div>
         </div>
     </main>
-
-
-    <footer class="footer mt-auto pt-5 pb-3">
+    <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
-                    <div class="footer-logo">
+                <div class="col-7 col-xl-3 mb-4 mb-xl-0">
+                    <div class="footer-logo ps-5 ps-xl-0">
                         <img src="../image/logo-removebg.png" alt="">
                         <p class="footer-text mt-3">
-                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
-                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
-                            និងទំនុកចិត្តលើខ្លួនឯង។
+                            ចូលរួមជាមួយយើង ដើម្បីបង្កើតការផ្លាស់ប្តូរ! <br>
+                            អនាគតប្រសើរឡើង ចាប់ផ្តើមពីអ្នក! <br>
+                            ជួយសង្គម ជួយខ្លួនឯង ចូលរួមស្ម័គ្រចិត្តឥឡូវនេះ!
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
+                <div class="col-5 col-xl-3 d-flex justify-content-xl-center">
+                    <div class="footer-type">
                         <h4>
-                            ទំព័រ
+                            ស្ម័គ្រចិត្ត
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="#" class="footer-link">
-                                    ទំព័រដើម
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តការអប់រំ
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    ការងារស្ម័គ្រចិត្ត
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តតាមសហគមន៍
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    ព្រឹត្តិការណ៏
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    សកម្មភាព
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    បរិច្ចាក
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    អំពីយើង
+                                <a href="../page/Donation.html" class="footer-link">
+                                    ការបរិច្ចាក
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
+                <div class="col-7 col-xl-3">
+                    <div class="footer-page ps-5 ps-xl-0">
                         <h4>
                             ទំនាក់ទំនង
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link d-flex">
                                     <i class="bi bi-envelope-at"></i>
                                     <span class="ps-2">
                                         volunteerCambo@gmail.com
@@ -987,7 +1103,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="https://maps.app.goo.gl/iBbp2p6K9tysaBkAA" class="footer-link d-flex">
                                     <i class="bi bi-geo-alt"></i>
                                     <span class="ps-2">
                                         Tul kok , Phmom Penh , Cambodia
@@ -995,7 +1111,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="tel:+85568382800" class="footer-link d-flex">
                                     <i class="bi bi-telephone"></i>
                                     <span class="ps-2">
                                         +85568382800
@@ -1005,29 +1121,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-5 col-xl-3">
                     <div class="footer-social">
                         <h4>
                             តាមដានយើង
                         </h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/facebook.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://t.me/SokryPes">
                                     <img src="../image/Icon/telegram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/instagram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/twitter.png" alt="">
                                 </a>
                             </li>
@@ -1042,26 +1158,116 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Search -->
+    <div class="modal fade searchModal fs-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content px-4 rounded-4">
+                <div class="modal-header pb-0 justify-content-between">
+                    <h1 class="modal-title fs-" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-circle fs-3"></i>
+                    </button>
                 </div>
-                <div class="modal-body">
-
-
-
-                    <form class="d-flex">
-                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                        <button type="submit" class="btn btn-primary rounded ms-2">
-                            <i class="bi bi-search"></i>
-                        </button>
+                <div class="modal-body pb-0">
+                    <form class="position-relative">
+                        <span>
+                            <i class="bi bi-search position-absolute"></i>
+                        </span>
+                        <input type="text" class="w-100 rounded" placeholder="ស្វែងរកទីនេះ..."
+                            value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
                     </form>
+                    <p class="mt-3 mb-1 fw-semibold">
+                        <i class="bi bi-clock-history"></i>
+                        <span>
+                            ធ្លាប់បានស្វែងរក
+                        </span>
+                    </p>
+                    <ul class="search-list list-unstyled ">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block ">
+                                    ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/detailpage-card-childcare.html" class="w-100 d-inline-block ">
+                                    ស្ម័គ្រចិត្តថែទាំកុមារ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/Donation.html" class="w-100 d-inline-block  ">
+                                    បរិច្ចាគ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/contactpage.html" class="w-100 d-inline-block  ">
+                                    ទាក់ទងតាមណា?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block  ">
+                                    តើមានស្ម័គ្រចិត្តអ្វីខ្លះ?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <div class="mt-2 w-100 text-center text-primary">
+                            <button type="button">
+                                លុបទាំងអស់
+                            </button>
+                        </div>
+                    </ul>
 
-
-
+                    <ul class="search-action list-unstyled mt-4 d-flex justify-content-center">
+                        <li class="pe-4">
+                            <a href="../page/contactpage.html">
+                                ទំនាក់ទំនង
+                            </a>
+                        </li>
+                        <li class="px-4">
+                            <a href="../page/aboutpage.html">
+                                អំពីយើង
+                            </a>
+                        </li>
+                        <li class="ps-4">
+                            <a href="../page/userprofile.html">
+                                មើលគណនី
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
@@ -1072,6 +1278,10 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         (() => {
             // Pull Bootstrap CSS variables for colors
@@ -1165,79 +1375,69 @@
         })();
     </script>
     <script>
-  (function(){
-    // ----- Form validation -----
-    const form = document.getElementById('opportunityForm');
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) { event.preventDefault(); event.stopPropagation(); }
-      form.classList.add('was-validated');
-    }, false);
+        (function () {
+            // ----- Form validation -----
+            const form = document.getElementById('opportunityForm');
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) { event.preventDefault(); event.stopPropagation(); }
+                form.classList.add('was-validated');
+            }, false);
 
-    // ----- Image upload -----
-    const drop = document.getElementById('opImageDropzone');
-    const input = document.getElementById('opImageInput');
-    const previewWrap = document.getElementById('opImagePreview');
-    const thumb = document.getElementById('opImageThumb');
-    const nameEl = document.getElementById('opImageName');
-    const metaEl = document.getElementById('opImageMeta');
-    const removeBtn = document.getElementById('opImageRemove');
-    const errEl = document.getElementById('opImageError');
+            // ----- Image upload -----
+            const drop = document.getElementById('opImageDropzone');
+            const input = document.getElementById('opImageInput');
+            const previewWrap = document.getElementById('opImagePreview');
+            const thumb = document.getElementById('opImageThumb');
+            const nameEl = document.getElementById('opImageName');
+            const metaEl = document.getElementById('opImageMeta');
+            const removeBtn = document.getElementById('opImageRemove');
+            const errEl = document.getElementById('opImageError');
 
-    const MAX_SIZE = 2 * 1024 * 1024; // 2 MB
-    const VALID_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
+            const MAX_SIZE = 2 * 1024 * 1024; // 2 MB
+            const VALID_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 
-    function openPicker(){ input.click(); }
-    function showError(msg){ errEl.textContent = msg; errEl.style.display = 'block'; }
-    function clearError(){ errEl.textContent=''; errEl.style.display='none'; }
+            function openPicker() { input.click(); }
+            function showError(msg) { errEl.textContent = msg; errEl.style.display = 'block'; }
+            function clearError() { errEl.textContent = ''; errEl.style.display = 'none'; }
 
-    function handleFile(file){
-      clearError();
-      if (!file) return;
-      if (!VALID_TYPES.includes(file.type)) { showError('សូមផ្ទុកឡើងជារូបភាព PNG, JPG ឬ WebP។'); input.value=''; return; }
-      if (file.size > MAX_SIZE) { showError('រូបភាពមានទំហំធំពេក។ អតិបរមា 2 MB។'); input.value=''; return; }
-      const reader = new FileReader();
-      reader.onload = e => {
-        thumb.src = e.target.result;
-        nameEl.textContent = file.name;
-        metaEl.textContent = `${(file.size/1024).toFixed(0)} KB • ${file.type}`;
-        previewWrap.classList.remove('d-none');
-      };
-      reader.readAsDataURL(file);
-    }
+            function handleFile(file) {
+                clearError();
+                if (!file) return;
+                if (!VALID_TYPES.includes(file.type)) { showError('សូមផ្ទុកឡើងជារូបភាព PNG, JPG ឬ WebP។'); input.value = ''; return; }
+                if (file.size > MAX_SIZE) { showError('រូបភាពមានទំហំធំពេក។ អតិបរមា 2 MB។'); input.value = ''; return; }
+                const reader = new FileReader();
+                reader.onload = e => {
+                    thumb.src = e.target.result;
+                    nameEl.textContent = file.name;
+                    metaEl.textContent = `${(file.size / 1024).toFixed(0)} KB • ${file.type}`;
+                    previewWrap.classList.remove('d-none');
+                };
+                reader.readAsDataURL(file);
+            }
 
-    // Click / keyboard
-    drop.addEventListener('click', openPicker);
-    drop.addEventListener('keypress', e => { if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openPicker(); }});
+            // Click / keyboard
+            drop.addEventListener('click', openPicker);
+            drop.addEventListener('keypress', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPicker(); } });
 
-    // Drag & drop feedback
-    ['dragenter','dragover'].forEach(evt => drop.addEventListener(evt, e=>{ e.preventDefault(); e.stopPropagation(); drop.classList.add('dragover'); }));
-    ['dragleave','dragend','drop'].forEach(evt => drop.addEventListener(evt, e=>{ e.preventDefault(); e.stopPropagation(); drop.classList.remove('dragover'); }));
+            // Drag & drop feedback
+            ['dragenter', 'dragover'].forEach(evt => drop.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); drop.classList.add('dragover'); }));
+            ['dragleave', 'dragend', 'drop'].forEach(evt => drop.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); drop.classList.remove('dragover'); }));
 
-    // Handle drop / picker
-    drop.addEventListener('drop', e => handleFile(e.dataTransfer.files[0]));
-    input.addEventListener('change', e => handleFile(e.target.files[0]));
+            // Handle drop / picker
+            drop.addEventListener('drop', e => handleFile(e.dataTransfer.files[0]));
+            input.addEventListener('change', e => handleFile(e.target.files[0]));
 
-    // Remove/reset
-    removeBtn.addEventListener('click', () => {
-      input.value = '';
-      previewWrap.classList.add('d-none');
-      thumb.src = '';
-      nameEl.textContent = '';
-      metaEl.textContent = '';
-      clearError();
-    });
-
-    // Example: include the image in AJAX submit
-    // form.addEventListener('submit', e => {
-    //   e.preventDefault();
-    //   if (!form.checkValidity()) return;
-    //   const data = new FormData(form);
-    //   if (input.files[0]) data.append('cover_image', input.files[0]);
-    //   fetch('/api/opportunities', { method: 'POST', body: data })
-    //     .then(r => r.json()).then(console.log).catch(console.error);
-    // });
-  })();
-  </script>
+            // Remove/reset
+            removeBtn.addEventListener('click', () => {
+                input.value = '';
+                previewWrap.classList.add('d-none');
+                thumb.src = '';
+                nameEl.textContent = '';
+                metaEl.textContent = '';
+                clearError();
+            });
+        })();
+    </script>
 
 </body>
 

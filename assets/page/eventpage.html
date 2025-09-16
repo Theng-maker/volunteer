@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
-
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 overflow-x-hidden">
+    <!-- header -->
     <header class="fixed-top shadow-sm">
         <div class="top-header">
             <div class="container d-flex justify-content-between align-items-center">
@@ -45,32 +46,32 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/england.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/arabic.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="border-0 bg-transparent text-white" data-theme-toggle
+                    <button type="button" class="border-0 text-white" data-theme-toggle
                         aria-label="Change to light theme">
                         <i class="bi bi-moon-fill"></i>
                     </button>
@@ -78,64 +79,135 @@
 
             </div>
         </div>
-
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
                 <a class="navbar-brand " href="homepage.html">
                     <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header d-flex align-items-center pb-0">
+                        <div class="d-flex align-items-center">
+                            <img src="../image/logo_no_bg.jpg" alt="">
+                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        </div>
+                        <button type="button" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body pt-1">
+                        <hr>
+                        <form class="position-relative">
+                            <span>
+                                <i class="bi bi-search position-absolute"></i>
+                            </span>
+                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
+                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
+                        </form>
+                        <hr>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="fs-5 mt-2">
+                                ទំព័រ ៖
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link " aria-current="page" href="homepage.html">
-                                    ទំព័រដើម
+                                    <i class="bi bi-house"></i>
+                                    <span>
+                                        ទំព័រដើម
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="opportunities.html">
-                                    ការងារស្ម័គ្រចិត្ត
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>
+                                        ការងារស្ម័គ្រចិត្ត
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="eventpage.html">
-                                    ព្រឹត្តិការណ៏
+                                    <i class="bi bi-calendar4-event"></i>
+                                    <span>
+                                        ព្រឹត្តិការណ៏
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="activity.html">
-                                    សកម្មភាព
+                                    <i class="bi bi-activity"></i>
+                                    <span>
+                                        សកម្មភាព
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Donation.html">
-                                    បរិច្ចាក
+                                    <i class="bi bi-gift"></i>
+                                    <span>
+                                        បរិច្ចាក
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutpage.html">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        អំពីយើង
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactpage.html">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>
+                                        ទំនាក់ទំនង
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="homepage.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opportunities.html">
+                            ការងារស្ម័គ្រចិត្ត
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="eventpage.html">
+                            ព្រឹត្តិការណ៏
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">
+                            សកម្មភាព
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donation.html">
+                            បរិច្ចាក
+                        </a>
+                    </li>
+                </ul>
+
 
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -148,7 +220,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -190,7 +262,7 @@
                                 </li>
 
                                 <li class=" my-3 d-flex justify-content-center">
-                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                    <a href="#" role="button">
                                         មើលការជូនដំណឹងទាំងអស់
                                     </a>
                                 </li>
@@ -203,7 +275,7 @@
                                 aria-expanded="false">
                                 <img src="../image/profile.png" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-person-circle"></i>
@@ -213,7 +285,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-gear"></i>
                                         <span class="ps-1">
                                             ការកំណត់
@@ -221,7 +293,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         <span class="ps-1">
                                             ចាកចេញ
@@ -231,51 +303,60 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
-
-
     </header>
-    <main class="flex-grow-1 mt-5">
+    <main class="flex-grow-1 mt-5 ">
         <section class="event-banner mt-5">
-            <div class="container  mt-5">
+            <div class="container mt-5">
                 <div class="row g-4">
-                    <div class="col-12 col-xl-7 d-flex justify-center align-items-center">
-                        <div class="card card1 bg-transparent border-0 ">
-                            <div class="card-body ">
+                    <div class="col-12 col-xl-7 d-flex justify-center align-items-center" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <div class="card card1 bg-transparent border-0">
+                            <div class="card-body">
                                 <h1>ព្រឹត្តិការណ៍ពិសេសដែលនឹងមកដល់ឆាប់ៗនេះ</h1>
                                 <p>ចូលរួមជាមួយយើងសម្រាប់កម្មវិធីដ៏អស្ចារ្យ ដែលនឹងផ្តល់បទពិសោធន៍ថ្មី
                                     និងឱកាសសហការដ៏មានតម្លៃ។</p>
-                                <ul class="list-unstyled ">
-                                    <li>
+                                <ul class="list-unstyled">
+                                    <li data-aos="fade-up" data-aos-delay="100">
                                         <i class="fa-solid fa-star-half-stroke me-2"></i>
                                         ជួយសហគមន៍កុមារកំព្រា ចាស់ជរា
                                     </li>
-                                    <li>
-                                        <i class="fa fa-book  me-2"></i>
+                                    <li data-aos="fade-up" data-aos-delay="200">
+                                        <i class="fa fa-book me-2"></i>
                                         ផ្តល់ការបង្រៀន និងចែករំលែកចំណេះដឹង
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-up" data-aos-delay="300">
                                         <i class="fa fa-users me-2"></i>
                                         បង្កើតបណ្ដាញសហគមន៍ និងការតភ្ជាប់មិត្តភាព
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-up" data-aos-delay="400">
                                         <i class="fa fa-gift me-2"></i>
                                         ចូលរួមក្នុងការផ្តល់ជំនួយ និងការផ្តល់អំណោយ
                                     </li>
                                 </ul>
                                 <a href="#eventnew" role="button"
-                                    class="btn event-btn btn-outline-warning mt-3 fs-5 px-4">មើលព្រឹត្តិការណ៍ថ្មីៗ</a>
+                                    class="btn event-btn btn-outline-primary mt-3 fs-5 px-4" data-aos="zoom-in"
+                                    data-aos-delay="500">មើលព្រឹត្តិការណ៍ថ្មីៗ</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-5 position-relative ">
-                        <div class="card image-stack border-0 bg-transparent w-100">
-                            <img src="../image/even-soon/4.jpg" alt="volunteer1" class="stack-img img1">
+                    <div class="col-12 col-xl-5 position-relative">
+                        <div class="card image-stack border-0 bg-transparent w-100" data-aos="fade-left"
+                            data-aos-duration="1000">
+                            <img src="../image/even-soon/4.jpg" alt="volunteer1" class="stack-img img1"
+                                 >
                             <img src="../image/even-soon/7.jpg" alt="volunteer2" class="stack-img img2">
-                            <img src="../image/even-soon/7.jpg" alt="volunteer3" class="stack-img img3">
-
+                            <img src="../image/even-soon/8.jpg" alt="volunteer3" class="stack-img img3">
                         </div>
                     </div>
                 </div>
@@ -284,47 +365,46 @@
         <section class="card-event" id="eventnew">
             <div class="container ">
                 <div class="row g-4">
-                    <div class="col-12 col-lg-6 ">
-                        <ul class="nav  nav-underline  fs-5" id="pills-tab" role="tablist">
+                    <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                        <ul class="nav nav-underline fs-5" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-all" type="button" role="tab"
-                                    aria-selected="true">ទាំងអស់</button>
+                                    data-bs-target="#pills-all" type="button" role="tab" aria-selected="true"
+                                    data-aos="fade-up" data-aos-delay="100">ទាំងអស់</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-thisweek-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-thisweek" type="button" role="tab"
-                                    aria-selected="false">សប្តាហ៍នេះ</button>
+                                    data-bs-target="#pills-thisweek" type="button" role="tab" aria-selected="false"
+                                    data-aos="fade-up" data-aos-delay="200">សប្តាហ៍នេះ</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-thismonth-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-thismonth" type="button" role="tab"
-                                    aria-selected="false">ខែនេះ</button>
+                                    data-bs-target="#pills-thismonth" type="button" role="tab" aria-selected="false"
+                                    data-aos="fade-up" data-aos-delay="300">ខែនេះ</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-nextmonth-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-nextmonth" type="button" role="tab"
-                                    aria-selected="false">ខែក្រោយ</button>
+                                    data-bs-target="#pills-nextmonth" type="button" role="tab" aria-selected="false"
+                                    data-aos="fade-up" data-aos-delay="400">ខែក្រោយ</button>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-lg-6 ">
+                    <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
                         <form action="" class="d-flex">
-                            <input type="text" class="form-control border-1 fs-5" placeholder="ស្វែងរកព្រឹត្តិការណ៍">
-                            <button type="button" class="btn btn-primary ms-2 w-25 py-2 fs-5">
+                            <input type="text" class="form-control border-1 fs-5" placeholder="ស្វែងរកព្រឹត្តិការណ៍"
+                                data-aos="fade-left" data-aos-delay="200">
+                            <button type="button" class="btn btn-primary ms-2 w-25 py-2 fs-5" data-aos="zoom-in"
+                                data-aos-delay="400">
                                 <span>ស្វែងរក</span>
-
                             </button>
                         </form>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12" data-aos="fade-up">
                         <div class="tab-content bg-transparent">
-                            <!-- All Events -->
                             <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
                                 aria-labelledby="pills-all-tab" tabindex="0">
-                                <div class="row g-4 ">
-                                    <!-- Card 1 -->
-                                    <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row g-4">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                                         <div class="card position-relative h-100">
                                             <img src="../image/even-soon/1.jpg" class="card-img-top" alt="event1">
                                             <span
@@ -339,20 +419,18 @@
                                                     <i class="bi bi-calendar4-event"></i>
                                                     សៅរ៍ ៣១ ខែកញ្ញា ២០២៥
                                                 </p>
-
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
                                                 <button class="btn btn-outline-primary d-block mx-auto w-75"
-                                                    data-bs-toggle="modal" data-bs-target="#eventModal1">
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal1"
+                                                    data-aos="zoom-in" data-aos-delay="200">
                                                     ព័ត៍មានលម្អិត
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Card 2 -->
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/3.jpg" class="card-img-top" alt="Event 2">
                                             <span
                                                 class="badge bg-success position-absolute top-0 start-0 m-2">សប្បុរសធម៏
@@ -366,20 +444,18 @@
                                                     <i class="bi bi-calendar4-event"></i>
                                                     ថ្ងៃសៅរ៍ ៣១ ខែមិថុនា ២០២៦
                                                 </p>
-
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal2">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal2"
+                                                    data-aos="zoom-in" data-aos-delay="300">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Card 3 -->
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/2.jpg" class="card-img-top" alt="Event 3">
-                                             <span
+                                            <span
                                                 class="badge bg-success position-absolute top-0 start-0 m-2">ព្រឹត្តិការណ៏ជាតិ
                                             </span>
                                             <div class="card-body">
@@ -388,22 +464,21 @@
                                                     ដើម្បីឪ្យបរិស្ថានក្នុងកំពុងពេលប្រារព្ធពិធីបុណ្យអុំទូកមានភាពស្រស់បំព្រងទាំង៣ថ្ងៃងាយស្រួលទស្សនាការប្រណាំងទូក
                                                 </p>
                                                 <p class="card-text pt-2">
-                                                    <i class=" bi bi-calendar4-event"></i>
+                                                    <i class="bi bi-calendar4-event"></i>
                                                     ថ្ងៃអង្គារ៏ ០៥ ខែវិច្ឆិកា ២០២៥
                                                 </p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal3">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal3"
+                                                    data-aos="zoom-in" data-aos-delay="400">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Card 4 -->
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/4.jpg" class="card-img-top" alt="Event 4">
-                                             <span
+                                            <span
                                                 class="badge bg-success position-absolute top-0 start-0 m-2">សប្បុរសធម៏
                                             </span>
                                             <div class="card-body">
@@ -417,18 +492,16 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal4">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal4"
+                                                    data-aos="zoom-in" data-aos-delay="500">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Card 5 -->
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/tree.jpg" class="card-img-top" alt="Event 5">
-                                             <span
-                                                class="badge bg-success position-absolute top-0 start-0 m-2">សហគមន៏
+                                            <span class="badge bg-success position-absolute top-0 start-0 m-2">សហគមន៏
                                             </span>
                                             <div class="card-body">
                                                 <h5 class="card-title">ដាំផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
@@ -441,18 +514,16 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal5">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal5"
+                                                    data-aos="zoom-in" data-aos-delay="600">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- Card 6 -->
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/srov.jpg" class="card-img-top" alt="Event 6">
-                                             <span
-                                                class="badge bg-success position-absolute top-0 start-0 m-2">កសិកម្ម
+                                            <span class="badge bg-success position-absolute top-0 start-0 m-2">កសិកម្ម
                                             </span>
                                             <div class="card-body">
                                                 <h5 class="card-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
@@ -465,18 +536,18 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal6">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal6"
+                                                    data-aos="zoom-in" data-aos-delay="700">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- This Week -->
                             <div class="tab-pane fade" id="pills-thisweek" role="tabpanel"
                                 aria-labelledby="pills-thisweek-tab" tabindex="0">
                                 <div class="row g-4">
-                                    <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                                         <div class="card position-relative h-100">
                                             <img src="../image/even-soon/1.jpg" class="card-img-top" alt="event1">
                                             <span
@@ -486,18 +557,18 @@
                                                 <p class="card-text mb-1">
                                                     ដើម្បីឪ្យកុមារយល់ដឹង​ពីការថែទាំសុខភាពការថែទាំសុខភាពប្រចាំថ្ងៃ
                                                     របបអាហារ </p>
-                                               
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal1">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal1"
+                                                    data-aos="zoom-in" data-aos-delay="200">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/3.jpg" class="card-img-top" alt="Event 2">
-                                           <span
+                                            <span
                                                 class="badge bg-success position-absolute top-0 start-0 m-2">សប្បុរសធម៏
                                             </span>
                                             <div class="card-body">
@@ -505,25 +576,23 @@
                                                 <p class="card-text mb-1">
                                                     ដល់អាហាររូបត្ថម្ភ
                                                     និងថែទាំមនុស្សចាស់នៅសហគមន៍ដែលកំពុងជួបការខ្វះខាត </p>
-                                               
-
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal2">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal2"
+                                                    data-aos="zoom-in" data-aos-delay="300">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- This Month -->
                             <div class="tab-pane fade" id="pills-thismonth" role="tabpanel"
                                 aria-labelledby="pills-thismonth-tab" tabindex="0">
                                 <div class="row g-4">
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/2.jpg" class="card-img-top" alt="Event 3">
-                                             <span
+                                            <span
                                                 class="badge bg-success position-absolute top-0 start-0 m-2">ព្រឹត្តិការណ៏ជាតិ
                                             </span>
                                             <div class="card-body">
@@ -533,13 +602,14 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal3">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal3"
+                                                    data-aos="zoom-in" data-aos-delay="200">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/4.jpg" class="card-img-top" alt="Event 4">
                                             <span
                                                 class="badge bg-success position-absolute top-0 start-0 m-2">សប្បុរសធម៏
@@ -551,22 +621,21 @@
                                                     និងរៀបចំសកម្មភាពកំសាន្តដល់កុមារក្រីក្រ។</p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal4">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal4"
+                                                    data-aos="zoom-in" data-aos-delay="300">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Next Month -->
                             <div class="tab-pane fade" id="pills-nextmonth" role="tabpanel"
                                 aria-labelledby="pills-nextmonth-tab" tabindex="0">
                                 <div class="row g-4">
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/tree.jpg" class="card-img-top" alt="Event 5">
-                                             <span
-                                                class="badge bg-success position-absolute top-0 start-0 m-2">សហគមន៏
+                                            <span class="badge bg-success position-absolute top-0 start-0 m-2">សហគមន៏
                                             </span>
                                             <div class="card-body">
                                                 <h5 class="card-title">ដាំផ្កាក្នុងសួនសាធារណៈបឹងកេងកង</h5>
@@ -575,16 +644,16 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn  btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal5">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal5"
+                                                    data-aos="zoom-in" data-aos-delay="200">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card position-relative  h-100">
+                                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="card position-relative h-100">
                                             <img src="../image/even-soon/srov.jpg" class="card-img-top" alt="Event 6">
-                                             <span
-                                                class="badge bg-success position-absolute top-0 start-0 m-2">កសិកម្ម
+                                            <span class="badge bg-success position-absolute top-0 start-0 m-2">កសិកម្ម
                                             </span>
                                             <div class="card-body">
                                                 <h5 class="card-title">ចែករំលែកចំណេះដឹងកសិកម្មស្រែស្រូវ</h5>
@@ -593,15 +662,15 @@
                                                     និងប្រមូលស្រែស្រូវ ដើម្បីបង្កើនផលិតភាព</p>
                                             </div>
                                             <div class="card-footer bg-transparent border-0 mb-2">
-                                                <button class="btn btn-outline-primary d-block mx-auto w-75" data-bs-toggle="modal"
-                                                    data-bs-target="#eventModal6">ព័ត៍មានលម្អិត</button>
+                                                <button class="btn btn-outline-primary d-block mx-auto w-75"
+                                                    data-bs-toggle="modal" data-bs-target="#eventModal6"
+                                                    data-aos="zoom-in" data-aos-delay="300">ព័ត៍មានលម្អិត</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -629,7 +698,8 @@
                                                         <i class="bi bi-calendar-check "></i>
                                                         <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
                                                     </p>
-                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                    <a type="button" href="volunteer-apply.html"
+                                                        class="btn btn-primary">ចុះឈ្មោះ</a>
                                                 </div>
                                                 <p>
                                                     <i class="bi bi-alarm"></i>
@@ -708,7 +778,8 @@
                                                         <i class="bi bi-calendar-check "></i>
                                                         <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
                                                     </p>
-                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                    <a type="button" href="volunteer-apply.html"
+                                                        class="btn btn-primary">ចុះឈ្មោះ</a>
                                                 </div>
                                                 <p>
                                                     <i class="bi bi-alarm"></i>
@@ -788,7 +859,8 @@
                                                         <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃអង្គារ៏ ០៥ ខែវិច្ឆិកា
                                                         ២០២៥
                                                     </p>
-                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                    <a type="button" href="volunteer-apply.html"
+                                                        class="btn btn-primary">ចុះឈ្មោះ</a>
                                                 </div>
                                                 <p>
                                                     <i class="bi bi-alarm"></i>
@@ -872,7 +944,8 @@
                                                         <i class="bi bi-calendar-check "></i>
                                                         <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣០ ខែមេសា ឆ្នាំ២០២៦
                                                     </p>
-                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                    <a type="button" href="volunteer-apply.html"
+                                                        class="btn btn-primary">ចុះឈ្មោះ</a>
                                                 </div>
                                                 <p>
                                                     <i class="bi bi-alarm"></i>
@@ -955,7 +1028,8 @@
                                                         <i class="bi bi-calendar-check "></i>
                                                         <strong>កាលបរិច្ឆេទ:​​ </strong>ថ្ងៃសៅរ៍ ៣១ ខែកញ្ញា ២០២៥
                                                     </p>
-                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                    <a type="button" href="volunteer-apply.html"
+                                                        class="btn btn-primary">ចុះឈ្មោះ</a>
                                                 </div>
                                                 <p>
                                                     <i class="bi bi-alarm"></i>
@@ -1035,7 +1109,8 @@
                                                         <i class="bi bi-calendar-check "></i>
                                                         <strong>កាលបរិច្ឆេទ:​ </strong>ថ្ងៃសៅរ៍ ៣0 ខែ កក្កដា ២០២៦
                                                     </p>
-                                                    <button type="button" class="btn btn-primary">ចុះឈ្មោះ</button>
+                                                    <a type="button" href="volunteer-apply.html"
+                                                        class="btn btn-primary">ចុះឈ្មោះ</a>
                                                 </div>
                                                 <p>
                                                     <i class="bi bi-alarm"></i>
@@ -1095,67 +1170,61 @@
 
     </main>
 
-
-    <footer class="footer mt-auto pt-5 pb-3">
+    <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
-                    <div class="footer-logo">
+                <div class="col-7 col-xl-3 mb-4 mb-xl-0">
+                    <div class="footer-logo ps-5 ps-xl-0">
                         <img src="../image/logo-removebg.png" alt="">
                         <p class="footer-text mt-3">
-                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
-                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
-                            និងទំនុកចិត្តលើខ្លួនឯង។
+                            ចូលរួមជាមួយយើង ដើម្បីបង្កើតការផ្លាស់ប្តូរ! <br>
+                            អនាគតប្រសើរឡើង ចាប់ផ្តើមពីអ្នក! <br>
+                            ជួយសង្គម ជួយខ្លួនឯង ចូលរួមស្ម័គ្រចិត្តឥឡូវនេះ!
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
+                <div class="col-5 col-xl-3 d-flex justify-content-xl-center">
+                    <div class="footer-type">
                         <h4>
-                            ទំព័រ
+                            ស្ម័គ្រចិត្ត
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="#" class="footer-link">
-                                    ទំព័រដើម
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តការអប់រំ
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    ការងារស្ម័គ្រចិត្ត
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តតាមសហគមន៍
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    ព្រឹត្តិការណ៏
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    សកម្មភាព
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link">
-                                    បរិច្ចាក
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer-link">
-                                    អំពីយើង
+                                <a href="../page/Donation.html" class="footer-link">
+                                    ការបរិច្ចាក
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
+                <div class="col-7 col-xl-3">
+                    <div class="footer-page ps-5 ps-xl-0">
                         <h4>
                             ទំនាក់ទំនង
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link d-flex">
                                     <i class="bi bi-envelope-at"></i>
                                     <span class="ps-2">
                                         volunteerCambo@gmail.com
@@ -1163,7 +1232,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="https://maps.app.goo.gl/iBbp2p6K9tysaBkAA" class="footer-link d-flex">
                                     <i class="bi bi-geo-alt"></i>
                                     <span class="ps-2">
                                         Tul kok , Phmom Penh , Cambodia
@@ -1171,7 +1240,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="tel:+85568382800" class="footer-link d-flex">
                                     <i class="bi bi-telephone"></i>
                                     <span class="ps-2">
                                         +85568382800
@@ -1181,29 +1250,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-5 col-xl-3">
                     <div class="footer-social">
                         <h4>
                             តាមដានយើង
                         </h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/facebook.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://t.me/SokryPes">
                                     <img src="../image/Icon/telegram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/instagram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/twitter.png" alt="">
                                 </a>
                             </li>
@@ -1217,30 +1286,116 @@
             </p>
         </div>
     </footer>
-
-
-
     <!-- Modal Search -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade searchModal fs-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content px-4 rounded-4">
+                <div class="modal-header pb-0 justify-content-between">
+                    <h1 class="modal-title fs-" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-circle fs-3"></i>
+                    </button>
                 </div>
-                <div class="modal-body">
-
-
-
-                    <form class="d-flex">
-                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                        <button type="submit" class="btn btn-primary rounded ms-2">
-                            <i class="bi bi-search"></i>
-                        </button>
+                <div class="modal-body pb-0">
+                    <form class="position-relative">
+                        <span>
+                            <i class="bi bi-search position-absolute"></i>
+                        </span>
+                        <input type="text" class="w-100 rounded" placeholder="ស្វែងរកទីនេះ..."
+                            value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
                     </form>
+                    <p class="mt-3 mb-1 fw-semibold">
+                        <i class="bi bi-clock-history"></i>
+                        <span>
+                            ធ្លាប់បានស្វែងរក
+                        </span>
+                    </p>
+                    <ul class="search-list list-unstyled ">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block ">
+                                    ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/detailpage-card-childcare.html" class="w-100 d-inline-block ">
+                                    ស្ម័គ្រចិត្តថែទាំកុមារ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/Donation.html" class="w-100 d-inline-block  ">
+                                    បរិច្ចាគ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/contactpage.html" class="w-100 d-inline-block  ">
+                                    ទាក់ទងតាមណា?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block  ">
+                                    តើមានស្ម័គ្រចិត្តអ្វីខ្លះ?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <div class="mt-2 w-100 text-center text-primary">
+                            <button type="button">
+                                លុបទាំងអស់
+                            </button>
+                        </div>
+                    </ul>
 
-
-
+                    <ul class="search-action list-unstyled mt-4 d-flex justify-content-center">
+                        <li class="pe-4">
+                            <a href="../page/contactpage.html">
+                                ទំនាក់ទំនង
+                            </a>
+                        </li>
+                        <li class="px-4">
+                            <a href="../page/aboutpage.html">
+                                អំពីយើង
+                            </a>
+                        </li>
+                        <li class="ps-4">
+                            <a href="../page/userprofile.html">
+                                មើលគណនី
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
@@ -1250,7 +1405,10 @@
     <!-- JS Script -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

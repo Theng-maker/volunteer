@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -17,9 +17,10 @@
         <section>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-xl-7 d-flex authentication-form">
+                    <div class="col-12 col-xl-8 d-flex authentication-form">
                         <div class="login-img">
-                            <img src="https://shiptotal.in/CRM/assets/image/image_login.jpg" alt="" class="img-fluid h-100">
+                            <img src="../../image/homepage/register-img.jpg" alt=""
+                                class="img-fluid object-fit-contain h-100 w-100">
                         </div>
                         <div class="login-area">
                             <div class="section-title text-center">
@@ -31,7 +32,7 @@
                                     <div>
                                         <label for="firstname" class="form-label">គោត្តនាម ៖</label>
                                         <input type="text" class="form-control" id="firstname"
-                                            placeholder="បញ្ចូលគោត្តនាម" required>
+                                            placeholder="បញ្ចូលគោត្តនាម" value="ចាន់" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលគោត្តនាមរបស់អ្នក!</div>
                                     </div>
                                 </div>
@@ -40,7 +41,7 @@
                                     <div>
                                         <label for="lastname" class="form-label">នាមខ្លួន ៖</label>
                                         <input type="text" class="form-control" id="lastname" placeholder="បញ្ចូលនាម"
-                                            required>
+                                            value="រតនា" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលនាមរបស់អ្នក!</div>
                                     </div>
                                 </div>
@@ -49,7 +50,7 @@
                                     <div>
                                         <label for="email" class="form-label">អ៊ីមែល ៖</label>
                                         <input type="email" class="form-control" id="email" placeholder="បញ្ចូលអ៊ីមែល"
-                                            required>
+                                            value="RathanaKh123@gmail.com" required>
                                         <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ!</div>
                                     </div>
                                 </div>
@@ -58,7 +59,7 @@
                                     <div>
                                         <label for="password" class="form-label">ពាក្យសម្ងាត់ ៖</label>
                                         <input type="password" class="form-control" id="password"
-                                            placeholder="បញ្ចូលពាក្យសម្ងាត់" required minlength="6">
+                                            placeholder="បញ្ចូលពាក្យសម្ងាត់" value="1234567" minlength="6">
                                         <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់យ៉ាងហោចណាស់ 6 តួអក្សរ!</div>
                                     </div>
                                 </div>
@@ -67,8 +68,8 @@
                                     <div>
                                         <div class="col-xl-12">
                                             <div>
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                                    required>
+                                                <input type="checkbox" class="form-check-input" checked
+                                                    id="exampleCheck1" required>
                                                 <label class="form-check-label" for="exampleCheck1">ចងចាំខ្ញុំ</label>
                                                 <div class="invalid-feedback">សូមចាំសញ្ញាចុងខ្ញុំ!</div>
                                             </div>

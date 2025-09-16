@@ -11,7 +11,6 @@
     countEl.textContent = count;
     btn.classList.toggle('btn-primary', liked);
   });
-
   // Add comment
   document.addEventListener('click', (e) => {
     const add = e.target.closest('.btn-add-comment');
@@ -19,7 +18,6 @@
     const wrap = add.closest('.comments-wrap');
     appendComment(wrap);
   });
-
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       const input = e.target.closest('.comment-input');
@@ -28,9 +26,7 @@
       const wrap = input.closest('.comments-wrap');
       appendComment(wrap);
     }
-  }); 
-  
-
+  });
   function appendComment(wrap){
     const input = wrap.querySelector('.comment-input');
     const list  = wrap.querySelector('.comments-list');
@@ -45,7 +41,7 @@
       <img src="../image/profile.png" class="comment-avatar" alt="">
       <div class="flex-grow-1">
         <div class="d-flex justify-content-between">
-          <div><span class="comment-author">អ្នកប្រើប្រាស់</span><span class="comment-time ms-2">ឥឡូវនេះ</span></div>
+          <div><span class="comment-author">ដារា លី</span><span class="comment-time ms-2">ឥឡូវនេះ</span></div>
         </div>
         <p class="comment-text">${escapeHtml(text)}</p>
         <div class="comment-actions">
@@ -66,7 +62,6 @@
   function escapeHtml(s){
     return s.replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   }
-
   // SHARE (copy deep link)
   document.addEventListener('click', async (e) => {
     const btn = e.target.closest('.btn-share');

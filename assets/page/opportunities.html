@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -20,7 +22,7 @@
 
 <body class="d-flex flex-column h-100">
     <!-- header -->
-    <header class="fixed-top  shadow-sm">
+    <header class="fixed-top shadow-sm">
         <div class="top-header">
             <div class="container d-flex justify-content-between align-items-center">
                 <ul class="nav-list list-unstyled d-flex m-0">
@@ -46,25 +48,25 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/Cambodia.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាខ្មែរ
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/england.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអង់គ្លេស
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item d-flex" href="#">
                                     <img src="../image/Icon/arabic.png" alt="">
-                                    <span>
+                                    <span class="ps-2">
                                         ភាសាអារ៉ាប់
                                     </span>
                                 </a>
@@ -79,63 +81,135 @@
 
             </div>
         </div>
-
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg bg-white ">
             <div class="container">
                 <a class="navbar-brand " href="homepage.html">
-                    <img src="../image/Logo.jpg" alt="">
+                    <img src="../image/logo-removebg.png" alt="">
                     ស្ម័គ្រចិត្ត
                 </a>
-
-                <!-- Offcanvas toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span>
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
-                </button>
-
                 <!-- Offcanvas menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="navbar-offcanvas offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="offcanvas-header d-flex align-items-center pb-0">
+                        <div class="d-flex align-items-center">
+                            <img src="../image/logo_no_bg.jpg" alt="">
+                            <h5 class="offcanvas-title ps-2" id="offcanvasNavbarLabel">ស្ម័គ្រចិត្ត</h5>
+                        </div>
+                        <button type="button" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body pt-1">
+                        <hr>
+                        <form class="position-relative">
+                            <span>
+                                <i class="bi bi-search position-absolute"></i>
+                            </span>
+                            <input type="text" class="w-100 " placeholder="ស្វែងរកទីនេះ..."
+                                value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
+                        </form>
+                        <hr>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="fs-5 mt-2">
+                                ទំព័រ ៖
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="homepage.html">
-                                    ទំព័រដើម
+                                <a class="nav-link" aria-current="page" href="homepage.html">
+                                    <i class="bi bi-house"></i>
+                                    <span>
+                                        ទំព័រដើម
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="opportunities.html">
-                                    ការងារស្ម័គ្រចិត្ត
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>
+                                        ការងារស្ម័គ្រចិត្ត
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="eventpage.html">
-                                    ព្រឹត្តិការណ៏
+                                    <i class="bi bi-calendar4-event"></i>
+                                    <span>
+                                        ព្រឹត្តិការណ៏
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="activity.html">
-                                    សកម្មភាព
+                                    <i class="bi bi-activity"></i>
+                                    <span>
+                                        សកម្មភាព
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Donation.html">
-                                    បរិច្ចាក
+                                    <i class="bi bi-gift"></i>
+                                    <span>
+                                        បរិច្ចាក
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 position-relative bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutpage.html">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        អំពីយើង
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactpage.html">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>
+                                        ទំនាក់ទំនង
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <ul class="navbar-nav navbar-nav01 justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="homepage.html">
+                            ទំព័រដើម
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="opportunities.html">
+                            ការងារស្ម័គ្រចិត្ត
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventpage.html">
+                            ព្រឹត្តិការណ៏
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">
+                            សកម្មភាព
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donation.html">
+                            បរិច្ចាក
+                        </a>
+                    </li>
+                </ul>
+
+
                 <ul class="nav-action d-flex m-0 list-unstyled align-items-center">
                     <li>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-search"></i>
+                        <button type="button" class="btn px-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <i class="bi bi-search"></i>
+                            </span>
                         </button>
                     </li>
                     <li>
@@ -148,7 +222,7 @@
                                     3
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end ">
                                 <li class="ps-3">
                                     <h3 class="fs-5">ការជូនដំណឹង</h3>
                                 </li>
@@ -190,7 +264,7 @@
                                 </li>
 
                                 <li class=" my-3 d-flex justify-content-center">
-                                    <a href="#" class="mx-auto bg-secondary text-white py-2 px-5 rounded text-center">
+                                    <a href="#" role="button">
                                         មើលការជូនដំណឹងទាំងអស់
                                     </a>
                                 </li>
@@ -203,7 +277,7 @@
                                 aria-expanded="false">
                                 <img src="../image/profile.png" alt="">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-person-circle"></i>
@@ -213,7 +287,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="userprofile.html">
                                         <i class="bi bi-gear"></i>
                                         <span class="ps-1">
                                             ការកំណត់
@@ -221,7 +295,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item  text-danger sign-up" href="#">
+                                    <a class="dropdown-item  text-danger sign-up" href="../../index.html">
                                         <i class="bi bi-box-arrow-left"></i>
                                         <span class="ps-1">
                                             ចាកចេញ
@@ -231,28 +305,35 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
-
     </header>
     <main class="flex-grow-1">
         <section class="opportunity ">
-            <div class="container">                
+            <div class="container">
                 <!-- search-filter -->
-                <div class="opportunity-search-filter">
+                <div class="opportunity-search-filter" data-aos="fade-down" data-aos-duration="1000">
                     <div class="row ">
                         <div class="col-12 col-md-12 col-lg-7 ">
                             <div class="opportunity-search">
-                                <input type="text"
-                                    placeholder=" ស្វែងរកការាងារស្ម័គ្រចិត្ត..." />
+                                <input type="text" placeholder=" ស្វែងរកការាងារស្ម័គ្រចិត្ត..." />
                                 <button class="search-btn">ស្វែងរក</button>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-5">
                             <div class="opportunity-filters row pt-3 pt-md-3 pt-lg-0">
                                 <label for="filter-category" class="visually-hidden">Filter by Category</label>
-                                <select id="categoryFilter" class="filter-category col-4 col-md-5 ms-md-3 mx-md-4 mx-4 shadow-sm"
+                                <select id="categoryFilter"
+                                    class="filter-category col-4 col-md-5 ms-md-3 mx-md-4 mx-4 shadow-sm"
                                     title="Filter by Category">
                                     <option value="all">គ្រប់ប្រភេទទាំងអស់</option>
                                     <option value="wildlife">ជម្រកសត្វព្រៃ</option>
@@ -286,207 +367,210 @@
                 </div>
                 <div class="category-icons">
                     <div class="tab mb-3">
-                        <!-- categories-icons -->
                         <div class="col-12 col-lg-10">
-                            <button class="tablinks" onclick="openOpportunity(event, 'all')" id="defaultOpen">
+                            <button class="tablinks" onclick="openOpportunity(event, 'all')" id="defaultOpen"
+                                data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                                 <div class="category-icons_item">
                                     <img src="../image/Logo.jpg" alt="logo" />
                                     <span>ទាំងអស់</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'wildlife')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'wildlife')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="200">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/wildlife.png" alt="Wildlife" />
                                     <span>ជម្រកសត្វព្រៃ</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'education')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'education')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="300">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/teaching.png" alt="Teaching" />
                                     <span>ការអប់រំ</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'childcare')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'childcare')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="400">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/childcare.png" alt="Childcare" />
                                     <span>មើលថែកុមារ</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'environment')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'environment')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="500">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/environment.png" alt="Environment" />
                                     <span>បរិស្ថាន</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'agriculture')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'agriculture')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="600">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/agriculture.png" alt="Agriculture" />
                                     <span>កសិកម្ម</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'event')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'event')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="700">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/event.png" alt="Event" />
                                     <span>រៀបចំព្រឹត្តការណ៍</span>
                                 </div>
                             </button>
-                            <button class="tablinks" onclick="openOpportunity(event, 'health')">
+                            <button class="tablinks" onclick="openOpportunity(event, 'health')" data-aos="fade-up"
+                                data-aos-duration="1000" data-aos-delay="800">
                                 <div class="category-icons_item">
                                     <img src="../image/opportunities/Categories/medical.png" alt="Medical" />
                                     <span>សុខភាព</span>
                                 </div>
                             </button>
                         </div>
-                        <!-- filter-modal -->
-                        <div class="ms-auto me-5 align-content-center filter-btn">
-                            <!-- -->
-                            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#filter">
+                        <div class="ms-auto me-5 align-content-center filter-btn" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-delay="900">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#filter">
                                 <i class="bi bi-sliders"></i>
                                 Filter
                             </button>
-                            <!--  -->
-                            <div class="modal fade" id="filter" data-bs-backdrop="static" data-bs-keyboard="false"
-                                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                <div class="modal-dialog ">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="filterModalLabel">Filters</h5>
-                                            <button type="button" class="btn-close " data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal fade" id="filter" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="filterModalLabel">Filters</h5>
+                                        <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="duration" class="form-label fw-medium">រយៈពេល</label>
+                                            <select class="form-select" id="duration">
+                                                <option>គ្រប់ពេល</option>
+                                                <option>រយៈពេលខ្លី / Short-term (≤ 1 សប្តាហ៍)</option>
+                                                <option>រយៈពេលមធ្យម / Medium-term (1 សប្តាហ៍ - 3 ខែ)</option>
+                                                <option>រយៈពេលវែង​​ / Long-term (3 ខែ +)</option>
+                                            </select>
                                         </div>
-                                        <div class="modal-body">
-                                            <!-- Duration -->
-                                            <div class="mb-3">
-                                                <label for="duration" class="form-label fw-medium">រយៈពេល</label>
-                                                <select class="form-select" id="duration">
-                                                    <option>គ្រប់ពេល</option>
-                                                    <option>រយៈពេលខ្លី / Short-term (≤ 1 សប្តាហ៍)</option>
-                                                    <option>រយៈពេលមធ្យម / Medium-term (1 សប្តាហ៍ - 3 ខែ)</option>
-                                                    <option>រយៈពេលវែង​​ / Long-term (3 ខែ +)</option>
-                                                </select>
-                                            </div>
-                                            <!-- Commitment Type -->
-                                            <div class="mb-3">
-                                                <label class="form-label fw-medium">ប្រភេទការប្តេជ្ញាចិត្ត</label><br>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="partTime"
-                                                        value="part-time">
-                                                    <label class="form-check-label" for="partTime">ក្រៅម៉ោង</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="fullTime"
-                                                        value="full-time">
-                                                    <label class="form-check-label" for="fullTime">ពេញម៉ោង</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="weekends"
-                                                        value="weekends">
-                                                    <label class="form-check-label" for="weekends">ចុងសប្តាហ៍</label>
-                                                </div>
-                                            </div>
-                                            <!-- Skills Required -->
-                                            <div class="mb-3">
-                                                <label class="form-label fw-medium">តម្រូវការជំនាញ</label><br>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="teaching"
-                                                        value="teaching">
-                                                    <label class="form-check-label" for="teaching">ការបង្រៀន</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="agriculture"
-                                                        value="agriculture">
-                                                    <label class="form-check-label" for="agriculture">កសិកម្ម</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="it" value="it">
-                                                    <label class="form-check-label" for="it">IT &
-                                                        បច្ចេកវិទ្យា</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="medical"
-                                                        value="medical">
-                                                    <label class="form-check-label" for="medical">វេជ្ជសាស្ត្រ /
-                                                        ថែទាំសុខភាព</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="translation"
-                                                        value="translation">
-                                                    <label class="form-check-label" for="translation">បកប្រែភាសា</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="event"
-                                                        value="event">
-                                                    <label class="form-check-label"
-                                                        for="event">រៀបចំព្រឹត្តការណ៍</label>
-                                                </div>
-                                            </div>
 
-                                            <!-- Organization -->
-                                            <div class="mb-3">
-                                                <label for="organization"
-                                                    class="form-label fw-medium">ក្រុមការងារស្ម័គ្រចិត្ត</label>
-                                                <select class="form-select" id="organization">
-                                                    <option>ទាំងអស់</option>
-                                                    <option>Organization A</option>
-                                                    <option>Organization B</option>
-                                                    <option>Organization C</option>
-                                                </select>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-medium">ប្រភេទការប្តេជ្ញាចិត្ត</label><br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="partTime"
+                                                    value="part-time">
+                                                <label class="form-check-label" for="partTime">ក្រៅម៉ោង</label>
                                             </div>
-
-                                            <!-- Deadline -->
-                                            <div class="mb-3">
-                                                <label for="deadline" class="form-label fw-medium">ថ្ងៃផុតកំណត់</label>
-                                                <input type="date" id="myDatePicker" class="form-control"
-                                                    placeholder="ជ្រើសរើស ថ្ងៃ / ខែ / ឆ្នាំ">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="fullTime"
+                                                    value="full-time">
+                                                <label class="form-check-label" for="fullTime">ពេញម៉ោង</label>
                                             </div>
-
-                                            <!-- Benefits -->
-                                            <div class="mb-3">
-                                                <label class="form-label fw-medium">អត្ថប្រយោជន៍</label><br>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="housing"
-                                                        value="housing">
-                                                    <label class="form-check-label" for="housing">កន្លែងស្នាក់នៅ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="meals"
-                                                        value="meals">
-                                                    <label class="form-check-label" for="meals">អាហារបរិភោគ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="transport"
-                                                        value="transport">
-                                                    <label class="form-check-label"
-                                                        for="transport">មធ្យោបាយធ្វើដំណើរ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="certificate"
-                                                        value="certificate">
-                                                    <label class="form-check-label"
-                                                        for="certificate">វិញ្ញាបនបត្រ</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="insurance"
-                                                        value="insurance">
-                                                    <label class="form-check-label" for="insurance">ធានារ៉ាប់រង</label>
-                                                </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="weekends"
+                                                    value="weekends">
+                                                <label class="form-check-label" for="weekends">ចុងសប្តាហ៍</label>
                                             </div>
                                         </div>
-                                        <div class="modal-footer">
-                                            <a href="#" type="button" class="me-auto">កំណត់ឡើងវិញ</a>
-                                            <button type="button" class="btn " data-bs-dismiss="modal">បិទ</button>
-                                            <button type="button" class="btn ">អនុវត្តតម្រង</button>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-medium">តម្រូវការជំនាញ</label><br>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="teaching"
+                                                    value="teaching">
+                                                <label class="form-check-label" for="teaching">ការបង្រៀន</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="agriculture"
+                                                    value="agriculture">
+                                                <label class="form-check-label" for="agriculture">កសិកម្ម</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="it" value="it">
+                                                <label class="form-check-label" for="it">IT & បច្ចេកវិទ្យា</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="medical"
+                                                    value="medical">
+                                                <label class="form-check-label" for="medical">វេជ្ជសាស្ត្រ /
+                                                    ថែទាំសុខភាព</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="translation"
+                                                    value="translation">
+                                                <label class="form-check-label" for="translation">បកប្រែភាសា</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="event"
+                                                    value="event">
+                                                <label class="form-check-label" for="event">រៀបចំព្រឹត្តការណ៍</label>
+                                            </div>
                                         </div>
+
+                                        <div class="mb-3">
+                                            <label for="organization"
+                                                class="form-label fw-medium">ក្រុមការងារស្ម័គ្រចិត្ត</label>
+                                            <select class="form-select" id="organization">
+                                                <option>ទាំងអស់</option>
+                                                <option>Organization A</option>
+                                                <option>Organization B</option>
+                                                <option>Organization C</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="deadline" class="form-label fw-medium">ថ្ងៃផុតកំណត់</label>
+                                            <input type="date" id="myDatePicker" class="form-control"
+                                                placeholder="ជ្រើសរើស ថ្ងៃ / ខែ / ឆ្នាំ">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-medium">អត្ថប្រយោជន៍</label><br>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="housing"
+                                                    value="housing">
+                                                <label class="form-check-label" for="housing">កន្លែងស្នាក់នៅ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="meals"
+                                                    value="meals">
+                                                <label class="form-check-label" for="meals">អាហារបរិភោគ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="transport"
+                                                    value="transport">
+                                                <label class="form-check-label"
+                                                    for="transport">មធ្យោបាយធ្វើដំណើរ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="certificate"
+                                                    value="certificate">
+                                                <label class="form-check-label" for="certificate">វិញ្ញាបនបត្រ</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="insurance"
+                                                    value="insurance">
+                                                <label class="form-check-label" for="insurance">ធានារ៉ាប់រង</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <a href="#" type="button" class="me-auto">កំណត់ឡើងវិញ</a>
+                                        <button type="button" class="btn" data-bs-dismiss="modal">បិទ</button>
+                                        <button type="button" class="btn">អនុវត្តតម្រង</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <!-- card-list -->
                     <div class="opportunities-card-list">
                         <div class="row g-4">
                             <!-- card-1 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="education" data-location="siem-reap">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="education"
+                                data-location="siem-reap">
                                 <div class="card shadow-lg h-100" id="education">
                                     <!-- card-top -->
                                     <div>
@@ -586,7 +670,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-center">
-                                                <a href="detailpage-card-education.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href="detailpage-card-education.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -695,7 +780,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href="detailpage-card-environment.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href="detailpage-card-environment.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -803,7 +889,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href="detailpage-card-wildlife.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href="detailpage-card-wildlife.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -811,7 +898,8 @@
                                 </div>
                             </div>
                             <!-- card-4 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="childcare" data-location="kandal">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="childcare"
+                                data-location="kandal">
                                 <div class="card shadow-lg h-100" id="childcare">
                                     <!-- card-top -->
                                     <div>
@@ -910,7 +998,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-childcare.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-childcare.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -983,7 +1072,8 @@
                                             ចូលរួមជួយកសិករក្នុងមូលដ្ឋានប្រមូលផលស្រូវ និងបន្លែធម្មជាតិ
                                             ដើម្បីលើកកម្ពស់ជីវភាពរស់នៅ
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រសួងកសិកម្ម និង អង្គការកសិផលខ្មែរ
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រសួងកសិកម្ម និង
+                                            អង្គការកសិផលខ្មែរ
                                         </p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
@@ -1020,7 +1110,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-agriculture.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-agriculture.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1028,7 +1119,8 @@
                                 </div>
                             </div>
                             <!-- card-6 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="health" data-location="phnom-penh">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="health"
+                                data-location="phnom-penh">
                                 <div class="card shadow-lg h-100" id="health">
                                     <!-- card-top -->
                                     <div>
@@ -1127,7 +1219,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-health.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-health.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1135,7 +1228,8 @@
                                 </div>
                             </div>
                             <!-- card-7 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="education" data-location="kratié">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="education"
+                                data-location="kratié">
                                 <div class="card shadow-lg h-100" id="education">
                                     <!-- card-top -->
                                     <div>
@@ -1235,7 +1329,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpages-card-1.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href="detailpage-card-education.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1243,7 +1338,8 @@
                                 </div>
                             </div>
                             <!-- card-8 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="education" data-location="siem-reap">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="education"
+                                data-location="siem-reap">
                                 <div class="card shadow-lg h-100" id="education">
                                     <!-- card-top -->
                                     <div>
@@ -1342,7 +1438,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpages-card-1.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href="detailpage-card-education.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1350,7 +1447,8 @@
                                 </div>
                             </div>
                             <!-- card-9 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="wildlife" data-location="mondulkiri">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="wildlife"
+                                data-location="mondulkiri">
                                 <div class="card shadow-lg h-100" id="wildlife">
                                     <!-- card-top -->
                                     <div>
@@ -1449,7 +1547,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-wildlife.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-wildlife.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1457,7 +1556,8 @@
                                 </div>
                             </div>
                             <!-- card-10 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="childcare" data-location="siem-reap">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="childcare"
+                                data-location="siem-reap">
                                 <div class="card shadow-lg h-100" id="childcare">
                                     <!-- card-top -->
                                     <div>
@@ -1556,7 +1656,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-childcare.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-childcare.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1664,7 +1765,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-environment.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-environment.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1672,7 +1774,8 @@
                                 </div>
                             </div>
                             <!-- card-12 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="wildlife" data-location="ratanakiri">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="wildlife"
+                                data-location="ratanakiri">
                                 <div class="card shadow-lg h-100" id="wildlife">
                                     <!-- card-top -->
                                     <div>
@@ -1771,7 +1874,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-wildlife.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-wildlife.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1779,7 +1883,8 @@
                                 </div>
                             </div>
                             <!-- card-13 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="event" data-location="siem-reap">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="event"
+                                data-location="siem-reap">
                                 <div class="card shadow-lg h-100" id="event">
                                     <!-- card-top -->
                                     <div>
@@ -1834,7 +1939,8 @@
                                     </div>
                                     <!-- card body -->
                                     <div class="card-body d-flex flex-column">
-                                        <h3 class="card-title fw-medium fs-4">កម្មវិធីស្ម័គ្រចិត្តសម្រាប់ព្រឹត្តិការណ៍រត់ប្រណាំង</h3>
+                                        <h3 class="card-title fw-medium fs-4">
+                                            កម្មវិធីស្ម័គ្រចិត្តសម្រាប់ព្រឹត្តិការណ៍រត់ប្រណាំង</h3>
                                         <div class="location mb-2">
                                             <i class="bi bi-geo-alt-fill"></i>
                                             <span>សៀមរាប</span>
@@ -1842,7 +1948,8 @@
                                         <p class="card-text mb-1">
                                             ជួយរៀបចំកន្លែងចុះឈ្មោះ និងផ្តល់ទឹកដល់អ្នកចូលរួមរត់ប្រណាំង
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: គណៈកម្មាធិការជាតិអូឡាំពិកកម្ពុជា</p>
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ:
+                                            គណៈកម្មាធិការជាតិអូឡាំពិកកម្ពុជា</p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
                                                 <li class="mb-1">
@@ -1878,7 +1985,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-event.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-event.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1886,7 +1994,8 @@
                                 </div>
                             </div>
                             <!-- card-14 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="health" data-location="kampot">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="health"
+                                data-location="kampot">
                                 <div class="card shadow-lg h-100" id="health">
                                     <!-- card-top -->
                                     <div>
@@ -1949,7 +2058,8 @@
                                         <p class="card-text mb-1">
                                             ក្រុមគ្រូពេទ្យស្ម័គ្រចិត្តចុះពិនិត្យសុខភាពទូទៅដល់ប្រជាពលរដ្ឋដោយឥតគិតថ្លៃ
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រុមវេជ្ជបណ្ឌិតស្ម័គ្រចិត្តកម្ពុជា</p>
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ:
+                                            ក្រុមវេជ្ជបណ្ឌិតស្ម័គ្រចិត្តកម្ពុជា</p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
                                                 <li class="mb-1">
@@ -1985,7 +2095,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-health.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-health.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -1993,7 +2104,8 @@
                                 </div>
                             </div>
                             <!-- card-15 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="childcare" data-location="siem-reap">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card " data-category="childcare"
+                                data-location="siem-reap">
                                 <div class="card shadow-lg h-100" id="childcare">
                                     <!-- card-top -->
                                     <div>
@@ -2054,7 +2166,8 @@
                                             <span>សៀមរាប</span>
                                         </div>
                                         <p class="card-text mb-1">
-                                            ចូលរួមរៀបចំ និងដឹកនាំសកម្មភាពសិល្បៈ សិប្បកម្ម ដើម្បីជួយអភិវឌ្ឍទេពកោសល្យ និងការច្នៃប្រឌិត
+                                            ចូលរួមរៀបចំ និងដឹកនាំសកម្មភាពសិល្បៈ សិប្បកម្ម ដើម្បីជួយអភិវឌ្ឍទេពកោសល្យ
+                                            និងការច្នៃប្រឌិត
                                         </p>
                                         <p class="small mb-3 text-orgainzation">រៀបចំដោយ: សមាគមសិល្បករវ័យក្មេង</p>
                                         <div class="card-content">
@@ -2092,7 +2205,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-childcare.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-childcare.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2164,7 +2278,8 @@
                                         <p class="card-text mb-1">
                                             រៀនពីរបៀបកែច្នៃកាកសំណល់ប្លាស្ទិកទៅជាផលិតផលថ្មីដែលមានប្រយោជន៍
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រុមហ៊ុនកែច្នៃសំរាម Cambodia Green</p>
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រុមហ៊ុនកែច្នៃសំរាម Cambodia
+                                            Green</p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
                                                 <li class="mb-1">
@@ -2183,7 +2298,8 @@
                                         </div>
                                         <div class="mt-auto">
                                             <!-- Benefits -->
-                                            <div class="benefits d-flex justify-content-around py-2 border-top border-bottom mb-3">
+                                            <div
+                                                class="benefits d-flex justify-content-around py-2 border-top border-bottom mb-3">
                                                 <div class="d-flex flex-column align-items-center benefits-item">
                                                     <i class="bi bi-taxi-front-fill fs-4"></i>
                                                     <span class="small">មានរថយន្ត</span>
@@ -2199,7 +2315,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-environment.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-environment.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2307,7 +2424,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-agriculture.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-agriculture.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2315,7 +2433,8 @@
                                 </div>
                             </div>
                             <!-- card-18 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card" data-category="health" data-location="phnom-penh">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card" data-category="health"
+                                data-location="phnom-penh">
                                 <div class="card shadow-lg h-100" id="health">
                                     <!-- card-top -->
                                     <div>
@@ -2376,9 +2495,11 @@
                                             <span>ភ្នំពេញ</span>
                                         </div>
                                         <p class="card-text mb-1">
-                                            យល់ដឹងពីសារៈសំខាន់នៃសុខភាពផ្លូវចិត្ត និងវិធីសាស្ត្រថែរក្សាសុខភាពផ្លូវចិត្តប្រចាំថ្ងៃ
+                                            យល់ដឹងពីសារៈសំខាន់នៃសុខភាពផ្លូវចិត្ត
+                                            និងវិធីសាស្ត្រថែរក្សាសុខភាពផ្លូវចិត្តប្រចាំថ្ងៃ
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: មជ្ឈមណ្ឌលសុខភាពផ្លូវចិត្តកម្ពុជា</p>
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ:
+                                            មជ្ឈមណ្ឌលសុខភាពផ្លូវចិត្តកម្ពុជា</p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
                                                 <li class="mb-1">
@@ -2414,7 +2535,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-health.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-health.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2484,7 +2606,8 @@
                                             <span>ស្ទឹងត្រែង</span>
                                         </div>
                                         <p class="card-text mb-1">
-                                            ចូលរួមជាមួយកសិករក្នុងសកម្មភាពស្ទូងស្រូវ និងជួយរៀបចំប្រព័ន្ធស្រោចស្រពក្នុងចំការ
+                                            ចូលរួមជាមួយកសិករក្នុងសកម្មភាពស្ទូងស្រូវ
+                                            និងជួយរៀបចំប្រព័ន្ធស្រោចស្រពក្នុងចំការ
                                         </p>
                                         <p class="small mb-3 text-orgainzation">រៀបចំដោយ: សហគមន៍កសិករកម្ពុជា</p>
                                         <div class="card-content">
@@ -2522,7 +2645,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-agriculture.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-agriculture.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2530,7 +2654,8 @@
                                 </div>
                             </div>
                             <!-- card-20 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card" data-category="event" data-location="phnom-penh">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card" data-category="event"
+                                data-location="phnom-penh">
                                 <div class="card shadow-lg h-100" id="event">
                                     <!-- card-top -->
                                     <div>
@@ -2593,7 +2718,8 @@
                                         <p class="card-text mb-1">
                                             ជួយរៀបចំសម្ភារៈ និងណែនាំអ្នកចូលរួមក្នុងសិក្ខាសាលា
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រុមហ៊ុនបច្ចេកវិទ្យា Tech Cambodia</p>
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រុមហ៊ុនបច្ចេកវិទ្យា Tech
+                                            Cambodia</p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
                                                 <li class="mb-1">
@@ -2629,7 +2755,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-event.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-event.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2637,7 +2764,8 @@
                                 </div>
                             </div>
                             <!-- card-21 -->
-                            <div class="col-12 col-md-6 col-lg-4 opportunity-card" data-category="event" data-location="phnom-penh">
+                            <div class="col-12 col-md-6 col-lg-4 opportunity-card" data-category="event"
+                                data-location="phnom-penh">
                                 <div class="card shadow-lg h-100" id="event">
                                     <!-- card-top -->
                                     <div>
@@ -2700,7 +2828,8 @@
                                         <p class="card-text mb-1">
                                             ជួយណែនាំភ្ញៀវជាតិ និងអន្តរជាតិអំពីរោងទស្សនីយភាពនានា
                                         </p>
-                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រសួងវប្បធម៌ និងវិចិត្រសិល្បៈ</p>
+                                        <p class="small mb-3 text-orgainzation">រៀបចំដោយ: ក្រសួងវប្បធម៌ និងវិចិត្រសិល្បៈ
+                                        </p>
                                         <div class="card-content">
                                             <ul class="list-unstyled ps-2 mb-3">
                                                 <li class="mb-1">
@@ -2736,7 +2865,8 @@
                                             </div>
                                             <!-- Buttons -->
                                             <div class="card-action d-flex justify-content-between">
-                                                <a href=" detailpage-card-event.html" class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
+                                                <a href=" detailpage-card-event.html"
+                                                    class="btn btn-outline-primary">ព័ត៌មានលម្អិត</a>
                                                 <a href="volunteer-apply.html" class="btn btn-primary">ដាក់ពាក្យ</a>
                                             </div>
                                         </div>
@@ -2744,6 +2874,11 @@
                                 </div>
                             </div>
                             <!--  -->
+                            <div id="noResults" class="col-12 text-center text-muted p-5"
+                                style="display: none; height: 50vh;">
+                                <i class="bi bi-search fs-1"></i>
+                                <p class="mt-3 fs-5">មិនមានលទ្ធផល — សូមសាកល្បងតម្រងផ្សេង ឬពិនិត្យម្តងទៀតពេលក្រោយ។</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2758,66 +2893,61 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer mt-auto pt-5 pb-3">
+    <footer class="pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4">
-                    <div class="footer-logo">
-                        <a href="homepage.html"><img src="../image/logo-removebg.png" alt=""></a>
+                <div class="col-7 col-xl-3 mb-4 mb-xl-0">
+                    <div class="footer-logo ps-5 ps-xl-0">
+                        <img src="../image/logo-removebg.png" alt="">
                         <p class="footer-text mt-3">
-                            ការស្ម័គ្រចិត្ដគឺជាមធ្យោបាយដ៏ល្អសម្រាប់អ្នកក្នុងការធ្វើឱ្យមានការផ្លាស់ប្តូរនៅក្នុងសហគមន៍របស់អ្នក
-                            ខណៈពេលដែលទទួលបានបទពិសោធន៍សំខាន់ៗ និងជំនាញទន់ ដូចជាការទំនាក់ទំនង ជំនាញចរចា
-                            និងទំនុកចិត្តលើខ្លួនឯង។
+                            ចូលរួមជាមួយយើង ដើម្បីបង្កើតការផ្លាស់ប្តូរ! <br>
+                            អនាគតប្រសើរឡើង ចាប់ផ្តើមពីអ្នក! <br>
+                            ជួយសង្គម ជួយខ្លួនឯង ចូលរួមស្ម័គ្រចិត្តឥឡូវនេះ!
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
+                <div class="col-5 col-xl-3 d-flex justify-content-xl-center">
+                    <div class="footer-type">
                         <h4>
-                            ទំព័រ
+                            ស្ម័គ្រចិត្ត
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="homepage.html" class="footer-link">
-                                    ទំព័រដើម
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តការអប់រំ
                                 </a>
                             </li>
                             <li>
-                                <a href="opportunities.html" class="footer-link">
-                                    ការងារស្ម័គ្រចិត្ត
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តតាមសហគមន៍
                                 </a>
                             </li>
                             <li>
-                                <a href="eventpage.html" class="footer-link">
-                                    ព្រឹត្តិការណ៏
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តផ្នែកបរិស្ថាន
                                 </a>
                             </li>
                             <li>
-                                <a href="activity.html" class="footer-link">
-                                    សកម្មភាព
+                                <a href="../page/opportunities.html" class="footer-link">
+                                    ស្ម័គ្រចិត្តរៀបចំព្រឹត្តិការណ៍
                                 </a>
                             </li>
                             <li>
-                                <a href="Donation.html" class="footer-link">
-                                    បរិច្ចាក
-                                </a>
-                            </li>
-                            <li>
-                                <a href="aboutpage.html" class="footer-link">
-                                    អំពីយើង
+                                <a href="../page/Donation.html" class="footer-link">
+                                    ការបរិច្ចាក
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 d-xl-flex justify-content-xl-center">
-                    <div class="footer-page">
+                <div class="col-7 col-xl-3">
+                    <div class="footer-page ps-5 ps-xl-0">
                         <h4>
                             ទំនាក់ទំនង
                         </h4>
                         <ul class="footer-ul list-unstyled">
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="mailto:volunteerCambo@gmail.com" class="footer-link d-flex">
                                     <i class="bi bi-envelope-at"></i>
                                     <span class="ps-2">
                                         volunteerCambo@gmail.com
@@ -2825,7 +2955,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="https://maps.app.goo.gl/iBbp2p6K9tysaBkAA" class="footer-link d-flex">
                                     <i class="bi bi-geo-alt"></i>
                                     <span class="ps-2">
                                         Tul kok , Phmom Penh , Cambodia
@@ -2833,7 +2963,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-link d-flex">
+                                <a href="tel:+85568382800" class="footer-link d-flex">
                                     <i class="bi bi-telephone"></i>
                                     <span class="ps-2">
                                         +85568382800
@@ -2843,29 +2973,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-5 col-xl-3">
                     <div class="footer-social">
                         <h4>
                             តាមដានយើង
                         </h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/facebook.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://t.me/SokryPes">
                                     <img src="../image/Icon/telegram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/instagram.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://web.facebook.com/Shakiryy8">
                                     <img src="../image/Icon/twitter.png" alt="">
                                 </a>
                             </li>
@@ -2881,26 +3011,115 @@
     </footer>
 
     <!-- Modal Search -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade searchModal fs-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">ស្វែករក</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content px-4 rounded-4">
+                <div class="modal-header pb-0 justify-content-between">
+                    <h1 class="modal-title fs-" id="exampleModalLabel">ស្វែករក</h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-circle fs-3"></i>
+                    </button>
                 </div>
-                <div class="modal-body">
-
-
-
-                    <form class="d-flex">
-                        <input type="text" class="w-100 rounded " placeholder="ស្វែងរកទីនេះ..." required />
-                        <button type="submit" class="btn btn-primary rounded ms-2">
-                            <i class="bi bi-search"></i>
-                        </button>
+                <div class="modal-body pb-0">
+                    <form class="position-relative">
+                        <span>
+                            <i class="bi bi-search position-absolute"></i>
+                        </span>
+                        <input type="text" class="w-100 rounded" placeholder="ស្វែងរកទីនេះ..."
+                            value="ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ" />
                     </form>
+                    <p class="mt-3 mb-1 fw-semibold">
+                        <i class="bi bi-clock-history"></i>
+                        <span>
+                            ធ្លាប់បានស្វែងរក
+                        </span>
+                    </p>
+                    <ul class="search-list list-unstyled ">
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block ">
+                                    ព្រឹត្តិការណ៏មកដល់ឆាប់ៗនេះ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/detailpage-card-childcare.html" class="w-100 d-inline-block ">
+                                    ស្ម័គ្រចិត្តថែទាំកុមារ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/Donation.html" class="w-100 d-inline-block  ">
+                                    បរិច្ចាគ
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/contactpage.html" class="w-100 d-inline-block  ">
+                                    ទាក់ទងតាមណា?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            <p class="w-100 ">
+                                <a href="../page/opportunities.html" class="w-100 d-inline-block  ">
+                                    តើមានស្ម័គ្រចិត្តអ្វីខ្លះ?
+                                </a>
+                            </p>
+                            <p class="px-0 ">
+                                <button type="button">
+                                    <i class="bi bi-x-lg fs-6"></i>
+                                </button>
+                            </p>
+                        </li>
+                        <div class="mt-2 w-100 text-center text-primary">
+                            <button type="button">
+                                លុបទាំងអស់
+                            </button>
+                        </div>
+                    </ul>
 
-
-
+                    <ul class="search-action list-unstyled mt-4 d-flex justify-content-center">
+                        <li class="pe-4">
+                            <a href="../page/contactpage.html">
+                                ទំនាក់ទំនង
+                            </a>
+                        </li>
+                        <li class="px-4">
+                            <a href="../page/aboutpage.html">
+                                អំពីយើង
+                            </a>
+                        </li>
+                        <li class="ps-4">
+                            <a href="../page/userprofile.html">
+                                មើលគណនី
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
@@ -2912,6 +3131,11 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="../js/main.js"></script>
     <script src="../js/opportunities.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
-
-  // ====================
   // Darkmode
-  // ====================
   let currentThemeSetting = localStorage.getItem("theme") || "light";
   const button = document.querySelector("[data-theme-toggle]");
   if (button) {
@@ -30,10 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentThemeSetting = newTheme;
     });
   }
-
-  // ====================
   // Testimonial Swiper
-  // ====================
   if (typeof Swiper !== "undefined") {
     new Swiper(".mySwiper", {
       direction: "vertical",
@@ -44,9 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ====================
   // Counter Number (jQuery)
-  // ====================
   if (typeof $ !== "undefined") {
     $(".counter").each(function () {
       const $el = $(this);
@@ -68,22 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ====================
-  // register ORG
-  // ====================
-  if (
-    typeof TomSelect !== "undefined" &&
-    document.querySelector("#select-beast")
-  ) {
-    new TomSelect("#select-beast", {
-      create: true,
-      sortField: { field: "text", direction: "asc" },
-    });
-  }
-
-  // ====================
   // File upload
-  // ====================
   if (typeof $ !== "undefined") {
     $("#file-browser").click(function (e) {
       e.preventDefault();
@@ -91,9 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ====================
   // Form Validations
-  // ====================
   function handleValidation(formId, redirectUrl) {
     const form = document.getElementById(formId);
     if (form) {
@@ -107,26 +82,35 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+  // register ORG
+  if (
+    typeof TomSelect !== "undefined" &&
+    document.querySelector("#select-beast")
+  ) {
+    new TomSelect("#select-beast", {
+      create: true,
+      sortField: { field: "text", direction: "asc" },
+    });
+  }
 
   // Login form validation
   handleValidation("loginForm", "../homepage.html");
   // register → homepage
   handleValidation("registerForm", "../Authentication/login.html");
-
   // confirm code login → resetPw
   handleValidation("passwordForm", "../Authentication/resetPw.html");
-
   // search account → found_acc
   handleValidation("searchForm", "../Authentication/comfirmCode.html");
-
   // changrPw → login
   handleValidation("resetForm", "../Authentication/login.html");
-
   // orgRegisterForm → login
-  handleValidation("orgRegisterForm", "../Authentication/login.html");
+  handleValidation("orgRegisterForm", "../Authentication/orglogin.html");
   // orgloginForm → homepage
   handleValidation("orgloginForm", "../orghomepage.html");
-
+  handleValidation("orgforgetForm", "../Authentication/orgComfirm.html");
+  handleValidation("orgCfForm", "../Authentication/orgResetpw.html");
+  handleValidation("orgresetForm", "../Authentication/orgLogin.html");
+  handleValidation("orgloginForm", "../homepage.html");
   //DOnation
   $(".donate-btn").hover(
     function () {
@@ -184,7 +168,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  handleValidation("orgloginForm", "../homepage.html");
-
-  // Testimonials
 });
