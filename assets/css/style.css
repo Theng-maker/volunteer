@@ -24,7 +24,7 @@
   --text-white-fixed: #FFFFFF;
   --text-black: #212536;
   --text-descript: #232531;
-  --text-title: #0D1B2A;
+  --text-title: #464646;
   --text-color: #333333;
   --white-bg: #FFFFFF;
   --gray-bg: #F1F1F1;
@@ -637,6 +637,9 @@ footer .footer-text {
 
 footer .footer-page ul li {
   margin-top: 4px;
+}
+footer .footer-type ul li {
+  margin: 6px 0;
 }
 
 footer .footer-link {
@@ -3573,7 +3576,7 @@ footer p.text-center {
   }
 
   .opportunity-card .card .card-body .card-action a {
-    margin-inline: 50px;
+    margin-inline: 30px;
   }
 
   .opportunity .category-icons .filter-btn button {
