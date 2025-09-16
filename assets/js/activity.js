@@ -28,7 +28,8 @@
       const wrap = input.closest('.comments-wrap');
       appendComment(wrap);
     }
-  });
+  }); 
+  
 
   function appendComment(wrap){
     const input = wrap.querySelector('.comment-input');
