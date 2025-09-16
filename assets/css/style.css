@@ -865,7 +865,7 @@ footer p.text-center {
 }
 
 .about-us .mission-list li:hover .list-img {
-  animation: border 2s linear infinite;
+  animation: border 1.2s linear infinite;
 }
 
 @keyframes border {
