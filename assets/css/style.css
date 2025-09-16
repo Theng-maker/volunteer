@@ -638,6 +638,9 @@ footer .footer-text {
 footer .footer-page ul li {
   margin-top: 4px;
 }
+footer .footer-type ul li {
+  margin: 6px 0;
+}
 
 footer .footer-link {
   font-size: 17px;
@@ -3573,7 +3576,7 @@ footer p.text-center {
   }
 
   .opportunity-card .card .card-body .card-action a {
-    margin-inline: 50px;
+    margin-inline: 30px;
   }
 
   .opportunity .category-icons .filter-btn button {
